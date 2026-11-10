@@ -1,0 +1,28 @@
+# Deploy site/ to GitHub Pages on every push to main. The index in site/data is committed (built locally or by
+# a separate scheduled job); this workflow only tests and publishes static files.
+name: Deploy to GitHub Pages
+on:
+  push: { branches: [main] }
+  workflow_dispatch:
+  # pushes made with GITHUB_TOKEN don't trigger workflows, so deploy after each index refresh too
+  workflow_run:
+    workflows: ["Refresh index"]
+    types: [completed]
+permissions: { contents: read, pages: write, id-token: write }
+concurrency: { group: pages, cancel-in-progress: true }
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
+    environment: { name: github-pages, url: "${{ steps.deployment.outputs.page_url }}" }
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: main }
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - run: node tests/run.mjs
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with: { path: site }
+      - id: deployment
+        uses: actions/deploy-pages@v4

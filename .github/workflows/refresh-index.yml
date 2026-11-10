@@ -1,0 +1,33 @@
+# Daily: discover FM-1 firmware projects and analyse new release files, then commit the updated index.
+# Uses this repository's own short-lived GITHUB_TOKEN (read-only use of the public API; write access only to
+# this repo's contents). The Pages deploy runs after this workflow (see pages.yml).
+name: Refresh index
+on:
+  schedule:
+    - cron: "17 5 * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency: { group: refresh-index, cancel-in-progress: false }
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - name: Refresh
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node tools/refresh.mjs --max-new 400
+      - name: Test
+        run: node tests/run.mjs
+      - name: Commit if changed
+        run: |
+          git config user.name "fm1-inspect index bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add site/data data/repos.json
+          if git diff --cached --quiet; then echo "No index changes."; exit 0; fi
+          git commit -m "Refresh firmware index ($(date -u +%Y-%m-%d))"
+          git push

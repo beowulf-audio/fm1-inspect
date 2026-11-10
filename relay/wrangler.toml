@@ -1,0 +1,8 @@
+name = "fm1-inspect-relay"
+main = "worker.js"
+compatibility_date = "2025-06-01"
+workers_dev = true
+
+[vars]
+# The page origins allowed to use the relay (comma-separated). Set this to your GitHub Pages origin.
+ALLOWED_ORIGINS = "https://beowulf-audio.github.io"

@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self' https://api.github.com https://raw.githubusercontent.com; font-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="color-scheme" content="dark light">
+<title>FM-1 Inspect</title>
+<meta name="description" content="Check an M-VAVE FM-1 firmware file before you install it. Runs entirely in your browser.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23f0a23b'/%3E%3Ccircle cx='14' cy='14' r='6.5' fill='none' stroke='%23140f0a' stroke-width='3'/%3E%3Cpath d='M19 19l6 6' stroke='%23140f0a' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preload" href="vendor/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="vendor/open-props/easings.min.css">
+<link rel="stylesheet" href="css/style.css">
+<script type="module" src="js/theme.js"></script>
+<script type="module" src="js/app.js"></script>
+</head>
+<body>
+<div class="bg" aria-hidden="true"></div>
+<header class="wrap top">
+  <div class="brand">
+    <span class="mark" aria-hidden="true"><svg class="i"><use href="img/icons.svg#search"></use></svg></span>
+    <span class="brand-name">FM-1 Inspect</span>
+  </div>
+  <div class="theme" role="group" aria-label="Colour theme">
+    <button data-theme-set="light" title="Light" aria-label="Light theme"><svg class="i"><use href="img/icons.svg#sun"></use></svg></button>
+    <button data-theme-set="system" title="System" aria-label="System theme"><svg class="i"><use href="img/icons.svg#monitor"></use></svg></button>
+    <button data-theme-set="dark" title="Dark" aria-label="Dark theme"><svg class="i"><use href="img/icons.svg#moon"></use></svg></button>
+  </div>
+</header>
+<section class="wrap intro">
+  <h1>Check a firmware before you flash it.</h1>
+  <p class="lede">What it is, where it came from, whether it can brick a newer FM-1, and whether it does anything it shouldn't.</p>
+  <p class="private"><svg class="i"><use href="img/icons.svg#lock"></use></svg> Files never leave your computer: everything is checked here in your browser.</p>
+</section>
+
+<main class="wrap">
+  <div class="tabs" role="tablist" aria-label="What to check">
+    <button role="tab" data-tab="files" aria-selected="true"><svg class="i"><use href="img/icons.svg#file-search"></use></svg> Files</button>
+    <button role="tab" data-tab="github" aria-selected="false"><svg class="i"><use href="img/icons.svg#github"></use></svg> GitHub repo</button>
+  </div>
+
+  <section data-panel="github" class="gh-panel" hidden>
+    <form id="gh-form" class="gh-form" autocomplete="off" role="search">
+      <span class="gh-ico" aria-hidden="true"><svg class="i"><use href="img/icons.svg#search"></use></svg></span>
+      <input id="repo" type="text" spellcheck="false" placeholder="Search firmware projects, or paste any GitHub repo" aria-label="Firmware project or GitHub repository"
+             role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="repo-list">
+      <button id="gh-go" class="btn primary" type="submit">Check</button>
+      <ul id="repo-list" class="repo-list" role="listbox" hidden></ul>
+    </form>
+    <p id="gh-msg" class="gh-msg" role="status"></p>
+    <p class="drop-foot note" id="gh-note">Checks the project's releases, firmware files and source. This tab talks to GitHub.</p>
+  </section>
+
+  <section data-panel="files" id="drop" class="drop" tabindex="0" aria-label="Drop .fwsc files here or choose them">
+    <span class="drop-ring" aria-hidden="true"><svg class="i"><use href="img/icons.svg#upload"></use></svg></span>
+    <p class="drop-title">Drop <code>.fwsc</code> files here</p>
+    <p class="drop-sub">One file, several, or a folder: every <code>.fwsc</code> inside it, subfolders included.</p>
+    <div class="drop-buttons">
+      <label class="btn primary"><svg class="i"><use href="img/icons.svg#file-search"></use></svg> Choose files<input type="file" id="pick" accept=".fwsc" multiple hidden></label>
+      <label class="btn"><svg class="i"><use href="img/icons.svg#folder-open"></use></svg> Scan a folder<input type="file" id="pickdir" webkitdirectory hidden></label>
+    </div>
+    <p id="dbinfo" class="drop-foot">Loading index…</p>
+    <p class="drop-foot note">Chrome may ask to "upload" a folder. Nothing is uploaded: files are only read here, in your browser.</p>
+  </section>
+
+  <div id="toolbar" class="toolbar" hidden>
+    <div class="filters" role="group" aria-label="Filter results" id="filters"></div>
+    <span id="progress" class="progress" hidden></span>
+    <span class="spacer"></span>
+    <button id="export" class="btn small"><svg class="i"><use href="img/icons.svg#download"></use></svg> Export JSON</button>
+    <button id="clear" class="btn small ghost"><svg class="i"><use href="img/icons.svg#trash-2"></use></svg> Clear</button>
+  </div>
+  <section id="results" aria-live="polite"></section>
+</main>
+
+<footer class="wrap foot">
+  <p>Static checks on the decrypted code: they catch common problems, not every possible one. Package format from <a href="https://github.com/joakimeriksson/fm1-emu" rel="noreferrer" target="_blank">fm1-emu</a>'s notes. Not affiliated with M-VAVE.</p>
+</footer>
+
+<div id="dragveil" class="dragveil" hidden aria-hidden="true"></div>
+<div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>
