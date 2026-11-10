@@ -13,7 +13,7 @@ let index = null, releases = {}, reports = [], filter = "all";
 async function loadData() {
   try {
     const [known, stop, rel] = await Promise.all(["data/known.json", "data/stoplist.json", "data/releases.json"]
-      .map((u) => fetch(u).then((r) => { if (!r.ok) throw new Error(u); return r.json(); })));
+      .map((u) => fetch(u, { cache: "no-cache" }).then((r) => { if (!r.ok) throw new Error(u); return r.json(); })));
     index = loadIndex(known, stop);
     releases = rel.releases || {};
     buildProjects();
