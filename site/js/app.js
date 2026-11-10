@@ -18,7 +18,7 @@ async function loadData() {
     releases = rel.releases || {};
     buildProjects();
     const repos = new Set(index.entries.map((e) => e.repo).filter(Boolean)).size;
-    $("#dbinfo").textContent = `Compared against ${fmtN(index.entries.length)} known firmware images from ${repos} projects and ${fmtN(rel.count)} release files · index ${known.generated}`;
+    $("#dbinfo").textContent = `Compared against ${fmtN(index.entries.length)} known firmware files from ${repos} projects and ${fmtN(rel.count)} release files · index ${known.generated}`;
   } catch {
     $("#dbinfo").textContent = "Index unavailable: files are still checked, but can't be identified.";
   }
