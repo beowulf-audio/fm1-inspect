@@ -1,0 +1,34 @@
+# DUELL: skips the first-start guide to the MORPH page, holds a chord while the MORPH fader moves from A toward B,
+# rolls a new B end, loads another sound, steps HOME's round to MORPH SET and MODE (LAYER/STEREO), then the GLO
+# mixer (docs/QUICKSTART.md "Make a first sound").
+name: duell-tour
+ms: 12500
+click_ms: 150
+steps:
+  - { at: 1400, screenshot: guide }
+  - { at: 1600, press: HOME }
+  - { at: 1950, turn: SELECT, clicks: -1 }
+  - { at: 2100, note: A3, vel: 100, hold: 2700 }
+  - { at: 2100, note: E4, vel: 100, hold: 2700 }
+  - { at: 2100, note: C5, vel: 100, hold: 2700 }
+  - { at: 2400, turn: KNOB1, clicks: 14 }
+  - { at: 4700, screenshot: morph }
+  - { at: 5000, turn: KNOB2, clicks: 1 }
+  - { at: 5300, note: F3, vel: 110, hold: 250 }
+  - { at: 5600, note: C4, vel: 110, hold: 250 }
+  - { at: 5900, note: F4, vel: 110, hold: 400 }
+  - { at: 6400, turn: PRESETS, clicks: 3 }
+  - { at: 7000, note: C4, vel: 100, hold: 600 }
+  - { at: 7000, note: G4, vel: 100, hold: 600 }
+  - { at: 7800, press: HOME }
+  - { at: 8100, press: HOME }
+  - { at: 8500, turn: KNOB1, clicks: 1 }
+  - { at: 8700, note: D4, vel: 100, hold: 400 }
+  - { at: 9300, turn: KNOB1, clicks: -1 }
+  - { at: 9600, press: GLO }
+  - { at: 9900, note: D4, vel: 100, hold: 300 }
+  - { at: 10300, note: A4, vel: 100, hold: 300 }
+  - { at: 10700, note: F4, vel: 100, hold: 700 }
+  - { at: 12300, screenshot: mixer }
+expect:
+  boots: true

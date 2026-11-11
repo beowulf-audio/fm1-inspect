@@ -1,0 +1,23 @@
+# BoopBox Trainer: the level picker's three songs (SELECT), level 1 started (OCT+), its coach's first step done
+# (ALGORITHM to track 4: NICE!), then the DRUMS grid (SEQ) with kicks tapped in while it plays. Based on docs/trainer.md.
+name: boopbox
+ms: 12500
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 2200, turn: SELECT, clicks: 1 }
+  - { at: 3100, turn: SELECT, clicks: 1 }
+  - { at: 4000, turn: SELECT, clicks: -2 }
+  - { at: 4700, press: OCTUP }
+  - { at: 5600, turn: ALGORITHM, clicks: 3 }
+  - { at: 7300, press: SEQ }
+  - { at: 8000, press: PLAY }
+  - { at: 8400, note: F3, hold: 150 }
+  - { at: 8800, note: C4, hold: 150 }
+  - { at: 9200, note: G4, hold: 150 }
+  - { at: 9600, note: D5, hold: 150 }
+  - { at: 10000, note: A3, hold: 150 }
+  - { at: 10400, note: B4, hold: 150 }
+  - { at: 12300, screenshot: end }
+expect:
+  boots: true

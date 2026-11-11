@@ -1,0 +1,41 @@
+# fm1-wheel: tonewheel organ (MANUAL.md "Buttons and encoders"): a chord on 3BAR, then registrations BLUES, ROCK, then on to FULL
+# via PRESETS, percussion (ENV), vibrato/chorus (LFO), the Leslie rotor from SLOW to FAST (PLAY), drive (FX) and reverb (SEQ).
+name: wheel
+ms: 12500
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, note: C4, vel: 100, hold: 900 }
+  - { at: 1700, note: E4, vel: 100, hold: 900 }
+  - { at: 1700, note: G4, vel: 100, hold: 900 }
+  - { at: 2700, turn: PRESETS, clicks: 1 }
+  - { at: 2900, note: F3, vel: 100, hold: 800 }
+  - { at: 2900, note: A3, vel: 100, hold: 800 }
+  - { at: 2900, note: C4, vel: 100, hold: 800 }
+  - { at: 2900, note: F4, vel: 100, hold: 800 }
+  - { at: 3800, turn: PRESETS, clicks: 1 }
+  - { at: 4000, note: G3, vel: 100, hold: 800 }
+  - { at: 4000, note: B3, vel: 100, hold: 800 }
+  - { at: 4000, note: D4, vel: 100, hold: 800 }
+  - { at: 4000, note: G4, vel: 100, hold: 800 }
+  - { at: 4900, turn: PRESETS, clicks: 3 }
+  - { at: 5500, press: ENV }
+  - { at: 5700, press: LFO }
+  - { at: 6000, note: C4, vel: 100, hold: 3000 }
+  - { at: 6000, note: E4, vel: 100, hold: 3000 }
+  - { at: 6000, note: G4, vel: 100, hold: 3000 }
+  - { at: 6000, note: C5, vel: 100, hold: 3000 }
+  - { at: 6300, press: PLAY }
+  - { at: 8300, press: FX }
+  - { at: 8600, press: SEQ }
+  - { at: 9200, note: A3, vel: 100, hold: 1300 }
+  - { at: 9200, note: C4, vel: 100, hold: 1300 }
+  - { at: 9200, note: E4, vel: 100, hold: 1300 }
+  - { at: 9200, note: A4, vel: 100, hold: 1300 }
+  - { at: 10600, note: F3, vel: 100, hold: 1300 }
+  - { at: 10600, note: A3, vel: 100, hold: 1300 }
+  - { at: 10600, note: C4, vel: 100, hold: 1300 }
+  - { at: 10600, note: F4, vel: 100, hold: 1300 }
+  - { at: 12400, screenshot: end }
+expect:
+  boots: true

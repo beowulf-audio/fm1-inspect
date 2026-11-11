@@ -1,0 +1,29 @@
+# GLIDER: three white keys latch a drone, PLAY starts the drum track, black keys glide tones up the scale,
+# a preset change, FX page 2 (tape echo), the drum page with a new random beat (ARP), then back to the play page
+# (GLIDER.md "Playing").
+name: glider-tour
+ms: 12500
+click_ms: 150
+steps:
+  - { at: 1400, screenshot: boot }
+  - { at: 1600, note: F3, hold: 120 }
+  - { at: 1900, note: C4, hold: 120 }
+  - { at: 2200, note: A4, hold: 120 }
+  - { at: 2700, screenshot: latched }
+  - { at: 3000, press: PLAY }
+  - { at: 3800, note: A#4, hold: 100 }
+  - { at: 5000, screenshot: glide }
+  - { at: 5200, note: C#4, hold: 100 }
+  - { at: 6300, turn: PRESETS, clicks: 3 }
+  - { at: 7300, screenshot: preset }
+  - { at: 7500, press: FX }
+  - { at: 8200, press: FX }
+  - { at: 8800, note: A#4, hold: 100 }
+  - { at: 9400, screenshot: fx }
+  - { at: 9600, press: SEQ }
+  - { at: 10000, press: ARP }
+  - { at: 11000, screenshot: drums }
+  - { at: 11200, press: HOME }
+  - { at: 12300, screenshot: home }
+expect:
+  boots: true

@@ -1,0 +1,31 @@
+# Programs a beat on HOME (black keys pick a voice, white keys set its steps: drum 1, snare, closed hat), plays it,
+# then the mixer (GLO), the voice EDIT page and HOME again. Based on firmware/fm1/README.md "A first pattern".
+name: tack
+ms: 12000
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1600, press: HOME }
+  - { at: 1900, note: F#3, hold: 120 }
+  - { at: 2150, note: F3, hold: 100 }
+  - { at: 2350, note: C4, hold: 100 }
+  - { at: 2550, note: G4, hold: 100 }
+  - { at: 2750, note: D5, hold: 100 }
+  - { at: 3050, note: C#4, hold: 120 }
+  - { at: 3300, note: C4, hold: 100 }
+  - { at: 3500, note: D5, hold: 100 }
+  - { at: 3800, note: F#4, hold: 120 }
+  - { at: 4050, note: A3, hold: 100 }
+  - { at: 4250, note: E4, hold: 100 }
+  - { at: 4450, note: B4, hold: 100 }
+  - { at: 4650, note: F5, hold: 100 }
+  - { at: 4950, press: PLAY }
+  - { at: 6500, screenshot: home }
+  - { at: 6700, press: GLO }
+  - { at: 8200, screenshot: mixer }
+  - { at: 8400, press: EDIT }
+  - { at: 9900, screenshot: edit }
+  - { at: 10100, press: HOME }
+  - { at: 11800, screenshot: end }
+expect:
+  boots: true

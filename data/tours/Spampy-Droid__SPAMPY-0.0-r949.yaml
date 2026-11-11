@@ -1,0 +1,35 @@
+# SPAMPY (a SLOOP-based groovebox): on the drum track, a kick on steps 1-5-9-13 and off-beat hats set with SEQ held
+# (GUIDE "SEQ - steps"), PLAY, a bass line played over it on track 1, the FX pages, then the TRACKS screen and its visualiser.
+name: spampy
+ms: 12500
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, turn: ALGORITHM, clicks: 3 }
+  - { at: 2300, note: F3, vel: 100, hold: 150 }
+  - { at: 2600, press: SEQ, hold: 1300 }
+  - { at: 2900, note: F3, hold: 100 }
+  - { at: 3100, note: C4, hold: 100 }
+  - { at: 3300, note: G4, hold: 100 }
+  - { at: 3500, note: D5, hold: 100 }
+  - { at: 4100, note: C4, vel: 90, hold: 150 }
+  - { at: 4400, press: SEQ, hold: 1300 }
+  - { at: 4700, note: A3, hold: 100 }
+  - { at: 4900, note: E4, hold: 100 }
+  - { at: 5100, note: B4, hold: 100 }
+  - { at: 5300, note: F5, hold: 100 }
+  - { at: 5900, press: PLAY }
+  - { at: 6300, turn: ALGORITHM, clicks: -3 }
+  - { at: 6800, note: C4, vel: 110, hold: 250 }
+  - { at: 7200, note: C4, vel: 110, hold: 150 }
+  - { at: 7500, note: D#4, vel: 110, hold: 250 }
+  - { at: 7900, note: G4, vel: 110, hold: 250 }
+  - { at: 8300, note: F4, vel: 110, hold: 400 }
+  - { at: 8900, press: FX }
+  - { at: 9200, note: G3, vel: 110, hold: 250 }
+  - { at: 9600, note: A#3, vel: 110, hold: 400 }
+  - { at: 10200, press: HOME }
+  - { at: 11000, press: HOME }
+  - { at: 12400, screenshot: end }
+expect:
+  boots: true

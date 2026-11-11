@@ -1,0 +1,27 @@
+# ARP held + PLAY rolls a random 303-style pattern with vowels per step, PLAY runs it; PRESETS jumps through the vowels,
+# ENV/FX/LFO held with the knobs add env mod, delay and the tongue LFO, and ARP held + G4 rolls a pattern on G
+# (README: "Sequencer", "Random patterns", "Controls").
+name: fmlarynx
+ms: 12500
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1600, press: ARP, hold: 500 }
+  - { at: 1800, press: PLAY }
+  - { at: 2300, press: PLAY }
+  - { at: 2900, turn: PRESETS, clicks: 1 }
+  - { at: 3500, turn: PRESETS, clicks: 1 }
+  - { at: 4100, turn: PRESETS, clicks: 1 }
+  - { at: 4700, turn: PRESETS, clicks: 1 }
+  - { at: 5300, press: ENV, hold: 1600 }
+  - { at: 5400, turn: KNOB2, clicks: 10 }
+  - { at: 7100, press: FX, hold: 1500 }
+  - { at: 7200, turn: KNOB1, clicks: 8 }
+  - { at: 8700, press: LFO, hold: 2000 }
+  - { at: 8800, turn: KNOB1, clicks: 5 }
+  - { at: 9700, turn: KNOB2, clicks: 6 }
+  - { at: 10900, press: ARP, hold: 500 }
+  - { at: 11100, note: G4, hold: 200 }
+  - { at: 12300, screenshot: end }
+expect:
+  boots: true

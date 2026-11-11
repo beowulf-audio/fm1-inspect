@@ -1,0 +1,17 @@
+# XMOD: the built-in theme song plays from boot while the tour walks the pattern page (4 then 8 channels), the SONG
+# order list, the MIXER with meters, the instrument volume envelope and the sample page (README: Controls).
+name: xmod
+ms: 12000
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 3400, press: HOME }
+  - { at: 4600, press: HOME }
+  - { at: 5800, press: SEQ }
+  - { at: 7000, press: GLO }
+  - { at: 8200, press: ENV }
+  - { at: 9400, press: LFO }
+  - { at: 10500, press: HOME }
+  - { at: 11500, screenshot: end }
+expect:
+  boots: true

@@ -1,0 +1,35 @@
+# Programs a beat on the step sequencer (SEQ: kick on T1, snare on T2, claps on T3), plays it, then visits
+# the TRACKS overview, the EDIT sound page, the HOME scope and the PERFORM screen (FX held), still playing. Based on the manual's quick start.
+name: hortator
+ms: 12000
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1600, press: SEQ }
+  - { at: 1900, note: F3, hold: 100 }
+  - { at: 2050, note: C4, hold: 100 }
+  - { at: 2200, note: G4, hold: 100 }
+  - { at: 2350, note: D5, hold: 100 }
+  - { at: 2600, turn: ALGORITHM, clicks: 1 }
+  - { at: 2900, note: C4, hold: 100 }
+  - { at: 3050, note: D5, hold: 100 }
+  - { at: 3300, turn: ALGORITHM, clicks: 1 }
+  - { at: 3600, note: A3, hold: 100 }
+  - { at: 3750, note: E4, hold: 100 }
+  - { at: 3900, note: B4, hold: 100 }
+  - { at: 4050, note: F5, hold: 100 }
+  - { at: 4300, press: PLAY }
+  - { at: 5000, screenshot: seq }
+  - { at: 5300, press: HOME }
+  - { at: 6600, screenshot: tracks }
+  - { at: 6900, press: EDIT }
+  - { at: 7300, turn: PRESETS, clicks: 1 }
+  - { at: 8200, screenshot: edit }
+  - { at: 8400, press: HOME }
+  - { at: 8700, press: HOME }
+  - { at: 9300, screenshot: home }
+  - { at: 9500, press: FX, hold: 1800 }
+  - { at: 10000, note: C#4, hold: 600 }
+  - { at: 10800, screenshot: perform }
+expect:
+  boots: true

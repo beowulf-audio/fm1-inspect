@@ -1,0 +1,38 @@
+# ORBIT: selects the drum track, programs kick, snare and hat on the GRID page (GUIDE "Recording and steps"),
+# plays the beat, switches to synth track 1 for a phrase and a preset change, then shows Mixer (GLO) and Event Tape (HOME).
+name: orbit-tour
+ms: 12500
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1600, turn: ALGORITHM, clicks: 3 }
+  - { at: 2200, press: SEQ }
+  - { at: 2500, note: F#3, vel: 100, hold: 120 }
+  - { at: 2700, note: F3, hold: 80 }
+  - { at: 2800, note: C4, hold: 80 }
+  - { at: 2900, note: G4, hold: 80 }
+  - { at: 3000, note: D5, hold: 80 }
+  - { at: 3200, note: G#3, vel: 100, hold: 120 }
+  - { at: 3400, note: C4, hold: 80 }
+  - { at: 3500, note: D5, hold: 80 }
+  - { at: 3700, note: A#3, vel: 100, hold: 120 }
+  - { at: 3900, note: A3, hold: 80 }
+  - { at: 4000, note: E4, hold: 80 }
+  - { at: 4100, note: B4, hold: 80 }
+  - { at: 4200, note: F5, hold: 80 }
+  - { at: 4400, press: PLAY }
+  - { at: 5600, screenshot: grid }
+  - { at: 5800, press: HOME }
+  - { at: 6000, turn: ALGORITHM, clicks: -3 }
+  - { at: 6600, note: C4, vel: 110, hold: 300 }
+  - { at: 7000, note: E4, vel: 110, hold: 300 }
+  - { at: 7400, note: G4, vel: 110, hold: 300 }
+  - { at: 7900, turn: PRESETS, clicks: 2 }
+  - { at: 8300, note: A4, vel: 110, hold: 300 }
+  - { at: 8700, note: G4, vel: 110, hold: 300 }
+  - { at: 9100, note: E4, vel: 110, hold: 500 }
+  - { at: 9800, press: GLO }
+  - { at: 11000, press: HOME }
+  - { at: 12200, screenshot: tape }
+expect:
+  boots: true

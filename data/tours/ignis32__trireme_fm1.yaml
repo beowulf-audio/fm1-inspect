@@ -1,0 +1,22 @@
+# Trireme (a USB keyboard and macro pad, no sound): the live legend highlighting a button and a key, SELECT flipping
+# to the note-keys page, PRESETS stepping the layers, then the on-device editor (OCT+) choosing REC and leaving (README).
+name: trireme
+ms: 11000
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, press: FX }
+  - { at: 2500, turn: KNOB1, clicks: 2 }
+  - { at: 3300, turn: SELECT, clicks: 1 }
+  - { at: 3800, note: C4, hold: 200 }
+  - { at: 4600, turn: SELECT, clicks: -1 }
+  - { at: 5200, turn: PRESETS, clicks: 1 }
+  - { at: 6000, turn: PRESETS, clicks: -1 }
+  - { at: 6800, press: OCTUP }
+  - { at: 7600, press: REC }
+  - { at: 8400, press: OCTUP }
+  - { at: 9400, press: OCTDN }
+  - { at: 9900, press: OCTDN }
+  - { at: 10800, screenshot: end }
+expect:
+  boots: true

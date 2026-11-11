@@ -1,0 +1,35 @@
+# Matryoshka: after the first-boot factory bank and its Quick Start card, the ORACLE V poly patch plays a chord, then
+# HOME + PRESET steps through patches (INIT, SIMPLE FM, PLUCKED STRING) with their device pages, and wraps back to
+# the VERONA DRUM 1 kit, played on the black keys (README: FM-1 controls).
+name: matryoshka-tour
+ms: 14500
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, note: C4, vel: 100, hold: 300 }
+  - { at: 5600, press: HOME }
+  - { at: 5900, note: C4, vel: 100, hold: 1200 }
+  - { at: 5900, note: E4, vel: 100, hold: 1200 }
+  - { at: 5900, note: G4, vel: 100, hold: 1200 }
+  - { at: 7200, note: A4, vel: 110, hold: 200 }
+  - { at: 7450, note: C5, vel: 110, hold: 200 }
+  - { at: 7700, note: E5, vel: 110, hold: 400 }
+  - { at: 8200, press: HOME, hold: 1000 }
+  - { at: 8400, turn: PRESETS, clicks: 3 }
+  - { at: 9300, note: C4, vel: 100, hold: 250 }
+  - { at: 9550, note: G4, vel: 100, hold: 250 }
+  - { at: 9800, note: C5, vel: 100, hold: 250 }
+  - { at: 10050, note: E5, vel: 100, hold: 500 }
+  - { at: 10700, press: HOME, hold: 1300 }
+  - { at: 10900, turn: PRESETS, clicks: -4 }
+  - { at: 12100, note: F#3, vel: 110, hold: 150 }
+  - { at: 12350, note: G#3, vel: 100, hold: 150 }
+  - { at: 12600, note: F#3, vel: 110, hold: 150 }
+  - { at: 12850, note: A#3, vel: 100, hold: 150 }
+  - { at: 13100, note: F#3, vel: 110, hold: 150 }
+  - { at: 13350, note: G#3, vel: 100, hold: 150 }
+  - { at: 13600, note: C#4, vel: 100, hold: 150 }
+  - { at: 13850, note: A#3, vel: 100, hold: 150 }
+  - { at: 14400, screenshot: end }
+expect:
+  boots: true

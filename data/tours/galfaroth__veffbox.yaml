@@ -1,0 +1,25 @@
+# Plays the OP4 FM sound on the keys, starts the chord sequence with PLAY, then the source (EDIT), chord sequence (SEQ),
+# modulation (LFO) and FX chain pages, then steps ALGORITHM to the ANLG and DRUM tracks (README control table).
+name: veffbox-tour
+ms: 12000
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, note: C4, vel: 100, hold: 500 }
+  - { at: 1700, note: G4, vel: 100, hold: 500 }
+  - { at: 2300, note: E5, vel: 110, hold: 300 }
+  - { at: 2800, press: PLAY }
+  - { at: 3800, screenshot: playing }
+  - { at: 4000, press: EDIT }
+  - { at: 5200, screenshot: src }
+  - { at: 5400, press: SEQ }
+  - { at: 6600, screenshot: seq }
+  - { at: 6800, press: LFO }
+  - { at: 8000, screenshot: mod }
+  - { at: 8200, press: FX }
+  - { at: 9400, screenshot: fx }
+  - { at: 9600, press: EDIT }
+  - { at: 9900, turn: ALGORITHM, clicks: 3 }
+  - { at: 11700, screenshot: drum }
+expect:
+  boots: true

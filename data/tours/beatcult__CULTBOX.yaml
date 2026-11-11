@@ -1,0 +1,30 @@
+# Starts the drum pattern (PLAY) on the mix page, then turns ALGORITHM through the three channels: DRUMS (pads
+# and the step sequencer, SEQ), the PLVKS synth (filter page) and the DUBMARINE siren radar, a few notes on each.
+name: cultbox-tour
+ms: 12000
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, press: PLAY }
+  - { at: 2500, screenshot: mix }
+  - { at: 2700, turn: ALGORITHM, clicks: 1 }
+  - { at: 3000, note: C4, vel: 110, hold: 150 }
+  - { at: 3250, note: D4, vel: 110, hold: 150 }
+  - { at: 3600, press: SEQ }
+  - { at: 4600, screenshot: drumseq }
+  - { at: 4800, press: SEQ }
+  - { at: 5000, turn: ALGORITHM, clicks: 1 }
+  - { at: 5300, press: ARP }
+  - { at: 5500, note: C4, vel: 110, hold: 1600 }
+  - { at: 5500, note: G4, vel: 110, hold: 1600 }
+  - { at: 6400, press: EDIT }
+  - { at: 7000, screenshot: plvks }
+  - { at: 7300, press: ARP }
+  - { at: 7500, press: ARP }
+  - { at: 7800, turn: ALGORITHM, clicks: 1 }
+  - { at: 8100, note: A4, vel: 110, hold: 1500 }
+  - { at: 9000, screenshot: dub }
+  - { at: 10000, press: HOME }
+  - { at: 11800, screenshot: end }
+expect:
+  boots: true

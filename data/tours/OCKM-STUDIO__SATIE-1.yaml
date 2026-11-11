@@ -1,0 +1,18 @@
+# The first tune plays by itself; after the splash the tour changes the mood (SELECT) and the
+# tune (PRESETS), steps ALGORITHM to the Lead, Bass and Drums pages, then opens the guide (GLO) and closes it (README "Start here").
+name: satie-tour
+ms: 14500
+click_ms: 150
+steps:
+  - { at: 4000, screenshot: boot }
+  - { at: 5800, turn: SELECT, clicks: 1 }
+  - { at: 7300, turn: PRESETS, clicks: 1 }
+  - { at: 8900, turn: ALGORITHM, clicks: 1 }
+  - { at: 9800, turn: ALGORITHM, clicks: 1 }
+  - { at: 10700, turn: ALGORITHM, clicks: 1 }
+  - { at: 11600, press: GLO }
+  - { at: 12700, turn: SELECT, clicks: 1 }
+  - { at: 13400, press: HOME }
+  - { at: 14300, screenshot: end }
+expect:
+  boots: true

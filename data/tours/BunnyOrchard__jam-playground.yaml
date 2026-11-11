@@ -1,0 +1,23 @@
+# The generative song playing from boot, a new vibe (PRESETS), the SEQ view of all tracks and steps (SELECT steps
+# through them), the GLO page played on the keys, then a mutation (FX) and a new song (ENV). README "Controls".
+name: jam-playground
+ms: 12000
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 2600, turn: PRESETS, clicks: 1 }
+  - { at: 3900, press: SEQ }
+  - { at: 4900, turn: SELECT, clicks: 1 }
+  - { at: 5700, turn: SELECT, clicks: 1 }
+  - { at: 6500, press: HOME }
+  - { at: 6900, press: GLO }
+  - { at: 7300, note: C4, vel: 100, hold: 250 }
+  - { at: 7600, note: E4, vel: 100, hold: 250 }
+  - { at: 7900, note: G4, vel: 100, hold: 250 }
+  - { at: 8200, note: C5, vel: 100, hold: 400 }
+  - { at: 8900, press: HOME }
+  - { at: 9200, press: FX }
+  - { at: 10300, press: ENV }
+  - { at: 11800, screenshot: newsong }
+expect:
+  boots: true

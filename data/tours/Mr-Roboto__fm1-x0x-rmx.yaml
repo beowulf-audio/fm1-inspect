@@ -1,0 +1,49 @@
+# X0X-RMX: the manual's "Getting started" tour: programs 909 kick, clap and open hats, writes a 303A line with
+# the TB-3PO generator (ARP, OCT+), shows the 303 EDIT page, fills the BREAK, then HOME with the break muted and back.
+name: x0x-tour
+ms: 12500
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1600, note: F#3, vel: 100, hold: 120 }
+  - { at: 1800, note: F3, vel: 100, hold: 80 }
+  - { at: 1900, note: C4, vel: 100, hold: 80 }
+  - { at: 2000, note: G4, vel: 100, hold: 80 }
+  - { at: 2100, note: D5, vel: 100, hold: 80 }
+  - { at: 2300, press: PLAY }
+  - { at: 2600, note: G#4, vel: 100, hold: 100 }
+  - { at: 2800, note: C4, vel: 100, hold: 80 }
+  - { at: 2900, note: D5, vel: 100, hold: 80 }
+  - { at: 3100, note: C#5, vel: 100, hold: 100 }
+  - { at: 3300, note: A3, vel: 100, hold: 80 }
+  - { at: 3400, note: E4, vel: 100, hold: 80 }
+  - { at: 3500, note: B4, vel: 100, hold: 80 }
+  - { at: 3600, note: F5, vel: 100, hold: 80 }
+  - { at: 3900, turn: ALGORITHM, clicks: 2 }
+  - { at: 4400, press: ARP }
+  - { at: 4900, press: OCTUP }
+  - { at: 5700, press: OCTUP }
+  - { at: 6500, press: EDIT }
+  - { at: 7300, turn: ALGORITHM, clicks: 2 }
+  - { at: 7800, note: F3, vel: 100, hold: 40 }
+  - { at: 7860, note: G3, vel: 100, hold: 40 }
+  - { at: 7920, note: A3, vel: 100, hold: 40 }
+  - { at: 7980, note: B3, vel: 100, hold: 40 }
+  - { at: 8040, note: C4, vel: 100, hold: 40 }
+  - { at: 8100, note: D4, vel: 100, hold: 40 }
+  - { at: 8160, note: E4, vel: 100, hold: 40 }
+  - { at: 8220, note: F4, vel: 100, hold: 40 }
+  - { at: 8280, note: G4, vel: 100, hold: 40 }
+  - { at: 8340, note: A4, vel: 100, hold: 40 }
+  - { at: 8400, note: B4, vel: 100, hold: 40 }
+  - { at: 8460, note: C5, vel: 100, hold: 40 }
+  - { at: 8520, note: D5, vel: 100, hold: 40 }
+  - { at: 8580, note: E5, vel: 100, hold: 40 }
+  - { at: 8640, note: F5, vel: 100, hold: 40 }
+  - { at: 8700, note: G5, vel: 100, hold: 40 }
+  - { at: 9300, press: HOME }
+  - { at: 10300, note: D#4, vel: 100, hold: 100 }
+  - { at: 11200, note: D#4, vel: 100, hold: 100 }
+  - { at: 12300, screenshot: end }
+expect:
+  boots: true

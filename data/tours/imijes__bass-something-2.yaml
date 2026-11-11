@@ -1,0 +1,38 @@
+# Bass Something 2: a bassline on the Bass Station II style panel, the FILTERS page with a knob turned, the arp on a
+# held chord, then HOME to Drum Something 400 with drums on the keys (MANUAL sections 2, 3, 5, 6).
+name: bs2
+ms: 12500
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 2300, note: C4, vel: 110, hold: 200 }
+  - { at: 2550, note: C4, vel: 90, hold: 200 }
+  - { at: 2800, note: D#4, vel: 110, hold: 200 }
+  - { at: 3050, note: G3, vel: 100, hold: 300 }
+  - { at: 3400, press: EDIT }
+  - { at: 3600, note: C4, vel: 110, hold: 400 }
+  - { at: 4100, press: FX }
+  - { at: 4300, note: G3, vel: 120, hold: 1400 }
+  - { at: 4400, turn: KNOB2, clicks: -8 }
+  - { at: 5000, turn: KNOB2, clicks: 10 }
+  - { at: 5900, press: ARP }
+  - { at: 6100, turn: PRESETS, clicks: 1 }
+  - { at: 6300, note: C4, vel: 110, hold: 1500 }
+  - { at: 6300, note: G4, vel: 110, hold: 1500 }
+  - { at: 6300, note: D#4, vel: 110, hold: 1500 }
+  - { at: 8000, turn: PRESETS, clicks: -1 }
+  - { at: 8300, press: HOME }
+  - { at: 8900, press: HOME }
+  - { at: 9600, note: C4, vel: 120, hold: 100 }
+  - { at: 9850, note: C5, vel: 100, hold: 100 }
+  - { at: 10100, note: D4, vel: 120, hold: 100 }
+  - { at: 10350, note: C5, vel: 100, hold: 100 }
+  - { at: 10600, note: C4, vel: 120, hold: 100 }
+  - { at: 10725, note: C4, vel: 100, hold: 100 }
+  - { at: 10850, note: C5, vel: 100, hold: 100 }
+  - { at: 11100, note: D4, vel: 120, hold: 100 }
+  - { at: 11350, note: E5, vel: 110, hold: 100 }
+  - { at: 11600, note: A4, vel: 110, hold: 100 }
+  - { at: 12200, screenshot: drums }
+expect:
+  boots: true

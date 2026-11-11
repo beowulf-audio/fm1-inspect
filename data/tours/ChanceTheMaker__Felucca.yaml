@@ -1,0 +1,29 @@
+# Felucca [Salt]: plays the ANALOG ACID sound, steps through presets with PRESETS and plays a preset's pattern,
+# then visits the EDIT, ENV, FX, LFO, ARP, SCL, SEQ and GLO pages (README "Core firmware features") and returns HOME.
+name: felucca-tour
+ms: 12500
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, note: C4, vel: 100, hold: 500 }
+  - { at: 1700, note: E4, vel: 100, hold: 500 }
+  - { at: 1700, note: G4, vel: 100, hold: 500 }
+  - { at: 2400, turn: PRESETS, clicks: 2 }
+  - { at: 2900, note: A4, vel: 110, hold: 200 }
+  - { at: 3200, note: C5, vel: 110, hold: 200 }
+  - { at: 3500, turn: PRESETS, clicks: 3 }
+  - { at: 4100, press: PLAY }
+  - { at: 4600, press: EDIT }
+  - { at: 5300, press: ENV }
+  - { at: 6000, press: FX }
+  - { at: 6700, press: LFO }
+  - { at: 7400, press: ARP }
+  - { at: 8100, press: SCL }
+  - { at: 8800, press: SEQ }
+  - { at: 9700, press: GLO }
+  - { at: 10500, press: HOME }
+  - { at: 11500, press: PLAY }
+  - { at: 11700, note: C4, vel: 100, hold: 500 }
+  - { at: 12300, screenshot: end }
+expect:
+  boots: true

@@ -1,0 +1,84 @@
+# FoMni: an Omnichord-style chord harp. C held on its black key and strummed up the white keys, then Am strummed,
+# then CHORD HOLD (ARP) with the rhythm on PLAY, the Rhythm page (SEQ), chords changing under it (README "Playing").
+name: fomni
+ms: 12000
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, note: G#3, vel: 100, hold: 1700 }
+  - { at: 1800, note: F3, vel: 100, hold: 120 }
+  - { at: 1855, note: G3, vel: 100, hold: 120 }
+  - { at: 1910, note: A3, vel: 100, hold: 120 }
+  - { at: 1965, note: B3, vel: 100, hold: 120 }
+  - { at: 2020, note: C4, vel: 100, hold: 120 }
+  - { at: 2075, note: D4, vel: 100, hold: 120 }
+  - { at: 2130, note: E4, vel: 100, hold: 120 }
+  - { at: 2185, note: F4, vel: 100, hold: 120 }
+  - { at: 2240, note: G4, vel: 100, hold: 120 }
+  - { at: 2295, note: A4, vel: 100, hold: 120 }
+  - { at: 2350, note: B4, vel: 100, hold: 120 }
+  - { at: 2405, note: C5, vel: 100, hold: 120 }
+  - { at: 2460, note: D5, vel: 100, hold: 120 }
+  - { at: 2515, note: E5, vel: 100, hold: 120 }
+  - { at: 2570, note: F5, vel: 100, hold: 120 }
+  - { at: 2625, note: G5, vel: 100, hold: 120 }
+  - { at: 3500, note: D#4, vel: 100, hold: 1500 }
+  - { at: 3600, note: G5, vel: 100, hold: 120 }
+  - { at: 3655, note: F5, vel: 100, hold: 120 }
+  - { at: 3710, note: E5, vel: 100, hold: 120 }
+  - { at: 3765, note: D5, vel: 100, hold: 120 }
+  - { at: 3820, note: C5, vel: 100, hold: 120 }
+  - { at: 3875, note: B4, vel: 100, hold: 120 }
+  - { at: 3930, note: A4, vel: 100, hold: 120 }
+  - { at: 3985, note: G4, vel: 100, hold: 120 }
+  - { at: 4040, note: F4, vel: 100, hold: 120 }
+  - { at: 4095, note: E4, vel: 100, hold: 120 }
+  - { at: 4150, note: D4, vel: 100, hold: 120 }
+  - { at: 4205, note: C4, vel: 100, hold: 120 }
+  - { at: 4260, note: B3, vel: 100, hold: 120 }
+  - { at: 4315, note: A3, vel: 100, hold: 120 }
+  - { at: 4370, note: G3, vel: 100, hold: 120 }
+  - { at: 4425, note: F3, vel: 100, hold: 120 }
+  - { at: 5300, press: ARP }
+  - { at: 5500, note: F#3, vel: 100, hold: 300 }
+  - { at: 5900, press: PLAY }
+  - { at: 6400, press: SEQ, hold: 150 }
+  - { at: 7600, note: G#3, vel: 100, hold: 300 }
+  - { at: 8000, note: F3, vel: 100, hold: 120 }
+  - { at: 8055, note: G3, vel: 100, hold: 120 }
+  - { at: 8110, note: A3, vel: 100, hold: 120 }
+  - { at: 8165, note: B3, vel: 100, hold: 120 }
+  - { at: 8220, note: C4, vel: 100, hold: 120 }
+  - { at: 8275, note: D4, vel: 100, hold: 120 }
+  - { at: 8330, note: E4, vel: 100, hold: 120 }
+  - { at: 8385, note: F4, vel: 100, hold: 120 }
+  - { at: 8440, note: G4, vel: 100, hold: 120 }
+  - { at: 8495, note: A4, vel: 100, hold: 120 }
+  - { at: 8550, note: B4, vel: 100, hold: 120 }
+  - { at: 8605, note: C5, vel: 100, hold: 120 }
+  - { at: 8660, note: D5, vel: 100, hold: 120 }
+  - { at: 8715, note: E5, vel: 100, hold: 120 }
+  - { at: 8770, note: F5, vel: 100, hold: 120 }
+  - { at: 8825, note: G5, vel: 100, hold: 120 }
+  - { at: 9400, note: A#3, vel: 100, hold: 300 }
+  - { at: 9800, press: HOME, hold: 150 }
+  - { at: 10600, note: G#3, vel: 100, hold: 300 }
+  - { at: 10800, note: G5, vel: 100, hold: 120 }
+  - { at: 10855, note: F5, vel: 100, hold: 120 }
+  - { at: 10910, note: E5, vel: 100, hold: 120 }
+  - { at: 10965, note: D5, vel: 100, hold: 120 }
+  - { at: 11020, note: C5, vel: 100, hold: 120 }
+  - { at: 11075, note: B4, vel: 100, hold: 120 }
+  - { at: 11130, note: A4, vel: 100, hold: 120 }
+  - { at: 11185, note: G4, vel: 100, hold: 120 }
+  - { at: 11240, note: F4, vel: 100, hold: 120 }
+  - { at: 11295, note: E4, vel: 100, hold: 120 }
+  - { at: 11350, note: D4, vel: 100, hold: 120 }
+  - { at: 11405, note: C4, vel: 100, hold: 120 }
+  - { at: 11460, note: B3, vel: 100, hold: 120 }
+  - { at: 11515, note: A3, vel: 100, hold: 120 }
+  - { at: 11570, note: G3, vel: 100, hold: 120 }
+  - { at: 11625, note: F3, vel: 100, hold: 120 }
+  - { at: 11900, screenshot: end }
+expect:
+  boots: true

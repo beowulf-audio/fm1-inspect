@@ -1,0 +1,18 @@
+# Makohai: PLAY starts the OLDSKOOL intro, then the group buttons show the SOUND (reverb), TRACKER (pan) and SONG
+# (live, key, arc) settings over the scrolling lanes, back to PLAY as all six lanes come in (README: The screens).
+name: makohai
+ms: 12500
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1800, press: PLAY }
+  - { at: 4200, press: FX }
+  - { at: 5400, press: ARP }
+  - { at: 6600, press: GLO }
+  - { at: 7300, turn: PRESETS, clicks: 2 }
+  - { at: 8300, press: SEQ }
+  - { at: 9800, press: HOME }
+  - { at: 10300, turn: PRESETS, clicks: 1 }
+  - { at: 12200, screenshot: end }
+expect:
+  boots: true

@@ -1,0 +1,32 @@
+# B3 organ: a held chord while the PRESETS knob steps through setBfree registrations, and the Leslie goes fast (LFO)
+# (README "Controls").
+name: setbfree-tour
+ms: 11500
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, note: C4, vel: 100, hold: 2600 }
+  - { at: 1700, note: E4, vel: 100, hold: 2600 }
+  - { at: 1700, note: G4, vel: 100, hold: 2600 }
+  - { at: 2200, turn: PRESETS, clicks: 4 }
+  - { at: 3200, press: LFO }
+  - { at: 3500, press: LFO }
+  - { at: 4400, note: A4, vel: 110, hold: 200 }
+  - { at: 4650, note: C5, vel: 110, hold: 200 }
+  - { at: 4900, note: E5, vel: 110, hold: 200 }
+  - { at: 5150, note: D5, vel: 110, hold: 400 }
+  - { at: 5700, turn: PRESETS, clicks: 6 }
+  - { at: 6700, note: F3, vel: 100, hold: 1800 }
+  - { at: 6700, note: C4, vel: 100, hold: 1800 }
+  - { at: 6700, note: A4, vel: 100, hold: 1800 }
+  - { at: 6900, turn: SELECT, clicks: 3 }
+  - { at: 7500, turn: ALGORITHM, clicks: -4 }
+  - { at: 8100, turn: KNOB3, clicks: 4 }
+  - { at: 8800, turn: KNOB1, clicks: 1 }
+  - { at: 9600, turn: KNOB1, clicks: 1 }
+  - { at: 10300, turn: KNOB1, clicks: -2 }
+  - { at: 10500, note: G4, vel: 100, hold: 800 }
+  - { at: 10500, note: D4, vel: 100, hold: 800 }
+  - { at: 11400, screenshot: end }
+expect:
+  boots: true

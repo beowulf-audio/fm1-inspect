@@ -1,0 +1,23 @@
+# The generated music runs from power-on; the tour follows the quick manual's panel table: Tempo and Perform (HOME),
+# the Pad, Bass and Acid pages (ENV, LFO, ARP), Drums and the sequencer (SEQ, held), a breakdown (SAVE), the next
+# piece (PRESETS) and the visualizers (HOME twice).
+name: perf1-tour
+ms: 12500
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1800, press: HOME }
+  - { at: 2600, press: HOME }
+  - { at: 3400, press: ENV }
+  - { at: 4200, press: LFO }
+  - { at: 5000, press: ARP }
+  - { at: 5800, press: SEQ }
+  - { at: 6600, press: SEQ, hold: 600 }
+  - { at: 7700, press: SAVE }
+  - { at: 8600, press: HOME }
+  - { at: 9300, turn: PRESETS, clicks: 1 }
+  - { at: 10600, press: HOME }
+  - { at: 10800, press: HOME }
+  - { at: 12300, screenshot: end }
+expect:
+  boots: true

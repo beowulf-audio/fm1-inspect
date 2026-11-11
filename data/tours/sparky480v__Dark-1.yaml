@@ -1,0 +1,20 @@
+# Self-playing dark groovebox: the piece plays from power-on, PRESETS moves to the next piece, GLO held with PRESETS
+# changes the genre (shortcut card shown), SELECT walks the pad, chords and bass pages (docs/MANUAL.md "Start here").
+name: dark1-tour
+ms: 12500
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, note: E4, vel: 100, hold: 150 }
+  - { at: 3200, turn: PRESETS, clicks: 1 }
+  - { at: 4800, press: GLO, hold: 1400 }
+  - { at: 5100, turn: PRESETS, clicks: 3 }
+  - { at: 6600, turn: SELECT, clicks: 1 }
+  - { at: 7400, turn: SELECT, clicks: 1 }
+  - { at: 8200, turn: SELECT, clicks: 1 }
+  - { at: 9000, press: HOME }
+  - { at: 9700, press: HOME }
+  - { at: 10300, turn: ALGORITHM, clicks: 6 }
+  - { at: 12400, screenshot: end }
+expect:
+  boots: true

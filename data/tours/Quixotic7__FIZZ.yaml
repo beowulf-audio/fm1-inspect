@@ -1,0 +1,25 @@
+# Leaves the FIZZ bubble logo and plays the demo drum pattern in the EDIT step view, then the mixer (ENV), the sends
+# (FX), the SHIFT (GLO) overlay, GEEK OUT meters and the piano roll via SHIFT + HOME (PLAYING.md "Getting around").
+name: fizz-tour
+ms: 12000
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 2200, press: HOME }
+  - { at: 2600, press: PLAY }
+  - { at: 4000, screenshot: steps }
+  - { at: 4200, press: ENV }
+  - { at: 5400, screenshot: mix }
+  - { at: 5600, press: FX }
+  - { at: 6800, screenshot: fx }
+  - { at: 7000, press: HOME }
+  - { at: 7400, press: GLO, hold: 900 }
+  - { at: 7700, press: HOME }
+  - { at: 8600, screenshot: view2 }
+  - { at: 8800, press: GLO, hold: 900 }
+  - { at: 9100, press: HOME }
+  - { at: 9600, press: GLO, hold: 900 }
+  - { at: 9900, press: HOME }
+  - { at: 11700, screenshot: geek }
+expect:
+  boots: true

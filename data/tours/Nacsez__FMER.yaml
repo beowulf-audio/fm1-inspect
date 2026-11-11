@@ -1,0 +1,32 @@
+# FMER: plays the default FM patch, browses to a VA preset, then visits the EDIT, ENV, FX, LFO and ARP pages
+# (panel reference in docs/help/panel.json), with the arpeggiator switched on over a held chord, and returns HOME.
+name: fmer-tour
+ms: 12000
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, note: C4, vel: 100, hold: 700 }
+  - { at: 1700, note: E4, vel: 100, hold: 700 }
+  - { at: 1700, note: G4, vel: 100, hold: 700 }
+  - { at: 2600, turn: PRESETS, clicks: 3 }
+  - { at: 3000, note: A4, vel: 110, hold: 250 }
+  - { at: 3300, note: C5, vel: 110, hold: 250 }
+  - { at: 3600, note: E5, vel: 110, hold: 400 }
+  - { at: 4200, press: EDIT }
+  - { at: 4400, note: C4, vel: 100, hold: 400 }
+  - { at: 5000, press: ENV }
+  - { at: 5200, note: E4, vel: 100, hold: 400 }
+  - { at: 5800, press: FX }
+  - { at: 5900, turn: KNOB3, clicks: 6 }
+  - { at: 6900, note: G4, vel: 100, hold: 400 }
+  - { at: 7500, press: LFO }
+  - { at: 7900, press: ARP }
+  - { at: 8150, press: ARP }
+  - { at: 8300, note: C4, vel: 100, hold: 2600 }
+  - { at: 8300, note: E4, vel: 100, hold: 2600 }
+  - { at: 8300, note: G4, vel: 100, hold: 2600 }
+  - { at: 9800, screenshot: arp }
+  - { at: 11100, press: HOME }
+  - { at: 11800, screenshot: home }
+expect:
+  boots: true

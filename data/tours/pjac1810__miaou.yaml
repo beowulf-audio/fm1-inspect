@@ -1,0 +1,31 @@
+# The cat keyboard: a few piano notes, the PAW (GLO) making every key meow, a rhythm (FX) under the bells (ENV),
+# a cat song (HOME), then the sequencer's pattern A, the cat orchestra (SEQ, PLAY). Based on the README's controls.
+name: miaou
+ms: 12000
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, note: C4, vel: 100, hold: 200 }
+  - { at: 1950, note: E4, vel: 100, hold: 200 }
+  - { at: 2200, note: G4, vel: 100, hold: 300 }
+  - { at: 2600, press: GLO }
+  - { at: 2800, note: C4, vel: 100, hold: 300 }
+  - { at: 3150, note: E4, vel: 100, hold: 300 }
+  - { at: 3500, note: G4, vel: 100, hold: 400 }
+  - { at: 3900, screenshot: meow }
+  - { at: 4000, press: GLO }
+  - { at: 4200, press: FX }
+  - { at: 4400, press: ENV }
+  - { at: 4700, note: E4, vel: 100, hold: 250 }
+  - { at: 5000, note: G4, vel: 100, hold: 250 }
+  - { at: 5300, note: C5, vel: 100, hold: 400 }
+  - { at: 5800, screenshot: rhythm }
+  - { at: 5900, press: OCTDN }
+  - { at: 6100, press: HOME }
+  - { at: 7900, screenshot: song }
+  - { at: 8000, press: OCTDN }
+  - { at: 8200, press: SEQ }
+  - { at: 8500, press: PLAY }
+  - { at: 11800, screenshot: seq }
+expect:
+  boots: true

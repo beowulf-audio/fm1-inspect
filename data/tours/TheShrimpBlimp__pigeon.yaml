@@ -1,0 +1,26 @@
+# A walk through the sampler's pages with no samples loaded: waveform, step grid and piano roll (SEQ),
+# patterns (SEL), mixer (ARP), effects (FX) and settings (HOME on the waveform) (docs/PIGEON_CONTROLS.md).
+name: pigeon-tour
+ms: 11500
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, note: C4, vel: 100, hold: 300 }
+  - { at: 2100, press: SEQ }
+  - { at: 2600, turn: KNOB3, clicks: 4 }
+  - { at: 3500, screenshot: grid }
+  - { at: 3700, press: SEQ }
+  - { at: 4800, screenshot: roll }
+  - { at: 5000, press: SCL }
+  - { at: 6100, screenshot: patterns }
+  - { at: 6300, press: ARP }
+  - { at: 7400, screenshot: mixer }
+  - { at: 7600, press: FX }
+  - { at: 8700, screenshot: fx }
+  - { at: 8900, press: HOME }
+  - { at: 9600, press: HOME }
+  - { at: 10500, screenshot: settings }
+  - { at: 10700, press: HOME }
+  - { at: 11400, screenshot: home }
+expect:
+  boots: true

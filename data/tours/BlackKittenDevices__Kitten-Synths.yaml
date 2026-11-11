@@ -1,0 +1,43 @@
+# Kitten Synths: after the kitten boot screen, a chord on track 1 (808 BOOM), its EDIT, ENV and LFO pages with a note each,
+# then ALGORITHM across the six tracks to the drums, a beat on the white keys and a kit change (MANUAL.en.md sections 3 and 6).
+name: kitten
+ms: 13500
+click_ms: 150
+steps:
+  - { at: 3000, screenshot: boot }
+  - { at: 3100, note: C4, vel: 100, hold: 700 }
+  - { at: 3100, note: E4, vel: 100, hold: 700 }
+  - { at: 3100, note: G4, vel: 100, hold: 700 }
+  - { at: 4000, press: EDIT }
+  - { at: 4200, note: C4, vel: 100, hold: 400 }
+  - { at: 4700, press: ENV }
+  - { at: 4900, note: E4, vel: 100, hold: 400 }
+  - { at: 5400, press: LFO }
+  - { at: 5600, note: G4, vel: 100, hold: 400 }
+  - { at: 6100, press: HOME }
+  - { at: 6300, turn: ALGORITHM, clicks: 4 }
+  - { at: 7100, note: C4, vel: 110, hold: 100 }
+  - { at: 7350, note: G4, vel: 100, hold: 100 }
+  - { at: 7600, note: E4, vel: 110, hold: 100 }
+  - { at: 7850, note: G4, vel: 100, hold: 100 }
+  - { at: 8100, note: C4, vel: 110, hold: 100 }
+  - { at: 8225, note: C4, vel: 100, hold: 100 }
+  - { at: 8350, note: G4, vel: 100, hold: 100 }
+  - { at: 8600, note: E4, vel: 110, hold: 100 }
+  - { at: 8850, note: A4, vel: 100, hold: 100 }
+  - { at: 9200, turn: PRESETS, clicks: 2 }
+  - { at: 9800, note: C4, vel: 110, hold: 100 }
+  - { at: 10050, note: G4, vel: 100, hold: 100 }
+  - { at: 10300, note: E4, vel: 110, hold: 100 }
+  - { at: 10550, note: G4, vel: 100, hold: 100 }
+  - { at: 10800, note: C4, vel: 110, hold: 100 }
+  - { at: 10925, note: C4, vel: 100, hold: 100 }
+  - { at: 11050, note: G4, vel: 100, hold: 100 }
+  - { at: 11300, note: E4, vel: 110, hold: 100 }
+  - { at: 11550, note: B4, vel: 100, hold: 100 }
+  - { at: 11900, turn: ALGORITHM, clicks: -4 }
+  - { at: 12400, note: A4, vel: 100, hold: 700 }
+  - { at: 12400, note: E4, vel: 100, hold: 700 }
+  - { at: 13300, screenshot: end }
+expect:
+  boots: true

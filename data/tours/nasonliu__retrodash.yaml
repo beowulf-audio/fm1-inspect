@@ -1,0 +1,18 @@
+# Title, PLAY menu, song select (Peaceful Days, Terra Snow March), AUTO on (SEQ) and PLAY: the battle scene scrolls
+# through its lead-in and the SPC music starts about 12 s in, so it runs 16 s (README "Play").
+name: retrodash-tour
+ms: 16000
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, press: PLAY }
+  - { at: 2100, press: PLAY }
+  - { at: 2400, screenshot: song1 }
+  - { at: 2500, turn: SELECT, clicks: 1 }
+  - { at: 3100, turn: SELECT, clicks: -1 }
+  - { at: 3500, press: SEQ }
+  - { at: 3800, press: PLAY }
+  - { at: 9000, screenshot: battle }
+  - { at: 15800, screenshot: battle2 }
+expect:
+  boots: true

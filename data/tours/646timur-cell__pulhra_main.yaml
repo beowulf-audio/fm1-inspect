@@ -1,0 +1,29 @@
+# PULHRA: after the boot screen, REC (grid record) and trigs on the white keys for T1 SAW, PLAY, then T4 BBOX picked
+# with ALGORITHM and a four-on-the-floor written while it plays, the SEQ page and HOME (PULHRA.md, stage 3 controls).
+name: pulhra
+ms: 12500
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 3400, press: REC }
+  - { at: 3700, note: F3, vel: 100, hold: 100 }
+  - { at: 3900, note: B3, vel: 100, hold: 100 }
+  - { at: 4100, note: E4, vel: 100, hold: 100 }
+  - { at: 4300, note: A4, vel: 100, hold: 100 }
+  - { at: 4500, note: D5, vel: 100, hold: 100 }
+  - { at: 4700, note: F5, vel: 100, hold: 100 }
+  - { at: 5100, press: PLAY }
+  - { at: 6300, turn: ALGORITHM, clicks: 3 }
+  - { at: 7100, note: F3, vel: 100, hold: 100 }
+  - { at: 7400, note: C4, vel: 100, hold: 100 }
+  - { at: 7700, note: G4, vel: 100, hold: 100 }
+  - { at: 8000, note: D5, vel: 100, hold: 100 }
+  - { at: 8300, note: E5, vel: 100, hold: 100 }
+  - { at: 8900, turn: ALGORITHM, clicks: -2 }
+  - { at: 9600, note: G3, vel: 100, hold: 100 }
+  - { at: 9900, note: C5, vel: 100, hold: 100 }
+  - { at: 10600, press: REC }
+  - { at: 11000, press: HOME, hold: 150 }
+  - { at: 12300, screenshot: end }
+expect:
+  boots: true

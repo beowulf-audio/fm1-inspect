@@ -1,0 +1,21 @@
+# VESPER: PRESETS picks a scene and PLAY starts it on the crystal orbit; ARP puts the keys on the focused voice for a
+# live phrase over it, HOME then shows the 4-track mixer, and FX steps the global chain's pages (README "Controls").
+name: vesper-tour
+ms: 12500
+click_ms: 150
+steps:
+  - { at: 1700, screenshot: boot }
+  - { at: 1900, turn: PRESETS, clicks: 2 }
+  - { at: 2800, press: PLAY }
+  - { at: 4300, press: ARP }
+  - { at: 4600, note: B4, vel: 110, hold: 500 }
+  - { at: 5200, note: E5, vel: 110, hold: 500 }
+  - { at: 5800, note: G#4, vel: 110, hold: 500 }
+  - { at: 6400, note: B4, vel: 110, hold: 900 }
+  - { at: 7600, press: HOME }
+  - { at: 9000, press: FX }
+  - { at: 10200, press: FX }
+  - { at: 11400, press: FX }
+  - { at: 12300, screenshot: end }
+expect:
+  boots: true

@@ -1,0 +1,22 @@
+# Keyboard Academy: PLAY starts lesson 1 (demonstration, then the learner's turn with a wrong note and the right
+# keys), K1/K2 step to chapter 5 lesson 2 (TWINKLE) and PLAY demonstrates it, then EDIT
+# shows the learning options (README "Four-knob learning home").
+name: academy
+ms: 12000
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, press: PLAY }
+  - { at: 4500, note: G4, vel: 100, hold: 250 }
+  - { at: 5000, note: C4, vel: 100, hold: 250 }
+  - { at: 5400, note: D4, vel: 100, hold: 250 }
+  - { at: 5800, note: E4, vel: 100, hold: 250 }
+  - { at: 6400, press: HOME }
+  - { at: 6700, turn: KNOB1, clicks: 4 }
+  - { at: 7600, turn: KNOB2, clicks: 1 }
+  - { at: 8100, press: PLAY }
+  - { at: 10300, press: HOME }
+  - { at: 10600, press: EDIT }
+  - { at: 11500, screenshot: options }
+expect:
+  boots: true

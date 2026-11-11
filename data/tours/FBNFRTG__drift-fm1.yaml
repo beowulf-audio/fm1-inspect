@@ -1,0 +1,29 @@
+# DRIFT: picks a patch from the patch list, starts the Euclidean loop, shows the SEQUENCE 1/2 piano-roll pages,
+# the DELAY and REVERB pages and oscillator 1, then plays a chord on another patch (manual: Sequence 1/2, Effects).
+name: drift
+ms: 12000
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, turn: PRESETS, clicks: 3 }
+  - { at: 2300, press: PLAY }
+  - { at: 2500, note: C4, vel: 90, hold: 1600 }
+  - { at: 2500, note: G4, vel: 90, hold: 1600 }
+  - { at: 3300, press: ARP }
+  - { at: 4300, screenshot: arp }
+  - { at: 4500, press: SEQ }
+  - { at: 5000, turn: KNOB1, clicks: 3 }
+  - { at: 5700, turn: KNOB2, clicks: 3 }
+  - { at: 6400, turn: KNOB3, clicks: 5 }
+  - { at: 7400, screenshot: seq }
+  - { at: 7600, press: FX }
+  - { at: 8100, press: FX }
+  - { at: 8300, note: E4, vel: 90, hold: 900 }
+  - { at: 8700, press: GLO }
+  - { at: 9400, press: HOME }
+  - { at: 9800, turn: PRESETS, clicks: 2 }
+  - { at: 10300, note: C4, vel: 100, hold: 900 }
+  - { at: 10300, note: E4, vel: 100, hold: 900 }
+  - { at: 11500, screenshot: patch }
+expect:
+  boots: true

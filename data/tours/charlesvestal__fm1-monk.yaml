@@ -1,0 +1,28 @@
+# MONK-1: Jerry sings a gliding phrase while ALGORITHM moves the vowel, EDIT (Choir) adds unison voices,
+# then PRESETS steps through five more singers, each with its own stage, singing a note (README "Playing").
+name: monk
+ms: 12000
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, note: C4, vel: 110, hold: 1500 }
+  - { at: 1900, turn: ALGORITHM, clicks: 6 }
+  - { at: 2900, note: E4, vel: 110, hold: 700 }
+  - { at: 3300, turn: ALGORITHM, clicks: -6 }
+  - { at: 3700, note: G4, vel: 110, hold: 500 }
+  - { at: 4300, press: EDIT }
+  - { at: 4500, turn: KNOB1, clicks: 4 }
+  - { at: 5100, note: D4, vel: 110, hold: 700 }
+  - { at: 6000, turn: PRESETS, clicks: 1 }
+  - { at: 6200, note: E4, vel: 110, hold: 600 }
+  - { at: 7000, turn: PRESETS, clicks: 1 }
+  - { at: 7200, note: G4, vel: 110, hold: 600 }
+  - { at: 8000, turn: PRESETS, clicks: 1 }
+  - { at: 8200, note: C4, vel: 110, hold: 600 }
+  - { at: 9000, turn: PRESETS, clicks: 5 }
+  - { at: 9900, note: A4, vel: 110, hold: 700 }
+  - { at: 10800, turn: PRESETS, clicks: 1 }
+  - { at: 11000, note: F4, vel: 110, hold: 700 }
+  - { at: 11900, screenshot: end }
+expect:
+  boots: true

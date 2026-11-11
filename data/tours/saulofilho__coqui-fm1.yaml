@@ -1,0 +1,26 @@
+# COQUI: loads the DEMO welcome scene from SAVE > PROJECTS (CHANGELOG 1.1) and plays it, then shows the perc
+# track's SOUND and GROOVE pages (MANUAL sections 1-2) while the PERREO groove plays, congas and bongos on the keys, the GRID and HOME.
+name: coqui-tour
+ms: 13000
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1600, note: F3, vel: 100, hold: 150 }
+  - { at: 1900, press: SAVE }
+  - { at: 2200, press: SAVE }
+  - { at: 2500, turn: KNOB4, clicks: 6 }
+  - { at: 3500, press: OCTUP }
+  - { at: 3800, press: HOME }
+  - { at: 4000, press: PLAY }
+  - { at: 5400, press: EDIT }
+  - { at: 6600, press: EDIT }
+  - { at: 8600, note: G4, vel: 110, hold: 150 }
+  - { at: 8900, note: F#4, vel: 110, hold: 150 }
+  - { at: 9200, note: G4, vel: 110, hold: 150 }
+  - { at: 9500, note: B4, vel: 110, hold: 150 }
+  - { at: 9800, note: C5, vel: 110, hold: 150 }
+  - { at: 10300, press: SEQ }
+  - { at: 11500, press: HOME }
+  - { at: 12700, screenshot: end }
+expect:
+  boots: true

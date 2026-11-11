@@ -1,0 +1,37 @@
+# FMtribe: a phrase on the HOME page, then the VCO and VCF/VCA (ENV), LFO and DRUMS (ARP) pages with a note on each;
+# on STEP (SEQ) the pattern plays while steps are switched on for the bass drum, snare and hi-hat (app/docs/MANUAL.md "STEP").
+name: fmtribe-tour
+ms: 12000
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, note: C4, vel: 110, hold: 200 }
+  - { at: 1950, note: D#4, vel: 110, hold: 200 }
+  - { at: 2200, note: G4, vel: 110, hold: 200 }
+  - { at: 2450, note: C5, vel: 110, hold: 300 }
+  - { at: 3000, press: ENV }
+  - { at: 3300, note: G4, vel: 110, hold: 300 }
+  - { at: 3800, press: ENV }
+  - { at: 4100, note: C4, vel: 110, hold: 300 }
+  - { at: 4600, press: LFO }
+  - { at: 4900, note: D#4, vel: 110, hold: 300 }
+  - { at: 5400, press: ARP }
+  - { at: 5700, note: F#3, hold: 200 }
+  - { at: 6200, press: SEQ }
+  - { at: 6500, press: PLAY }
+  - { at: 6800, note: F#3, hold: 150 }
+  - { at: 7100, note: F3, hold: 150 }
+  - { at: 7400, note: C4, hold: 150 }
+  - { at: 7700, note: G4, hold: 150 }
+  - { at: 8000, note: D5, hold: 150 }
+  - { at: 8400, note: G#3, hold: 150 }
+  - { at: 8700, note: C4, hold: 150 }
+  - { at: 9000, note: D5, hold: 150 }
+  - { at: 9400, note: A#3, hold: 150 }
+  - { at: 9700, note: A3, hold: 150 }
+  - { at: 10000, note: E4, hold: 150 }
+  - { at: 10300, note: B4, hold: 150 }
+  - { at: 10600, note: F5, hold: 150 }
+  - { at: 11800, screenshot: playing }
+expect:
+  boots: true

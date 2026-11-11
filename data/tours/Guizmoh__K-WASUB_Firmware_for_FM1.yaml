@@ -1,0 +1,24 @@
+# K-WASUB: first-run setup (CLASSIC mode, a look), a bass on CURRENT PATCH, PLAY starts bass + drums, then the SEQ BASS,
+# DRUMS, LFO and FX views (cheat sheet "The menus"), a preset change while it plays.
+name: kwasub
+ms: 12000
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1600, press: HOME }
+  - { at: 2100, press: OCTDN }
+  - { at: 2500, press: SCL }
+  - { at: 3000, press: SCL }
+  - { at: 3500, note: C4, vel: 110, hold: 400 }
+  - { at: 4000, note: G4, vel: 110, hold: 300 }
+  - { at: 4400, press: PLAY }
+  - { at: 5400, press: SEQ }
+  - { at: 6600, press: SEQ }
+  - { at: 7200, press: SEQ }
+  - { at: 8400, press: LFO }
+  - { at: 9400, press: FX }
+  - { at: 10300, press: HOME }
+  - { at: 10700, turn: PRESETS, clicks: 1 }
+  - { at: 11900, screenshot: end }
+expect:
+  boots: true

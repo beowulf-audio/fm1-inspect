@@ -1,0 +1,19 @@
+# Starts the Tamborzão pattern with PLAY once the title art clears, toggles extra BUMBO steps on the white keys,
+# then switches PRESETS to the Voltmix and Beat Bolha kits while it plays (README "Controls").
+name: baile-tour
+ms: 13500
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 4500, press: PLAY }
+  - { at: 5000, screenshot: tamborzao }
+  - { at: 5200, note: D4, hold: 120 }
+  - { at: 5450, note: A4, hold: 120 }
+  - { at: 5700, note: E5, hold: 120 }
+  - { at: 6800, screenshot: steps }
+  - { at: 7000, turn: PRESETS, clicks: 1 }
+  - { at: 9800, screenshot: voltmix }
+  - { at: 10000, turn: PRESETS, clicks: 1 }
+  - { at: 13200, screenshot: bolha }
+expect:
+  boots: true

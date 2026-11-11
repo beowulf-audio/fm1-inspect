@@ -1,0 +1,23 @@
+# Starts the drone (PLAY with SEQ off) and visits the pages from the manual's button reference: CORE ARRAY, ARRAY
+# (HOME held), COUPLING, EXHAUST (FX), ENVELOPE, MODULATION and the live SPECTRUM / PHASE analyzer (GLO).
+name: xenolith-tour
+ms: 12500
+click_ms: 150
+steps:
+  - { at: 1400, screenshot: boot }
+  - { at: 2100, press: PLAY }
+  - { at: 2500, turn: KNOB2, clicks: 10 }
+  - { at: 3000, turn: KNOB3, clicks: 4 }
+  - { at: 3800, press: HOME, hold: 900 }
+  - { at: 5000, press: EDIT }
+  - { at: 5300, press: EDIT }
+  - { at: 6200, press: FX }
+  - { at: 7200, press: ENV }
+  - { at: 8200, press: LFO }
+  - { at: 9200, press: GLO }
+  - { at: 9500, turn: KNOB3, clicks: 6 }
+  - { at: 10800, press: HOME }
+  - { at: 11100, turn: KNOB2, clicks: -8 }
+  - { at: 12300, screenshot: end }
+expect:
+  boots: true

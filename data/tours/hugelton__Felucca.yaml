@@ -1,0 +1,33 @@
+# Felucca: the HOME page's scope while an acid line plays, then the ENV, LFO and EDIT (OSC) pages with a note on
+# each, back to HOME and two PRESETS turns (other sounds), a phrase on each.
+name: felucca
+ms: 12000
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, note: C4, vel: 110, hold: 180 }
+  - { at: 1950, note: C5, vel: 110, hold: 180 }
+  - { at: 2200, note: D#4, vel: 110, hold: 180 }
+  - { at: 2450, note: G4, vel: 110, hold: 180 }
+  - { at: 2700, note: A#4, vel: 110, hold: 180 }
+  - { at: 2950, note: C4, vel: 110, hold: 250 }
+  - { at: 3600, press: ENV, hold: 250 }
+  - { at: 4000, note: G4, vel: 110, hold: 400 }
+  - { at: 4800, press: LFO, hold: 250 }
+  - { at: 5200, note: D#4, vel: 110, hold: 400 }
+  - { at: 6000, press: EDIT, hold: 250 }
+  - { at: 6400, note: C4, vel: 110, hold: 400 }
+  - { at: 7200, press: HOME, hold: 250 }
+  - { at: 7600, turn: PRESETS, clicks: 3 }
+  - { at: 8200, note: C4, vel: 100, hold: 350 }
+  - { at: 8200, note: E4, vel: 100, hold: 350 }
+  - { at: 8200, note: G4, vel: 100, hold: 350 }
+  - { at: 8700, note: A4, vel: 100, hold: 350 }
+  - { at: 9400, turn: PRESETS, clicks: 3 }
+  - { at: 10000, note: C4, vel: 110, hold: 200 }
+  - { at: 10250, note: G4, vel: 110, hold: 200 }
+  - { at: 10500, note: C5, vel: 110, hold: 200 }
+  - { at: 10750, note: D#5, vel: 110, hold: 500 }
+  - { at: 11600, screenshot: end }
+expect:
+  boots: true

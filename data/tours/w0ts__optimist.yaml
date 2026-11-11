@@ -1,0 +1,36 @@
+# Optimist (drum-machines build): pick the drum track, open STEP, program kick, snare and closed-hat lanes
+# (black key = lane, white keys = steps), play it, then on the mixer change kits (808, 909, 606) while it plays, and SCOPE
+# (docs/guide/shortcuts.md, drums.md).
+name: optimist-tour
+ms: 11500
+click_ms: 150
+steps:
+  - { at: 1400, screenshot: boot }
+  - { at: 1600, turn: ALGORITHM, clicks: 3 }
+  - { at: 2150, press: SEQ }
+  # kick lane: steps 1 5 9 13
+  - { at: 2450, note: F#3, hold: 100 }
+  - { at: 2650, note: F3, hold: 70 }
+  - { at: 2780, note: C4, hold: 70 }
+  - { at: 2910, note: G4, hold: 70 }
+  - { at: 3040, note: D5, hold: 70 }
+  # snare lane: steps 5 13
+  - { at: 3250, note: G#3, hold: 100 }
+  - { at: 3450, note: C4, hold: 70 }
+  - { at: 3580, note: D5, hold: 70 }
+  # closed hat lane: offbeats
+  - { at: 3800, note: C#4, hold: 100 }
+  - { at: 4000, note: A3, hold: 70 }
+  - { at: 4130, note: E4, hold: 70 }
+  - { at: 4260, note: B4, hold: 70 }
+  - { at: 4390, note: F5, hold: 70 }
+  - { at: 4600, press: PLAY }
+  # the mixer, then the kits while it plays
+  - { at: 6000, press: HOME }
+  - { at: 6600, turn: ALGORITHM, clicks: -4 }
+  - { at: 7800, turn: PRESETS, clicks: 1 }
+  - { at: 8900, turn: PRESETS, clicks: 1 }
+  - { at: 9900, press: HOME }
+  - { at: 11300, screenshot: scope }
+expect:
+  boots: true

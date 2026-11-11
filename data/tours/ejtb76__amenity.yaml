@@ -1,0 +1,29 @@
+# The break playing (PLAY) and torn up live, after the README's Controls: held white keys for a build and a STRETCH,
+# K2 VARIATION and K3 WARP up, the next break (PRESETS) with feedback and an octave drop on the top black keys, the FX page.
+name: amenity-tour
+ms: 12000
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1600, press: PLAY }
+  - { at: 2800, screenshot: playing }
+  # key 2: build (1/4 -> 1/32)
+  - { at: 3000, note: G3, hold: 1400 }
+  - { at: 4300, screenshot: build }
+  # key 3: STRETCH
+  - { at: 4700, note: A3, hold: 900 }
+  - { at: 5500, screenshot: stretch }
+  - { at: 5700, turn: KNOB2, clicks: 8 }
+  - { at: 5700, turn: KNOB3, clicks: 6 }
+  - { at: 7100, screenshot: warp }
+  # the next break, then feedback and an octave down
+  - { at: 7300, turn: PRESETS, clicks: 1 }
+  - { at: 8300, note: C#5, hold: 700 }
+  - { at: 9200, note: F#5, hold: 700 }
+  - { at: 9800, screenshot: apache }
+  - { at: 10000, press: FX }
+  - { at: 10800, screenshot: fxpage }
+  - { at: 11000, press: FX }
+  - { at: 11900, screenshot: end }
+expect:
+  boots: true

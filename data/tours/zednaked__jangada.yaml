@@ -1,0 +1,26 @@
+# Walks the four tracks (ALGORITHM: ANALOG, DIGITAL, LOFI, DRUM), plays drum track 4's beat (PLAY), a chord and a
+# line on track 1 over it, then the punch-in effects (FX held + a white key) and the live mix screen (GLO held). Based on the README's first steps.
+name: jangada
+ms: 12000
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, turn: ALGORITHM, clicks: 3 }
+  - { at: 2400, turn: PRESETS, clicks: 1 }
+  - { at: 3200, press: PLAY }
+  - { at: 4400, screenshot: beat }
+  - { at: 4600, turn: ALGORITHM, clicks: -3 }
+  - { at: 5300, note: C4, vel: 100, hold: 900 }
+  - { at: 5300, note: G4, vel: 100, hold: 900 }
+  - { at: 6400, note: D#4, vel: 110, hold: 200 }
+  - { at: 6700, note: G4, vel: 110, hold: 200 }
+  - { at: 7000, note: C5, vel: 110, hold: 300 }
+  - { at: 7500, screenshot: synth }
+  - { at: 7700, press: FX, hold: 1800 }
+  - { at: 8100, note: C4, hold: 1000 }
+  - { at: 9000, screenshot: punch }
+  - { at: 9900, press: GLO, hold: 1300 }
+  - { at: 10900, screenshot: mix }
+  - { at: 11500, screenshot: end }
+expect:
+  boots: true

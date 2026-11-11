@@ -1,0 +1,25 @@
+# Prysm: the OSC 1 page (the operator chain's waves), the AMP envelope, LFO and CHORUS pages with notes on each,
+# then the ARP switched on under a held chord and the LIVE page (README "The pages").
+name: prysm-tour
+ms: 12000
+click_ms: 150
+steps:
+  - { at: 1900, screenshot: boot }
+  - { at: 2000, note: C4, vel: 110, hold: 400 }
+  - { at: 2500, note: G4, vel: 110, hold: 400 }
+  - { at: 3000, note: D#5, vel: 110, hold: 500 }
+  - { at: 3800, press: ENV }
+  - { at: 4100, note: E4, vel: 110, hold: 500 }
+  - { at: 4900, press: LFO }
+  - { at: 5200, note: G4, vel: 110, hold: 500 }
+  - { at: 6000, press: FX }
+  - { at: 6300, note: C5, vel: 110, hold: 500 }
+  - { at: 7100, press: ARP }
+  - { at: 7400, press: ARP }
+  - { at: 7700, note: C4, vel: 100, hold: 4000 }
+  - { at: 7700, note: E4, vel: 100, hold: 4000 }
+  - { at: 7700, note: G4, vel: 100, hold: 4000 }
+  - { at: 9400, press: HOME }
+  - { at: 11500, screenshot: live }
+expect:
+  boots: true

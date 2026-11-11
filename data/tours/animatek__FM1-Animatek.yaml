@@ -1,0 +1,23 @@
+# ATEK303: plays the acid sequencer (PLAY), generates a new line (SEQ), opens the EDIT step editor, mutates notes (LFO),
+# changes the wave with ALGORITHM, walks the HOME pages and FX, and transposes with a key (atek303/README "Fase 2-3").
+name: atek303-tour
+ms: 12500
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1600, press: PLAY }
+  - { at: 2800, press: SEQ }
+  - { at: 4300, press: EDIT }
+  - { at: 5600, press: HOME }
+  - { at: 6100, press: LFO }
+  - { at: 6600, turn: ALGORITHM, clicks: 3 }
+  - { at: 7500, press: HOME }
+  - { at: 8200, press: HOME }
+  - { at: 8900, press: HOME }
+  - { at: 9600, press: FX }
+  - { at: 10300, note: F4, vel: 100, hold: 200 }
+  - { at: 11000, press: HOME }
+  - { at: 11500, note: C4, vel: 100, hold: 200 }
+  - { at: 12300, screenshot: end }
+expect:
+  boots: true

@@ -1,0 +1,31 @@
+# Elka Synthex engine: chords on factory sounds as PRESETS steps through the bank (Chunky Synth, Wah Brass, Fat Sound,
+# Chorale), then the OSC 1 and FILTER pages (firmware/README.md "Playing it").
+name: scintilla-tour
+ms: 12500
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, note: C4, vel: 100, hold: 700 }
+  - { at: 1700, note: E4, vel: 100, hold: 700 }
+  - { at: 1700, note: G4, vel: 100, hold: 700 }
+  - { at: 2600, turn: PRESETS, clicks: 2 }
+  - { at: 3000, note: A3, vel: 100, hold: 600 }
+  - { at: 3000, note: E4, vel: 100, hold: 600 }
+  - { at: 3000, note: C5, vel: 100, hold: 600 }
+  - { at: 3800, turn: PRESETS, clicks: 4 }
+  - { at: 4500, note: C4, vel: 100, hold: 200 }
+  - { at: 4750, note: G4, vel: 100, hold: 200 }
+  - { at: 5000, note: C5, vel: 100, hold: 400 }
+  - { at: 5500, press: EDIT }
+  - { at: 6300, press: ENV }
+  - { at: 6500, note: F4, vel: 100, hold: 500 }
+  - { at: 7100, press: FX }
+  - { at: 7900, press: HOME }
+  - { at: 8100, note: D4, vel: 100, hold: 1700 }
+  - { at: 8100, note: A4, vel: 100, hold: 1700 }
+  - { at: 8200, turn: KNOB1, clicks: 8 }
+  - { at: 10000, note: C4, vel: 100, hold: 2000 }
+  - { at: 10200, turn: ALGORITHM, clicks: 6 }
+  - { at: 12400, screenshot: end }
+expect:
+  boots: true

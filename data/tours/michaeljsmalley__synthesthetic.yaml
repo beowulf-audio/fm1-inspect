@@ -1,0 +1,32 @@
+# Records a one-bar drum loop on the drum track (REC, keys, REC), then opens the audio-reactive visualizer (HOME on
+# TRACKS, WARP mode on autopilot) and turns SELECT (mode) and PRESETS (palette) while the loop plays (HANDBOOK "The visualizer").
+name: synthesthetic-tour
+ms: 12000
+click_ms: 150
+steps:
+  - { at: 1400, screenshot: boot }
+  - { at: 1600, turn: ALGORITHM, clicks: 3 }
+  - { at: 2200, press: REC }
+  - { at: 2500, note: F3, hold: 120 }
+  - { at: 2500, note: C4, hold: 80 }
+  - { at: 2750, note: C4, hold: 80 }
+  - { at: 3000, note: A3, hold: 120 }
+  - { at: 3000, note: C4, hold: 80 }
+  - { at: 3250, note: C4, hold: 80 }
+  - { at: 3375, note: F3, hold: 120 }
+  - { at: 3500, note: F3, hold: 120 }
+  - { at: 3500, note: C4, hold: 80 }
+  - { at: 3750, note: D4, hold: 80 }
+  - { at: 4000, note: A3, hold: 120 }
+  - { at: 4000, note: C4, hold: 80 }
+  - { at: 4250, note: C4, hold: 80 }
+  - { at: 4500, press: REC }
+  - { at: 5600, screenshot: looping }
+  - { at: 5800, press: HOME }
+  - { at: 7200, screenshot: visual1 }
+  - { at: 7400, turn: SELECT, clicks: 1 }
+  - { at: 8800, turn: SELECT, clicks: 1 }
+  - { at: 10000, turn: PRESETS, clicks: 2 }
+  - { at: 11700, screenshot: visual3 }
+expect:
+  boots: true

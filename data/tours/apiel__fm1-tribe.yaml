@@ -1,0 +1,28 @@
+# TRIBE: PLAY starts the built-in beat on the MIX page, track 3 (909 CH) is picked and two steps added on SEQ,
+# two mix scatter effects (REV, 1/16 loop) are held on a sound page, then the clips, the kick's steps and GLO
+# (MANUAL "Getting started" and "Scatter effects").
+name: tribe-tour
+ms: 12000
+click_ms: 150
+steps:
+  - { at: 1400, screenshot: boot }
+  - { at: 1600, press: PLAY }
+  - { at: 2600, screenshot: mix }
+  - { at: 2700, note: A#3, hold: 150 }
+  - { at: 3000, press: SEQ }
+  - { at: 3600, note: D4, hold: 120 }
+  - { at: 4000, note: B4, hold: 120 }
+  - { at: 4500, screenshot: steps }
+  - { at: 4700, press: EDIT }
+  - { at: 5100, note: C5, hold: 900 }
+  - { at: 6300, note: A4, hold: 800 }
+  - { at: 7000, screenshot: scatter }
+  - { at: 7300, press: HOME }
+  - { at: 8400, screenshot: clips }
+  - { at: 8600, note: F#3, hold: 150 }
+  - { at: 8900, press: SEQ }
+  - { at: 10000, screenshot: kick }
+  - { at: 10300, press: GLO }
+  - { at: 11800, screenshot: glo }
+expect:
+  boots: true

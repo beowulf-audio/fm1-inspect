@@ -1,0 +1,40 @@
+# Frodhes: a chord, then ALGORITHM changing the instrument (SUITCASE, VIBES, MARIMBA),
+# the TREM/WAH page switched on under a chord, the arpeggiator on a held chord, and a factory preset (MANUAL.md section 3).
+name: frodhes
+ms: 12000
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, note: C4, vel: 100, hold: 700 }
+  - { at: 1700, note: E4, vel: 100, hold: 700 }
+  - { at: 1700, note: G4, vel: 100, hold: 700 }
+  - { at: 2600, press: HOME }
+  - { at: 2800, turn: ALGORITHM, clicks: 1 }
+  - { at: 3100, note: A4, vel: 110, hold: 500 }
+  - { at: 3700, turn: ALGORITHM, clicks: 1 }
+  - { at: 3900, turn: ALGORITHM, clicks: 1 }
+  - { at: 4100, turn: ALGORITHM, clicks: 1 }
+  - { at: 4300, note: E5, vel: 110, hold: 300 }
+  - { at: 4600, note: C5, vel: 110, hold: 300 }
+  - { at: 5000, turn: ALGORITHM, clicks: 1 }
+  - { at: 5300, note: G4, vel: 110, hold: 150 }
+  - { at: 5500, note: A4, vel: 110, hold: 150 }
+  - { at: 5700, note: C5, vel: 110, hold: 300 }
+  - { at: 6400, press: LFO }
+  - { at: 6700, press: LFO }
+  - { at: 6900, note: D4, vel: 100, hold: 900 }
+  - { at: 6900, note: F4, vel: 100, hold: 900 }
+  - { at: 6900, note: A4, vel: 100, hold: 900 }
+  - { at: 8000, press: ARP }
+  - { at: 8300, press: ARP }
+  - { at: 8500, note: C4, vel: 100, hold: 1600 }
+  - { at: 8500, note: E4, vel: 100, hold: 1600 }
+  - { at: 8500, note: G4, vel: 100, hold: 1600 }
+  - { at: 10200, press: ARP }
+  - { at: 10300, turn: ALGORITHM, clicks: -5 }
+  - { at: 10500, turn: PRESETS, clicks: 3 }
+  - { at: 11100, note: C4, vel: 100, hold: 600 }
+  - { at: 11100, note: G4, vel: 100, hold: 600 }
+  - { at: 11900, screenshot: end }
+expect:
+  boots: true

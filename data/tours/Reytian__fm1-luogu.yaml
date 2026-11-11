@@ -1,0 +1,16 @@
+# LUOGU: PRESETS steps through the 锣鼓经 groups to 脆头, PLAY runs it with its 字谱 lit stroke by stroke and PLAY again
+# plays its 收; then HOME opens the 唱腔 page and PLAY starts 西皮原板 with its 锣鼓 lead-in (README: Controls).
+name: luogu-tour
+ms: 12000
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1600, turn: PRESETS, clicks: 4 }
+  - { at: 2400, press: PLAY }
+  - { at: 4400, press: PLAY }
+  - { at: 5200, screenshot: luogu }
+  - { at: 5400, press: HOME }
+  - { at: 5800, press: PLAY }
+  - { at: 11900, screenshot: changqiang }
+expect:
+  boots: true

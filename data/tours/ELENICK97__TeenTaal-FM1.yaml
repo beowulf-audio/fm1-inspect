@@ -1,0 +1,21 @@
+# Starts the tanpura (SEQ) and the tabla taal (PLAY), plays swaras on the keys, changes the taal with SELECT and the
+# tempo with KNOB1, opens the EDIT page and returns HOME (docs/CONTROLS.md).
+name: teentaal-tour
+ms: 12500
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, press: SEQ }
+  - { at: 2700, press: PLAY }
+  - { at: 4200, note: C4, hold: 500 }
+  - { at: 4800, note: D4, hold: 400 }
+  - { at: 5300, note: E4, hold: 400 }
+  - { at: 5800, note: G4, hold: 700 }
+  - { at: 6800, turn: KNOB1, clicks: 6 }
+  - { at: 7900, turn: SELECT, clicks: 1 }
+  - { at: 9600, press: EDIT }
+  - { at: 10400, turn: SELECT, clicks: 2 }
+  - { at: 11200, press: HOME }
+  - { at: 12300, screenshot: end }
+expect:
+  boots: true

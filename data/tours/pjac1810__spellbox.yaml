@@ -1,0 +1,23 @@
+# SPELLBOX (talking spelling game after the Speak & Spell): SPELL repeats its prompt, SPEAK types H-E-L-L-O on the
+# alphabetic keyboard and says it, then LETTER SYNTH sings letters on the keys (README "Jouer").
+name: spellbox
+ms: 12000
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, press: SEQ }
+  - { at: 3800, turn: PRESETS, clicks: 7 }
+  - { at: 5000, note: C4, hold: 150 }
+  - { at: 5300, note: A3, hold: 150 }
+  - { at: 5600, note: E4, hold: 150 }
+  - { at: 5900, note: E4, hold: 150 }
+  - { at: 6200, note: G4, hold: 150 }
+  - { at: 6600, note: G5, hold: 150 }
+  - { at: 8300, turn: PRESETS, clicks: -1 }
+  - { at: 8700, note: C4, vel: 100, hold: 400 }
+  - { at: 9200, note: E4, vel: 100, hold: 400 }
+  - { at: 9700, note: G4, vel: 100, hold: 400 }
+  - { at: 10200, note: C5, vel: 100, hold: 900 }
+  - { at: 11600, screenshot: synth }
+expect:
+  boots: true

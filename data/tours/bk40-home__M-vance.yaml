@@ -1,0 +1,31 @@
+# A chord on HOME, programs from the factory bank, the OSC 1 and MULTI-FX pages,
+# then the arpeggiator (ARP tap) running a held chord back on HOME. Based on the README's panel table.
+name: mvance
+ms: 12000
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, note: C4, vel: 100, hold: 2200 }
+  - { at: 1700, note: E4, vel: 100, hold: 2200 }
+  - { at: 1700, note: G4, vel: 100, hold: 2200 }
+  - { at: 3800, screenshot: home }
+  - { at: 4000, turn: PRESETS, clicks: 1 }
+  - { at: 4200, note: A3, vel: 110, hold: 250 }
+  - { at: 4500, note: C4, vel: 110, hold: 250 }
+  - { at: 4800, note: E4, vel: 110, hold: 400 }
+  - { at: 5300, turn: PRESETS, clicks: 10 }
+  - { at: 6900, note: F3, vel: 100, hold: 900 }
+  - { at: 6900, note: C4, vel: 100, hold: 900 }
+  - { at: 6900, note: A4, vel: 100, hold: 900 }
+  - { at: 7900, press: EDIT }
+  - { at: 8000, note: D4, vel: 100, hold: 300 }
+  - { at: 8500, press: FX }
+  - { at: 8700, press: FX }
+  - { at: 9100, press: HOME }
+  - { at: 9300, press: ARP }
+  - { at: 9600, note: C4, vel: 100, hold: 2300 }
+  - { at: 9600, note: E4, vel: 100, hold: 2300 }
+  - { at: 9600, note: G4, vel: 100, hold: 2300 }
+  - { at: 11500, screenshot: arp }
+expect:
+  boots: true

@@ -1,0 +1,22 @@
+# Ear Trainer: OCT+ past the setup notice, HOME+PLAY enters training, a question plays, a guess comes back red
+# (WRONG - REPLAY), REC moves to the next question, then K2 raises it to 1 OF 3 and PRESETS picks another sound
+# (README "Controls").
+name: ear-trainer-tour
+ms: 13100
+click_ms: 150
+steps:
+  - { at: 1400, screenshot: boot }
+  - { at: 1600, press: OCTUP }
+  - { at: 2200, press: HOME, hold: 700 }
+  - { at: 2500, press: PLAY }
+  - { at: 4200, screenshot: question }
+  - { at: 4500, note: E4, vel: 100, hold: 300 }
+  - { at: 5400, screenshot: answer }
+  - { at: 6200, press: REC }
+  - { at: 8000, note: G4, vel: 100, hold: 300 }
+  - { at: 8900, screenshot: answer2 }
+  - { at: 9400, turn: KNOB2, clicks: 3 }
+  - { at: 10200, turn: PRESETS, clicks: 2 }
+  - { at: 12900, screenshot: harder }
+expect:
+  boots: true

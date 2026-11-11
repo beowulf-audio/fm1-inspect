@@ -1,0 +1,34 @@
+# Programs a beat on the step keys (kick D1 on 1/5/9/13, snare SN on 5/13, closed hat CH on the off-beats), starts
+# it, then visits the filter (SCL), FX bus and PERF pages and the HOME grid while it plays (README "Controls").
+name: elixir-tour
+ms: 12000
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, note: F#3, hold: 100 }
+  - { at: 1850, note: F3, hold: 80 }
+  - { at: 1950, note: C4, hold: 80 }
+  - { at: 2050, note: G4, hold: 80 }
+  - { at: 2150, note: D5, hold: 80 }
+  - { at: 2300, note: C#4, hold: 100 }
+  - { at: 2450, note: C4, hold: 80 }
+  - { at: 2550, note: D5, hold: 80 }
+  - { at: 2700, note: F#4, hold: 100 }
+  - { at: 2850, note: A3, hold: 80 }
+  - { at: 2950, note: E4, hold: 80 }
+  - { at: 3050, note: B4, hold: 80 }
+  - { at: 3150, note: F5, hold: 80 }
+  - { at: 3400, press: PLAY }
+  - { at: 4400, screenshot: beat }
+  - { at: 4600, press: SCL }
+  - { at: 5200, turn: KNOB2, clicks: 6 }
+  - { at: 6400, screenshot: filter }
+  - { at: 6600, press: FX }
+  - { at: 7800, screenshot: fx }
+  - { at: 8000, press: ARP }
+  - { at: 8600, note: C5, hold: 900 }
+  - { at: 9700, screenshot: perf }
+  - { at: 9900, press: HOME }
+  - { at: 11700, screenshot: grid }
+expect:
+  boots: true

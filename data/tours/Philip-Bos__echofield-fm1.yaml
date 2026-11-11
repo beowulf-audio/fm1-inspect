@@ -1,0 +1,23 @@
+# Plays a chord into the grain cloud, starts the endless sound with PLAY, then steps ALGORITHM through the
+# granular modes (CLOUD, DUST, TAPE, BLOOM, PULSE, DRIFT) and holds FX + a black key (README "Playing it").
+name: echofield-tour
+ms: 11500
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, note: C4, vel: 100, hold: 900 }
+  - { at: 1700, note: E4, vel: 100, hold: 900 }
+  - { at: 1700, note: G4, vel: 100, hold: 900 }
+  - { at: 2800, press: PLAY }
+  - { at: 3600, screenshot: play }
+  - { at: 3800, turn: ALGORITHM, clicks: 1 }
+  - { at: 4900, turn: ALGORITHM, clicks: 1 }
+  - { at: 6000, turn: ALGORITHM, clicks: 1 }
+  - { at: 7100, turn: ALGORITHM, clicks: 1 }
+  - { at: 8200, turn: ALGORITHM, clicks: 1 }
+  - { at: 9200, press: FX, hold: 1500 }
+  - { at: 9500, note: C#4, vel: 100, hold: 1000 }
+  - { at: 10200, screenshot: fx }
+  - { at: 11200, screenshot: drift }
+expect:
+  boots: true

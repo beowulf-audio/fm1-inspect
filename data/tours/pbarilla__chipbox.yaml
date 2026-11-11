@@ -1,0 +1,26 @@
+# The first demo song playing on NES channels (RACK), punched up on the FX pads (white keys: DIVE, RPT), then the
+# project view (HOME held) and the second demo, eight consoles, opened and played. Manual: rack, effects, projects.
+name: chipbox-tour
+ms: 12500
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 2300, press: HOME }
+  - { at: 2500, press: PLAY }
+  - { at: 4100, screenshot: rack }
+  # FX: the white keys as pads
+  - { at: 4300, press: FX }
+  - { at: 4600, note: C5, hold: 800 }
+  - { at: 5600, note: G3, hold: 600 }
+  - { at: 6300, press: FX }
+  - { at: 6500, press: HOME }
+  - { at: 7600, screenshot: rack2 }
+  # projects: the second demo
+  - { at: 7800, press: HOME, hold: 1200 }
+  - { at: 9300, screenshot: projects }
+  - { at: 9400, turn: SELECT, clicks: 1 }
+  - { at: 9800, press: OCTUP }
+  - { at: 10400, press: PLAY }
+  - { at: 12400, screenshot: demo2 }
+expect:
+  boots: true

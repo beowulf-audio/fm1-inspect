@@ -1,0 +1,31 @@
+# Plays the first sound, steps PRESETS to other user sounds, holds a chord with the arpeggiator (ARP), and opens
+# the EDIT, ENV, LFO and FX pages before returning HOME.
+name: analogbeast-tour
+ms: 12000
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, note: C4, vel: 100, hold: 300 }
+  - { at: 2100, note: G4, vel: 100, hold: 300 }
+  - { at: 2500, turn: PRESETS, clicks: 2 }
+  - { at: 2900, note: E4, vel: 100, hold: 400 }
+  - { at: 3500, press: ARP }
+  - { at: 3700, note: C4, vel: 100, hold: 2600 }
+  - { at: 3700, note: E4, vel: 100, hold: 2600 }
+  - { at: 3700, note: G4, vel: 100, hold: 2600 }
+  - { at: 4300, press: EDIT }
+  - { at: 5000, screenshot: edit }
+  - { at: 5200, press: ENV }
+  - { at: 6000, screenshot: env }
+  - { at: 6500, press: ARP }
+  - { at: 6700, press: LFO }
+  - { at: 7500, screenshot: lfo }
+  - { at: 7700, press: FX }
+  - { at: 8500, screenshot: fx }
+  - { at: 8700, press: HOME }
+  - { at: 9000, turn: PRESETS, clicks: 2 }
+  - { at: 9400, note: A3, vel: 100, hold: 500 }
+  - { at: 10100, note: E4, vel: 100, hold: 500 }
+  - { at: 11800, screenshot: end }
+expect:
+  boots: true

@@ -1,0 +1,23 @@
+# Closes the Quick Start guide, plays the first pattern, switches pattern with SELECT, punches in FX pads
+# (tap FX, then a white key), then the LAB view (HOME) and its pages on ALGORITHM (cheat sheet: PATTERN / LAB, FX pads).
+name: drumlab-tour
+ms: 12000
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1800, press: HOME }
+  - { at: 2200, press: PLAY }
+  - { at: 3600, screenshot: playing }
+  - { at: 3800, turn: SELECT, clicks: 1 }
+  - { at: 5400, screenshot: pattern2 }
+  - { at: 5600, press: FX }
+  - { at: 6000, note: G3, hold: 700 }
+  - { at: 6900, note: D4, hold: 700 }
+  - { at: 7800, screenshot: fx }
+  - { at: 7900, press: FX }
+  - { at: 8200, press: HOME }
+  - { at: 9200, turn: ALGORITHM, clicks: 1 }
+  - { at: 10200, turn: ALGORITHM, clicks: 1 }
+  - { at: 11700, screenshot: lab }
+expect:
+  boots: true

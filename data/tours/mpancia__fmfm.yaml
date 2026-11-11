@@ -1,0 +1,22 @@
+# Starts the four-lane generative sequencer with PLAY and, while it plays, steps through SEQ (RHYTHM, FEEL), EDIT
+# (SOUND, FILTER), FX and GLO pages, then turns a lane's hits on HOME (README "Using it").
+name: fmfm-tour
+ms: 12000
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, press: PLAY }
+  - { at: 3000, press: SEQ }
+  - { at: 4000, press: SEQ }
+  - { at: 5000, press: EDIT }
+  - { at: 5600, turn: KNOB2, clicks: 5 }
+  - { at: 6600, press: EDIT }
+  - { at: 7400, press: FX }
+  - { at: 8300, press: GLO }
+  - { at: 9200, press: HOME }
+  - { at: 9500, turn: KNOB1, clicks: 4 }
+  - { at: 10400, turn: SELECT, clicks: 1 }
+  - { at: 10700, turn: KNOB1, clicks: 3 }
+  - { at: 11800, screenshot: end }
+expect:
+  boots: true

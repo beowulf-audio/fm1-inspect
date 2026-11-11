@@ -1,0 +1,23 @@
+# After the splash: GLASS BELL, ARP held on, a C major chord latched with PLAY so the arpeggio runs; SELECT sweeps the
+# wavetable position, PRESETS goes to FM PLUCK, then the EDIT, ENV and ARP pages (README: "Playing it", "Arpeggiator").
+name: tastywaves
+ms: 12500
+click_ms: 150
+steps:
+  - { at: 3300, screenshot: boot }
+  - { at: 3400, pot: 1023 }
+  - { at: 3500, turn: PRESETS, clicks: 1 }
+  - { at: 4100, press: ARP, hold: 900 }
+  - { at: 5200, note: C4, vel: 100, hold: 1200 }
+  - { at: 5200, note: E4, vel: 100, hold: 1200 }
+  - { at: 5200, note: G4, vel: 100, hold: 1200 }
+  - { at: 5700, press: PLAY }
+  - { at: 6600, press: HOME }
+  - { at: 6900, turn: SELECT, clicks: 10 }
+  - { at: 8600, turn: PRESETS, clicks: 5 }
+  - { at: 10000, press: EDIT }
+  - { at: 10800, press: ENV }
+  - { at: 11600, press: ARP }
+  - { at: 12300, screenshot: end }
+expect:
+  boots: true

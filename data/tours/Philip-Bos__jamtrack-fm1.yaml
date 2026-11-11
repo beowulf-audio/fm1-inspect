@@ -1,0 +1,20 @@
+# JAMTRACK: PLAY starts the band on the first jam with its chord ring, a lead solo on the keys over it, the EDIT and
+# ENV (SOUNDS) pages, SEQ switches to part B, then PRESETS queues another jam for the next bar (README "Playing it").
+name: jamtrack-tour
+ms: 14000
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, press: PLAY }
+  - { at: 3200, note: A4, vel: 110, hold: 250 }
+  - { at: 3500, note: B4, vel: 110, hold: 250 }
+  - { at: 3800, note: D5, vel: 110, hold: 500 }
+  - { at: 4400, note: F#4, vel: 110, hold: 400 }
+  - { at: 5000, press: EDIT }
+  - { at: 6000, press: ENV }
+  - { at: 7000, press: HOME }
+  - { at: 7300, press: SEQ }
+  - { at: 9200, turn: PRESETS, clicks: 2 }
+  - { at: 13800, screenshot: end }
+expect:
+  boots: true

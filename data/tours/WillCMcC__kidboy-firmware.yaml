@@ -1,0 +1,25 @@
+# The four cards from the README: SONGS (a key starts a nursery song, buttons add drums, OCT- stops it), LETTERS
+# (giant letters, spoken), NUMBERS (counted dots) and PIANO (note names), turning PRESETS between them.
+name: kidboy-tour
+ms: 13000
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 2700, note: C4, vel: 100, hold: 300 }
+  - { at: 3500, press: FX }
+  - { at: 3800, press: SCL }
+  - { at: 4100, press: FX }
+  - { at: 4500, press: OCTDN }
+  - { at: 4700, turn: PRESETS, clicks: 1 }
+  - { at: 6000, note: D4, vel: 100, hold: 300 }
+  - { at: 6900, note: F4, vel: 100, hold: 300 }
+  - { at: 7700, turn: PRESETS, clicks: 1 }
+  - { at: 9000, note: E4, vel: 100, hold: 300 }
+  - { at: 10100, turn: PRESETS, clicks: 1 }
+  - { at: 11400, note: C4, vel: 100, hold: 200 }
+  - { at: 11650, note: E4, vel: 100, hold: 200 }
+  - { at: 11900, note: G4, vel: 100, hold: 200 }
+  - { at: 12150, note: C5, vel: 110, hold: 500 }
+  - { at: 12900, screenshot: piano }
+expect:
+  boots: true

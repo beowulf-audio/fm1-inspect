@@ -1,0 +1,23 @@
+# ARP opens GRIDS; on page 2 KNOB 4 assigns T1-T3 to the Grids kick, snare and hat, PLAY runs the live Grids beat while X and
+# CHAOS turn; then HOME shows TRACKS and the scope, SEQ the STEP and PATTERN pages (docs/USER_GUIDE.md: "Grids and WRITE",
+# "Panel navigation").
+name: nauclerus
+ms: 12000
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1600, press: ARP }
+  - { at: 2200, press: ARP }
+  - { at: 2700, turn: KNOB4, clicks: 1 }
+  - { at: 3200, press: PLAY }
+  - { at: 3800, press: ARP }
+  - { at: 4200, turn: KNOB2, clicks: 8 }
+  - { at: 5600, turn: KNOB4, clicks: 6 }
+  - { at: 6800, press: HOME }
+  - { at: 7800, press: HOME }
+  - { at: 8700, press: SEQ }
+  - { at: 9600, press: SEQ }
+  - { at: 10600, press: HOME }
+  - { at: 11800, screenshot: end }
+expect:
+  boots: true

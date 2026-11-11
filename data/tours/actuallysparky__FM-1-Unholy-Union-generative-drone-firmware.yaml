@@ -1,0 +1,19 @@
+# Unholy Union: PLAY starts the generative drone (Immaculate Permutation) with a hand-played voice over it, OCT+ reveals
+# new arrangements in a new key, scale and tempo, then a tap of OCT- opens the instrument editor while it plays (README).
+name: unholy
+ms: 12500
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, press: PLAY }
+  - { at: 3000, note: A4, vel: 100, hold: 600 }
+  - { at: 3700, note: C5, vel: 100, hold: 500 }
+  - { at: 4500, press: OCTUP }
+  - { at: 6000, press: OCTUP }
+  - { at: 7400, press: ENV, hold: 700 }
+  - { at: 7600, press: OCTUP }
+  - { at: 8800, press: LFO }
+  - { at: 9800, press: OCTDN }
+  - { at: 12300, screenshot: end }
+expect:
+  boots: true

@@ -1,0 +1,30 @@
+# Drones the voice (PLAY), steps through vowel presets (PRESETS) and moves the tongue (KNOB1/2), sings a few
+# notes, adds an S (hold SEQ) and a T (hold LFO), then opens the effects page (FX) (README "Playing it").
+name: pinktrombone-tour
+ms: 12000
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, press: PLAY }
+  - { at: 2300, turn: PRESETS, clicks: 2 }
+  - { at: 3000, screenshot: vowel1 }
+  - { at: 3200, turn: PRESETS, clicks: 2 }
+  - { at: 3900, screenshot: vowel2 }
+  - { at: 4100, turn: KNOB1, clicks: 8 }
+  - { at: 4200, turn: KNOB2, clicks: -8 }
+  - { at: 5500, screenshot: tongue }
+  - { at: 5700, press: PLAY }
+  - { at: 5900, note: C4, vel: 100, hold: 400 }
+  - { at: 6350, note: E4, vel: 100, hold: 400 }
+  - { at: 6800, note: G4, vel: 100, hold: 700 }
+  - { at: 7600, press: SEQ, hold: 500 }
+  - { at: 7600, note: D4, vel: 100, hold: 1400 }
+  - { at: 7900, screenshot: s }
+  - { at: 8300, press: LFO, hold: 300 }
+  - { at: 9200, turn: PRESETS, clicks: 3 }
+  - { at: 9300, note: A4, vel: 100, hold: 1100 }
+  - { at: 10500, press: FX }
+  - { at: 10700, note: C4, vel: 100, hold: 800 }
+  - { at: 11800, screenshot: fx }
+expect:
+  boots: true

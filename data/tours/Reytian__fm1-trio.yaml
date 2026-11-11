@@ -1,0 +1,33 @@
+# TRIO: PLAY counts a bar in, then a ii-V-I-VI-ii played as held chords (root lowest); the walking bass and the drummer
+# follow each chord (README "Play"), then the GLO mix page and back to the band page.
+name: trio
+ms: 12500
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, press: PLAY }
+  - { at: 3300, note: D4, vel: 90, hold: 1550 }
+  - { at: 3300, note: F4, vel: 90, hold: 1550 }
+  - { at: 3300, note: A4, vel: 90, hold: 1550 }
+  - { at: 3300, note: C5, vel: 90, hold: 1550 }
+  - { at: 5000, note: G3, vel: 90, hold: 1550 }
+  - { at: 5000, note: B3, vel: 90, hold: 1550 }
+  - { at: 5000, note: D4, vel: 90, hold: 1550 }
+  - { at: 5000, note: F4, vel: 90, hold: 1550 }
+  - { at: 6700, note: C4, vel: 90, hold: 1550 }
+  - { at: 6700, note: E4, vel: 90, hold: 1550 }
+  - { at: 6700, note: G4, vel: 90, hold: 1550 }
+  - { at: 6700, note: B4, vel: 90, hold: 1550 }
+  - { at: 8400, note: A3, vel: 90, hold: 1550 }
+  - { at: 8400, note: C#4, vel: 90, hold: 1550 }
+  - { at: 8400, note: E4, vel: 90, hold: 1550 }
+  - { at: 8400, note: G4, vel: 90, hold: 1550 }
+  - { at: 10100, note: D4, vel: 90, hold: 1550 }
+  - { at: 10100, note: F4, vel: 90, hold: 1550 }
+  - { at: 10100, note: A4, vel: 90, hold: 1550 }
+  - { at: 10100, note: C5, vel: 90, hold: 1550 }
+  - { at: 11000, press: GLO }
+  - { at: 11900, press: GLO }
+  - { at: 12400, screenshot: end }
+expect:
+  boots: true

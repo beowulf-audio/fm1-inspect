@@ -1,0 +1,36 @@
+# SEQ-4 (a MIDI sequencer, silent on its own): steps tapped on sequencer 1 (Mono), PLAY, then ALGORITHM to
+# sequencer 2 (Chord) and 3 (Multitrack drums) with steps added to each, the LFO page and back (README "In short").
+name: seq4-tour
+ms: 12000
+click_ms: 150
+steps:
+  - { at: 1400, screenshot: boot }
+  - { at: 1600, note: F3, hold: 120 }
+  - { at: 1800, note: C4, hold: 120 }
+  - { at: 2000, note: G4, hold: 120 }
+  - { at: 2200, note: D5, hold: 120 }
+  - { at: 2500, note: G#4, hold: 1300 }
+  - { at: 2700, note: A3, hold: 120 }
+  - { at: 2900, note: E4, hold: 120 }
+  - { at: 3100, note: B4, hold: 120 }
+  - { at: 3300, note: F5, hold: 120 }
+  - { at: 4000, press: PLAY }
+  - { at: 5500, screenshot: playing }
+  - { at: 5700, turn: ALGORITHM, clicks: 1 }
+  - { at: 6100, note: F3, hold: 120 }
+  - { at: 6300, note: B3, hold: 120 }
+  - { at: 6500, note: E4, hold: 120 }
+  - { at: 6700, note: A4, hold: 120 }
+  - { at: 7500, screenshot: seq2 }
+  - { at: 7700, turn: ALGORITHM, clicks: 1 }
+  - { at: 8100, note: F3, hold: 120 }
+  - { at: 8300, note: A3, hold: 120 }
+  - { at: 8500, note: C4, hold: 120 }
+  - { at: 8700, note: E4, hold: 120 }
+  - { at: 9400, screenshot: seq3 }
+  - { at: 9600, press: LFO }
+  - { at: 10500, screenshot: lfo }
+  - { at: 10700, press: HOME }
+  - { at: 11800, screenshot: back }
+expect:
+  boots: true

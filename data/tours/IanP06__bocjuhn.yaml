@@ -1,0 +1,33 @@
+# bocjuhn: records a free loop on track 1 (FM), then picks tracks 2-4 with the top-row buttons and turns PRESETS
+# to other engines (FRACT, HIVE, RYUJI), each with its animated drawing, back to track 1 with its loop playing
+# (README-TONITOR.md "Playing it").
+name: bocjuhn-tour
+ms: 12000
+click_ms: 150
+steps:
+  - { at: 1400, screenshot: boot }
+  - { at: 1600, press: REC }
+  - { at: 1900, note: F3, vel: 100, hold: 300 }
+  - { at: 2300, note: C4, vel: 100, hold: 300 }
+  - { at: 2700, note: A3, vel: 100, hold: 300 }
+  - { at: 3100, note: E4, vel: 100, hold: 500 }
+  - { at: 3700, press: REC }
+  - { at: 4300, screenshot: loop }
+  - { at: 4500, press: SCL }
+  - { at: 4800, turn: PRESETS, clicks: 2 }
+  - { at: 5300, note: C4, vel: 110, hold: 400 }
+  - { at: 5800, note: G4, vel: 110, hold: 400 }
+  - { at: 6400, screenshot: track2 }
+  - { at: 6600, press: ENV }
+  - { at: 6900, turn: PRESETS, clicks: 4 }
+  - { at: 7500, note: A4, vel: 100, hold: 300 }
+  - { at: 7900, note: D5, vel: 100, hold: 300 }
+  - { at: 8400, screenshot: track3 }
+  - { at: 8600, press: LFO }
+  - { at: 8900, turn: PRESETS, clicks: 3 }
+  - { at: 9400, note: F3, vel: 100, hold: 600 }
+  - { at: 9400, note: C4, vel: 100, hold: 600 }
+  - { at: 10300, press: FX }
+  - { at: 11800, screenshot: track1 }
+expect:
+  boots: true

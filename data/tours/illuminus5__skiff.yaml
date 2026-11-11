@@ -1,0 +1,42 @@
+# Builds the "first beat" from Skiff's Learn chapter: the drum track's grid (black keys pick a lane, white keys set
+# steps), kick, snare and hats, then PLAY; then HOME and the next drum kit (PRESETS), the FX layer (held FX with a key) and the HOME-held SHIFT map.
+name: skiff-tour
+ms: 12000
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1600, turn: ALGORITHM, clicks: 3 }
+  - { at: 2200, press: SEQ }
+  # kick: lane F#3, steps 1 5 9 13
+  - { at: 2500, note: F#3, hold: 120 }
+  - { at: 2700, note: F3, hold: 100 }
+  - { at: 2850, note: C4, hold: 100 }
+  - { at: 3000, note: G4, hold: 100 }
+  - { at: 3150, note: D5, hold: 100 }
+  # snare: lane G#3, steps 5 13
+  - { at: 3400, note: G#3, hold: 120 }
+  - { at: 3600, note: C4, hold: 100 }
+  - { at: 3750, note: D5, hold: 100 }
+  # hats: lane C#4, steps 3 7 11 15
+  - { at: 4000, note: C#4, hold: 120 }
+  - { at: 4200, note: A3, hold: 100 }
+  - { at: 4350, note: E4, hold: 100 }
+  - { at: 4500, note: B4, hold: 100 }
+  - { at: 4650, note: F5, hold: 100 }
+  - { at: 4900, screenshot: grid }
+  - { at: 4900, press: PLAY }
+  - { at: 6000, press: HOME }
+  - { at: 6700, turn: PRESETS, clicks: 1 }
+  - { at: 7500, screenshot: kit }
+  # FX layer: hold FX, B3 = REVERSE, then D5 = FLANGE
+  - { at: 7700, press: FX, hold: 1900 }
+  - { at: 8000, note: B3, hold: 700 }
+  - { at: 8800, note: D5, hold: 700 }
+  - { at: 9400, screenshot: fx }
+  # HOME held: the SHIFT map; let go alone it opens the MENU, HOME closes it
+  - { at: 9900, press: HOME, hold: 1100 }
+  - { at: 10900, screenshot: shift }
+  - { at: 11300, press: HOME }
+  - { at: 11900, screenshot: end }
+expect:
+  boots: true

@@ -1,0 +1,23 @@
+# NAIWAN 91: the piece that starts at power-on, HOME to the Perform page, SAVE for a breakdown then the build and drop,
+# FX opens the effect keys and one is latched, GLO held shows the mix map while PRESETS picks another genre, and HOME
+# twice quickly opens the visualizers (README: A first minute; docs/QUICK.md).
+name: naiwan91-tour
+ms: 11500
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, press: HOME }
+  - { at: 2200, press: HOME }
+  - { at: 2700, press: SAVE }
+  - { at: 4700, press: SAVE }
+  - { at: 6300, press: FX }
+  - { at: 6700, note: E4, hold: 150 }
+  - { at: 7700, press: OCTDN }
+  - { at: 8000, press: FX }
+  - { at: 8400, press: GLO, hold: 1400 }
+  - { at: 8900, turn: PRESETS, clicks: 1 }
+  - { at: 10300, press: HOME, hold: 80 }
+  - { at: 10500, press: HOME, hold: 80 }
+  - { at: 11400, screenshot: end }
+expect:
+  boots: true

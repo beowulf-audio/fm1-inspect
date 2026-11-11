@@ -1,0 +1,22 @@
+# KAWA: the README's "load the demo" path (SAVE, SELECT down to DEMO, OCT+, PLAY), then the demo song playing on
+# TRACKS, the step GRID (SEQ), the SOUND page (EDIT), the LIVE effects (FX twice, STUTTER X4 held), back to TRACKS.
+name: kawa
+ms: 12500
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, press: HOME, hold: 120 }
+  - { at: 2200, press: SAVE, hold: 120 }
+  - { at: 2600, turn: SELECT, clicks: 4 }
+  - { at: 3400, press: OCTUP, hold: 120 }
+  - { at: 4000, press: PLAY, hold: 120 }
+  - { at: 6000, press: SEQ, hold: 120 }
+  - { at: 7500, press: EDIT, hold: 120 }
+  - { at: 8300, turn: PRESETS, clicks: 1 }
+  - { at: 9200, press: FX, hold: 120 }
+  - { at: 9800, press: FX, hold: 120 }
+  - { at: 10200, note: G4, hold: 700 }
+  - { at: 11100, press: HOME, hold: 120 }
+  - { at: 12300, screenshot: end }
+expect:
+  boots: true

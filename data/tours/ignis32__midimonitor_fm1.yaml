@@ -1,0 +1,25 @@
+# Walks the README's control table: ALGO through the LOG tab's views (KEYS, CC, CHANS, CLOCK), PRESETS through the
+# pages (FILTER, STATS, THRU), GLO through its three settings pages, KNOB1 on 3/3 to change the skin, then HOME.
+name: midimon-tour
+ms: 12000
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, note: C4, vel: 100, hold: 300 }
+  - { at: 2200, turn: ALGORITHM, clicks: 1 }
+  - { at: 2800, turn: ALGORITHM, clicks: 1 }
+  - { at: 3400, turn: ALGORITHM, clicks: 1 }
+  - { at: 4000, turn: ALGORITHM, clicks: 1 }
+  - { at: 4600, press: HOME }
+  - { at: 5200, turn: PRESETS, clicks: 1 }
+  - { at: 5800, turn: PRESETS, clicks: 1 }
+  - { at: 6400, turn: PRESETS, clicks: 1 }
+  - { at: 7000, press: GLO }
+  - { at: 7600, press: GLO }
+  - { at: 8200, press: GLO }
+  - { at: 8800, turn: KNOB1, clicks: 1 }
+  - { at: 9600, press: GLO }
+  - { at: 10200, press: HOME }
+  - { at: 11800, screenshot: home }
+expect:
+  boots: true

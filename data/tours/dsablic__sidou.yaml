@@ -1,0 +1,31 @@
+# Plays SAW LEAD on LIVE and turns the cutoff, starts the built-in song (PLAY), opens STEP then TRACKER (SEQ, per
+# controls.md "Song views"), back to LIVE to change presets over the song, then LAB (ENV) and two of its pages.
+name: sidou-tour
+ms: 12500
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, note: C4, vel: 100, hold: 300 }
+  - { at: 2100, note: E4, vel: 100, hold: 200 }
+  - { at: 2400, note: G4, vel: 100, hold: 400 }
+  - { at: 2600, turn: KNOB1, clicks: -3 }
+  - { at: 3200, press: PLAY }
+  - { at: 3800, screenshot: live }
+  - { at: 4000, press: SEQ }
+  - { at: 5600, screenshot: step }
+  - { at: 5800, press: SEQ }
+  - { at: 7400, screenshot: tracker }
+  - { at: 7600, press: HOME }
+  - { at: 8000, turn: PRESETS, clicks: 1 }
+  - { at: 8200, note: C5, vel: 100, hold: 400 }
+  - { at: 8800, turn: PRESETS, clicks: 1 }
+  - { at: 9000, note: G4, vel: 100, hold: 400 }
+  - { at: 9600, press: ENV }
+  - { at: 10000, note: E4, vel: 100, hold: 400 }
+  - { at: 10500, turn: SELECT, clicks: 1 }
+  - { at: 10900, turn: SELECT, clicks: 1 }
+  - { at: 11400, screenshot: lab }
+  - { at: 11600, press: PLAY }
+  - { at: 12300, screenshot: end }
+expect:
+  boots: true

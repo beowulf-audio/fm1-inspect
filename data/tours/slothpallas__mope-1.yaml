@@ -1,0 +1,30 @@
+# MOPE-1: PLAY starts the backing beat, then the blob reacts as parts are turned under held notes: Eyes (resonance up),
+# Vibe (LFO depth), Tears (delay up), a preset change and the Tape deck page (README "The blob is the synth", "Controls").
+name: mope
+ms: 12500
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, press: PLAY }
+  - { at: 1900, note: C4, vel: 100, hold: 700 }
+  - { at: 1900, note: G4, vel: 100, hold: 700 }
+  - { at: 2900, press: EDIT }
+  - { at: 3000, note: E4, vel: 110, hold: 1300 }
+  - { at: 3100, turn: KNOB2, clicks: 10 }
+  - { at: 4500, press: LFO }
+  - { at: 4600, note: A4, vel: 110, hold: 1200 }
+  - { at: 4700, turn: KNOB2, clicks: 8 }
+  - { at: 6100, press: FX }
+  - { at: 6400, press: FX }
+  - { at: 6600, turn: KNOB1, clicks: 8 }
+  - { at: 7000, note: D5, vel: 110, hold: 300 }
+  - { at: 7600, note: C5, vel: 110, hold: 300 }
+  - { at: 8300, press: HOME }
+  - { at: 8500, turn: PRESETS, clicks: 1 }
+  - { at: 9000, note: C4, vel: 100, hold: 800 }
+  - { at: 9000, note: E4, vel: 100, hold: 800 }
+  - { at: 10100, press: SEQ }
+  - { at: 10400, press: SEQ }
+  - { at: 12300, screenshot: end }
+expect:
+  boots: true

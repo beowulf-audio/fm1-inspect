@@ -1,0 +1,19 @@
+# MAKU: the boot's random world plays; KNOB 2-4 raise parts 2-4 and move the focus to each (their macros shown),
+# a few keys, the verbs ENV (swell, its timing page) and LFO (wobble), then HOME held makes a new world (README "What it does").
+name: maku-tour
+ms: 12000
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, turn: KNOB2, clicks: 3 }
+  - { at: 2600, turn: KNOB3, clicks: 3 }
+  - { at: 3500, turn: KNOB4, clicks: 3 }
+  - { at: 4200, turn: SELECT, clicks: 5 }
+  - { at: 5200, note: C5, hold: 300 }
+  - { at: 5600, note: G4, hold: 300 }
+  - { at: 6200, press: ENV, hold: 600 }
+  - { at: 7400, press: LFO, hold: 600 }
+  - { at: 8600, press: HOME, hold: 1500 }
+  - { at: 11800, screenshot: newworld }
+expect:
+  boots: true

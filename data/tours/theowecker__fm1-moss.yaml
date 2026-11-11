@@ -1,0 +1,25 @@
+# MOSS-1: a phrase played into DRIFT Garden and kept with REC (the looper that listens), SEQ through the STUDIO, LOOPS,
+# CHORDS and BEAT screens and back to the picture, then PRESETS to LOFI Study and on to SCAPES Rain (MANUAL "The short version").
+name: moss
+ms: 12500
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, note: E4, vel: 100, hold: 300 }
+  - { at: 2050, note: G4, vel: 100, hold: 300 }
+  - { at: 2400, note: B4, vel: 100, hold: 300 }
+  - { at: 2750, note: D5, vel: 100, hold: 600 }
+  - { at: 3500, press: REC }
+  - { at: 4300, press: SEQ }
+  - { at: 5200, press: SEQ }
+  - { at: 6100, press: SEQ }
+  - { at: 7000, press: SEQ }
+  - { at: 7900, press: SEQ }
+  - { at: 8400, turn: PRESETS, clicks: 1 }
+  - { at: 9000, note: C4, vel: 100, hold: 400 }
+  - { at: 9600, note: E4, vel: 100, hold: 400 }
+  - { at: 10400, turn: PRESETS, clicks: 5 }
+  - { at: 11500, note: A4, vel: 100, hold: 500 }
+  - { at: 12400, screenshot: end }
+expect:
+  boots: true

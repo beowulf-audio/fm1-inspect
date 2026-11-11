@@ -1,0 +1,20 @@
+# FM1-TRAX: the boot intro, then the demo song playing through the pattern view, the stage view (scopes and
+# piano roll), the order list and the FM instrument editor, back to the pattern (README "Controls").
+name: fm1-trax-tour
+ms: 12500
+click_ms: 150
+steps:
+  - { at: 1400, screenshot: boot }
+  - { at: 2600, press: HOME }
+  - { at: 3400, press: PLAY }
+  - { at: 4800, screenshot: pattern }
+  - { at: 5000, press: HOME }
+  - { at: 7200, screenshot: stage }
+  - { at: 7400, press: SEQ }
+  - { at: 8600, screenshot: orders }
+  - { at: 8800, press: EDIT }
+  - { at: 10200, screenshot: instrument }
+  - { at: 10400, press: HOME }
+  - { at: 12300, screenshot: pattern2 }
+expect:
+  boots: true

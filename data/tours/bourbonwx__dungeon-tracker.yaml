@@ -1,0 +1,20 @@
+# HOME held opens the MENU; ALGORITHM walks its tabs to GAME and OCT+ on RANDOM SONG rolls a new party, sounds and song;
+# PLAY then walks the party down the dungeon corridor with the song, and SEQ opens the drum track's tracker
+# (DUNGEON-TRACKER.md: "A song to start from: RANDOM SONG", "HOME: the dungeon", "The tracker (SEQ)").
+name: dungeon-tracker
+ms: 12500
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1600, press: HOME, hold: 800 }
+  - { at: 2600, turn: ALGORITHM, clicks: 5 }
+  - { at: 3500, turn: SELECT, clicks: 6 }
+  - { at: 4600, press: OCTUP }
+  - { at: 5000, turn: SELECT, clicks: -6 }
+  - { at: 6000, press: OCTUP }
+  - { at: 6400, press: HOME }
+  - { at: 6700, press: PLAY }
+  - { at: 10200, press: SEQ }
+  - { at: 12300, screenshot: end }
+expect:
+  boots: true

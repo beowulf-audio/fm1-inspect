@@ -1,0 +1,27 @@
+# Holds a chord for the chance arp, latches it (REC: HOLD), turns CHANCE (ALGORITHM), changes the sound (PRESETS),
+# and visits the ENV, FX and SEQ pages while it plays (README "Quick start").
+name: mightyarp-tour
+ms: 12000
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, note: C4, vel: 100, hold: 2000 }
+  - { at: 1700, note: E4, vel: 100, hold: 2000 }
+  - { at: 1700, note: G4, vel: 100, hold: 2000 }
+  - { at: 1700, note: B4, vel: 100, hold: 2000 }
+  - { at: 3000, press: REC }
+  - { at: 3200, screenshot: arp }
+  - { at: 4000, turn: ALGORITHM, clicks: 5 }
+  - { at: 5200, turn: PRESETS, clicks: 3 }
+  - { at: 6000, screenshot: preset }
+  - { at: 6300, press: ENV }
+  - { at: 7400, screenshot: env }
+  - { at: 7600, press: FX }
+  - { at: 8700, screenshot: fx }
+  - { at: 8900, press: SEQ }
+  - { at: 10000, screenshot: seq }
+  - { at: 10200, press: HOME }
+  - { at: 10500, turn: PRESETS, clicks: 4 }
+  - { at: 11800, screenshot: home }
+expect:
+  boots: true

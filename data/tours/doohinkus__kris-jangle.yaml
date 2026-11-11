@@ -1,0 +1,17 @@
+# One round of the carol game: PLAY starts Jingle Bells level 1, LISTEN plays its first three notes, the keys
+# replay them (YOUR TURN, a note modal per key) and Santa shows LEVEL CLEAR. README "How to play".
+name: kris-jangle
+ms: 12000
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, press: SEQ }
+  - { at: 3800, screenshot: santa }
+  - { at: 4000, press: PLAY }
+  - { at: 7000, screenshot: listen }
+  - { at: 7200, note: E4, vel: 100, hold: 250 }
+  - { at: 7600, note: E4, vel: 100, hold: 250 }
+  - { at: 8000, note: E4, vel: 100, hold: 400 }
+  - { at: 11800, screenshot: next }
+expect:
+  boots: true

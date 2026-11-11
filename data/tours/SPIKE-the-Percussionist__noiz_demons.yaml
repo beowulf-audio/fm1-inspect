@@ -1,0 +1,40 @@
+# Skips the splash, then summons four times (hold EDIT + black key 3, README "Quick start") and plays a phrase after
+# each, so each demon's sigil and rank show on HOME and the rerolled sound is heard.
+name: noiz-demons-tour
+ms: 11660
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, note: F3, vel: 90, hold: 200 }
+  - { at: 2000, note: C4, vel: 100, hold: 300 }
+  - { at: 2350, note: G4, vel: 100, hold: 300 }
+  - { at: 2800, press: EDIT, hold: 500 }
+  - { at: 2950, note: A#3, vel: 100, hold: 150 }
+  - { at: 3500, note: C4, vel: 105, hold: 220 }
+  - { at: 3760, note: E4, vel: 105, hold: 220 }
+  - { at: 4020, note: G4, vel: 105, hold: 220 }
+  - { at: 4280, note: C5, vel: 105, hold: 220 }
+  - { at: 4640, screenshot: demon1 }
+  - { at: 4940, press: EDIT, hold: 500 }
+  - { at: 5090, note: A#3, vel: 100, hold: 150 }
+  - { at: 5640, note: C4, vel: 105, hold: 220 }
+  - { at: 5900, note: E4, vel: 105, hold: 220 }
+  - { at: 6160, note: G4, vel: 105, hold: 220 }
+  - { at: 6420, note: C5, vel: 105, hold: 220 }
+  - { at: 6780, screenshot: demon2 }
+  - { at: 7080, press: EDIT, hold: 500 }
+  - { at: 7230, note: A#3, vel: 100, hold: 150 }
+  - { at: 7780, note: C4, vel: 105, hold: 220 }
+  - { at: 8040, note: E4, vel: 105, hold: 220 }
+  - { at: 8300, note: G4, vel: 105, hold: 220 }
+  - { at: 8560, note: C5, vel: 105, hold: 220 }
+  - { at: 8920, screenshot: demon3 }
+  - { at: 9220, press: EDIT, hold: 500 }
+  - { at: 9370, note: A#3, vel: 100, hold: 150 }
+  - { at: 9920, note: C4, vel: 105, hold: 220 }
+  - { at: 10180, note: E4, vel: 105, hold: 220 }
+  - { at: 10440, note: G4, vel: 105, hold: 220 }
+  - { at: 10700, note: C5, vel: 105, hold: 220 }
+  - { at: 11060, screenshot: demon4 }
+expect:
+  boots: true

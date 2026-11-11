@@ -1,0 +1,22 @@
+# The power-on random drone, then the pages by their shortcut buttons: oscillators (EDIT), wavetable (SEL, the SCL button, + EDIT),
+# function generators (ENV), gate generators (LFO), mod matrix (ARP), effects (FX), the index (HOME), G5 twice (RANDOM) and ENV again.
+# Based on docs/QUICKSTART.md "Page by page".
+name: arcturus-s6
+ms: 12500
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, press: EDIT }
+  - { at: 2900, press: SCL, hold: 500 }
+  - { at: 3100, press: EDIT }
+  - { at: 4300, press: ENV }
+  - { at: 5500, press: LFO }
+  - { at: 6700, press: ARP }
+  - { at: 7900, press: FX }
+  - { at: 9100, press: HOME }
+  - { at: 9500, note: G5, hold: 150 }
+  - { at: 9900, note: G5, hold: 150 }
+  - { at: 11000, press: ENV }
+  - { at: 12300, screenshot: end }
+expect:
+  boots: true

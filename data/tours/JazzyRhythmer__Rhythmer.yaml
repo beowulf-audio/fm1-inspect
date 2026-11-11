@@ -1,0 +1,23 @@
+# Opens HOME GEN (HOME + SELECT, docs/GEN-TARGET.md), generates a four-track pattern (OCT+) and plays it, changes
+# the genre and generates again, then shows the DRUM and FMINI-1 machine pages under EDIT while it plays.
+name: rhythmer-tour
+ms: 12500
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, press: HOME, hold: 900 }
+  - { at: 2000, turn: SELECT, clicks: 1 }
+  - { at: 2900, screenshot: gen }
+  - { at: 3000, press: OCTUP }
+  - { at: 3500, press: PLAY }
+  - { at: 5200, screenshot: playing }
+  - { at: 5400, turn: KNOB1, clicks: 4 }
+  - { at: 6200, press: OCTUP }
+  - { at: 7800, screenshot: genre2 }
+  - { at: 8000, press: HOME }
+  - { at: 9200, screenshot: home }
+  - { at: 9400, press: EDIT }
+  - { at: 10600, turn: ALGORITHM, clicks: 1 }
+  - { at: 11800, screenshot: edit }
+expect:
+  boots: true

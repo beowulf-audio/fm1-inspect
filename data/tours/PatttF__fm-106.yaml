@@ -1,0 +1,37 @@
+# FM-106: a chord on A11 Brass, the ENV and FX (chorus) pages, a change to A18 Piano I, then the SEQ piano roll
+# with a live take (REC, PLAY, count-in, five notes) that fills the roll (README "Step Sequencer & Piano Roll").
+name: fm-106-tour
+ms: 14000
+click_ms: 150
+steps:
+  - { at: 1400, screenshot: boot }
+  - { at: 1700, note: C4, vel: 100, hold: 700 }
+  - { at: 1700, note: E4, vel: 100, hold: 700 }
+  - { at: 1700, note: G4, vel: 100, hold: 700 }
+  - { at: 2300, screenshot: brass }
+  - { at: 2600, press: ENV }
+  - { at: 2800, note: F3, vel: 110, hold: 300 }
+  - { at: 2800, note: C4, vel: 110, hold: 300 }
+  - { at: 3300, press: FX }
+  - { at: 3500, note: A4, vel: 100, hold: 500 }
+  - { at: 3500, note: E4, vel: 100, hold: 500 }
+  - { at: 4000, screenshot: fx }
+  - { at: 4200, press: HOME }
+  - { at: 4400, turn: PRESETS, clicks: 7 }
+  - { at: 5600, note: C4, vel: 100, hold: 200 }
+  - { at: 5850, note: E4, vel: 100, hold: 200 }
+  - { at: 6100, note: G4, vel: 100, hold: 200 }
+  - { at: 6350, note: C5, vel: 100, hold: 400 }
+  - { at: 6800, screenshot: piano }
+  - { at: 7000, press: SEQ }
+  - { at: 7300, press: REC }
+  - { at: 7500, press: PLAY }
+  - { at: 9500, note: C4, hold: 200 }
+  - { at: 10000, note: D#4, hold: 200 }
+  - { at: 10500, note: G4, hold: 200 }
+  - { at: 11000, note: A#4, hold: 200 }
+  - { at: 11500, note: C5, hold: 200 }
+  - { at: 12000, press: REC }
+  - { at: 13600, screenshot: seq }
+expect:
+  boots: true

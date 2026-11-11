@@ -1,0 +1,32 @@
+# Plays chords through the first presets (BLADE BRASS, BR BLUES, BR STRINGS, CHARIOTS), swaps channel I's tone with
+# ALGORITHM, walks the VCO pages (EDIT), the VCF EG (ENV), RING MOD and DRIVE (FX), then back to HOME and the next preset.
+name: cs1-tour
+ms: 12500
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, note: C4, vel: 100, hold: 1100 }
+  - { at: 1700, note: E4, vel: 100, hold: 1100 }
+  - { at: 1700, note: G4, vel: 100, hold: 1100 }
+  - { at: 3000, turn: PRESETS, clicks: 4 }
+  - { at: 3700, note: A3, vel: 110, hold: 900 }
+  - { at: 3700, note: E4, vel: 110, hold: 900 }
+  - { at: 4800, turn: ALGORITHM, clicks: 5 }
+  - { at: 5700, note: F3, vel: 110, hold: 200 }
+  - { at: 6000, note: F4, vel: 110, hold: 200 }
+  - { at: 6300, note: G3, vel: 110, hold: 200 }
+  - { at: 6600, press: EDIT }
+  - { at: 6800, note: C4, vel: 100, hold: 600 }
+  - { at: 7600, press: EDIT }
+  - { at: 8300, press: ENV }
+  - { at: 8500, note: D4, vel: 100, hold: 600 }
+  - { at: 9300, press: FX }
+  - { at: 10000, press: FX }
+  - { at: 10200, turn: KNOB1, clicks: 5 }
+  - { at: 10200, note: G4, vel: 100, hold: 900 }
+  - { at: 11300, press: HOME }
+  - { at: 11500, turn: PRESETS, clicks: 1 }
+  - { at: 11600, note: C4, vel: 100, hold: 700 }
+  - { at: 12400, screenshot: end }
+expect:
+  boots: true

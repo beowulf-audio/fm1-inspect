@@ -1,0 +1,23 @@
+# Sardine: PLAY starts the generated club groove; HOME again shows VIEW (a scope per layer), PRESETS steps through the
+# LEAD, CHORD, BASS and DRUMS layers, ENV held plays a fill, GLO opens the mixer pages, ARP held a break and drop
+# (docs/CHEATSHEET.md).
+name: sardine
+ms: 12500
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, press: PLAY }
+  - { at: 2900, press: HOME }
+  - { at: 4000, press: HOME }
+  - { at: 4300, turn: PRESETS, clicks: 1 }
+  - { at: 5100, turn: PRESETS, clicks: 1 }
+  - { at: 5900, turn: PRESETS, clicks: 1 }
+  - { at: 6700, turn: PRESETS, clicks: 1 }
+  - { at: 7500, press: ENV, hold: 900 }
+  - { at: 8700, press: GLO }
+  - { at: 9500, press: GLO }
+  - { at: 10300, press: ARP, hold: 1100 }
+  - { at: 11700, press: HOME }
+  - { at: 12400, screenshot: end }
+expect:
+  boots: true

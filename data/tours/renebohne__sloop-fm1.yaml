@@ -1,0 +1,35 @@
+# On the drum track, the SEQ layer (SEQ held, white keys = steps, KNOB 1 the sound) writes kick, snare and hats; PLAY runs
+# the beat on TRACKS, FX held shows the PUNCH layer with a loop effect, then a bass line on track 1 over it
+# (README: "Play it live: hold a button, touch a key", "The controls").
+name: sloop
+ms: 12000
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1600, turn: ALGORITHM, clicks: 3 }
+  - { at: 2100, press: SEQ, hold: 1200 }
+  - { at: 2300, note: F3, hold: 100 }
+  - { at: 2500, note: C4, hold: 100 }
+  - { at: 2700, note: G4, hold: 100 }
+  - { at: 2900, note: D5, hold: 100 }
+  - { at: 3500, press: SEQ, hold: 1300 }
+  - { at: 3600, turn: KNOB1, clicks: 2 }
+  - { at: 4200, note: C4, hold: 100 }
+  - { at: 4400, note: D5, hold: 100 }
+  - { at: 5000, press: SEQ, hold: 1600 }
+  - { at: 5100, turn: KNOB1, clicks: 2 }
+  - { at: 5700, note: A3, hold: 100 }
+  - { at: 5850, note: E4, hold: 100 }
+  - { at: 6000, note: B4, hold: 100 }
+  - { at: 6150, note: F5, hold: 100 }
+  - { at: 6900, press: PLAY }
+  - { at: 8300, press: FX, hold: 1300 }
+  - { at: 8600, note: A3, hold: 800 }
+  - { at: 9800, turn: ALGORITHM, clicks: -3 }
+  - { at: 10400, note: F3, vel: 110, hold: 300 }
+  - { at: 10750, note: F3, vel: 90, hold: 200 }
+  - { at: 11050, note: G#3, vel: 110, hold: 300 }
+  - { at: 11400, note: C4, vel: 110, hold: 300 }
+  - { at: 11800, screenshot: end }
+expect:
+  boots: true

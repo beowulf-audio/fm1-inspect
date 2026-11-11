@@ -1,0 +1,19 @@
+# CORTEX: the self-playing piece Hypnagogia with the video synth, then the Voice 1-3 pages (ENV, ARP, LFO), Space (FX),
+# the Tape reel (SEQ) and the Cortex page, PRESETS to the piece REM and EDIT for the next chord (manual: Getting started).
+name: cortex
+ms: 12500
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 2500, press: HOME }
+  - { at: 3800, press: ENV }
+  - { at: 4800, press: ARP }
+  - { at: 5800, press: LFO }
+  - { at: 6800, press: FX }
+  - { at: 7800, press: SEQ }
+  - { at: 8800, press: HOME }
+  - { at: 9300, turn: PRESETS, clicks: 2 }
+  - { at: 10800, press: EDIT }
+  - { at: 12300, screenshot: end }
+expect:
+  boots: true

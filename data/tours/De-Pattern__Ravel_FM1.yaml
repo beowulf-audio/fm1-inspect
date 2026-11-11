@@ -1,0 +1,28 @@
+# Loads DEMO 1 from SAVE > PROJECT (manual section 14) and plays it, then walks HOME tracks, SEQ steps, EDIT on
+# T1 and the other engines (VA, PHYS, strike), the FX delay, the GLO mixer and the HOME influence grid.
+name: ravel-tour
+ms: 12500
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, press: HOME }
+  - { at: 2100, press: SAVE }
+  - { at: 2400, turn: KNOB1, clicks: 2 }
+  - { at: 2900, press: SAVE }
+  - { at: 3200, press: SAVE }
+  - { at: 3700, press: PLAY }
+  - { at: 4300, screenshot: demo }
+  - { at: 4500, press: HOME }
+  - { at: 5600, screenshot: home }
+  - { at: 5800, press: SEQ }
+  - { at: 6900, screenshot: seq }
+  - { at: 7100, press: EDIT }
+  - { at: 7900, turn: ALGORITHM, clicks: 4 }
+  - { at: 8700, screenshot: edit }
+  - { at: 8900, press: FX }
+  - { at: 9900, press: GLO }
+  - { at: 10900, press: HOME }
+  - { at: 11100, turn: SELECT, clicks: 1 }
+  - { at: 12300, screenshot: influence }
+expect:
+  boots: true

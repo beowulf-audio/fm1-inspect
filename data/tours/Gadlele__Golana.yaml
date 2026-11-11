@@ -1,0 +1,36 @@
+# Golana: HOME drawing a chord, then the EDIT (oscillators), SCL (filter), ENV, LFO and FX pages each with a note,
+# the arpeggiator on a held chord, and two program changes (README "The controls").
+name: golana
+ms: 11500
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, note: C4, vel: 100, hold: 900 }
+  - { at: 1700, note: E4, vel: 100, hold: 900 }
+  - { at: 1700, note: G4, vel: 100, hold: 900 }
+  - { at: 2300, screenshot: home }
+  - { at: 2800, press: EDIT }
+  - { at: 3000, note: F3, vel: 100, hold: 400 }
+  - { at: 3500, press: SCL }
+  - { at: 3700, note: G3, vel: 100, hold: 600 }
+  - { at: 3700, turn: KNOB1, clicks: -4 }
+  - { at: 4500, press: ENV }
+  - { at: 4700, note: C4, vel: 100, hold: 400 }
+  - { at: 5200, press: LFO }
+  - { at: 5400, note: E4, vel: 100, hold: 400 }
+  - { at: 5900, press: FX }
+  - { at: 6100, note: G4, vel: 100, hold: 400 }
+  - { at: 6600, press: HOME }
+  - { at: 6800, press: ARP }
+  - { at: 7000, note: C4, vel: 100, hold: 1800 }
+  - { at: 7000, note: E4, vel: 100, hold: 1800 }
+  - { at: 7000, note: G4, vel: 100, hold: 1800 }
+  - { at: 8000, screenshot: arp }
+  - { at: 8900, press: ARP }
+  - { at: 9200, turn: PRESETS, clicks: 1 }
+  - { at: 9400, note: F3, vel: 100, hold: 500 }
+  - { at: 10100, turn: PRESETS, clicks: 1 }
+  - { at: 10300, note: A3, vel: 100, hold: 600 }
+  - { at: 11200, screenshot: end }
+expect:
+  boots: true

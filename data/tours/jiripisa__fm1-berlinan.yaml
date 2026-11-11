@@ -1,0 +1,21 @@
+# A MIDI-only sequencer (the FM-1 itself is silent): PLAY starts the Demo trio, a degree key moves the harmony, then
+# the Pattern (ARP), Arranger (SEQ) and Delay (FX) pages, and PRESETS loads Full ensemble on HOME (manual sections 2 and 4).
+name: berlinan-tour
+ms: 11500
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, press: PLAY }
+  - { at: 3000, screenshot: perform }
+  - { at: 3200, note: F4, hold: 150 }
+  - { at: 4200, press: ARP }
+  - { at: 5400, screenshot: pattern }
+  - { at: 5600, press: SEQ }
+  - { at: 6800, screenshot: arranger }
+  - { at: 7000, press: FX }
+  - { at: 8000, screenshot: delay }
+  - { at: 8200, press: HOME }
+  - { at: 8600, turn: PRESETS, clicks: 1 }
+  - { at: 11200, screenshot: ensemble }
+expect:
+  boots: true

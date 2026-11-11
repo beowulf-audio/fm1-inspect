@@ -1,0 +1,22 @@
+# MYCELIUM: after the logo a key starts the factory Forest groove, ARP swaps the bass pattern, FX opens PSY FX
+# with SPACE and ALIEN turned up, ENV held for a psy fill, then HOME's track overview (MYCELIUM.md in the source archive).
+name: mycelium-tour
+ms: 15000
+click_ms: 150
+steps:
+  - { at: 4800, screenshot: logo }
+  - { at: 5000, note: C4, vel: 110, hold: 200 }
+  - { at: 6600, screenshot: beat }
+  - { at: 6800, press: ARP }
+  - { at: 8000, screenshot: gallop }
+  - { at: 8200, press: FX }
+  - { at: 8600, turn: KNOB2, clicks: 20 }
+  - { at: 9800, turn: KNOB4, clicks: 25 }
+  - { at: 11300, screenshot: psyfx }
+  - { at: 11400, turn: KNOB4, clicks: -25 }
+  - { at: 12000, press: ENV, hold: 1600 }
+  - { at: 13300, screenshot: fill }
+  - { at: 13800, press: HOME }
+  - { at: 14800, screenshot: tracks }
+expect:
+  boots: true

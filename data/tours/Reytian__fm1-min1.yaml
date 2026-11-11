@@ -1,0 +1,21 @@
+# MIN-1 plays itself from power-on: the Form, Upper, Lower, Bass, Lead and Chords pages, two white keys picking chords,
+# then PRESETS through a piece of each model, PHASE, PATTERNS and BELLS (README "Four models", "The pages").
+name: min1
+ms: 12500
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, press: ENV }
+  - { at: 2400, press: ARP }
+  - { at: 3100, press: LFO }
+  - { at: 3800, press: SEQ }
+  - { at: 4500, press: FX }
+  - { at: 5200, press: HOME }
+  - { at: 5400, note: A4, vel: 100, hold: 900 }
+  - { at: 6400, note: F4, vel: 100, hold: 900 }
+  - { at: 7500, turn: PRESETS, clicks: 8 }
+  - { at: 9300, turn: PRESETS, clicks: 4 }
+  - { at: 10900, turn: PRESETS, clicks: 4 }
+  - { at: 12300, screenshot: end }
+expect:
+  boots: true

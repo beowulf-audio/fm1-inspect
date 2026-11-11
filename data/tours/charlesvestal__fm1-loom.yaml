@@ -1,0 +1,37 @@
+# LOOM-8: the manual's quick start, steps 1-2: a kick, snare and hat beat programmed on T1 kit's Steps page, PLAY,
+# then a bass line on T2 (SEQ held to pick the note, white keys for the steps), its Engine page and HOME's Arrange.
+name: loom
+ms: 12720
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1600, note: F#3, hold: 90 }
+  - { at: 1740, note: F3, hold: 90 }
+  - { at: 1880, note: C4, hold: 90 }
+  - { at: 2020, note: G4, hold: 90 }
+  - { at: 2160, note: D5, hold: 90 }
+  - { at: 2400, note: G#3, hold: 90 }
+  - { at: 2540, note: C4, hold: 90 }
+  - { at: 2680, note: D5, hold: 90 }
+  - { at: 2920, note: A#3, hold: 90 }
+  - { at: 3060, note: A3, hold: 90 }
+  - { at: 3200, note: E4, hold: 90 }
+  - { at: 3340, note: B4, hold: 90 }
+  - { at: 3480, note: F5, hold: 90 }
+  - { at: 3820, press: PLAY, hold: 120 }
+  - { at: 5620, turn: ALGORITHM, clicks: 1 }
+  - { at: 6020, press: SEQ, hold: 700 }
+  - { at: 6270, note: A3, hold: 250 }
+  - { at: 6920, note: F3, hold: 90 }
+  - { at: 7060, note: B3, hold: 90 }
+  - { at: 7200, note: E4, hold: 90 }
+  - { at: 7340, note: A4, hold: 90 }
+  - { at: 7580, press: SEQ, hold: 600 }
+  - { at: 7830, note: D4, hold: 250 }
+  - { at: 8380, note: E5, hold: 90 }
+  - { at: 9120, press: EDIT, hold: 120 }
+  - { at: 9520, turn: KNOB1, clicks: 6 }
+  - { at: 10920, press: HOME, hold: 120 }
+  - { at: 12520, screenshot: end }
+expect:
+  boots: true

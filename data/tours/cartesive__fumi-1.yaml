@@ -1,0 +1,30 @@
+# FuMi-1: a koto phrase recorded into the looper (REC, play, REC) loops; PRESETS changes the instrument and a phrase
+# is played over it, ARP's trill on a held note, a bend on OCT+, and SEL tapped for the other tuning (README "Sixty seconds").
+name: fumi-tour
+ms: 12500
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, press: REC }
+  - { at: 1900, note: F3, vel: 100, hold: 250 }
+  - { at: 2200, note: A3, vel: 100, hold: 250 }
+  - { at: 2500, note: C4, vel: 100, hold: 250 }
+  - { at: 2800, note: D4, vel: 100, hold: 400 }
+  - { at: 3300, note: C4, vel: 100, hold: 250 }
+  - { at: 3600, note: A3, vel: 100, hold: 600 }
+  - { at: 4400, press: REC }
+  - { at: 4900, turn: PRESETS, clicks: 2 }
+  - { at: 5500, note: E4, vel: 110, hold: 300 }
+  - { at: 5900, note: G4, vel: 110, hold: 300 }
+  - { at: 6300, note: A4, vel: 110, hold: 600 }
+  - { at: 7100, press: ARP }
+  - { at: 7300, note: C5, vel: 110, hold: 1300 }
+  - { at: 8800, press: ARP }
+  - { at: 9000, note: B4, vel: 110, hold: 900 }
+  - { at: 9300, press: OCTUP, hold: 400 }
+  - { at: 10200, press: SCL }
+  - { at: 10500, note: A4, vel: 110, hold: 400 }
+  - { at: 11000, note: E4, vel: 110, hold: 600 }
+  - { at: 12300, screenshot: end }
+expect:
+  boots: true

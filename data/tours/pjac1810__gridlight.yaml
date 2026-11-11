@@ -1,0 +1,28 @@
+# Plays the demo song in block 1, shows every layer at once (SEQ), steps through the layers to BOUNCE (14) and drops
+# three balls on the white keys, then opens the LAYER, SONG and EFFECTS pages (README "Commandes").
+name: gridlight-tour
+ms: 12500
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, press: PLAY }
+  - { at: 3000, screenshot: playing }
+  - { at: 3100, press: SEQ }
+  - { at: 4300, screenshot: all }
+  - { at: 4400, press: SEQ }
+  - { at: 4700, turn: PRESETS, clicks: 7 }
+  - { at: 6100, screenshot: random }
+  - { at: 6200, turn: PRESETS, clicks: 6 }
+  - { at: 7300, note: C4, vel: 100, hold: 150 }
+  - { at: 7600, note: G4, vel: 100, hold: 150 }
+  - { at: 7900, note: D5, vel: 100, hold: 150 }
+  - { at: 8400, screenshot: bounce }
+  - { at: 8500, press: HOME }
+  - { at: 9000, turn: KNOB1, clicks: 3 }
+  - { at: 9900, press: LFO }
+  - { at: 10300, turn: KNOB3, clicks: 2 }
+  - { at: 11100, press: FX }
+  - { at: 11500, turn: KNOB1, clicks: 4 }
+  - { at: 12300, screenshot: end }
+expect:
+  boots: true

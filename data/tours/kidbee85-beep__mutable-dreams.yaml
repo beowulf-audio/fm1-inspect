@@ -1,0 +1,25 @@
+# Mutable Dreams: PLAY starts the Biome (Velvet Mist) with a few keys over it; PRESETS on HOME picks two other Biomes
+# as it plays, then the EDIT pages (Sound, Filter), the FX granular page and back HOME (Quickstart.txt).
+name: mutable-dreams
+ms: 12000
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, press: PLAY }
+  - { at: 2200, note: C4, vel: 100, hold: 500 }
+  - { at: 2800, note: G4, vel: 100, hold: 500 }
+  - { at: 3700, turn: PRESETS, clicks: 1 }
+  - { at: 4300, note: C4, vel: 110, hold: 200 }
+  - { at: 4700, note: D#4, vel: 110, hold: 200 }
+  - { at: 5600, turn: PRESETS, clicks: 1 }
+  - { at: 6200, note: C4, vel: 110, hold: 200 }
+  - { at: 6600, note: C4, vel: 110, hold: 200 }
+  - { at: 7400, press: EDIT, hold: 150 }
+  - { at: 7800, note: G3, vel: 110, hold: 200 }
+  - { at: 8300, press: EDIT, hold: 150 }
+  - { at: 9200, press: FX, hold: 150 }
+  - { at: 9500, note: C4, vel: 110, hold: 300 }
+  - { at: 10200, press: HOME, hold: 150 }
+  - { at: 11800, screenshot: end }
+expect:
+  boots: true

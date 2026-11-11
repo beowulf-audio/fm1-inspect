@@ -1,0 +1,32 @@
+# FMEL-1 (Mellotron tapes): chords on FLUTE, CHOIR and CELLO, the LAYER, LOFI and FX pages, SELECT bending the tape
+# speed, then the arpeggiator on VIBES (web manual "The sections").
+name: fmel
+ms: 12000
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, note: C4, vel: 100, hold: 900 }
+  - { at: 1700, note: E4, vel: 100, hold: 900 }
+  - { at: 1700, note: G4, vel: 100, hold: 900 }
+  - { at: 2700, turn: PRESETS, clicks: 1 }
+  - { at: 2900, note: A3, vel: 100, hold: 1300 }
+  - { at: 2900, note: C4, vel: 100, hold: 1300 }
+  - { at: 2900, note: E4, vel: 100, hold: 1300 }
+  - { at: 3300, turn: SELECT, clicks: -3 }
+  - { at: 4400, press: SCL }
+  - { at: 4900, press: LFO }
+  - { at: 5100, turn: PRESETS, clicks: 1 }
+  - { at: 5300, note: F3, vel: 100, hold: 1200 }
+  - { at: 5300, note: C4, vel: 100, hold: 1200 }
+  - { at: 5300, note: A4, vel: 100, hold: 1200 }
+  - { at: 6700, press: FX }
+  - { at: 6900, turn: KNOB4, clicks: 6 }
+  - { at: 7600, turn: PRESETS, clicks: 1 }
+  - { at: 7800, press: ARP }
+  - { at: 8100, note: D4, vel: 100, hold: 2600 }
+  - { at: 8100, note: F4, vel: 100, hold: 2600 }
+  - { at: 8100, note: A4, vel: 100, hold: 2600 }
+  - { at: 10900, press: HOME }
+  - { at: 11700, screenshot: end }
+expect:
+  boots: true

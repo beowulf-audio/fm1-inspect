@@ -1,0 +1,33 @@
+# A chord, then the Track view (EDIT) with ALGORITHM stepping GM programs (pianos to mallets), an eight-note line
+# step-recorded (SEQ), played back (PLAY) through the Song, Mix (FX) and Bar views. Based on the README's Using it.
+name: gm-tour
+ms: 13900
+click_ms: 150
+steps:
+  - { at: 1400, screenshot: boot }
+  - { at: 1700, note: C4, hold: 500 }
+  - { at: 1700, note: E4, hold: 500 }
+  - { at: 1700, note: G4, hold: 500 }
+  - { at: 2300, press: EDIT }
+  - { at: 2600, turn: ALGORITHM, clicks: 4 }
+  - { at: 3300, note: A4, hold: 300 }
+  - { at: 3700, turn: ALGORITHM, clicks: 7 }
+  - { at: 4900, note: E4, hold: 400 }
+  - { at: 5400, press: SEQ }
+  - { at: 5700, note: C4, hold: 150 }
+  - { at: 6000, note: E4, hold: 150 }
+  - { at: 6300, note: G4, hold: 150 }
+  - { at: 6600, note: C5, hold: 150 }
+  - { at: 6900, note: B4, hold: 150 }
+  - { at: 7200, note: G4, hold: 150 }
+  - { at: 7500, note: E4, hold: 150 }
+  - { at: 7800, note: D4, hold: 150 }
+  - { at: 8200, press: SEQ }
+  - { at: 8500, press: PLAY }
+  - { at: 9900, press: HOME }
+  - { at: 11100, press: FX }
+  - { at: 12300, press: HOME }
+  - { at: 12500, press: HOME }
+  - { at: 13700, screenshot: end }
+expect:
+  boots: true

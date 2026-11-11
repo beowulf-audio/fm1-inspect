@@ -1,0 +1,19 @@
+# Tuna: PLAY starts a generated piece over the falling-notes HOME screen, ALGORITHM jumps to other eras, the library
+# (FX), key and scale (SCL) and mix (GLO) pages show what is playing, and OCT+ moves to the next seed (README "Controls").
+name: tuna
+ms: 12500
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, press: PLAY }
+  - { at: 3600, turn: ALGORITHM, clicks: 2 }
+  - { at: 5400, press: FX }
+  - { at: 6400, press: SCL }
+  - { at: 7300, press: HOME }
+  - { at: 7500, turn: ALGORITHM, clicks: 3 }
+  - { at: 9300, press: OCTUP }
+  - { at: 10300, press: GLO }
+  - { at: 11300, press: HOME }
+  - { at: 12300, screenshot: end }
+expect:
+  boots: true

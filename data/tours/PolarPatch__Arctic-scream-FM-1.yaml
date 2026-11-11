@@ -1,0 +1,20 @@
+# Arctic Scream: after the glitch boot, two low keys latch the ICE WRAITH howl, WARP on HOME makes its wave wilder,
+# LFO twice opens the DRONE page (STOARBMA raised), then FX's GRAIN page (MANUAL "HOME", README "DRONE").
+name: arctic-scream-tour
+ms: 14000
+click_ms: 150
+steps:
+  - { at: 4100, screenshot: boot }
+  - { at: 4300, note: F3, vel: 110, hold: 200 }
+  - { at: 4500, note: C4, vel: 100, hold: 200 }
+  - { at: 5300, turn: KNOB3, clicks: 20 }
+  - { at: 8400, screenshot: warp }
+  - { at: 8500, press: LFO }
+  - { at: 8800, press: LFO }
+  - { at: 9200, turn: KNOB2, clicks: 15 }
+  - { at: 11400, screenshot: drone }
+  - { at: 11500, press: FX }
+  - { at: 12300, press: FX }
+  - { at: 13800, screenshot: fx }
+expect:
+  boots: true

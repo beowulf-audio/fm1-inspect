@@ -1,0 +1,23 @@
+# TONIC: plays the default four-track pattern, opens the SEQ TRIG rows and piano roll, switches tracks with ALGORITHM,
+# then the EDIT SYN1 algorithm page, ENV filter page and FX chorus/delay pages, back to HOME (user guide: The controls).
+name: tonic
+ms: 12000
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, press: PLAY }
+  - { at: 2800, press: SEQ }
+  - { at: 3600, press: SEQ }
+  - { at: 4000, press: SEQ }
+  - { at: 5000, screenshot: roll }
+  - { at: 5200, turn: ALGORITHM, clicks: 2 }
+  - { at: 6200, screenshot: roll3 }
+  - { at: 6400, press: EDIT }
+  - { at: 7400, press: ENV }
+  - { at: 8300, press: FX }
+  - { at: 8700, press: FX }
+  - { at: 9200, press: FX }
+  - { at: 10000, press: HOME }
+  - { at: 11500, screenshot: home }
+expect:
+  boots: true

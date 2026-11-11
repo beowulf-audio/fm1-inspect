@@ -1,0 +1,29 @@
+# A held chord while the moon orbits, each planet picked in turn (ALGORITHM 1-4 and back), two more
+# factory sounds (PRESETS), then the knob pages (SEL) with a chord. Based on the README's FM-1 control table.
+name: vector37
+ms: 12000
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, note: C4, vel: 100, hold: 4200 }
+  - { at: 1700, note: G4, vel: 100, hold: 4200 }
+  - { at: 1700, note: D#5, vel: 100, hold: 4200 }
+  - { at: 2500, turn: ALGORITHM, clicks: 1 }
+  - { at: 3200, turn: ALGORITHM, clicks: 1 }
+  - { at: 3900, turn: ALGORITHM, clicks: 1 }
+  - { at: 4600, turn: ALGORITHM, clicks: 1 }
+  - { at: 5300, turn: ALGORITHM, clicks: -4 }
+  - { at: 6100, turn: PRESETS, clicks: 1 }
+  - { at: 6300, note: A3, vel: 100, hold: 1300 }
+  - { at: 6300, note: E4, vel: 100, hold: 1300 }
+  - { at: 7800, turn: PRESETS, clicks: 1 }
+  - { at: 8000, note: F3, vel: 100, hold: 300 }
+  - { at: 8400, note: C4, vel: 100, hold: 300 }
+  - { at: 8800, note: F4, vel: 100, hold: 300 }
+  - { at: 9300, press: SCL }
+  - { at: 9600, press: SCL }
+  - { at: 9900, note: D4, vel: 100, hold: 1800 }
+  - { at: 9900, note: A4, vel: 100, hold: 1800 }
+  - { at: 11800, screenshot: path }
+expect:
+  boots: true

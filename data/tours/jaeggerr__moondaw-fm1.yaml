@@ -1,0 +1,19 @@
+# MOONDAW: CONTINUE opens the demo song's SONG screen and PLAY starts it; while it plays, SEL on a cell opens
+# its PATTERN notes, FX its effects column, HOME goes back to SONG and FX there the MIXER (skill references/control.md).
+name: moondaw-tour
+ms: 12000
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, press: SCL }
+  - { at: 2400, press: PLAY }
+  - { at: 4000, screenshot: song }
+  - { at: 4900, press: SCL }
+  - { at: 7000, screenshot: pattern }
+  - { at: 7300, press: FX }
+  - { at: 9100, screenshot: fx }
+  - { at: 9300, press: HOME }
+  - { at: 10300, press: FX }
+  - { at: 11800, screenshot: mixer }
+expect:
+  boots: true

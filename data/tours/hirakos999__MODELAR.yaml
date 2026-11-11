@@ -1,0 +1,33 @@
+# Raises MASTER and the four oscillator volumes (K1-K4), touches points on the KAOS PAD (white keys), plays a
+# circle gesture (black key), then shows the four bars (HOME), the FX and ENV pages (README "First sound").
+name: modelar-tour
+ms: 12000
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1600, pot: 900 }
+  - { at: 1700, turn: KNOB1, clicks: 10 }
+  - { at: 2000, turn: KNOB1, clicks: 10 }
+  - { at: 1750, turn: KNOB2, clicks: 10 }
+  - { at: 2050, turn: KNOB2, clicks: 10 }
+  - { at: 1800, turn: KNOB3, clicks: 16 }
+  - { at: 1850, turn: KNOB4, clicks: 14 }
+  - { at: 3400, note: G4, vel: 100, hold: 900 }
+  - { at: 4400, note: C4, vel: 100, hold: 1000 }
+  - { at: 4400, note: G5, vel: 100, hold: 1000 }
+  - { at: 4900, screenshot: pad }
+  - { at: 5600, note: F#3, vel: 100, hold: 1800 }
+  - { at: 6800, screenshot: gesture }
+  - { at: 7500, press: HOME }
+  - { at: 7600, note: E4, vel: 100, hold: 3800 }
+  - { at: 8400, screenshot: bars }
+  - { at: 8600, press: FX }
+  - { at: 9600, screenshot: fx }
+  - { at: 9800, press: FX }
+  - { at: 9900, press: ENV }
+  - { at: 10900, screenshot: env }
+  - { at: 11000, press: ENV }
+  - { at: 11100, press: HOME }
+  - { at: 11900, screenshot: end }
+expect:
+  boots: true

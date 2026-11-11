@@ -1,0 +1,22 @@
+# Plays the first song (three synths over the chord machine) from Home, plays chords on the keys on the Chord
+# page (ARP), then the synth's Roll (SEQ), the FX page and the Global colour/Space/media page (manual: The panel).
+name: demake-tour
+ms: 12000
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, press: PLAY }
+  - { at: 3200, screenshot: home }
+  - { at: 3400, press: ARP }
+  - { at: 3800, note: A4, vel: 100, hold: 700 }
+  - { at: 4700, note: F4, vel: 100, hold: 700 }
+  - { at: 5800, screenshot: chord }
+  - { at: 6000, press: SEQ }
+  - { at: 7400, screenshot: roll }
+  - { at: 7600, press: FX }
+  - { at: 9000, screenshot: fx }
+  - { at: 9200, press: GLO }
+  - { at: 10400, press: HOME }
+  - { at: 11700, screenshot: home2 }
+expect:
+  boots: true

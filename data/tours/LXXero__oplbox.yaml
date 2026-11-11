@@ -1,0 +1,20 @@
+# The built-in Stone Age song playing through the OPL2 emulation: the jukebox screen, the scrolling tracker screen
+# (SEQ), the nine-channel scope screen (FX), then the next song (SELECT) on the jukebox and tracker screens.
+# Based on the README "Controls" section.
+name: oplbox
+ms: 11500
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 2600, press: SEQ }
+  - { at: 5200, screenshot: tracker }
+  - { at: 5400, press: SEQ }
+  - { at: 5600, press: FX }
+  - { at: 7400, screenshot: scope }
+  - { at: 7600, press: FX }
+  - { at: 8400, turn: SELECT, clicks: 1 }
+  - { at: 9800, screenshot: next }
+  - { at: 10000, press: SEQ }
+  - { at: 11200, screenshot: nexttracker }
+expect:
+  boots: true

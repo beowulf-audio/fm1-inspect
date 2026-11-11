@@ -1,0 +1,40 @@
+# Skiff (atlatl build): track 4's drum grid on SEQ, kick, snare and hat steps set on the white keys, PLAY, then
+# track 1's acid line played over the beat on HOME, and the FX layer's repeat and tape stop held (README "Controls").
+name: skiff-atlatl
+ms: 12500
+click_ms: 120
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, turn: ALGORITHM, clicks: 3 }
+  - { at: 2300, press: SEQ, hold: 150 }
+  - { at: 2700, note: F3, vel: 100, hold: 90 }
+  - { at: 2850, note: C4, vel: 100, hold: 90 }
+  - { at: 3000, note: G4, vel: 100, hold: 90 }
+  - { at: 3150, note: D5, vel: 100, hold: 90 }
+  - { at: 3400, turn: KNOB1, clicks: 1 }
+  - { at: 3700, note: C4, vel: 100, hold: 90 }
+  - { at: 3850, note: D5, vel: 100, hold: 90 }
+  - { at: 4100, turn: KNOB1, clicks: 2 }
+  - { at: 4500, note: A3, vel: 100, hold: 90 }
+  - { at: 4650, note: E4, vel: 100, hold: 90 }
+  - { at: 4800, note: B4, vel: 100, hold: 90 }
+  - { at: 4950, note: F5, vel: 100, hold: 90 }
+  - { at: 5100, press: PLAY }
+  - { at: 6400, turn: ALGORITHM, clicks: -3 }
+  - { at: 6900, press: HOME, hold: 150 }
+  - { at: 7200, note: C4, vel: 110, hold: 120 }
+  - { at: 7430, note: C4, vel: 110, hold: 120 }
+  - { at: 7660, note: D#4, vel: 110, hold: 120 }
+  - { at: 7890, note: C5, vel: 110, hold: 120 }
+  - { at: 8120, note: G4, vel: 110, hold: 120 }
+  - { at: 8350, note: A#4, vel: 110, hold: 120 }
+  - { at: 8580, note: C4, vel: 110, hold: 120 }
+  - { at: 8810, note: G4, vel: 110, hold: 120 }
+  - { at: 9240, press: FX, hold: 2000 }
+  - { at: 9540, note: G3, vel: 100, hold: 700 }
+  - { at: 10340, note: E4, vel: 100, hold: 800 }
+  - { at: 11740, note: C4, vel: 110, hold: 200 }
+  - { at: 11990, note: D#4, vel: 110, hold: 200 }
+  - { at: 12300, screenshot: end }
+expect:
+  boots: true

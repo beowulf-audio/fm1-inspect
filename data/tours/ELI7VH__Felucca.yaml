@@ -1,0 +1,36 @@
+# The HOME page's scope while a line plays, the ENV, LFO and EDIT pages with a note on each, then on HOME the other
+# tracks (ALGORITHM selects the track, per the README; track 4 is drums) and a PRESETS turn on track 1 with a chord.
+name: felucca-waveloop
+ms: 12000
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, note: C4, vel: 110, hold: 180 }
+  - { at: 1950, note: C5, vel: 110, hold: 180 }
+  - { at: 2200, note: D#4, vel: 110, hold: 180 }
+  - { at: 2450, note: G4, vel: 110, hold: 180 }
+  - { at: 2700, note: A#4, vel: 110, hold: 250 }
+  - { at: 3300, press: ENV, hold: 250 }
+  - { at: 3700, note: G4, vel: 110, hold: 400 }
+  - { at: 4400, press: LFO, hold: 250 }
+  - { at: 4800, note: D#4, vel: 110, hold: 400 }
+  - { at: 5500, press: EDIT, hold: 250 }
+  - { at: 5900, note: C4, vel: 110, hold: 400 }
+  - { at: 6600, press: HOME, hold: 250 }
+  - { at: 7000, turn: ALGORITHM, clicks: 1 }
+  - { at: 7400, note: C4, vel: 110, hold: 300 }
+  - { at: 7700, note: G4, vel: 110, hold: 300 }
+  - { at: 8100, turn: ALGORITHM, clicks: 2 }
+  - { at: 8500, note: C4, vel: 120, hold: 150 }
+  - { at: 8750, note: D4, vel: 120, hold: 150 }
+  - { at: 9000, note: C4, vel: 120, hold: 150 }
+  - { at: 9250, note: F#4, vel: 120, hold: 150 }
+  - { at: 9600, turn: ALGORITHM, clicks: -3 }
+  - { at: 10000, turn: PRESETS, clicks: 3 }
+  - { at: 10500, note: C4, vel: 100, hold: 350 }
+  - { at: 10500, note: E4, vel: 100, hold: 350 }
+  - { at: 10500, note: G4, vel: 100, hold: 350 }
+  - { at: 11000, note: A4, vel: 100, hold: 400 }
+  - { at: 11800, screenshot: end }
+expect:
+  boots: true

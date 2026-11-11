@@ -1,0 +1,38 @@
+# The HYBRID engine's CLIPPER pad with KNOB 1 opening the cutoff over a held chord, then ALGORITHM through the
+# families (SYNC LEAD, PLUCK, BRASS) with a line or chord on each, ending on the GLO global page (quick start, "On the FM-1").
+name: clipper-tour
+ms: 12000
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, note: C4, vel: 100, hold: 2000 }
+  - { at: 1700, note: E4, vel: 100, hold: 2000 }
+  - { at: 1700, note: G4, vel: 100, hold: 2000 }
+  - { at: 1700, note: B4, vel: 100, hold: 2000 }
+  - { at: 1900, turn: KNOB1, clicks: 10 }
+  - { at: 3600, screenshot: pad }
+  - { at: 3900, turn: ALGORITHM, clicks: 1 }
+  - { at: 4200, note: C5, vel: 110, hold: 200 }
+  - { at: 4450, note: D#5, vel: 110, hold: 200 }
+  - { at: 4700, note: G5, vel: 110, hold: 400 }
+  - { at: 5200, note: F5, vel: 110, hold: 200 }
+  - { at: 5450, note: D#5, vel: 110, hold: 400 }
+  - { at: 5900, screenshot: lead }
+  - { at: 6100, turn: ALGORITHM, clicks: 1 }
+  - { at: 6400, note: C4, vel: 110, hold: 150 }
+  - { at: 6600, note: G4, vel: 110, hold: 150 }
+  - { at: 6800, note: D#5, vel: 110, hold: 150 }
+  - { at: 7000, note: G4, vel: 110, hold: 150 }
+  - { at: 7200, note: D5, vel: 110, hold: 150 }
+  - { at: 7400, note: G4, vel: 110, hold: 300 }
+  - { at: 7900, screenshot: pluck }
+  - { at: 8100, turn: ALGORITHM, clicks: 1 }
+  - { at: 8400, note: D4, vel: 100, hold: 1100 }
+  - { at: 8400, note: F4, vel: 100, hold: 1100 }
+  - { at: 8400, note: A4, vel: 100, hold: 1100 }
+  - { at: 8400, note: C5, vel: 100, hold: 1100 }
+  - { at: 9300, screenshot: keys }
+  - { at: 10000, press: GLO, hold: 250 }
+  - { at: 11200, screenshot: glo }
+expect:
+  boots: true

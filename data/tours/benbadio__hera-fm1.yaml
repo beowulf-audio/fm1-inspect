@@ -1,0 +1,29 @@
+# Turns chord mode on (SEL) and plays chords, holds SEL for the chord map and browses sets, starts a phrase (ARP,
+# style 6) and opens the phrase piano roll, steps through Sounds (LFO), then shows the sequencer; per GUIDE.md 1-5.
+name: hera-tour
+ms: 12500
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, press: SCL }
+  - { at: 2000, note: C4, vel: 100, hold: 500 }
+  - { at: 2600, note: A3, vel: 100, hold: 500 }
+  - { at: 3200, screenshot: chord }
+  - { at: 3300, press: SCL, hold: 2200 }
+  - { at: 3900, note: F4, vel: 100, hold: 400 }
+  - { at: 4400, turn: PRESETS, clicks: 3 }
+  - { at: 5000, note: G4, vel: 100, hold: 400 }
+  - { at: 5600, press: HOME }
+  - { at: 5900, press: ARP }
+  - { at: 6100, turn: SELECT, clicks: 5 }
+  - { at: 6900, note: D4, vel: 100, hold: 1400 }
+  - { at: 8300, screenshot: phrase }
+  - { at: 8400, press: ARP, hold: 1500 }
+  - { at: 8500, note: E4, vel: 100, hold: 1300 }
+  - { at: 9900, press: LFO }
+  - { at: 10200, turn: PRESETS, clicks: 3 }
+  - { at: 10800, note: C4, vel: 100, hold: 800 }
+  - { at: 11700, press: SEQ }
+  - { at: 12300, screenshot: seq }
+expect:
+  boots: true

@@ -1,0 +1,28 @@
+# RemoteFM1 standalone (README "Using it" > Standalone): a chord on the DX7, PRESETS to other ROM voices, a REC take
+# looped with PLAY, the SEQ loops grid, then SAVE's theme menu stepped through four themes while the loop plays.
+name: remotefm1
+ms: 12000
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, note: C4, vel: 100, hold: 600 }
+  - { at: 1700, note: E4, vel: 100, hold: 600 }
+  - { at: 1700, note: G4, vel: 100, hold: 600 }
+  - { at: 2500, turn: PRESETS, clicks: 3 }
+  - { at: 3200, press: REC, hold: 120 }
+  - { at: 3600, note: C4, vel: 110, hold: 200 }
+  - { at: 3850, note: E4, vel: 110, hold: 200 }
+  - { at: 4100, note: G4, vel: 110, hold: 200 }
+  - { at: 4350, note: C5, vel: 110, hold: 200 }
+  - { at: 4600, note: B4, vel: 110, hold: 200 }
+  - { at: 4850, note: G4, vel: 110, hold: 200 }
+  - { at: 5100, note: D5, vel: 110, hold: 400 }
+  - { at: 5600, press: PLAY, hold: 120 }
+  - { at: 6800, press: SEQ, hold: 120 }
+  - { at: 8000, press: SAVE, hold: 120 }
+  - { at: 8500, turn: KNOB1, clicks: 2 }
+  - { at: 9500, turn: KNOB1, clicks: 2 }
+  - { at: 10500, press: HOME, hold: 120 }
+  - { at: 11600, screenshot: end }
+expect:
+  boots: true

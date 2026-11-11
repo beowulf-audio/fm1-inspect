@@ -1,0 +1,36 @@
+# FMini-1: a chord on the FILTER screen, then the OSCILLATOR BANK, FILTER CONTOUR and EFFECTS pages from the page buttons,
+# each with a note, the ARPEGGIATOR pop-up (UP) over a held chord, and three presets with a note each.
+name: fmini
+ms: 12000
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, note: C4, vel: 100, hold: 700 }
+  - { at: 1700, note: E4, vel: 100, hold: 700 }
+  - { at: 1700, note: G4, vel: 100, hold: 700 }
+  - { at: 2600, press: LFO }
+  - { at: 2800, note: A4, vel: 100, hold: 400 }
+  - { at: 3300, press: EDIT }
+  - { at: 3500, note: C5, vel: 100, hold: 400 }
+  - { at: 4000, press: SCL }
+  - { at: 4200, note: G4, vel: 100, hold: 400 }
+  - { at: 4700, press: ENV }
+  - { at: 4900, note: E4, vel: 100, hold: 400 }
+  - { at: 5400, press: FX }
+  - { at: 5600, note: D4, vel: 100, hold: 400 }
+  - { at: 6100, press: HOME }
+  - { at: 6300, press: ARP }
+  - { at: 6600, note: C4, vel: 100, hold: 1800 }
+  - { at: 6600, note: E4, vel: 100, hold: 1800 }
+  - { at: 6600, note: G4, vel: 100, hold: 1800 }
+  - { at: 8500, press: ARP }
+  - { at: 8700, press: HOME }
+  - { at: 9000, turn: PRESETS, clicks: 1 }
+  - { at: 9200, note: F3, vel: 100, hold: 600 }
+  - { at: 9800, turn: PRESETS, clicks: 1 }
+  - { at: 10000, note: C4, vel: 100, hold: 600 }
+  - { at: 10800, turn: PRESETS, clicks: 1 }
+  - { at: 11000, note: G4, vel: 100, hold: 600 }
+  - { at: 11900, screenshot: end }
+expect:
+  boots: true

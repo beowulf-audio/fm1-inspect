@@ -1,0 +1,24 @@
+# From the README's control table: a chord rhythm (ALGORITHM, latched) with the drums raised (K4), chords changed
+# from the keys, the BASS (LFO), DECOR (EDIT, a new creature) and DRUMS (GLO) pages, then the zoomed-out view (SAVE).
+name: osr1-tour
+ms: 12500
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, turn: ALGORITHM, clicks: 3 }
+  - { at: 2300, turn: KNOB4, clicks: 12 }
+  - { at: 2300, note: C4, vel: 110, hold: 200 }
+  - { at: 4300, note: A4, vel: 110, hold: 200 }
+  - { at: 5600, press: LFO }
+  - { at: 5900, turn: KNOB1, clicks: 3 }
+  - { at: 6600, note: F4, vel: 110, hold: 200 }
+  - { at: 7300, press: EDIT }
+  - { at: 7600, turn: KNOB1, clicks: 2 }
+  - { at: 8300, press: GLO }
+  - { at: 8600, turn: KNOB1, clicks: 2 }
+  - { at: 9200, note: G4, vel: 110, hold: 200 }
+  - { at: 9900, press: HOME }
+  - { at: 10500, press: SAVE }
+  - { at: 12300, screenshot: end }
+expect:
+  boots: true

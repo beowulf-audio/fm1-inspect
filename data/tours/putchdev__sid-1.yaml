@@ -1,0 +1,35 @@
+# SID-1: plays the first factory C64-style patches (PRESETS: saw bass, sweep pad, flute) with chords and notes,
+# then shows the ENV, EDIT, FX (pulse and filter sweeps), LFO, ARP (wavetable) and GLO pages (README "The FM-1's screens").
+name: sid1-tour
+ms: 12500
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, note: C4, vel: 100, hold: 500 }
+  - { at: 1700, note: E4, vel: 100, hold: 500 }
+  - { at: 1700, note: G4, vel: 100, hold: 500 }
+  - { at: 2300, turn: PRESETS, clicks: 1 }
+  - { at: 2500, note: C4, vel: 110, hold: 400 }
+  - { at: 3000, turn: PRESETS, clicks: 1 }
+  - { at: 3200, note: E4, vel: 110, hold: 400 }
+  - { at: 3700, turn: PRESETS, clicks: 1 }
+  - { at: 3900, note: G4, vel: 110, hold: 400 }
+  - { at: 4400, turn: PRESETS, clicks: 1 }
+  - { at: 4600, note: C4, vel: 110, hold: 600 }
+  - { at: 5300, press: ENV }
+  - { at: 5500, note: D4, vel: 100, hold: 300 }
+  - { at: 6000, press: EDIT }
+  - { at: 6700, press: FX }
+  - { at: 6900, note: F4, vel: 100, hold: 300 }
+  - { at: 7400, press: FX }
+  - { at: 8100, press: LFO }
+  - { at: 8300, note: A4, vel: 100, hold: 300 }
+  - { at: 8800, press: ARP }
+  - { at: 9000, note: C5, vel: 100, hold: 400 }
+  - { at: 9700, press: GLO }
+  - { at: 10500, press: HOME }
+  - { at: 10700, note: C4, vel: 100, hold: 800 }
+  - { at: 10700, note: G4, vel: 100, hold: 800 }
+  - { at: 12300, screenshot: end }
+expect:
+  boots: true

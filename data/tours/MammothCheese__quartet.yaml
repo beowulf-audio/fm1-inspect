@@ -1,0 +1,22 @@
+# QUARTET: PLAY starts the demo groove; while it plays, ALGORITHM steps through lead, pads, bass and drums, then the
+# mixer (GLO), the reverb pedal (FX), a sound change (SELECT) and SUPER SEQ (HOME) (docs/USER_GUIDE.md).
+name: quartet
+ms: 12000
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, press: PLAY }
+  - { at: 2700, turn: ALGORITHM, clicks: 2 }
+  - { at: 3500, turn: ALGORITHM, clicks: 2 }
+  - { at: 4300, turn: ALGORITHM, clicks: 2 }
+  - { at: 5100, press: GLO }
+  - { at: 6200, press: GLO }
+  - { at: 6500, press: FX }
+  - { at: 7500, press: HOME }
+  - { at: 7800, turn: ALGORITHM, clicks: -6 }
+  - { at: 8800, turn: SELECT, clicks: 2 }
+  - { at: 9800, press: HOME }
+  - { at: 11000, press: HOME }
+  - { at: 11900, screenshot: end }
+expect:
+  boots: true

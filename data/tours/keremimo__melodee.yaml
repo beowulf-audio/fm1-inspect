@@ -1,0 +1,39 @@
+# Melodee: OCT+ past the boot notice to the four-track home, a chord on track 1 (Prophet), HOME's chord wheel,
+# the FLT ENV and LFO pages, then ALGORITHM to track 2 (FM6 bass) and track 4 (808 kit) with a line on each.
+# Based on the README's Controls section.
+name: melodee
+ms: 12500
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, press: OCTUP, hold: 200 }
+  - { at: 2300, note: C4, vel: 100, hold: 600 }
+  - { at: 2300, note: E4, vel: 100, hold: 600 }
+  - { at: 2300, note: G4, vel: 100, hold: 600 }
+  - { at: 3000, note: A4, vel: 110, hold: 200 }
+  - { at: 3250, note: C5, vel: 110, hold: 300 }
+  - { at: 3800, press: HOME, hold: 200 }
+  - { at: 4200, note: F4, vel: 100, hold: 700 }
+  - { at: 4200, note: A4, vel: 100, hold: 700 }
+  - { at: 4200, note: C5, vel: 100, hold: 700 }
+  - { at: 5200, press: ENV, hold: 200 }
+  - { at: 5600, note: G4, vel: 100, hold: 400 }
+  - { at: 6300, press: LFO, hold: 200 }
+  - { at: 6700, note: E4, vel: 100, hold: 400 }
+  - { at: 7400, press: HOME, hold: 200 }
+  - { at: 7800, turn: ALGORITHM, clicks: 1 }
+  - { at: 8100, note: F3, vel: 110, hold: 200 }
+  - { at: 8350, note: F3, vel: 110, hold: 200 }
+  - { at: 8600, note: C4, vel: 110, hold: 300 }
+  - { at: 9100, turn: ALGORITHM, clicks: 2 }
+  - { at: 9500, note: F3, vel: 120, hold: 150 }
+  - { at: 9750, note: A3, vel: 120, hold: 150 }
+  - { at: 10000, note: F3, vel: 120, hold: 150 }
+  - { at: 10250, note: A3, vel: 120, hold: 150 }
+  - { at: 10500, note: F3, vel: 120, hold: 150 }
+  - { at: 10750, note: G3, vel: 120, hold: 150 }
+  - { at: 11000, note: A3, vel: 120, hold: 150 }
+  - { at: 11250, note: B3, vel: 120, hold: 150 }
+  - { at: 12100, screenshot: end }
+expect:
+  boots: true

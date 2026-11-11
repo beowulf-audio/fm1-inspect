@@ -1,0 +1,49 @@
+# Programs a 909 beat (kick, clap, open hats) as in the manual's "Getting started" tour, starts it, writes a
+# TB-3PO acid line on 303A, fills the BREAK part's 16 steps, then shows HOME with the parts playing.
+name: x0x-tour
+ms: 11160
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, note: F#3, vel: 100, hold: 120 }
+  - { at: 1900, note: F3, hold: 100 }
+  - { at: 2050, note: C4, hold: 100 }
+  - { at: 2200, note: G4, hold: 100 }
+  - { at: 2350, note: D5, hold: 100 }
+  - { at: 2550, note: G#4, vel: 100, hold: 120 }
+  - { at: 2700, note: C4, hold: 100 }
+  - { at: 2850, note: D5, hold: 100 }
+  - { at: 3000, note: C#5, vel: 100, hold: 120 }
+  - { at: 3150, note: A3, hold: 100 }
+  - { at: 3300, note: E4, hold: 100 }
+  - { at: 3450, note: B4, hold: 100 }
+  - { at: 3600, note: F5, hold: 100 }
+  - { at: 3800, press: PLAY }
+  - { at: 4600, screenshot: beat }
+  - { at: 4800, turn: ALGORITHM, clicks: 2 }
+  - { at: 5300, press: ARP }
+  - { at: 5600, press: OCTUP }
+  - { at: 6200, screenshot: tb3po }
+  - { at: 6400, press: OCTUP }
+  - { at: 6900, turn: ALGORITHM, clicks: 2 }
+  - { at: 7400, note: F3, hold: 80 }
+  - { at: 7510, note: G3, hold: 80 }
+  - { at: 7620, note: A3, hold: 80 }
+  - { at: 7730, note: B3, hold: 80 }
+  - { at: 7840, note: C4, hold: 80 }
+  - { at: 7950, note: D4, hold: 80 }
+  - { at: 8060, note: E4, hold: 80 }
+  - { at: 8170, note: F4, hold: 80 }
+  - { at: 8280, note: G4, hold: 80 }
+  - { at: 8390, note: A4, hold: 80 }
+  - { at: 8500, note: B4, hold: 80 }
+  - { at: 8610, note: C5, hold: 80 }
+  - { at: 8720, note: D5, hold: 80 }
+  - { at: 8830, note: E5, hold: 80 }
+  - { at: 8940, note: F5, hold: 80 }
+  - { at: 9050, note: G5, hold: 80 }
+  - { at: 9360, screenshot: break }
+  - { at: 9560, press: HOME }
+  - { at: 10860, screenshot: home }
+expect:
+  boots: true

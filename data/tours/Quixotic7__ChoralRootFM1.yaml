@@ -1,0 +1,35 @@
+# ChoralRoot: chords from the chord block (MAJ, MIN + m7, MAJ + M7) over root keys with BASS on, then the same
+# progression recorded into the looper (REC, play, REC), a preset change while it loops, and PERF on (MANUAL 2).
+name: choralroot-tour
+ms: 11900
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1600, press: ENV }
+  - { at: 1900, note: A#3, hold: 590 }
+  - { at: 1930, note: C4, vel: 100, hold: 550 }
+  - { at: 2550, note: G#3, hold: 590 }
+  - { at: 2550, note: G3, hold: 590 }
+  - { at: 2580, note: A4, vel: 100, hold: 550 }
+  - { at: 3200, note: A#3, hold: 590 }
+  - { at: 3200, note: A3, hold: 590 }
+  - { at: 3230, note: F4, vel: 100, hold: 550 }
+  - { at: 3850, note: A#3, hold: 590 }
+  - { at: 3880, note: G4, vel: 100, hold: 550 }
+  - { at: 4600, press: REC }
+  - { at: 4900, note: A#3, hold: 490 }
+  - { at: 4930, note: C4, vel: 100, hold: 450 }
+  - { at: 5400, note: G#3, hold: 490 }
+  - { at: 5400, note: G3, hold: 490 }
+  - { at: 5430, note: A4, vel: 100, hold: 450 }
+  - { at: 5900, note: A#3, hold: 490 }
+  - { at: 5900, note: A3, hold: 490 }
+  - { at: 5930, note: F4, vel: 100, hold: 450 }
+  - { at: 6400, note: A#3, hold: 490 }
+  - { at: 6430, note: G4, vel: 100, hold: 450 }
+  - { at: 6900, press: REC }
+  - { at: 8200, screenshot: looping }
+  - { at: 8400, turn: PRESETS, clicks: 1 }
+  - { at: 9900, press: ARP }
+expect:
+  boots: true

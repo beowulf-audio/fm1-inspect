@@ -1,0 +1,31 @@
+# MNM-1: picks track 2 (FM+), plays it, tap-programs steps on SEQ's STEP page and starts the pattern, then the
+# SYNTH page (INDX turned up), FILTER (BASE opened) and EFFECTS pages, back to TRACKS (README "On the panel").
+name: mnm1-tour
+ms: 12500
+click_ms: 150
+steps:
+  - { at: 1400, screenshot: boot }
+  - { at: 1600, turn: ALGORITHM, clicks: 1 }
+  - { at: 1900, note: C4, vel: 100, hold: 200 }
+  - { at: 2150, note: E4, vel: 100, hold: 200 }
+  - { at: 2400, note: G4, vel: 100, hold: 400 }
+  - { at: 3000, press: SEQ }
+  - { at: 3300, note: F3, hold: 100 }
+  - { at: 3500, note: B3, hold: 100 }
+  - { at: 3700, note: E4, hold: 100 }
+  - { at: 3900, note: A4, hold: 100 }
+  - { at: 4100, note: D5, hold: 100 }
+  - { at: 4400, press: PLAY }
+  - { at: 5400, screenshot: steps }
+  - { at: 5600, press: EDIT }
+  - { at: 6000, turn: KNOB3, clicks: 15 }
+  - { at: 7200, screenshot: synth }
+  - { at: 7400, press: ENV }
+  - { at: 7800, turn: KNOB1, clicks: 12 }
+  - { at: 9000, screenshot: filter }
+  - { at: 9200, press: FX }
+  - { at: 10300, screenshot: fx }
+  - { at: 10500, press: HOME }
+  - { at: 12300, screenshot: home }
+expect:
+  boots: true

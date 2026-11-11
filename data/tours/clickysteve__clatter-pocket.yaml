@@ -1,0 +1,26 @@
+# Plays a few drum sounds, generates a pattern (ARP) and plays it, then shows the PATTERN, SOUND and MIXER pages,
+# a new kit (ENV) and the next kit (PRESETS) while it plays (README control table, docs/POCKET-CONTROLS.md).
+name: clatter-tour
+ms: 12000
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, note: C4, vel: 110, hold: 150 }
+  - { at: 1950, note: D4, vel: 110, hold: 150 }
+  - { at: 2200, note: E4, vel: 110, hold: 150 }
+  - { at: 2500, press: ARP }
+  - { at: 2900, press: PLAY }
+  - { at: 3800, screenshot: main-playing }
+  - { at: 4200, press: SEQ }
+  - { at: 5300, screenshot: pattern }
+  - { at: 5500, press: EDIT }
+  - { at: 6500, screenshot: sound }
+  - { at: 6700, press: ENV }
+  - { at: 7700, press: FX }
+  - { at: 8700, screenshot: mixer }
+  - { at: 8900, press: HOME }
+  - { at: 9300, turn: PRESETS, clicks: 1 }
+  - { at: 10300, press: ARP }
+  - { at: 11800, screenshot: main }
+expect:
+  boots: true

@@ -1,0 +1,28 @@
+# Held string chords on ENSEMBLE with the STRINGS and ENSEMBLE pages, PRESETS to PHASED STR and its PHASER page, HOME
+# twice for the MIXER, then ARP STRING plays a chord (README: "The pages", "The panel").
+name: shineon
+ms: 12800
+click_ms: 150
+steps:
+  - { at: 2600, screenshot: boot }
+  - { at: 2700, note: C4, vel: 100, hold: 2400 }
+  - { at: 2700, note: E4, vel: 100, hold: 2400 }
+  - { at: 2700, note: G4, vel: 100, hold: 2400 }
+  - { at: 2700, note: C5, vel: 100, hold: 2400 }
+  - { at: 3300, press: EDIT }
+  - { at: 4200, press: FX }
+  - { at: 5300, turn: PRESETS, clicks: 11 }
+  - { at: 7200, note: A3, vel: 100, hold: 2200 }
+  - { at: 7200, note: C4, vel: 100, hold: 2200 }
+  - { at: 7200, note: E4, vel: 100, hold: 2200 }
+  - { at: 7200, note: A4, vel: 100, hold: 2200 }
+  - { at: 7700, press: FX }
+  - { at: 8600, press: HOME }
+  - { at: 9100, press: HOME }
+  - { at: 9700, turn: PRESETS, clicks: 6 }
+  - { at: 10800, note: D4, vel: 100, hold: 1600 }
+  - { at: 10800, note: F4, vel: 100, hold: 1600 }
+  - { at: 10800, note: A4, vel: 100, hold: 1600 }
+  - { at: 12600, screenshot: end }
+expect:
+  boots: true

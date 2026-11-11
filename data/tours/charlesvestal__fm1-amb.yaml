@@ -1,0 +1,24 @@
+# The garden playing itself ("Getting started"): EDIT moves on a chord, PRESETS goes to Voices (sung pad, its Pad
+# page), then to Night Bus (pulse forward, its Pulse and Space pages), REC freezes the chord, HOME shows the garden.
+name: amb-tour
+ms: 12000
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, press: EDIT }
+  - { at: 2700, screenshot: next-chord }
+  - { at: 2900, turn: PRESETS, clicks: 2 }
+  - { at: 3800, press: ENV }
+  - { at: 4200, turn: KNOB3, clicks: 6 }
+  - { at: 5400, screenshot: voices }
+  - { at: 5600, turn: PRESETS, clicks: 2 }
+  - { at: 6400, press: SEQ }
+  - { at: 6800, turn: KNOB2, clicks: 6 }
+  - { at: 8000, screenshot: pulse }
+  - { at: 8200, press: FX }
+  - { at: 9000, press: REC }
+  - { at: 9800, screenshot: space }
+  - { at: 10000, press: HOME }
+  - { at: 11600, screenshot: frozen }
+expect:
+  boots: true

@@ -1,0 +1,31 @@
+# sloopDX: after the algorithm splash, plays the DX7 FM BASS and the next voice (PRESETS), opens the EDIT voice list,
+# then selects the drum track and free-records an FM drum loop with REC (README "Your first beat in 60 seconds").
+name: sloopdx-tour
+ms: 13000
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 3900, note: C4, vel: 110, hold: 250 }
+  - { at: 4200, note: C4, vel: 110, hold: 250 }
+  - { at: 4500, note: G4, vel: 110, hold: 250 }
+  - { at: 4800, note: A#3, vel: 110, hold: 300 }
+  - { at: 5200, turn: PRESETS, clicks: 1 }
+  - { at: 5500, note: C4, vel: 110, hold: 300 }
+  - { at: 5800, note: D#4, vel: 110, hold: 300 }
+  - { at: 6200, press: EDIT }
+  - { at: 6400, note: G3, vel: 110, hold: 300 }
+  - { at: 7000, press: HOME }
+  - { at: 7200, turn: ALGORITHM, clicks: 4 }
+  - { at: 7900, press: REC }
+  - { at: 8200, note: F3, vel: 110, hold: 80 }
+  - { at: 8533, note: A3, vel: 110, hold: 80 }
+  - { at: 8867, note: G3, vel: 110, hold: 80 }
+  - { at: 9200, note: A3, vel: 110, hold: 80 }
+  - { at: 9533, note: F3, vel: 110, hold: 80 }
+  - { at: 9867, note: A3, vel: 110, hold: 80 }
+  - { at: 10200, note: G3, vel: 110, hold: 80 }
+  - { at: 10533, note: A3, vel: 110, hold: 80 }
+  - { at: 10867, press: REC }
+  - { at: 12800, screenshot: end }
+expect:
+  boots: true

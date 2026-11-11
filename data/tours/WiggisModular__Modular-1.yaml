@@ -1,0 +1,28 @@
+# After the splash: plays the first patch, steps PRESETS to other patches and SELECT through modules, then opens the
+# arpeggiator's melody (ARP), rhythm (SEQ) and chaos (LFO) pages with keys held, and returns HOME (README "FM-1").
+name: modular-tour
+ms: 15500
+click_ms: 150
+steps:
+  - { at: 5000, screenshot: boot }
+  - { at: 5300, note: C4, vel: 100, hold: 500 }
+  - { at: 5300, note: G4, vel: 100, hold: 500 }
+  - { at: 5900, note: E4, vel: 110, hold: 200 }
+  - { at: 6150, note: A4, vel: 110, hold: 300 }
+  - { at: 6600, turn: PRESETS, clicks: 1 }
+  - { at: 6800, note: C4, vel: 100, hold: 400 }
+  - { at: 7300, turn: PRESETS, clicks: 1 }
+  - { at: 7500, note: E4, vel: 100, hold: 400 }
+  - { at: 8000, turn: SELECT, clicks: 1 }
+  - { at: 8500, turn: SELECT, clicks: 1 }
+  - { at: 8900, note: G4, vel: 100, hold: 400 }
+  - { at: 9600, press: ARP }
+  - { at: 9800, note: C4, vel: 100, hold: 4800 }
+  - { at: 9800, note: E4, vel: 100, hold: 4800 }
+  - { at: 9800, note: G4, vel: 100, hold: 4800 }
+  - { at: 11100, press: SEQ }
+  - { at: 12400, press: LFO }
+  - { at: 13700, press: HOME }
+  - { at: 15300, screenshot: end }
+expect:
+  boots: true

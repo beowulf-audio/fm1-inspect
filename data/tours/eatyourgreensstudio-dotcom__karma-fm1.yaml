@@ -1,0 +1,25 @@
+# KARMA: GEN writes the band (cheat sheet "GEN writes a part"): a key on SEQ's GEN page turns GEN on for track 1 (acid
+# bass), 2 (line) and 3 (lead) in D, PLAY, then DRUM GEN in MAP mode on the drum track, and HOME's tape reels and lanes.
+name: karma
+ms: 12500
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, press: SEQ, hold: 150 }
+  - { at: 2100, turn: SELECT, clicks: 5 }
+  - { at: 3100, note: D4, vel: 100, hold: 200 }
+  - { at: 3500, press: PLAY }
+  - { at: 4300, turn: ALGORITHM, clicks: 1 }
+  - { at: 4800, note: D4, vel: 100, hold: 200 }
+  - { at: 5600, turn: ALGORITHM, clicks: 1 }
+  - { at: 6100, note: D4, vel: 100, hold: 200 }
+  - { at: 6900, turn: ALGORITHM, clicks: 1 }
+  - { at: 7300, press: HOME, hold: 150 }
+  - { at: 7700, press: SEQ, hold: 150 }
+  - { at: 8100, press: SEQ, hold: 150 }
+  - { at: 8500, press: SEQ, hold: 150 }
+  - { at: 9000, turn: KNOB1, clicks: 1 }
+  - { at: 10300, press: HOME, hold: 150 }
+  - { at: 12300, screenshot: end }
+expect:
+  boots: true

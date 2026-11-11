@@ -1,0 +1,30 @@
+# Film-music FM synth: long pad chords on the TOWN engine while PRESETS steps through the SOUFFLES presets, EDIT opens
+# the FM and ESPACE pages, ENV shows the envelope, then more presets with a short phrase (MODULAR_TOWN.md "TOWN").
+name: modular-one-tour
+ms: 12500
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 2100, note: C4, vel: 110, hold: 2000 }
+  - { at: 2100, note: G4, vel: 110, hold: 2000 }
+  - { at: 2100, note: E5, vel: 110, hold: 2000 }
+  - { at: 3000, turn: PRESETS, clicks: 3 }
+  - { at: 4400, note: A3, vel: 110, hold: 1800 }
+  - { at: 4400, note: E4, vel: 110, hold: 1800 }
+  - { at: 4400, note: C5, vel: 110, hold: 1800 }
+  - { at: 4700, press: EDIT }
+  - { at: 5500, press: EDIT }
+  - { at: 5900, turn: KNOB3, clicks: 2 }
+  - { at: 6500, note: F3, vel: 110, hold: 1800 }
+  - { at: 6500, note: C4, vel: 110, hold: 1800 }
+  - { at: 6500, note: A4, vel: 110, hold: 1800 }
+  - { at: 7300, press: ENV }
+  - { at: 8500, press: HOME }
+  - { at: 8700, turn: PRESETS, clicks: 8 }
+  - { at: 10100, note: D4, vel: 110, hold: 250 }
+  - { at: 10400, note: F4, vel: 110, hold: 250 }
+  - { at: 10700, note: A4, vel: 110, hold: 250 }
+  - { at: 11000, note: C5, vel: 110, hold: 700 }
+  - { at: 12400, screenshot: end }
+expect:
+  boots: true

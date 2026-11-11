@@ -1,0 +1,19 @@
+# FIENDBOX: PLAY starts the LABYRINTH scene with HOME's coven of familiars; ALGORITHM picks T2 and EDIT shows its FM6
+# algorithm, then T4's drums get a new kit from PRESETS and EDIT draws its familiar (docs/GUIDE.md: first steps).
+name: fiendbox-tour
+ms: 12000
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, press: PLAY }
+  - { at: 4200, turn: ALGORITHM, clicks: 1 }
+  - { at: 5200, press: EDIT }
+  - { at: 6000, turn: KNOB1, clicks: 6 }
+  - { at: 7400, press: HOME }
+  - { at: 7800, turn: ALGORITHM, clicks: 2 }
+  - { at: 8600, turn: PRESETS, clicks: 2 }
+  - { at: 9800, press: EDIT }
+  - { at: 11000, press: HOME }
+  - { at: 11900, screenshot: end }
+expect:
+  boots: true

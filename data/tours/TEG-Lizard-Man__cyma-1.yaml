@@ -1,0 +1,28 @@
+# CYMA-1 (playable Chladni plate): mallet strikes on the sand table, SELECT morphing the plate shape, EDIT through the
+# SAND, FIELD and MESH views, then presets 02 HANDPAN and 08 STEEL RAIN held (README "The encoders", "Buttons").
+name: cyma
+ms: 12000
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, note: C4, vel: 110, hold: 300 }
+  - { at: 2300, note: G4, vel: 110, hold: 300 }
+  - { at: 2800, note: C5, vel: 120, hold: 300 }
+  - { at: 3200, turn: SELECT, clicks: 16 }
+  - { at: 5700, note: E4, vel: 120, hold: 300 }
+  - { at: 6000, press: EDIT }
+  - { at: 6200, note: G3, vel: 120, hold: 300 }
+  - { at: 6600, note: D4, vel: 110, hold: 300 }
+  - { at: 7100, press: EDIT }
+  - { at: 7300, note: C4, vel: 120, hold: 300 }
+  - { at: 7800, note: A4, vel: 110, hold: 300 }
+  - { at: 8300, press: EDIT }
+  - { at: 8500, turn: PRESETS, clicks: 1 }
+  - { at: 8900, note: D4, vel: 110, hold: 200 }
+  - { at: 9200, note: A4, vel: 110, hold: 200 }
+  - { at: 9500, note: F4, vel: 110, hold: 200 }
+  - { at: 9900, turn: PRESETS, clicks: 6 }
+  - { at: 10900, note: E4, vel: 120, hold: 1000 }
+  - { at: 11800, screenshot: rain }
+expect:
+  boots: true

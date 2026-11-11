@@ -1,0 +1,33 @@
+# Opens a new project (SEL), enters an eight-note line on CH1 in the tracker (SEQ, keys + K1 to the next step),
+# plays it (PLAY), then shows the instrument page (EDIT) and the mixer (GLO). Based on the README's Where to Start.
+name: beetle-tour
+ms: 15400
+click_ms: 150
+steps:
+  - { at: 1400, screenshot: boot }
+  - { at: 1700, press: SCL }
+  - { at: 4300, press: SCL }
+  - { at: 5000, press: SEQ }
+  - { at: 5400, note: C4, hold: 120 }
+  - { at: 5600, turn: KNOB1, clicks: 2 }
+  - { at: 5900, note: D#4, hold: 120 }
+  - { at: 6100, turn: KNOB1, clicks: 2 }
+  - { at: 6400, note: G4, hold: 120 }
+  - { at: 6600, turn: KNOB1, clicks: 2 }
+  - { at: 6900, note: C5, hold: 120 }
+  - { at: 7100, turn: KNOB1, clicks: 2 }
+  - { at: 7400, note: A#4, hold: 120 }
+  - { at: 7600, turn: KNOB1, clicks: 2 }
+  - { at: 7900, note: G4, hold: 120 }
+  - { at: 8100, turn: KNOB1, clicks: 2 }
+  - { at: 8400, note: F4, hold: 120 }
+  - { at: 8600, turn: KNOB1, clicks: 2 }
+  - { at: 8900, note: D#4, hold: 120 }
+  - { at: 9100, turn: KNOB1, clicks: 2 }
+  - { at: 9500, press: PLAY }
+  - { at: 11800, press: EDIT }
+  - { at: 13000, press: GLO }
+  - { at: 14200, press: SEQ }
+  - { at: 15200, screenshot: end }
+expect:
+  boots: true

@@ -1,0 +1,31 @@
+# Chords on Juno-60 presets (PRESETS: A11 Brass Set 1, then Flutes, a scroll to Organ / Calliope / Donald Pluck),
+# with the page buttons from the README's table: VCF (LFO), ADSR (GLO) and CHORUS (SAVE).
+name: amy-tour
+ms: 12500
+click_ms: 150
+steps:
+  - { at: 1400, screenshot: boot }
+  - { at: 1700, note: C4, hold: 900 }
+  - { at: 1700, note: E4, hold: 900 }
+  - { at: 1700, note: G4, hold: 900 }
+  - { at: 2800, turn: PRESETS, clicks: 3 }
+  - { at: 3500, note: A3, hold: 900 }
+  - { at: 3500, note: C4, hold: 900 }
+  - { at: 3500, note: E4, hold: 900 }
+  - { at: 4600, press: LFO }
+  - { at: 4800, note: F3, hold: 2200 }
+  - { at: 4800, note: A3, hold: 2200 }
+  - { at: 4800, note: C4, hold: 2200 }
+  - { at: 4900, turn: KNOB1, clicks: -12 }
+  - { at: 7300, press: GLO }
+  - { at: 7700, turn: PRESETS, clicks: 9 }
+  - { at: 9300, note: G3, hold: 1200 }
+  - { at: 9300, note: D4, hold: 1200 }
+  - { at: 9300, note: G4, hold: 1200 }
+  - { at: 10700, press: SAVE }
+  - { at: 10900, note: C5, hold: 200 }
+  - { at: 11200, note: E5, hold: 200 }
+  - { at: 11500, note: G5, hold: 500 }
+  - { at: 12300, screenshot: end }
+expect:
+  boots: true

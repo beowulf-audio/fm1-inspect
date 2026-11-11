@@ -1,0 +1,25 @@
+# ARTIHIVE: after the boot check, PLAY starts the drone preset on the DRONE page, the first white keys trigger voices
+# 1-4, then the FM ROUTE (EDIT), HYPER LFO and LFO SPACE (LFO), MOD DEL (FX) and ENVELOPE pages, a MUTATE (SEQ), and
+# two PRESETS turns on the DRONE page (manual ch. 3).
+name: artihive
+ms: 13500
+click_ms: 150
+steps:
+  - { at: 3600, screenshot: boot }
+  - { at: 3800, press: PLAY }
+  - { at: 4300, note: F3, vel: 110, hold: 400 }
+  - { at: 4600, note: G3, vel: 110, hold: 400 }
+  - { at: 4900, note: A3, vel: 110, hold: 400 }
+  - { at: 5200, note: B3, vel: 110, hold: 400 }
+  - { at: 5800, press: EDIT }
+  - { at: 6600, press: LFO }
+  - { at: 7400, press: LFO }
+  - { at: 8200, press: FX }
+  - { at: 9000, press: ENV }
+  - { at: 9600, press: SEQ }
+  - { at: 10400, press: HOME }
+  - { at: 10800, turn: PRESETS, clicks: 1 }
+  - { at: 12000, turn: PRESETS, clicks: 1 }
+  - { at: 13400, screenshot: end }
+expect:
+  boots: true

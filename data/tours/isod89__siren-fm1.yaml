@@ -1,0 +1,21 @@
+# SIREN: starts the self-writing rave (PLAY), picks layers with SELECT, switches style to ACID on the SEL page,
+# holds a ROLL on the FX page, opens the LFO mixer, then FILL and NEW MELODY on the black keys (README "The controls").
+name: siren-tour
+ms: 12500
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1600, press: PLAY }
+  - { at: 3200, turn: SELECT, clicks: 2 }
+  - { at: 4000, press: SCL }
+  - { at: 4400, note: B3, vel: 100, hold: 150 }
+  - { at: 4800, note: B3, vel: 100, hold: 150 }
+  - { at: 5600, press: FX }
+  - { at: 6000, note: G3, vel: 100, hold: 900 }
+  - { at: 7300, press: LFO }
+  - { at: 8500, press: HOME }
+  - { at: 8800, note: D#4, vel: 100, hold: 150 }
+  - { at: 9900, note: F#4, vel: 100, hold: 150 }
+  - { at: 12300, screenshot: end }
+expect:
+  boots: true

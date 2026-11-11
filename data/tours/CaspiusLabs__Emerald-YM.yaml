@@ -1,0 +1,21 @@
+# Starts the generative YM2612 + PSG backing with PLAY and plays live PSG keys over it, then raises K1 tempo,
+# K2 density and K4 transpose while it keeps playing (README "Quick controls").
+name: emerald-tour
+ms: 11000
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, press: PLAY }
+  - { at: 3400, note: C5, vel: 110, hold: 250 }
+  - { at: 3700, note: E5, vel: 110, hold: 250 }
+  - { at: 4000, note: G5, vel: 110, hold: 500 }
+  - { at: 4800, screenshot: playing }
+  - { at: 5000, turn: KNOB1, clicks: 8 }
+  - { at: 6600, turn: KNOB2, clicks: -5 }
+  - { at: 7600, turn: KNOB4, clicks: 5 }
+  - { at: 8600, note: D5, vel: 110, hold: 250 }
+  - { at: 8900, note: F5, vel: 110, hold: 250 }
+  - { at: 9200, note: A4, vel: 110, hold: 500 }
+  - { at: 10800, screenshot: knobs }
+expect:
+  boots: true

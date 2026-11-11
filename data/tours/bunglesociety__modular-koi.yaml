@@ -1,0 +1,26 @@
+# A phrase on the tongue drum, ARP starts the rain (the drum plays by itself), SEL feeds the koi, ALGORITHM changes the
+# material (LOW DRUM, then GLASS), SELECT turns the pond from day to dusk, PRESETS the scale (README: "The keys").
+name: modular-koi
+ms: 12200
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1600, note: C4, vel: 100, hold: 300 }
+  - { at: 1900, note: E4, vel: 90, hold: 300 }
+  - { at: 2200, note: G4, vel: 100, hold: 300 }
+  - { at: 2500, note: C5, vel: 110, hold: 400 }
+  - { at: 2950, note: A4, vel: 90, hold: 400 }
+  - { at: 3500, press: ARP }
+  - { at: 4600, press: SCL }
+  - { at: 5500, turn: ALGORITHM, clicks: 1 }
+  - { at: 6300, turn: SELECT, clicks: -24 }
+  - { at: 7000, note: G4, vel: 100, hold: 300 }
+  - { at: 7300, note: C5, vel: 100, hold: 400 }
+  - { at: 8600, note: E4, vel: 100, hold: 400 }
+  - { at: 10100, turn: ALGORITHM, clicks: 1 }
+  - { at: 10500, note: G4, vel: 100, hold: 300 }
+  - { at: 10800, note: E5, vel: 100, hold: 400 }
+  - { at: 11300, turn: PRESETS, clicks: 1 }
+  - { at: 12100, screenshot: end }
+expect:
+  boots: true

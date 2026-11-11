@@ -1,0 +1,15 @@
+# Lets the generative Impressionist drift play over the water-lily pond, opens the colour (K2: the water brightens),
+# changes the scale (SELECT) and loads the Clair de Lune mood (PRESETS) (ROADMAP "Panel mapping").
+name: impressionism-tour
+ms: 12000
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, turn: KNOB2, clicks: 12 }
+  - { at: 4000, screenshot: colour }
+  - { at: 5800, turn: SELECT, clicks: 1 }
+  - { at: 7600, screenshot: scale }
+  - { at: 7800, turn: PRESETS, clicks: 1 }
+  - { at: 11700, screenshot: mood }
+expect:
+  boots: true

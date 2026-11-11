@@ -1,0 +1,26 @@
+# After the ~6.5 s start screen: chords on the Prophet-600 engine through three factory programs (PRESETS: ORGAN I,
+# CL. BRASS, STRINGS), then the envelope page (ENV), the effects page (FX), SEQ and back HOME.
+name: guru-600
+ms: 15500
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 7000, note: C4, vel: 100, hold: 900 }
+  - { at: 7000, note: E4, vel: 100, hold: 900 }
+  - { at: 7000, note: G4, vel: 100, hold: 900 }
+  - { at: 8200, turn: PRESETS, clicks: 1 }
+  - { at: 8500, note: A4, vel: 110, hold: 700 }
+  - { at: 8500, note: C5, vel: 110, hold: 700 }
+  - { at: 9500, turn: PRESETS, clicks: 1 }
+  - { at: 9800, note: C4, vel: 110, hold: 700 }
+  - { at: 9800, note: G4, vel: 110, hold: 700 }
+  - { at: 10800, press: ENV }
+  - { at: 11000, note: E4, vel: 100, hold: 600 }
+  - { at: 12000, press: FX }
+  - { at: 12200, note: G4, vel: 100, hold: 600 }
+  - { at: 13200, press: SEQ }
+  - { at: 13400, note: C4, vel: 100, hold: 600 }
+  - { at: 14500, press: HOME }
+  - { at: 15300, screenshot: end }
+expect:
+  boots: true

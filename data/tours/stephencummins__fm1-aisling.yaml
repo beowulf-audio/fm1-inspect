@@ -1,0 +1,20 @@
+# The first piece plays by itself; the tour then visits the layer pages (ARP Sequence, ENV Drone, LFO Lead,
+# SEQ Sequence 2), the Chords (EDIT), Space (FX) and Aisling (HOME) pages, and turns PRESETS to the next piece
+# (manual "Controls").
+name: aisling-tour
+ms: 12500
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 2200, press: ARP }
+  - { at: 3300, turn: KNOB1, clicks: 4 }
+  - { at: 4200, press: ENV }
+  - { at: 5200, press: LFO }
+  - { at: 6200, press: SEQ }
+  - { at: 7200, press: EDIT }
+  - { at: 8200, press: FX }
+  - { at: 9200, press: HOME }
+  - { at: 10000, turn: PRESETS, clicks: 1 }
+  - { at: 12300, screenshot: end }
+expect:
+  boots: true

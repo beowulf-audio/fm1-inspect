@@ -1,0 +1,26 @@
+# Kitten Rack: waits out the first-boot factory-bank write, plays MUUG TAPE, opens the rack (GLO) with its modules
+# and cables, scrolls the factory patches to the generative BERLIN SEQ, then HOME to the oscilloscope and the visuals
+# (README "Quick guide", MANUAL section 6).
+name: kitten-rack-tour
+ms: 15500
+click_ms: 150
+steps:
+  - { at: 5000, screenshot: boot }
+  - { at: 5200, turn: PRESETS, clicks: 1 }
+  - { at: 5500, note: F3, vel: 100, hold: 250 }
+  - { at: 5800, note: C4, vel: 100, hold: 250 }
+  - { at: 6100, note: F4, vel: 110, hold: 250 }
+  - { at: 6400, note: G#4, vel: 110, hold: 400 }
+  - { at: 6900, screenshot: muug }
+  - { at: 7000, press: GLO }
+  - { at: 7200, note: C4, vel: 100, hold: 600 }
+  - { at: 8200, screenshot: rack }
+  - { at: 8300, press: HOME }
+  - { at: 8600, turn: PRESETS, clicks: 12 }
+  - { at: 10800, screenshot: berlin }
+  - { at: 11200, press: HOME }
+  - { at: 12600, screenshot: scope }
+  - { at: 12800, press: HOME }
+  - { at: 15300, screenshot: visuals }
+expect:
+  boots: true

@@ -1,0 +1,20 @@
+# Wild (collection build): starts the generative five-track drum/acid pattern, moves to track 3, then walks the Track,
+# Sound, Drift, Track FX and Master pages, back to Pattern to raise Evolve, and switches SEQ to LIVE mode.
+name: wild
+ms: 12000
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, press: PLAY }
+  - { at: 3000, turn: SELECT, clicks: 2 }
+  - { at: 3800, press: EDIT }
+  - { at: 4800, press: ENV }
+  - { at: 5800, press: LFO }
+  - { at: 6800, press: FX }
+  - { at: 7800, press: GLO }
+  - { at: 8800, press: HOME }
+  - { at: 9300, turn: KNOB4, clicks: 4 }
+  - { at: 10200, press: SEQ }
+  - { at: 11500, screenshot: end }
+expect:
+  boots: true

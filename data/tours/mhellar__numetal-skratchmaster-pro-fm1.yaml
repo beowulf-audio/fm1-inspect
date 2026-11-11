@@ -1,0 +1,25 @@
+# The 3.0 DJ deck: keys drop the needle on SAM words and hold to scratch them (STOP, CROWD, SCREAM...), SELECT jogs
+# the record, ALGORITHM changes the scratch STYLE and PRESETS the GROOVE; PLAY at the start and end.
+name: numetal-tour
+ms: 12000
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, press: PLAY }
+  - { at: 2000, note: C4, vel: 110, hold: 150 }
+  - { at: 2500, note: E4, vel: 110, hold: 1200 }
+  - { at: 3200, screenshot: scratch }
+  - { at: 3900, turn: SELECT, clicks: 6 }
+  - { at: 4900, turn: SELECT, clicks: -6 }
+  - { at: 6000, turn: ALGORITHM, clicks: 3 }
+  - { at: 6600, note: G4, vel: 110, hold: 1300 }
+  - { at: 7300, screenshot: technique }
+  - { at: 8100, turn: PRESETS, clicks: 1 }
+  - { at: 8500, note: D4, vel: 110, hold: 1200 }
+  - { at: 9200, screenshot: record }
+  - { at: 9900, turn: KNOB4, clicks: 2 }
+  - { at: 10000, note: A4, vel: 110, hold: 1000 }
+  - { at: 11200, press: PLAY }
+  - { at: 11900, screenshot: end }
+expect:
+  boots: true

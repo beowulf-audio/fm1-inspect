@@ -1,0 +1,16 @@
+# CRT-4: the NES demo song plays over its scene, then GLO held + ALGORITHM brings up the consoles' shelf;
+# letting go powers the SNES on with its own screen and demo song, played (docs/MANUAL.md "Getting started").
+name: crt4-tour
+ms: 12500
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, press: PLAY }
+  - { at: 3800, screenshot: nes }
+  - { at: 4000, press: GLO, hold: 2400 }
+  - { at: 4400, turn: ALGORITHM, clicks: 4 }
+  - { at: 6000, screenshot: shelf }
+  - { at: 9000, press: PLAY }
+  - { at: 12300, screenshot: end }
+expect:
+  boots: true

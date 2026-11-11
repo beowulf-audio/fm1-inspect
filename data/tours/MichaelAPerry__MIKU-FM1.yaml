@@ -1,0 +1,20 @@
+# PLAY starts the song (she sings); HOME then steps through the pages STAGE, DANCE, SONG, PATTERN, MIXER, GEN,
+# LYRICS and LOOK while it plays (README "Quick start").
+name: miku-tour
+ms: 11500
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, press: PLAY }
+  - { at: 3200, screenshot: stage }
+  - { at: 3400, press: HOME }
+  - { at: 4400, press: HOME }
+  - { at: 5400, press: HOME }
+  - { at: 6400, press: HOME }
+  - { at: 7400, press: HOME }
+  - { at: 8400, press: HOME }
+  - { at: 9400, press: HOME }
+  - { at: 10400, press: HOME }
+  - { at: 11300, screenshot: end }
+expect:
+  boots: true

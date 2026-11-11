@@ -1,0 +1,33 @@
+# A chord on the algorithm diagram while ALGORITHM changes it, two more factory voices, HOME's spectrum and scope
+# screens, then the arpeggiator (ARP tapped twice) running a held chord. Based on docs/QUICK-REFERENCE.md.
+name: fm_lab
+ms: 12000
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, note: C4, vel: 100, hold: 1500 }
+  - { at: 1700, note: E4, vel: 100, hold: 1500 }
+  - { at: 1700, note: G4, vel: 100, hold: 1500 }
+  - { at: 2000, turn: ALGORITHM, clicks: 4 }
+  - { at: 3300, turn: PRESETS, clicks: 1 }
+  - { at: 3500, note: A3, vel: 110, hold: 200 }
+  - { at: 3750, note: C4, vel: 110, hold: 200 }
+  - { at: 4000, note: E4, vel: 110, hold: 400 }
+  - { at: 4500, turn: PRESETS, clicks: 2 }
+  - { at: 4900, note: F3, vel: 100, hold: 1300 }
+  - { at: 4900, note: C4, vel: 100, hold: 1300 }
+  - { at: 4900, note: A4, vel: 100, hold: 1300 }
+  - { at: 5200, press: HOME }
+  - { at: 6300, press: HOME }
+  - { at: 6400, note: D4, vel: 110, hold: 200 }
+  - { at: 6650, note: F4, vel: 110, hold: 200 }
+  - { at: 6900, note: A4, vel: 110, hold: 400 }
+  - { at: 7500, press: HOME }
+  - { at: 7700, press: ARP }
+  - { at: 8000, press: ARP }
+  - { at: 8300, note: C4, vel: 100, hold: 3400 }
+  - { at: 8300, note: E4, vel: 100, hold: 3400 }
+  - { at: 8300, note: G4, vel: 100, hold: 3400 }
+  - { at: 11500, screenshot: arp }
+expect:
+  boots: true

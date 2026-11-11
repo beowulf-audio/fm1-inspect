@@ -1,0 +1,34 @@
+# DX747: a chord on the Parts screen, then the Part, layer Sound (two patch changes, a note each), Range, Mix with its
+# meters, the MIDI-in monitor, Effects, Master filter and Scenes screens (DX747.md "The screens").
+name: dx747
+ms: 12000
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, note: C4, vel: 100, hold: 800 }
+  - { at: 1700, note: E4, vel: 100, hold: 800 }
+  - { at: 1700, note: G4, vel: 100, hold: 800 }
+  - { at: 2700, press: SEQ }
+  - { at: 2900, note: A4, vel: 100, hold: 400 }
+  - { at: 3500, press: EDIT }
+  - { at: 3700, turn: PRESETS, clicks: 1 }
+  - { at: 3900, note: C5, vel: 100, hold: 500 }
+  - { at: 4500, turn: PRESETS, clicks: 1 }
+  - { at: 4700, note: E4, vel: 100, hold: 500 }
+  - { at: 5300, press: EDIT }
+  - { at: 5900, press: SCL }
+  - { at: 6100, note: C4, vel: 110, hold: 700 }
+  - { at: 6100, note: G4, vel: 110, hold: 700 }
+  - { at: 7000, press: REC }
+  - { at: 7200, note: D4, vel: 100, hold: 300 }
+  - { at: 7550, note: F4, vel: 100, hold: 300 }
+  - { at: 8100, press: FX }
+  - { at: 8300, note: A4, vel: 100, hold: 400 }
+  - { at: 8900, press: FX }
+  - { at: 9100, note: E4, vel: 100, hold: 400 }
+  - { at: 9700, press: PLAY }
+  - { at: 10500, press: HOME }
+  - { at: 10700, note: G4, vel: 100, hold: 600 }
+  - { at: 11800, screenshot: end }
+expect:
+  boots: true

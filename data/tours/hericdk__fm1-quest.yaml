@@ -1,0 +1,35 @@
+# FM1 Quest: PLAY leaves the title for the village; steps set on the Spell Book (SEQ) page for the selected hero track
+# (SLOOP's "steps under your fingers"), the 3D flight view, notes played as attacks on the boss, then HOME's screens.
+name: quest
+ms: 12500
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, press: PLAY }
+  - { at: 2500, turn: ALGORITHM, clicks: 3 }
+  - { at: 3100, note: F3, vel: 100, hold: 150 }
+  - { at: 3400, press: SEQ }
+  - { at: 3800, note: F3, hold: 120 }
+  - { at: 4000, note: C4, hold: 120 }
+  - { at: 4200, note: G4, hold: 120 }
+  - { at: 4400, note: D5, hold: 120 }
+  - { at: 4700, press: HOME }
+  - { at: 5000, note: C4, vel: 100, hold: 150 }
+  - { at: 5300, press: SEQ }
+  - { at: 5600, note: A3, hold: 120 }
+  - { at: 5800, note: E4, hold: 120 }
+  - { at: 6000, note: B4, hold: 120 }
+  - { at: 6200, note: F5, hold: 120 }
+  - { at: 6500, press: HOME }
+  - { at: 6800, turn: ALGORITHM, clicks: -3 }
+  - { at: 7300, note: C4, vel: 110, hold: 250 }
+  - { at: 7700, note: D#4, vel: 110, hold: 250 }
+  - { at: 8100, note: G4, vel: 110, hold: 250 }
+  - { at: 8500, note: A#4, vel: 110, hold: 400 }
+  - { at: 9200, note: C5, vel: 120, hold: 250 }
+  - { at: 9600, note: G4, vel: 120, hold: 400 }
+  - { at: 10400, press: HOME }
+  - { at: 11300, press: HOME }
+  - { at: 12400, screenshot: end }
+expect:
+  boots: true

@@ -1,0 +1,26 @@
+# Penumbra (space drone): VOX on the white keys over the drone, a BLOOM (black key 7), a phrase looped with REC, the
+# next scene with PRESETS, a VOX sound change, then the SHAPE and SCENE pages (README "Two minutes in", manual 11).
+name: penumbra
+ms: 12000
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, note: C4, vel: 100, hold: 500 }
+  - { at: 2400, note: G4, vel: 100, hold: 500 }
+  - { at: 3000, note: G#4, vel: 110, hold: 200 }
+  - { at: 3600, press: REC }
+  - { at: 3800, note: E4, vel: 100, hold: 300 }
+  - { at: 4200, note: G4, vel: 100, hold: 300 }
+  - { at: 4600, note: A4, vel: 100, hold: 300 }
+  - { at: 5000, note: D5, vel: 100, hold: 500 }
+  - { at: 5800, press: REC }
+  - { at: 6600, turn: PRESETS, clicks: 1 }
+  - { at: 7600, note: A#4, vel: 100, hold: 200 }
+  - { at: 8000, note: C5, vel: 100, hold: 400 }
+  - { at: 8600, press: ENV }
+  - { at: 9600, press: EDIT }
+  - { at: 10600, press: HOME }
+  - { at: 10800, note: E5, vel: 100, hold: 500 }
+  - { at: 11700, screenshot: end }
+expect:
+  boots: true

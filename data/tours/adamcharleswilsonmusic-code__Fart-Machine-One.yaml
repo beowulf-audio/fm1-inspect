@@ -1,0 +1,21 @@
+# Fart Machine One (sample player with a one-bar loop): a few samples, a loop recorded with REC and left playing,
+# then reverb and delay turned up on KNOB1/KNOB2 (README "Controls").
+name: fart
+ms: 11000
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, note: F3, vel: 110, hold: 150 }
+  - { at: 2300, note: G3, vel: 110, hold: 150 }
+  - { at: 2900, press: REC }
+  - { at: 3000, note: F3, vel: 120, hold: 120 }
+  - { at: 3500, note: A3, vel: 100, hold: 120 }
+  - { at: 4000, note: F3, vel: 120, hold: 120 }
+  - { at: 4250, note: D4, vel: 100, hold: 120 }
+  - { at: 4500, note: B3, vel: 110, hold: 120 }
+  - { at: 5200, press: REC }
+  - { at: 6000, turn: KNOB1, clicks: 10 }
+  - { at: 7800, turn: KNOB2, clicks: 10 }
+  - { at: 10500, screenshot: loop }
+expect:
+  boots: true

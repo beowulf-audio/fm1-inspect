@@ -1,0 +1,35 @@
+# OberVave: the ARP page, chords arpeggiated on 01 DARK ARP while the EDIT (OSC / FILTER), ENV, LFO and FX pages open
+# (README "The panel"), two PRESETS turns with a chord on each, then the sequencer's TRACKS view (SEQ).
+name: obervave
+ms: 12000
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, press: ARP }
+  - { at: 2100, note: C4, vel: 100, hold: 2300 }
+  - { at: 2100, note: D#4, vel: 100, hold: 2300 }
+  - { at: 2100, note: G4, vel: 100, hold: 2300 }
+  - { at: 2100, note: A#4, vel: 100, hold: 2300 }
+  - { at: 3000, press: EDIT }
+  - { at: 3800, press: EDIT }
+  - { at: 4500, note: G#3, vel: 100, hold: 2300 }
+  - { at: 4500, note: C4, vel: 100, hold: 2300 }
+  - { at: 4500, note: D#4, vel: 100, hold: 2300 }
+  - { at: 4500, note: G4, vel: 100, hold: 2300 }
+  - { at: 4900, press: ENV }
+  - { at: 5700, press: LFO }
+  - { at: 6500, press: FX }
+  - { at: 7000, press: HOME }
+  - { at: 7300, turn: PRESETS, clicks: 1 }
+  - { at: 7600, note: A#3, vel: 100, hold: 1200 }
+  - { at: 7600, note: D4, vel: 100, hold: 1200 }
+  - { at: 7600, note: F4, vel: 100, hold: 1200 }
+  - { at: 7600, note: A#4, vel: 100, hold: 1200 }
+  - { at: 8900, turn: PRESETS, clicks: 1 }
+  - { at: 9100, note: C4, vel: 100, hold: 1000 }
+  - { at: 9100, note: D#4, vel: 100, hold: 1000 }
+  - { at: 9100, note: G4, vel: 100, hold: 1000 }
+  - { at: 10300, press: SEQ }
+  - { at: 11900, screenshot: end }
+expect:
+  boots: true

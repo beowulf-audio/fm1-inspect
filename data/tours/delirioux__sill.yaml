@@ -1,0 +1,20 @@
+# Sill (generative eurodance): PLAY starts a song, ENERGY and LIFT turned up, a new style with PRESETS, a BREAK on
+# REC, the hook played on the keys, then the ARC page showing the song's form (README "The controls").
+name: sill
+ms: 12500
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, press: PLAY }
+  - { at: 3200, turn: KNOB4, clicks: 6 }
+  - { at: 4300, turn: KNOB1, clicks: 6 }
+  - { at: 5400, turn: PRESETS, clicks: 4 }
+  - { at: 7800, press: REC }
+  - { at: 8200, note: C5, vel: 110, hold: 200 }
+  - { at: 8500, note: D5, vel: 110, hold: 200 }
+  - { at: 8800, note: E5, vel: 110, hold: 400 }
+  - { at: 9400, press: ENV }
+  - { at: 11000, press: HOME }
+  - { at: 12200, screenshot: end }
+expect:
+  boots: true

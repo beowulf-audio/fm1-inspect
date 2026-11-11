@@ -1,0 +1,23 @@
+# Starts the generative piece (PLAY), browses worlds with K1, then turns SELECT through the other HOME views
+# (GROW, SOUND, MOTIF, EVOLVE, MIX) while it plays (README, the HOME page paragraph).
+name: bunker-tour
+ms: 12000
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, press: PLAY }
+  - { at: 3000, screenshot: world }
+  - { at: 3100, turn: KNOB1, clicks: 3 }
+  - { at: 3700, press: OCTUP }
+  - { at: 4500, turn: SELECT, clicks: 1 }
+  - { at: 5600, screenshot: grow }
+  - { at: 5800, turn: SELECT, clicks: 1 }
+  - { at: 6900, screenshot: sound }
+  - { at: 7100, turn: SELECT, clicks: 1 }
+  - { at: 8200, screenshot: motif }
+  - { at: 8400, turn: SELECT, clicks: 1 }
+  - { at: 9500, screenshot: evolve }
+  - { at: 9700, turn: SELECT, clicks: 1 }
+  - { at: 11800, screenshot: mix }
+expect:
+  boots: true

@@ -1,0 +1,21 @@
+# Generative firmware: a press skips the intro and the generated song plays while ALGORITHM steps through the
+# PLAY, SOUND, EVOLVE, MIX (with the channel strip) and DRUMS pages, then HOME returns to PLAY (MANUAL.md "Navigation and editing").
+name: aquora-tour
+ms: 12000
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, press: HOME }
+  - { at: 3600, turn: ALGORITHM, clicks: 1 }
+  - { at: 4500, turn: PRESETS, clicks: 1 }
+  - { at: 5400, turn: ALGORITHM, clicks: 1 }
+  - { at: 6800, turn: ALGORITHM, clicks: 1 }
+  - { at: 7800, press: FX }
+  - { at: 8500, press: FX }
+  - { at: 8700, turn: ALGORITHM, clicks: 1 }
+  - { at: 9500, turn: PRESETS, clicks: 1 }
+  - { at: 10400, press: HOME }
+  - { at: 10700, note: C5, vel: 100, hold: 400 }
+  - { at: 11900, screenshot: end }
+expect:
+  boots: true

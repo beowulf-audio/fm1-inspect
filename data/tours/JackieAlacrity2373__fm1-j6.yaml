@@ -1,0 +1,35 @@
+# J6 (JUNO-60 style polysynth): a chord, the DCO/VCF/ENV/chorus pages, three memories, then a 4-step pattern
+# recorded with REC (README "Controls").
+name: j6
+ms: 12000
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, note: C4, vel: 100, hold: 700 }
+  - { at: 1700, note: E4, vel: 100, hold: 700 }
+  - { at: 1700, note: G4, vel: 100, hold: 700 }
+  - { at: 2600, press: EDIT }
+  - { at: 2800, turn: KNOB1, clicks: 3 }
+  - { at: 3400, press: SCL }
+  - { at: 3600, turn: KNOB1, clicks: -6 }
+  - { at: 3700, note: A3, vel: 110, hold: 900 }
+  - { at: 4800, press: ENV }
+  - { at: 5300, press: FX }
+  - { at: 5800, press: HOME }
+  - { at: 6000, turn: PRESETS, clicks: 1 }
+  - { at: 6200, note: C4, vel: 100, hold: 400 }
+  - { at: 6200, note: G4, vel: 100, hold: 400 }
+  - { at: 6800, turn: PRESETS, clicks: 3 }
+  - { at: 7400, note: E4, vel: 100, hold: 400 }
+  - { at: 7400, note: B4, vel: 100, hold: 400 }
+  - { at: 8000, press: REC }
+  - { at: 8200, note: C4, hold: 150 }
+  - { at: 8400, note: E4, hold: 150 }
+  - { at: 8600, note: G4, hold: 150 }
+  - { at: 8800, note: C5, hold: 150 }
+  - { at: 9100, press: REC }
+  - { at: 9300, press: SEQ }
+  - { at: 11500, screenshot: seq }
+  - { at: 11600, press: SEQ }
+expect:
+  boots: true

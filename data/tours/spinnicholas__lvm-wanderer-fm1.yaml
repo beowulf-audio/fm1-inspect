@@ -1,0 +1,26 @@
+# Event-memory synth: PLAY starts the transport and REC captures a short phrase, which loops while KNOB 1 (Melt) evolves it and PRESETS changes the
+# sound, then a held ARP opens the arpeggiator and a chord is arpeggiated (docs QUICK_START_1.4).
+name: wanderer-tour
+ms: 12500
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, press: PLAY }
+  - { at: 1850, press: REC }
+  - { at: 2000, note: C4, vel: 100, hold: 250 }
+  - { at: 2300, note: E4, vel: 100, hold: 250 }
+  - { at: 2600, note: G4, vel: 100, hold: 250 }
+  - { at: 2900, note: B4, vel: 100, hold: 250 }
+  - { at: 3200, note: A4, vel: 100, hold: 400 }
+  - { at: 3700, press: REC }
+  - { at: 4800, turn: KNOB1, clicks: 6 }
+  - { at: 6000, turn: PRESETS, clicks: 2 }
+  - { at: 7500, press: ARP, hold: 900 }
+  - { at: 8700, turn: KNOB1, clicks: 1 }
+  - { at: 9000, turn: KNOB2, clicks: 2 }
+  - { at: 9500, note: C4, vel: 100, hold: 2300 }
+  - { at: 9500, note: E4, vel: 100, hold: 2300 }
+  - { at: 9500, note: G4, vel: 100, hold: 2300 }
+  - { at: 12400, screenshot: end }
+expect:
+  boots: true

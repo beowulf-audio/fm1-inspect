@@ -1,0 +1,22 @@
+# Ripple: the droplet list, then three built-in droplets started with PLAY and left with HOME held (README "On the
+# FM-1"): bells (FM bells on loops of different lengths), life (Game of Life, a note per birth), awake (a wandering melody).
+name: ripple
+ms: 12500
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, turn: SELECT, clicks: 3 }
+  - { at: 2400, press: PLAY }
+  - { at: 2900, note: C4, vel: 100, hold: 300 }
+  - { at: 3500, note: G4, vel: 100, hold: 300 }
+  - { at: 4800, press: HOME, hold: 1200 }
+  - { at: 6200, turn: SELECT, clicks: 4 }
+  - { at: 7000, press: PLAY }
+  - { at: 7300, note: E4, vel: 100, hold: 200 }
+  - { at: 7500, note: A4, vel: 100, hold: 200 }
+  - { at: 9000, press: HOME, hold: 1200 }
+  - { at: 10400, turn: SELECT, clicks: -6 }
+  - { at: 11200, press: PLAY }
+  - { at: 12400, screenshot: end }
+expect:
+  boots: true

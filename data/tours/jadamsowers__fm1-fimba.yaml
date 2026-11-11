@@ -1,0 +1,33 @@
+# A tine melody (white keys, lowest tine in the middle), black-key chord rolls, then ARP starts the mbira
+# pattern while SELECT changes the material and the Body, Space and Grain pages open (README, "The controls").
+name: fimba-tour
+ms: 12000
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, note: G4, hold: 200 }
+  - { at: 1950, note: A4, hold: 200 }
+  - { at: 2200, note: B4, hold: 200 }
+  - { at: 2450, note: C4, hold: 250 }
+  - { at: 2750, note: B3, hold: 250 }
+  - { at: 3050, note: D5, hold: 200 }
+  - { at: 3300, note: C5, hold: 200 }
+  - { at: 3550, note: B4, hold: 300 }
+  - { at: 3900, screenshot: tines }
+  - { at: 4000, note: F#3, hold: 500 }
+  - { at: 4600, note: F#4, hold: 500 }
+  - { at: 5200, note: C#4, hold: 500 }
+  - { at: 5800, note: D#4, hold: 500 }
+  - { at: 6100, screenshot: chords }
+  - { at: 6400, press: ARP }
+  - { at: 6500, note: F#3, hold: 1500 }
+  - { at: 7300, turn: SELECT, clicks: 5 }
+  - { at: 8300, screenshot: glass }
+  - { at: 8400, press: ENV }
+  - { at: 9300, press: FX }
+  - { at: 9500, turn: KNOB3, clicks: 8 }
+  - { at: 10700, press: LFO }
+  - { at: 10900, turn: KNOB1, clicks: 6 }
+  - { at: 11800, screenshot: grain }
+expect:
+  boots: true

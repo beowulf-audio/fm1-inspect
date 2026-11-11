@@ -1,0 +1,25 @@
+# Plays the first sound, turns PRESETS, picks another engine (EDIT held + a white key), then sets the arpeggiator's
+# mode to GEN and presses PLAY so the track plays by itself, shows the ARP pages and raises GEN's density and chords (README "The generative arpeggiator").
+name: argo-tour
+ms: 13500
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, note: C4, hold: 400 }
+  - { at: 2150, note: G4, hold: 400 }
+  - { at: 2700, turn: PRESETS, clicks: 1 }
+  - { at: 2900, note: C4, hold: 300 }
+  - { at: 3250, note: E4, hold: 300 }
+  - { at: 3800, press: EDIT, hold: 900 }
+  - { at: 4100, note: A3, hold: 150 }
+  - { at: 4900, note: E4, hold: 400 }
+  - { at: 5500, press: ARP }
+  - { at: 5900, turn: KNOB1, clicks: 15 }
+  - { at: 8400, press: PLAY }
+  - { at: 9400, press: ARP }
+  - { at: 10000, press: ARP }
+  - { at: 10600, turn: KNOB1, clicks: 6 }
+  - { at: 11600, turn: KNOB2, clicks: 4 }
+  - { at: 13300, screenshot: end }
+expect:
+  boots: true

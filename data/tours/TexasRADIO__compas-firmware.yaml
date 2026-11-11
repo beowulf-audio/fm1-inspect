@@ -1,0 +1,22 @@
+# Starts the band playing (PLAY) with the volume up, jumps to the intro part from a key, visits the BASS tab
+# (SELECT) and the song list (GLO). The project README has no manual; controls found by trying them.
+name: compas
+ms: 11500
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1600, pot: 0 }
+  - { at: 1700, pot: 500 }
+  - { at: 1800, pot: 1023 }
+  - { at: 2000, press: PLAY }
+  - { at: 3500, note: C4, hold: 300 }
+  - { at: 5000, screenshot: intro }
+  - { at: 5200, turn: SELECT, clicks: 1 }
+  - { at: 6800, screenshot: bass }
+  - { at: 7000, turn: SELECT, clicks: -1 }
+  - { at: 8000, press: GLO }
+  - { at: 9800, screenshot: show }
+  - { at: 10000, press: GLO }
+  - { at: 11300, screenshot: band }
+expect:
+  boots: true

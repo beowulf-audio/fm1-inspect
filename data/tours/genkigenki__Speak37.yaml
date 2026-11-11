@@ -1,0 +1,26 @@
+# Sings the first SONGS sentence a word a key with CHOIR, steps PRESETS to Twinkle Twinkle and plays it as a melody,
+# changes the voice (ALGORITHM), lets PLAY speak the sentence in time, then wakes MOPE (EDIT held; README "On the FM-1").
+name: speak37-tour
+ms: 12500
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, note: C4, vel: 100, hold: 450 }
+  - { at: 2200, note: D4, vel: 100, hold: 450 }
+  - { at: 2700, note: E4, vel: 100, hold: 450 }
+  - { at: 3300, turn: PRESETS, clicks: 7 }
+  - { at: 4600, note: C4, vel: 100, hold: 400 }
+  - { at: 5050, note: C4, vel: 100, hold: 400 }
+  - { at: 5500, note: G4, vel: 100, hold: 400 }
+  - { at: 5950, note: G4, vel: 100, hold: 500 }
+  - { at: 6600, turn: ALGORITHM, clicks: -3 }
+  - { at: 7200, note: A4, vel: 100, hold: 400 }
+  - { at: 7650, note: A4, vel: 100, hold: 400 }
+  - { at: 8100, note: G4, vel: 100, hold: 600 }
+  - { at: 8800, press: PLAY }
+  - { at: 10600, press: PLAY }
+  - { at: 10800, press: EDIT, hold: 800 }
+  - { at: 11800, press: PLAY }
+  - { at: 12400, screenshot: mope }
+expect:
+  boots: true

@@ -1,0 +1,20 @@
+# Opens the song generator (SELECT on HOME), makes a piece (OCT+) and plays it, then HOME, an EDIT page and the
+# hidden visualizer (OCT- + HOME, OCT+ for the next scene). Based on the manual's "Your first song" and the shift deck.
+name: gammawave-tour
+ms: 12500
+click_ms: 150
+steps:
+  - { at: 1400, screenshot: boot }
+  - { at: 1700, turn: SELECT, clicks: 1 }
+  - { at: 2300, turn: KNOB1, clicks: 3 }
+  - { at: 3000, press: OCTUP }
+  - { at: 3500, press: PLAY }
+  - { at: 5500, press: HOME }
+  - { at: 6800, press: EDIT }
+  - { at: 8000, press: OCTDN, hold: 600 }
+  - { at: 8200, press: HOME }
+  - { at: 9600, press: OCTUP }
+  - { at: 11000, press: HOME }
+  - { at: 12300, screenshot: end }
+expect:
+  boots: true

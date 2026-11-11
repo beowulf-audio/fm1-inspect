@@ -1,0 +1,22 @@
+# The quick start closed (HOME), a random acid pattern (LFO) played (PLAY) while CUTOFF and RESON turn, a second
+# random pattern, the next knob page (ALGORITHM), then the FX punch-in pads held on the keys. Based on the site guide.
+name: smileyface
+ms: 12500
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 2800, press: HOME }
+  - { at: 3200, press: LFO }
+  - { at: 3500, press: PLAY }
+  - { at: 4600, turn: KNOB1, clicks: 6 }
+  - { at: 5500, turn: KNOB2, clicks: 6 }
+  - { at: 6400, press: LFO }
+  - { at: 7400, turn: ALGORITHM, clicks: 1 }
+  - { at: 7900, turn: KNOB3, clicks: 4 }
+  - { at: 8800, press: FX }
+  - { at: 9300, note: C5, hold: 900 }
+  - { at: 10400, note: A4, hold: 900 }
+  - { at: 11500, press: FX }
+  - { at: 12300, screenshot: end }
+expect:
+  boots: true

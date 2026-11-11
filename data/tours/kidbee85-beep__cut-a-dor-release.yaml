@@ -1,0 +1,20 @@
+# Cut-A-Dor: PLAY starts the BOOM BAP beat on the Live Dojo; DJ keys punch in Filter and Echo, then SEQ shows the
+# Step Dojo grid and EDIT the Drum Mix (README: Controls).
+name: cut-a-dor-tour
+ms: 12000
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, pot: 840 }
+  - { at: 2000, press: PLAY }
+  - { at: 3500, note: F3, vel: 110, hold: 500 }
+  - { at: 4400, note: C4, vel: 110, hold: 900 }
+  - { at: 5600, note: B4, vel: 110, hold: 200 }
+  - { at: 6400, note: D5, vel: 110, hold: 200 }
+  - { at: 7300, press: SEQ }
+  - { at: 8800, press: EDIT }
+  - { at: 10200, press: HOME }
+  - { at: 10500, note: D4, vel: 110, hold: 700 }
+  - { at: 11900, screenshot: end }
+expect:
+  boots: true

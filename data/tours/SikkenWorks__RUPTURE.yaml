@@ -1,0 +1,51 @@
+# RUPTURE: SEL steps through the first-run welcome (backup, format NO, CRT, tutorial NO); then a bass line on the CXS
+# oscillator's PLAY page, HOME to SOUND SHAPE and SUB OSC 1, and the FX (reverb) page, the line on each (README).
+name: rupture
+ms: 15600
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 1700, press: SCL, hold: 120 }
+  - { at: 2250, press: SCL, hold: 120 }
+  - { at: 2800, press: SCL, hold: 120 }
+  - { at: 3350, press: SCL, hold: 120 }
+  - { at: 3900, press: SCL, hold: 120 }
+  - { at: 4450, press: SCL, hold: 120 }
+  - { at: 5000, press: SCL, hold: 120 }
+  - { at: 5550, press: SCL, hold: 120 }
+  - { at: 6100, press: SCL, hold: 120 }
+  - { at: 6950, note: F3, vel: 115, hold: 180 }
+  - { at: 7180, note: F3, vel: 115, hold: 180 }
+  - { at: 7410, note: G#3, vel: 115, hold: 180 }
+  - { at: 7640, note: F3, vel: 115, hold: 180 }
+  - { at: 7870, note: C4, vel: 115, hold: 300 }
+  - { at: 8100, note: A#3, vel: 115, hold: 180 }
+  - { at: 8330, note: F3, vel: 115, hold: 300 }
+  - { at: 8560, press: HOME, hold: 150 }
+  - { at: 8760, note: F3, vel: 115, hold: 180 }
+  - { at: 8990, note: F3, vel: 115, hold: 180 }
+  - { at: 9220, note: G#3, vel: 115, hold: 180 }
+  - { at: 9450, note: F3, vel: 115, hold: 180 }
+  - { at: 9680, note: C4, vel: 115, hold: 300 }
+  - { at: 9910, note: A#3, vel: 115, hold: 180 }
+  - { at: 10140, note: F3, vel: 115, hold: 300 }
+  - { at: 10370, press: HOME, hold: 150 }
+  - { at: 10870, turn: ALGORITHM, clicks: 1 }
+  - { at: 11270, note: F3, vel: 115, hold: 180 }
+  - { at: 11500, note: F3, vel: 115, hold: 180 }
+  - { at: 11730, note: G#3, vel: 115, hold: 180 }
+  - { at: 11960, note: F3, vel: 115, hold: 180 }
+  - { at: 12190, note: C4, vel: 115, hold: 300 }
+  - { at: 12420, note: A#3, vel: 115, hold: 180 }
+  - { at: 12650, note: F3, vel: 115, hold: 300 }
+  - { at: 12880, press: FX, hold: 150 }
+  - { at: 13080, note: F3, vel: 115, hold: 180 }
+  - { at: 13310, note: F3, vel: 115, hold: 180 }
+  - { at: 13540, note: G#3, vel: 115, hold: 180 }
+  - { at: 13770, note: F3, vel: 115, hold: 180 }
+  - { at: 14000, note: C4, vel: 115, hold: 300 }
+  - { at: 14230, note: A#3, vel: 115, hold: 180 }
+  - { at: 14460, note: F3, vel: 115, hold: 300 }
+  - { at: 15290, screenshot: end }
+expect:
+  boots: true

@@ -1,0 +1,27 @@
+# Wavetable synth: a chord on the factory performance, PLAY for its arp and sequence, notes while FX, SEL and ENV open
+# the oscillator, filter and envelope pages, then HOME with PRESETS loads other performances (docs/manual.md).
+name: carnac-tour
+ms: 13000
+click_ms: 150
+steps:
+  - { at: 1500, screenshot: boot }
+  - { at: 3500, note: C4, vel: 120, hold: 700 }
+  - { at: 3500, note: E4, vel: 120, hold: 700 }
+  - { at: 3500, note: G4, vel: 120, hold: 700 }
+  - { at: 4300, press: PLAY }
+  - { at: 5500, note: A3, vel: 120, hold: 400 }
+  - { at: 6600, note: C4, vel: 120, hold: 400 }
+  - { at: 7700, note: E4, vel: 120, hold: 400 }
+  - { at: 5200, press: FX }
+  - { at: 6100, press: SCL }
+  - { at: 7200, press: ENV }
+  - { at: 8300, press: HOME }
+  - { at: 8600, turn: PRESETS, clicks: 2 }
+  - { at: 9800, note: C4, vel: 120, hold: 600 }
+  - { at: 9800, note: G4, vel: 120, hold: 600 }
+  - { at: 10600, turn: PRESETS, clicks: 2 }
+  - { at: 11600, note: A3, vel: 120, hold: 900 }
+  - { at: 11600, note: E4, vel: 120, hold: 900 }
+  - { at: 12900, screenshot: end }
+expect:
+  boots: true
