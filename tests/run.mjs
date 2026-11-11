@@ -42,7 +42,8 @@ ok(similarity(a, signature(shingleHashes(other)).sig) < 0.2, "different code -> 
   const other = applyBrick({ verdict: "invalid", findings: [] }, { v: "fail" });
   ok(other.verdict === "invalid", "an invalid file stays invalid");
   ok(applyBrick(rep(), null).verdict === "caution" && brickNote(null) === "", "no result: nothing changes");
-  ok(/works on newer/.test(brickNote({ v: "pass" })) && /breaks on newer/.test(brickNote({ v: "fail" })), "badge notes");
+  ok(/works with the newer/.test(brickNote({ v: "pass" })) && /won't save with the newer/.test(brickNote({ v: "fail" })), "badge notes");
+  ok(/Units with the original chip aren't affected/.test(applyBrick(rep(), { v: "fail" }).findings[0].text), "a fail says who is affected");
 }
 
 // 3. real files (optional corpus)
