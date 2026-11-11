@@ -5,6 +5,7 @@ import { readFileSync, existsSync } from "node:fs";
 import { analyze } from "../site/js/analyze.js";
 import { parsePackage, identityOf } from "../site/js/fwsc.js";
 import { shingleHashes, signature, similarity } from "../site/js/fingerprint.js";
+import { applyBrick, brickNote } from "../site/js/brick.js";
 
 let fail = 0, pass = 0;
 const ok = (c, msg) => { if (c) pass++; else { fail++; console.log("FAIL:", msg); } };
@@ -24,6 +25,25 @@ const a = signature(shingleHashes(code)).sig, b = signature(shingleHashes(code))
 ok(similarity(a, b) === 1, "same code -> similarity 1");
 const other = code.slice(); for (let i = 0; i < other.length; i += 2) other[i] ^= 0x5a;
 ok(similarity(a, signature(shingleHashes(other)).sig) < 0.2, "different code -> low similarity");
+
+// 2b. an emulated flash-chip test over what the code alone says (site/js/brick.js)
+{
+  const rep = () => ({ verdict: "caution", findings: [{ level: "warn", area: "flash", text: "Checks for the original Puya flash chip only." }, { level: "ok", area: "usb", text: "No HID." }] });
+  const pass = applyBrick(rep(), { v: "pass", r: "same use" });
+  ok(pass.verdict === "ok", "brick pass clears a flash-only caution");
+  ok(pass.findings[0].tested && pass.findings[0].level === "ok", "the tested finding comes first");
+  ok(pass.findings[1].level === "info" && pass.findings[1].text.startsWith("From the code alone:"), "the code-only finding stays, as a note");
+  const fail = applyBrick(rep(), { v: "fail", r: "never saves" });
+  ok(fail.verdict === "risk" && fail.findings[0].level === "bad", "brick fail is a risk");
+  const twice = applyBrick(applyBrick(rep(), { v: "pass" }), { v: "fail" });
+  ok(twice.findings.filter((f) => f.tested).length === 1 && twice.verdict === "ok", "applied once only");
+  const inc = applyBrick(rep(), { v: "inconclusive" });
+  ok(inc.verdict === "caution" && inc.findings[1].level === "warn", "inconclusive keeps the code-only warning");
+  const other = applyBrick({ verdict: "invalid", findings: [] }, { v: "fail" });
+  ok(other.verdict === "invalid", "an invalid file stays invalid");
+  ok(applyBrick(rep(), null).verdict === "caution" && brickNote(null) === "", "no result: nothing changes");
+  ok(/works on newer/.test(brickNote({ v: "pass" })) && /breaks on newer/.test(brickNote({ v: "fail" })), "badge notes");
+}
 
 // 3. real files (optional corpus)
 const corpus = process.argv[2];

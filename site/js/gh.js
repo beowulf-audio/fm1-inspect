@@ -184,7 +184,7 @@ function repoCard(meta, releases, committed, srcEl, ctx, repo, ref) {
     const top = h("div", { class: "aname" }, h("code", { text: a.name }), h("span", { class: "muted", text: fmtKB(a.size) }));
     if (v && a.sha && ctx.hasReport(a.sha)) {
       const row = h("button", { class: "asset clickable", type: "button", title: "Open the full report" },
-        top, h("div", { class: "abadges" }, prov, ctx.verdictOf(v, an, idx), h("span", { class: "open" }, "Report", icon("chevron-down", "i rot"))));
+        top, h("div", { class: "abadges" }, prov, ctx.verdictOf(v, an, idx, a.sha), h("span", { class: "open" }, "Report", icon("chevron-down", "i rot"))));
       row.addEventListener("click", async () => {
         cardEl.querySelectorAll(".asset.active").forEach((x) => x.classList.remove("active"));
         row.classList.add("active");
@@ -208,7 +208,7 @@ function repoCard(meta, releases, committed, srcEl, ctx, repo, ref) {
       action = btn;
     } else if (!v) action = ext(a.url, h("span", { class: "dl" }, icon("download"), "download, then drop it in the Files tab"));
     return h("li", {}, h("div", { class: "asset" }, top, h("div", { class: "abadges" }, prov,
-      v ? ctx.verdictOf(v, an, idx) : badge("b-none", "file-question", "not in our index"), action)));
+      v ? ctx.verdictOf(v, an, idx, a.sha) : badge("b-none", "file-question", "not in our index"), action)));
   };
   const relRow = (r, i) => h("li", { class: "relrow" },
     h("div", { class: "relhead" }, ext(safeUrl(r.url), r.tag), r.pre ? h("span", { class: "tagpill", text: "pre-release" }) : null, i === 0 ? h("span", { class: "tagpill new", text: "latest" }) : null, h("span", { class: "muted", text: r.date })),

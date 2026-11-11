@@ -2,12 +2,13 @@
 // ever inserted with textContent (never innerHTML); styles are set through the CSSOM (the CSP forbids style attributes).
 import { analyze } from "./analyze.js";
 import { loadIndex, fingerprint, closest, strength } from "./match.js";
+import { applyBrick, brickNote } from "./brick.js";
 import { sigFromB64 } from "./fingerprint.js";
 
 import { $, h, icon, safeUrl, ext, ghLink, short, fmtKB, fmtN, toast } from "./ui.js";
 import { parseRepo, lookupRepo } from "./gh.js";
 
-let index = null, releases = {}, reports = [], filter = "all";
+let index = null, releases = {}, brick = {}, reports = [], filter = "all";
 
 // ---------------------------------------------------------------- data
 async function loadData() {
@@ -16,6 +17,8 @@ async function loadData() {
       .map((u) => fetch(u, { cache: "no-cache" }).then((r) => { if (!r.ok) throw new Error(u); return r.json(); })));
     index = loadIndex(known, stop);
     releases = rel.releases || {};
+    // emulated flash-chip tests (fm1-lab), optional: the page works without them
+    brick = await fetch("data/lab.json", { cache: "no-cache" }).then((r) => (r.ok ? r.json() : {})).then((b) => b.results || {}).catch(() => ({}));
     buildProjects();
     const repos = new Set(index.entries.map((e) => e.repo).filter(Boolean)).size;
     $("#dbinfo").textContent = `Compared against ${fmtN(index.entries.length)} known firmware files from ${repos} projects and ${fmtN(rel.count)} release files · index ${known.generated}`;
@@ -99,13 +102,15 @@ function renderChecks(findings) {
 }
 
 /** compact verdict badge for a release file we have analysed (from the index) */
-function verdictOf(v, an, idx) {
+function verdictOf(v, an, idx, sha) {
   const official = idx?.official;
   if (official && v === "caution") v = "ok";
+  const b = brick[sha || idx?.sha256];
+  if (b && an?.brickVerdict) v = an.brickVerdict;        // the release's verdict with the tested result in it (tools/apply-brick.mjs)
   const [ico, txt] = VERDICT[v] || VERDICT.unknown;
   const cls = v === "ok" ? "b-ok" : v === "caution" ? "b-warn" : v === "risk" ? "b-bad" : "b-none";
   const flash = an?.flash || idx?.flash;
-  const why = v === "caution" && flash && !flash.uc25Constant ? " · old flash chip only" : "";
+  const why = b ? brickNote(b) : v === "caution" && flash && !flash.uc25Constant ? " · old flash chip only" : "";
   return h("span", { class: `badge ${cls}` }, icon(ico), txt + why);
 }
 
@@ -126,6 +131,15 @@ function card(file, sha, rep, id, rels) {
     h("span", { class: "mono", title: sha }, icon("hash"), h("b", { text: sha.slice(0, 12) + "…" }), copy));
 
   const checks = h("section", {}, h("h3", { class: "sec-h" }, icon("shield-check"), "Checks"), renderChecks(rep.findings));
+  const lab = brick[sha];
+  const emu = lab ? h("section", {}, h("h3", { class: "sec-h" }, icon("microchip"), "On an emulated FM-1"),
+    h("div", { class: "emu" },
+      lab.shot ? h("img", { class: "emu-shot", src: `data/shots/${sha}.png`, alt: "The screen 1.5 s after it starts, on an emulated FM-1", loading: "lazy", width: "240", height: "240" }) : null,
+      h("ul", { class: "emu-facts" },
+        h("li", { text: lab.boots ? `Boots: its screen is up ${lab.ms != null ? `${(lab.ms / 1000).toFixed(2)} s` : ""} after power-on.` : "The screen stayed blank in the emulator." }),
+        h("li", { text: lab.sound ? "Makes sound when a key is played." : "No sound from a played key (some firmware needs a pattern or a mode first)." }),
+        lab.v ? h("li", { text: lab.v === "pass" ? "Newer flash chip (UC25HQ80): works." : lab.v === "fail" ? "Newer flash chip (UC25HQ80): stops saving." : `Newer flash chip (UC25HQ80): ${lab.v}.` }) : null,
+        h("li", { class: "muted", text: `Tested with fm1-lab${lab.at ? ` on ${lab.at}` : ""}: emulated, not on a real unit.` })))) : null;
 
   const chain = h("section", {}, h("h3", { class: "sec-h" }, icon("badge-check"), "Trust chain"),
     h("ol", { class: "chain" }, trustChain(id).map((s) => h("li", { class: `s-${s.state}` }, h("span", { class: "node" }, icon(s.ico)),
@@ -166,7 +180,7 @@ function card(file, sha, rep, id, rels) {
   const det = h("details", { class: "tech" }, h("summary", {}, icon("search"), "Technical details", icon("chevron-down", "i chev")), h("dl", { class: "kv" }, kv));
 
   return h("article", { class: `card t-${rep.verdict}`, "data-verdict": rep.verdict },
-    head, meta, h("div", { class: "body" }, checks, chain, relSec), det);
+    head, meta, h("div", { class: "body" }, checks, emu, chain, relSec), det);
 }
 
 function skeleton() {
@@ -216,6 +230,7 @@ async function runBatch(files, after = null) {
       const { report, app } = analyze(bytes);
       const id = identify(sha);
       adjustForIdentity(report, id);
+      applyBrick(report, brick[sha]);
       const rels = app && index ? closest(fingerprint(app, index), index, { exclude: sha, excludeRepo: id.repo, limit: 6 }) : [];
       reports.push({ file: file.name, sha256: sha, identified: id.title, repo: id.repo, provenance: id.rel || null, report,
         related: rels.map((r) => ({ repo: r.entry.repo, file: r.entry.file, score: +r.score.toFixed(3) })) });
@@ -269,6 +284,7 @@ async function openRelease(sha, assetName, after) {
   const report = structuredClone(rec.report);
   const id = identify(sha);
   adjustForIdentity(report, id);
+  applyBrick(report, brick[sha]);
   let rels = [];
   if (rec.fp && index) {
     const fp = { sig: sigFromB64(rec.fp.sig), ownCode: rec.fp.ownCode, ssig: sigFromB64(rec.fp.ssig), ownStrings: rec.fp.ownStrings };

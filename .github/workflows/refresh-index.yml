@@ -12,7 +12,7 @@ concurrency: { group: refresh-index, cancel-in-progress: false }
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 90
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -21,6 +21,30 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: node tools/refresh.mjs --max-new 400
+      # fm1-lab (public, pinned): each new release file booted on an emulated FM-1 (a boot screenshot, sound, the
+      # UC25HQ80 flash test), sandboxed with bubblewrap; the results go into site/data (lab.json, shots/, the reports)
+      - uses: actions/checkout@v4
+        with:
+          repository: beowulf-audio/fm1-lab
+          ref: fe1cc1b1149de50959493fe2f733eacd87fb471c
+          path: .fm1-lab
+          persist-credentials: false
+      - name: fm1-lab's sandbox and emulator
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq bubblewrap libasound2-dev libx11-dev libxkbcommon-dev libxcursor-dev libxrandr-dev libxi-dev pkg-config
+          sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0
+          rustup toolchain install 1.95.0 --profile minimal
+      - uses: actions/cache@v4
+        with:
+          path: |
+            .fm1-lab/.work/target
+            ~/.cargo/registry
+          key: fm1-lab-emu-${{ runner.os }}-${{ hashFiles('.fm1-lab/vendor/fm1-emu/Cargo.lock', '.fm1-lab/patches/*.patch') }}
+      - name: Test new release files on an emulated FM-1
+        run: |
+          node .fm1-lab/bin/fm1-lab.mjs setup emu
+          node tools/lab-new.mjs --lab .fm1-lab --max 150
       - name: Test
         run: node tests/run.mjs
       - name: Commit if changed

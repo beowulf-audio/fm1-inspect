@@ -312,3 +312,9 @@ details.tech[open] summary .chev { transform: rotate(180deg); }
 .opt-empty { cursor: default; color: var(--ink-3); font-size: 13px; }
 .opt-custom { border-top: 1px solid var(--line); margin-top: 4px; border-radius: 0 0 10px 10px; }
 .gh-panel { position: relative; z-index: 5; }
+
+/* On an emulated FM-1 (fm1-lab) */
+.emu { display: flex; gap: 14px; align-items: flex-start; flex-wrap: wrap; }
+.emu-shot { width: 160px; height: 160px; image-rendering: pixelated; border-radius: 8px; border: 1px solid var(--line, #2a2e36); flex: none; }
+.emu-facts { margin: 0; padding-left: 18px; flex: 1 1 220px; }
+.emu-facts li { margin: 2px 0; }
