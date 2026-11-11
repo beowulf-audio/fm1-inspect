@@ -6,18 +6,23 @@
 const TESTED = "Tested on an emulated FM-1 with the newer UC25HQ80 flash chip";
 const TEXT = {
   pass: { level: "ok", text: `${TESTED}: it uses its flash the same way as on the original chip, so settings save and later installs work on newer FM-1 units.` },
-  fail: { level: "bad", text: "On FM-1 units with the newer UC25HQ80 flash chip it won't save: it accepts only the original chip, so there it keeps settings in RAM (lost at power-off) and later installs are refused, which then needs a USB download-mode rescue. Units with the original chip aren't affected. Confirmed on an emulated FM-1 with the newer chip; check the project for a release that supports it." },
+  fail: { level: "warn", text: "In fm1-lab's test on an emulated FM-1 with the newer UC25HQ80 flash chip, it didn't save anything, and its code accepts only the original chip. On units with the newer chip, expect settings to be lost at power-off and later installs to be refused (which then needs a USB download-mode rescue). Not yet confirmed on a real unit. Units with the original chip aren't affected." },
   warn: { level: "warn", text: `${TESTED}: it uses its flash much less there than on the original chip. It may not save everything on newer FM-1 units; check the project's notes.` },
   inconclusive: { level: "info", text: `${TESTED}: no conclusion (it did not use its flash during the test).` },
   error: { level: "info", text: `${TESTED}: the emulator could not run it, so no conclusion.` },
 };
 
-/** Put a brick-test result into a report (once): the tested finding first, the code-only flash findings as notes. */
+/** Put a brick-test result into a report: the tested finding first, the code-only flash findings as notes. Applied again
+ *  (a newer result, newer wording) it replaces the earlier tested finding. */
 export function applyBrick(rep, b) {
-  if (!rep || !b || !TEXT[b.v] || !Array.isArray(rep.findings) || rep.findings.some((f) => f.tested)) return rep;
+  if (!rep || !b || !TEXT[b.v] || !Array.isArray(rep.findings)) return rep;
   const t = TEXT[b.v];
-  const rest = rep.findings.map((f) => (f.area === "flash" && b.v !== "inconclusive" && b.v !== "error"
-    ? { ...f, level: "info", text: `From the code alone: ${f.text}` } : f));
+  const NOTE = "From the code alone: ";
+  const rest = rep.findings.filter((f) => !f.tested).map((f) => {
+    if (f.area !== "flash") return f;
+    const orig = f.text.startsWith(NOTE) ? { ...f, text: f.text.slice(NOTE.length), level: f.was || f.level } : f;   // as the code check had it
+    return b.v === "inconclusive" || b.v === "error" ? orig : { ...orig, was: orig.level, level: "info", text: NOTE + orig.text };
+  });
   rep.findings = [{ level: t.level, area: "flash", text: t.text, tested: true }, ...rest];
   rep.brick = { verdict: b.v, reason: b.r || "" };
   if (["ok", "caution", "risk"].includes(rep.verdict)) {
@@ -29,5 +34,5 @@ export function applyBrick(rep, b) {
 
 /** A short note for a verdict badge. */
 export function brickNote(b) {
-  return !b ? "" : b.v === "pass" ? " · works with the newer flash chip (tested)" : b.v === "fail" ? " · won't save with the newer flash chip (tested)" : b.v === "warn" ? " · may not save with the newer flash chip" : "";
+  return !b ? "" : b.v === "pass" ? " · works with the newer flash chip (tested)" : b.v === "fail" ? " · didn't save with the newer flash chip (emulated test)" : b.v === "warn" ? " · may not save with the newer flash chip" : "";
 }

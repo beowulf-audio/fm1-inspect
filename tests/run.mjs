@@ -34,15 +34,17 @@ ok(similarity(a, signature(shingleHashes(other)).sig) < 0.2, "different code -> 
   ok(pass.findings[0].tested && pass.findings[0].level === "ok", "the tested finding comes first");
   ok(pass.findings[1].level === "info" && pass.findings[1].text.startsWith("From the code alone:"), "the code-only finding stays, as a note");
   const fail = applyBrick(rep(), { v: "fail", r: "never saves" });
-  ok(fail.verdict === "risk" && fail.findings[0].level === "bad", "brick fail is a risk");
+  ok(fail.verdict === "caution" && fail.findings[0].level === "warn", "brick fail is a caution (not yet confirmed on a real unit)");
+  ok(/Not yet confirmed on a real unit/.test(fail.findings[0].text), "a fail says what is not confirmed");
   const twice = applyBrick(applyBrick(rep(), { v: "pass" }), { v: "fail" });
-  ok(twice.findings.filter((f) => f.tested).length === 1 && twice.verdict === "ok", "applied once only");
+  ok(twice.findings.filter((f) => f.tested).length === 1 && twice.verdict === "caution", "applied again: the newer result replaces the earlier");
+  ok(twice.findings.filter((f) => /^From the code alone: From/.test(f.text)).length === 0, "the code-only note isn't prefixed twice");
   const inc = applyBrick(rep(), { v: "inconclusive" });
   ok(inc.verdict === "caution" && inc.findings[1].level === "warn", "inconclusive keeps the code-only warning");
   const other = applyBrick({ verdict: "invalid", findings: [] }, { v: "fail" });
   ok(other.verdict === "invalid", "an invalid file stays invalid");
   ok(applyBrick(rep(), null).verdict === "caution" && brickNote(null) === "", "no result: nothing changes");
-  ok(/works with the newer/.test(brickNote({ v: "pass" })) && /won't save with the newer/.test(brickNote({ v: "fail" })), "badge notes");
+  ok(/works with the newer/.test(brickNote({ v: "pass" })) && /didn't save with the newer flash chip \(emulated test\)/.test(brickNote({ v: "fail" })), "badge notes");
   ok(/Units with the original chip aren't affected/.test(applyBrick(rep(), { v: "fail" }).findings[0].text), "a fail says who is affected");
 }
 
