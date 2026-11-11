@@ -114,19 +114,29 @@ function verdictOf(v, an, idx, sha) {
   return h("span", { class: `badge ${cls}` }, icon(ico), txt + why);
 }
 
-/** The preview's sound; pressing play starts the GIF from its first frame, so picture and sound run together (both
- *  come from one emulator run over the same 7 s). */
+/** The preview's sound, looping with its GIF: both come from one emulator run over the same 7 s. Play starts both from
+ *  the top (a GIF can't be paused or seeked, so a resume mid-way couldn't line up), and every time the sound comes round
+ *  the GIF restarts with it, so they never drift apart. */
 function syncedAudio(src, hasGif) {
   const a = h("audio", { controls: "", preload: "none", src, class: "emu-audio" });
-  if (hasGif) a.addEventListener("play", () => {
+  if (!hasGif) { a.loop = true; return a; }
+  const restartGif = () => {
     const img = a.closest(".emu")?.querySelector(".emu-shot");
-    if (img) { const base = img.src.split("?")[0]; img.src = `${base}?t=${Date.now()}`; }   // a new URL restarts a GIF
+    if (img) img.src = `${img.src.split("?")[0]}?t=${Date.now()}`;   // a new URL starts a GIF from its first frame
+  };
+  let fromTop = false;
+  a.addEventListener("play", () => {
+    if (!fromTop && a.currentTime > 0) { fromTop = true; a.currentTime = 0; }   // resumed mid-way: from the top instead
+    fromTop = false;
+    restartGif();
   });
+  // the loop: from the top, the GIF with it (browsers don't always fire "play" again for a restart after the end)
+  a.addEventListener("ended", () => { a.currentTime = 0; restartGif(); a.play().catch(() => {}); });
   return a;
 }
 
 const TOUR_NOTE = {
-  generic: "The preview plays the same short tour on every firmware (a chord, a melody, PLAY, a few presets), so it shows the default state and a few presets, not everything it can do.",
+  generic: "The preview sends every firmware the same inputs: three keys together, a quick run of keys, PLAY, then the PRESETS knob three times with a key each. What they do depends on the firmware (a synth plays a chord and a melody; a groovebox may play drums or start a pattern), so it shows the default state and the first presets, not everything it can do.",
   tailored: "The preview plays a tour written for this firmware from its documentation.",
   author: "The preview plays the tour this firmware's author wrote (.fm1-preview.yaml).",
 };
@@ -152,7 +162,7 @@ function card(file, sha, rep, id, rels) {
   const emu = lab ? h("section", {}, h("h3", { class: "sec-h" }, icon("microchip"), "On an emulated FM-1"),
     h("div", { class: "emu" },
       lab.gif || lab.shot ? h("img", { class: "emu-shot", src: `data/shots/${sha}.${lab.gif ? "gif" : "png"}`, loading: "lazy", width: "240", height: "240",
-        alt: lab.gif ? "Its screen on an emulated FM-1 while a chord, a melody, PLAY and a few presets are played" : "The screen 1.5 s after it starts, on an emulated FM-1" }) : null,
+        alt: lab.gif ? "Its screen on an emulated FM-1 during the preview: keys, PLAY, then a few presets" : "The screen 1.5 s after it starts, on an emulated FM-1" }) : null,
       h("ul", { class: "emu-facts" },
         h("li", { text: lab.boots ? `Boots: its screen is up ${lab.ms != null ? `${(lab.ms / 1000).toFixed(2)} s` : ""} after power-on.` : "The screen stayed blank in the emulator." }),
         h("li", { text: lab.sound ? "Makes sound when a key is played." : "No sound from a played key (some firmware needs a pattern or a mode first)." }),

@@ -7,7 +7,9 @@ button presses, about 7 seconds long.
 The tour used, the first that exists:
 1. `.fm1-preview.yaml` at the root of the firmware's own repository (its author's: they know what shows it off)
 2. `OWNER__REPO.yaml` here, written for the project from its documentation
-3. fm1-lab's generic tour (`scenarios/preview.yaml`: a chord, a melody, PLAY, a few presets)
+3. fm1-lab's generic tour (`scenarios/preview.yaml`: the same inputs for every firmware, three keys together, a run of
+   keys, PLAY and a few preset changes; what they do depends on the firmware)
 
-When a project's tour changes, the daily job makes its latest releases' previews again. A tour is data, never code:
+When what a project's tour plays changes (not its comments or formatting), the daily job makes its latest releases'
+previews again. A tour is data, never code:
 it is parsed as a scenario and must be at most 20 seconds and 200 steps.

@@ -6,7 +6,7 @@
 //      the project's tour has changed since it was made, or is missing; the flash test is kept
 // A project's tour, the first that exists: the author's .fm1-preview.yaml in their repository (the default branch),
 // a tour written for it here (data/tours/OWNER__REPO.yaml), fm1-lab's generic one (scenarios/preview.yaml).
-//   node tools/lab-update.mjs --lab PATH_TO_FM1_LAB [--max-new 150] [--max-previews 300]
+//   node tools/lab-update.mjs --lab PATH_TO_FM1_LAB [--max-new 150] [--max-previews 300] [--dry-run]
 import { readFileSync, writeFileSync, existsSync, mkdirSync, mkdtempSync, readdirSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { tmpdir } from "node:os";
@@ -20,7 +20,9 @@ const LAB = arg("--lab"), MAX_NEW = +arg("--max-new", 150), MAX_PREV = +arg("--m
 if (!LAB || !existsSync(join(LAB, "bin", "fm1-lab.mjs"))) { console.error("usage: node tools/lab-update.mjs --lab PATH_TO_FM1_LAB [--max-new N] [--max-previews N]"); process.exit(64); }
 const { normalize } = await import(pathToFileURL(join(LAB, "lib", "scenario.mjs")).href);
 const yaml = await import(pathToFileURL(join(LAB, "lib", "vendor", "js-yaml.mjs")).href);
-const tourHash = (t) => createHash("sha256").update(t).digest("hex").slice(0, 16);
+// a tour's identity is what it plays, not its text (fm1-lab's tourHash), so a comment or formatting change makes no previews again
+const { tourHash: hashOf } = await import(pathToFileURL(join(LAB, "lib", "preview.mjs")).href);
+const tourHash = (text, where) => hashOf(normalize(yaml.load(text), where));
 
 // FM-1 packages only (fm1-lab emulates an FM-1; an SMK-37 or MKE-P37 package wouldn't behave as on its own hardware)
 const releases = Object.fromEntries(Object.entries(JSON.parse(readFileSync(join(ROOT, "site", "data", "releases.json"), "utf8")).releases)
@@ -47,11 +49,11 @@ async function tourFor(repo) {
   const safe = repo.replace("/", "__");
   try {   // the author's, from their repository (data only: parsed as a scenario, never run as code)
     const res = await fetch(`https://raw.githubusercontent.com/${repo}/HEAD/.fm1-preview.yaml`, { headers: { "user-agent": "fm1-inspect" } });
-    if (res.ok) { const t = await res.text(); if (t.length < 20000 && ok(t, `${repo}/.fm1-preview.yaml`)) { const p = join(tourDir, `${safe}.author.yaml`); writeFileSync(p, t); return { scenario: p, source: "author", hash: tourHash(t) }; } }
+    if (res.ok) { const t = await res.text(); if (t.length < 20000 && ok(t, `${repo}/.fm1-preview.yaml`)) { const p = join(tourDir, `${safe}.author.yaml`); writeFileSync(p, t); return { scenario: p, source: "author", hash: tourHash(t, p) }; } }
   } catch {}
   const ours = join(ROOT, "data", "tours", `${safe}.yaml`);
-  if (existsSync(ours)) { const t = readFileSync(ours, "utf8"); if (ok(t, ours)) return { scenario: ours, source: "tailored", hash: tourHash(t) }; }
-  return { scenario: generic, source: "generic", hash: tourHash(readFileSync(generic, "utf8")) };
+  if (existsSync(ours)) { const t = readFileSync(ours, "utf8"); if (ok(t, ours)) return { scenario: ours, source: "tailored", hash: tourHash(t, ours) }; }
+  return { scenario: generic, source: "generic", hash: tourHash(readFileSync(generic, "utf8"), generic) };
 }
 
 // 1. new files, and 2. previews whose tour changed
@@ -70,6 +72,10 @@ const newRepos = new Set(fresh.map((s) => releases[s].repo));
 for (const s of fresh) if (!tours[s]) tours[s] = { scenario: generic, source: "generic" };
 console.log(`${Object.keys(releases).length} release files · ${fresh.length} new to test (${newRepos.size} projects) · ${redo.length} previews to make again`);
 writeFileSync(join(work, "tours.json"), JSON.stringify(tours));
+if (process.argv.includes("--dry-run")) {   // what it would do, nothing more
+  const src = {}; for (const t of Object.values(tours)) src[t.source] = (src[t.source] || 0) + 1;
+  console.log(`dry run: tours by source for the latest releases: ${JSON.stringify(src)}`); process.exit(0);
+}
 
 async function download(shas, dir) {
   mkdirSync(dir, { recursive: true }); let got = 0;
