@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // The daily job's fm1-lab step: release files with no emulated result yet (site/data/lab.json), newest first, are
-// downloaded (anonymously, checked against their SHA-256), run through `fm1-lab sweep --brick` (boot screenshot,
-// sound, the UC25HQ80 flash test; sandboxed with bubblewrap) and merged into the site's data (tools/apply-lab.mjs).
+// downloaded (anonymously, checked against their SHA-256), run through `fm1-lab sweep --brick --gif` (a preview GIF,
+// a boot screenshot, sound, the UC25HQ80 flash test; sandboxed with bubblewrap) and merged into the site's data (tools/apply-lab.mjs).
 //   node tools/lab-new.mjs --lab PATH_TO_FM1_LAB [--max 150]
 import { readFileSync, writeFileSync, existsSync, mkdirSync, mkdtempSync } from "node:fs";
 import { join, dirname } from "node:path";
@@ -38,6 +38,6 @@ for (const [sha, r] of todo) {
 }
 console.log(`downloaded ${got}`);
 if (!got) process.exit(0);
-execFileSync(process.execPath, [join(LAB, "bin", "fm1-lab.mjs"), "sweep", files, "--out", out, "--brick", "--no-audio"], { stdio: "inherit" });
+execFileSync(process.execPath, [join(LAB, "bin", "fm1-lab.mjs"), "sweep", files, "--out", out, "--brick", "--gif", "--no-audio"], { stdio: "inherit" });
 const commit = execFileSync("git", ["-C", LAB, "rev-parse", "HEAD"], { encoding: "utf8" }).trim();
 execFileSync(process.execPath, [join(ROOT, "tools", "apply-lab.mjs"), out, "--lab-commit", commit], { stdio: "inherit" });

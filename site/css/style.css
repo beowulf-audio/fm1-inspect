@@ -315,6 +315,6 @@ details.tech[open] summary .chev { transform: rotate(180deg); }
 
 /* On an emulated FM-1 (fm1-lab) */
 .emu { display: flex; gap: 14px; align-items: flex-start; flex-wrap: wrap; }
-.emu-shot { width: 160px; height: 160px; image-rendering: pixelated; border-radius: 8px; border: 1px solid var(--line, #2a2e36); flex: none; }
+.emu-shot { width: 200px; height: 200px; image-rendering: pixelated; border-radius: 8px; border: 1px solid var(--line, #2a2e36); flex: none; }
 .emu-facts { margin: 0; padding-left: 18px; flex: 1 1 220px; }
 .emu-facts li { margin: 2px 0; }

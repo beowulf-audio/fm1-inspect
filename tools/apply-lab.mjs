@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 // fm1-lab's results (an fm1-lab sweep: results.json and shots/) into the site's data:
 //   site/data/lab.json        SHA-256 -> what the emulated FM-1 showed: v/r (the UC25HQ80 flash test's verdict and
-//                             reason; FM-1 packages only), boots, sound, ms (first screen), shot (a screenshot exists)
-//   site/data/shots/SHA.png   the boot screenshot
+//                             reason; FM-1 packages only), boots, sound, ms (first screen), shot / gif (files exist)
+//   site/data/shots/SHA.png   the boot screenshot; SHA.gif the screen through fm1-lab's preview tour (sweep --gif)
 //   site/data/rel/SHA.json    the stored report, with the tested flash result in it (site/js/brick.js applyBrick)
 //   site/data/releases.json   each release's verdict with it (a.brickVerdict), and known.json's entries likewise
 // Earlier results stay; a file tested again is replaced.
@@ -33,6 +33,9 @@ for (const r of sweep) {
   if (r.brick && r.check.model === "FM-1") { e.v = r.brick.verdict; e.r = r.brick.reason; }
   const png = join(sweepDir, "shots", `${r.sha}-boot.png`);
   if (existsSync(png)) { copyFileSync(png, join(DATA, "shots", `${r.sha}.png`)); e.shot = true; shots++; }
+  // the preview: a GIF of the screen through fm1-lab's tour (a chord, a melody, PLAY, a few presets)
+  const anim = join(sweepDir, "anim", `${r.sha}.gif`);
+  if (existsSync(anim)) { copyFileSync(anim, join(DATA, "shots", `${r.sha}.gif`)); e.gif = true; }
   lab.results[r.sha] = e; added++;
 }
 lab.generated = new Date().toISOString().slice(0, 10);

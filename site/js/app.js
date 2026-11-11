@@ -134,12 +134,13 @@ function card(file, sha, rep, id, rels) {
   const lab = brick[sha];
   const emu = lab ? h("section", {}, h("h3", { class: "sec-h" }, icon("microchip"), "On an emulated FM-1"),
     h("div", { class: "emu" },
-      lab.shot ? h("img", { class: "emu-shot", src: `data/shots/${sha}.png`, alt: "The screen 1.5 s after it starts, on an emulated FM-1", loading: "lazy", width: "240", height: "240" }) : null,
+      lab.gif || lab.shot ? h("img", { class: "emu-shot", src: `data/shots/${sha}.${lab.gif ? "gif" : "png"}`, loading: "lazy", width: "240", height: "240",
+        alt: lab.gif ? "Its screen on an emulated FM-1 while a chord, a melody, PLAY and a few presets are played" : "The screen 1.5 s after it starts, on an emulated FM-1" }) : null,
       h("ul", { class: "emu-facts" },
         h("li", { text: lab.boots ? `Boots: its screen is up ${lab.ms != null ? `${(lab.ms / 1000).toFixed(2)} s` : ""} after power-on.` : "The screen stayed blank in the emulator." }),
         h("li", { text: lab.sound ? "Makes sound when a key is played." : "No sound from a played key (some firmware needs a pattern or a mode first)." }),
         lab.v ? h("li", { text: lab.v === "pass" ? "Newer flash chip (UC25HQ80): works." : lab.v === "fail" ? "Newer flash chip (UC25HQ80): stops saving." : `Newer flash chip (UC25HQ80): ${lab.v}.` }) : null,
-        h("li", { class: "muted", text: `Tested with fm1-lab${lab.at ? ` on ${lab.at}` : ""}: emulated, not on a real unit.` })))) : null;
+        h("li", { class: "muted", text: `Tested with fm1-lab${lab.at ? ` on ${lab.at}` : ""}: emulated, not on a real unit.${lab.gif ? " The preview plays the same short tour on every firmware: a chord, a melody, PLAY, then a few presets." : ""}` })))) : null;
 
   const chain = h("section", {}, h("h3", { class: "sec-h" }, icon("badge-check"), "Trust chain"),
     h("ol", { class: "chain" }, trustChain(id).map((s) => h("li", { class: `s-${s.state}` }, h("span", { class: "node" }, icon(s.ico)),
