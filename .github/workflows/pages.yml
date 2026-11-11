@@ -21,6 +21,9 @@ jobs:
       - uses: actions/setup-node@v4
         with: { node-version: 22 }
       - run: node tests/run.mjs
+      # every local script, stylesheet and module import gets ?v=<commit>, so browsers fetch a deploy's new files at once
+      # instead of mixing cached old code with new data (rewrites this checkout only)
+      - run: node tools/version-assets.mjs site "${GITHUB_SHA::7}"
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with: { path: site }
