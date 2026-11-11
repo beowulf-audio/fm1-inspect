@@ -3,12 +3,13 @@
 import { analyze } from "./analyze.js";
 import { loadIndex, fingerprint, closest, strength } from "./match.js";
 import { applyBrick, brickNote } from "./brick.js";
+import { previewBlock } from "./preview.js";
 import { sigFromB64 } from "./fingerprint.js";
 
 import { $, h, icon, safeUrl, ext, ghLink, short, fmtKB, fmtN, toast } from "./ui.js";
 import { parseRepo, lookupRepo } from "./gh.js";
 
-let index = null, releases = {}, brick = {}, reports = [], filter = "all";
+let index = null, releases = {}, brick = {}, previews = {}, reports = [], filter = "all";
 
 // ---------------------------------------------------------------- data
 async function loadData() {
@@ -19,6 +20,7 @@ async function loadData() {
     releases = rel.releases || {};
     // emulated flash-chip tests (fm1-lab), optional: the page works without them
     brick = await fetch("data/lab.json", { cache: "no-cache" }).then((r) => (r.ok ? r.json() : {})).then((b) => b.results || {}).catch(() => ({}));
+    previews = await fetch("data/previews.json", { cache: "no-cache" }).then((r) => (r.ok ? r.json() : {})).then((b) => b.previews || {}).catch(() => ({}));
     buildProjects();
     const repos = new Set(index.entries.map((e) => e.repo).filter(Boolean)).size;
     $("#dbinfo").textContent = `Compared against ${fmtN(index.entries.length)} known firmware files from ${repos} projects and ${fmtN(rel.count)} release files · index ${known.generated}`;
@@ -114,33 +116,6 @@ function verdictOf(v, an, idx, sha) {
   return h("span", { class: `badge ${cls}` }, icon(ico), txt + why);
 }
 
-/** The preview's sound, looping with its GIF: both come from one emulator run over the same 7 s. Play starts both from
- *  the top (a GIF can't be paused or seeked, so a resume mid-way couldn't line up), and every time the sound comes round
- *  the GIF restarts with it, so they never drift apart. */
-function syncedAudio(src, hasGif) {
-  const a = h("audio", { controls: "", preload: "none", src, class: "emu-audio" });
-  if (!hasGif) { a.loop = true; return a; }
-  const restartGif = () => {
-    const img = a.closest(".emu")?.querySelector(".emu-shot");
-    if (img) img.src = `${img.src.split("?")[0]}?t=${Date.now()}`;   // a new URL starts a GIF from its first frame
-  };
-  let fromTop = false;
-  a.addEventListener("play", () => {
-    if (!fromTop && a.currentTime > 0) { fromTop = true; a.currentTime = 0; }   // resumed mid-way: from the top instead
-    fromTop = false;
-    restartGif();
-  });
-  // the loop: from the top, the GIF with it (browsers don't always fire "play" again for a restart after the end)
-  a.addEventListener("ended", () => { a.currentTime = 0; restartGif(); a.play().catch(() => {}); });
-  return a;
-}
-
-const TOUR_NOTE = {
-  generic: "The preview sends every firmware the same inputs: three keys together, a quick run of keys, PLAY, then the PRESETS knob three times with a key each. What they do depends on the firmware (a synth plays a chord and a melody; a groovebox may play drums or start a pattern), so it shows the default state and the first presets, not everything it can do.",
-  tailored: "The preview plays a tour written for this firmware from its documentation.",
-  author: "The preview plays the tour this firmware's author wrote (.fm1-preview.yaml).",
-};
-
 function card(file, sha, rep, id, rels) {
   const [vIco, vTxt] = VERDICT[rep.verdict] || VERDICT.unknown;
   const head = h("div", { class: "card-head" },
@@ -159,16 +134,18 @@ function card(file, sha, rep, id, rels) {
 
   const checks = h("section", {}, h("h3", { class: "sec-h" }, icon("shield-check"), "Checks"), renderChecks(rep.findings));
   const lab = brick[sha];
+  // the project's preview is on its card; here only when this file is the one previewed
+  const repo = id.repo || releases[sha]?.repo, proj = repo ? previews[repo] : null, isPreview = proj?.sha === sha && lab?.gif;
   const emu = lab ? h("section", {}, h("h3", { class: "sec-h" }, icon("microchip"), "On an emulated FM-1"),
+    isPreview ? previewBlock(proj, lab) : null,
     h("div", { class: "emu" },
-      lab.gif || lab.shot ? h("img", { class: "emu-shot", src: `data/shots/${sha}.${lab.gif ? "gif" : "png"}`, loading: "lazy", width: "240", height: "240",
-        alt: lab.gif ? "Its screen on an emulated FM-1 during the preview: keys, PLAY, then a few presets" : "The screen 1.5 s after it starts, on an emulated FM-1" }) : null,
+      !isPreview && lab.shot ? h("img", { class: "emu-shot", src: `data/shots/${sha}.png`, loading: "lazy", width: "240", height: "240", alt: "The screen 1.5 s after it starts, on an emulated FM-1" }) : null,
       h("ul", { class: "emu-facts" },
         h("li", { text: lab.boots ? `Boots: its screen is up ${lab.ms != null ? `${(lab.ms / 1000).toFixed(2)} s` : ""} after power-on.` : "The screen stayed blank in the emulator." }),
         h("li", { text: lab.sound ? "Makes sound when a key is played." : "No sound from a played key (some firmware needs a pattern or a mode first)." }),
         lab.v ? h("li", { text: lab.v === "pass" ? "Newer flash chip (UC25HQ80): works." : lab.v === "fail" ? "Newer flash chip (UC25HQ80): stops saving." : `Newer flash chip (UC25HQ80): ${lab.v}.` }) : null,
-        lab.audio ? h("li", {}, syncedAudio(`data/shots/${sha}.m4a`, lab.gif)) : null,
-        h("li", { class: "muted", text: `Tested with fm1-lab${lab.at ? ` on ${lab.at}` : ""}: emulated, not on a real unit.${lab.gif || lab.audio ? ` ${TOUR_NOTE[lab.tour?.source] || TOUR_NOTE.generic}` : ""}` })))) : null;
+        !isPreview && proj ? h("li", { text: `The project's preview (${proj.tag}) is on its card in the GitHub repo tab.` }) : null,
+        h("li", { class: "muted", text: `Tested with fm1-lab${lab.at ? ` on ${lab.at}` : ""}: emulated, not on a real unit.` })))) : null;
 
   const chain = h("section", {}, h("h3", { class: "sec-h" }, icon("badge-check"), "Trust chain"),
     h("ol", { class: "chain" }, trustChain(id).map((s) => h("li", { class: `s-${s.state}` }, h("span", { class: "node" }, icon(s.ico)),
@@ -352,6 +329,7 @@ async function runRepo(input) {
   try {
     const el = await lookupRepo(repo, {
       index, releases, renderChecks, verdictOf, openRelease, hasReport: (sha) => !!releases[sha]?.a,
+      preview: (r) => { const k = Object.keys(previews).find((x) => x.toLowerCase() === String(r).toLowerCase()), p = k ? previews[k] : null; return p ? { p, lab: brick[p.sha] } : null; },
       onFile: (f, after, prov) => { if (prov?.sha) liveProv.set(prov.sha, prov); return inspectFiles([f], after); },
       status: (m) => progress(m),
     });

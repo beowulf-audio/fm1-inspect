@@ -46,7 +46,6 @@ jobs:
         run: |
           node .fm1-lab/bin/fm1-lab.mjs setup emu
           node tools/lab-update.mjs --lab .fm1-lab --max-new 150 --max-previews 300
-          node tools/tour-check.mjs
       - name: Test
         run: node tests/run.mjs
       - name: Commit if changed

@@ -4,7 +4,7 @@
 //                             reason), boots, sound, ms (first screen), shot / gif / audio (files exist), tour; FM-1
 //                             packages only (fm1-lab emulates an FM-1)
 //   site/data/shots/SHA.png   the boot screenshot; SHA.gif and SHA.m4a the screen and sound through a preview tour
-//                             (fm1-lab sweep --preview), for each project's latest 3 releases
+//                             (fm1-lab sweep --preview), for the one release file each project's preview is of
 //   site/data/rel/SHA.json    the stored report, with the tested flash result in it (site/js/brick.js applyBrick)
 //   site/data/releases.json   each release's verdict with it (a.brickVerdict), and known.json's entries likewise
 // Earlier results stay; a file tested again is replaced.
@@ -45,26 +45,7 @@ for (const r of sweep) {
   }
   lab.results[r.sha] = e; added++;
 }
-// previews (GIF, audio) only for each project's latest releases, so the site doesn't grow without end; older versions
-// keep their screenshot and test results
-const KEEP = 3;
-{
-  const rels = JSON.parse(readFileSync(join(DATA, "releases.json"), "utf8")).releases;
-  const byRepo = new Map();
-  for (const [sha, x] of Object.entries(rels)) { if (!byRepo.has(x.repo)) byRepo.set(x.repo, []); byRepo.get(x.repo).push([sha, x.published || "", x.tag || ""]); }
-  const keep = new Set();
-  for (const list of byRepo.values()) {
-    const tags = [...new Set(list.sort((a, b) => b[1].localeCompare(a[1])).map((x) => x[2]))].slice(0, KEEP);
-    for (const [sha, , tag] of list) if (tags.includes(tag)) keep.add(sha);
-  }
-  let pruned = 0;
-  for (const [sha, e] of Object.entries(lab.results)) {
-    if (keep.has(sha) || !rels[sha] || (!e.gif && !e.audio)) continue;
-    for (const ext of ["gif", "m4a"]) rmSync(join(DATA, "shots", `${sha}.${ext}`), { force: true });
-    delete e.gif; delete e.audio; delete e.tour; pruned++;
-  }
-  if (pruned) console.log(`previews of older releases removed: ${pruned}`);
-}
+// which preview each project shows (one each), and removing the rest: tools/previews.mjs
 lab.generated = new Date().toISOString().slice(0, 10);
 lab.lab = { repo: "beowulf-audio/fm1-lab", commit: labCommit || lab.lab?.commit || null };
 lab.count = Object.keys(lab.results).length;

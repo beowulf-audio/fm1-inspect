@@ -14,8 +14,9 @@ When what a project's tour plays changes (not its comments or formatting), the d
 previews again. A tour is data, never code:
 it is parsed as a scenario and must be at most 20 seconds and 200 steps.
 
-A tour is written for one version of a firmware. Every day, for each project with its own tour (here or the author's),
-the latest release's preview is compared with the previous release's through the same tour (`tools/tour-check.mjs`):
-the number of distinct screens, how much of the time there is sound, how many sounds start. A newer version that shows
-clearly less (its controls moved, so the tour ends on a menu or a notice) goes on `review.json` here, and the job's log
-gets a warning. Nothing is changed by it: the tour needs a look, and a fixed tour makes the previews again.
+One preview per project, on its card with the version it is of (`site/data/previews.json`). When a project has a
+newer release, the daily job plays the same tour on it and compares what it shows with the current preview (the number of
+distinct screens, how much of the time there is sound, how many sounds start; `tools/previews.mjs`). As much: it
+becomes the preview, and the old one's files are removed. Clearly less (a version that moved its controls can leave a
+tour ending on a menu or a notice): the current preview stays, the project goes on `review.json` here and the job's log
+gets a warning; a fixed tour makes it again.

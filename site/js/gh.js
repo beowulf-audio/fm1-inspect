@@ -5,6 +5,7 @@
 //   * the source: C/C++ files scanned for the same signals as the binary checks
 import { h, icon, ext, ghLink, short, fmtKB, fmtN, safeUrl } from "./ui.js";
 import { RELAY_URL } from "./config.js";
+import { previewBlock } from "./preview.js";
 
 const API = "https://api.github.com";
 const RAW = "https://raw.githubusercontent.com";
@@ -103,7 +104,7 @@ async function viaRelay(repo, a) {
 // ---------------------------------------------------------------- the lookup
 /**
  * @param {string} repo  owner/name
- * @param {{index, releases, renderChecks:Function, verdictOf:Function, onFile:(File)=>void, status:(msg:string)=>void}} ctx
+ * @param {{index, releases, renderChecks:Function, verdictOf:Function, onFile:(File)=>void, status:(msg:string)=>void, preview?:(repo:string)=>{p, lab}|null}} ctx
  */
 export async function lookupRepo(repo, ctx) {
   ctx.status("Looking up the repository…");
@@ -233,8 +234,11 @@ function repoCard(meta, releases, committed, srcEl, ctx, repo, ref) {
       return h("li", { class: "asset" }, h("div", { class: "aname" }, h("code", { text: t.path }), h("span", { class: "muted", text: fmtKB(t.size || 0) })), h("div", { class: "abadges" }, btn));
     }))) : null;
 
+  // the project's preview: its tour on one release file, with the version it is of
+  const pv = ctx.preview?.(repo), pvEl = pv ? previewBlock(pv.p, pv.lab) : null;
   cardEl = h("article", { class: `card t-${tone}`, "data-verdict": "repo" }, head, meta2,
     h("div", { class: "body" },
+      pvEl ? h("section", { class: "wide" }, h("h3", { class: "sec-h" }, icon("microchip"), "Preview on an emulated FM-1"), pvEl) : null,
       h("section", {}, h("h3", { class: "sec-h" }, icon("history"), "Releases"), relList),
       h("section", {}, h("h3", { class: "sec-h" }, icon("search"), "Source check"), srcEl),
       committedSec));
