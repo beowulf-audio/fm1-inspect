@@ -1,0 +1,24 @@
+{
+ "summary": "A drum machine for glitch and microsound beats in which every sound is synthesized, with polymetric sequencing, mutating loops and stutter effects on the keys. Beta, tested on one unit.",
+ "features": [
+  "27 slots, one per key: a hi-hat plus 26 synthesized microsounds",
+  "Up to 64 steps per slot with own length, rate, probability, ratchets",
+  "Random beat generator and MUTATE for loops that change each bar",
+  "16 stutter and 11 punch-in effects, held with FX and a key",
+  "Tape echo, delay, filter with drive and shimmer reverb",
+  "16 stored patterns; MIDI notes, clock, start and stop"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "61a979ce22569792",
+  "length": 4471,
+  "headings": [
+   "glitch – microsound drum machine for the m-vave fm-1",
+   "what it does",
+   "install",
+   "build",
+   "test reports and contributions",
+   "license"
+  ]
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "summary": "A Felucca mod that turns sound randomization into a themed \"summoning\": each roll calls one of 30 demons whose rank sets how far the sound is pushed from where it was.",
+ "features": [
+  "Per-track \"Ritual\" mode; on at every power-up",
+  "Rerolls the whole track, the FM6 patch, or one ENV, LFO or FX area",
+  "Seven ranks set the reach, from small nudges to a full random patch",
+  "Each knob click on a page summons a new variation",
+  "Hold SAVE to undo; shared delay, reverb and chorus can't be undone",
+  "Otherwise stock Felucca; must be built from source to install"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "870833ac72f98213",
+  "length": 17536,
+  "headings": [
+   "contents",
+   "quick start",
+   "ritual",
+   "summoning",
+   "the sigil",
+   "the hierarchy",
+   "the codex",
+   "kings",
+   "princes",
+   "dukes",
+   "marquises",
+   "earls",
+   "presidents",
+   "knight",
+   "installing",
+   "credits and license"
+  ]
+ }
+}

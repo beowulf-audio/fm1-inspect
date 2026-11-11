@@ -1,0 +1,43 @@
+{
+ "summary": "A C64 SID player and synth for the FM-1, started as a feasibility study: it plays .sid tunes and GoatTracker 2 songs through reSID 0.16, includes a GoatTracker editor on the device, and runs as a module or firmware on fm1-dock.",
+ "features": [
+  "Plays PSID and RSID tunes, RSID on a full emulated C64",
+  "GoatTracker 2 songs and an on-device editor; 16 flash song slots",
+  "SID synth with 12 instruments and a three-track, 16-step sequencer",
+  "Choice of reSID 0.16 or its own SID model, 6581 or 8580",
+  "Chorus, delay and reverb; USB MIDI notes and program change",
+  "Needs fm1-dock on hardware; no USB audio, MIDI out or TRS MIDI yet"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "78b3e67154d3ceac",
+  "length": 72103,
+  "headings": [
+   "fm1-sid — a sid synth for the m-vave fm-1?",
+   "summary",
+   "user guide: fm-1 sid",
+   "try it without an fm-1",
+   "install it on an fm-1: as an fm1-dock module",
+   "fm-1 sid as its own firmware",
+   "the tune player",
+   "usb-midi",
+   "your own tunes on the fm-1",
+   "the sid synth",
+   "the goattracker editor",
+   "short answer",
+   "engine comparison: own model, resid 0.16, resid 1.0, residfp",
+   "real c64 tunes",
+   "emulator fixes found on the way ai-smarthome pr #31",
+   "the sid player firmware firmware/, player/",
+   "the web page web/, github pages",
+   "measured own model",
+   "what is in here",
+   "the chip model src/sid.c",
+   "the synth driver src/sidsynth.c",
+   "the fm-1 as a sid synth",
+   "ways to build it",
+   "limits and open questions",
+   "next steps"
+  ]
+ }
+}

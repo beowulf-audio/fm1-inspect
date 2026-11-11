@@ -1,0 +1,36 @@
+{
+ "summary": "Felucca 1.5.1 with an extra \"OPX\" altered-FM engine modelled on the Korg opsix's operator section. A separate \"OPX Solo\" build runs only that engine, with more effects and presets.",
+ "features": [
+  "Six operators per voice, up to six voices; 40 algorithms plus a user matrix",
+  "Operator modes: FM, ring mod, filter, filter FM, wave folder, effect",
+  "23 waveforms, per-operator envelopes and key tracking, 3 EGs and 3 LFOs",
+  "8 factory OPX sounds, 126 in OPX Solo; web editor with an OPX tab",
+  "All of Felucca 1.5.1 kept; its projects move both ways",
+  "No opsix arpeggiator or sequencer; user sample slot 3 halved"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "c324bdfecc7ef4d3",
+  "length": 44938,
+  "headings": [
+   "opx",
+   "before you install",
+   "the opx engine",
+   "what it plays",
+   "the pages",
+   "how close to an opsix",
+   "everything else: felucca 1.5.1",
+   "features",
+   "controls",
+   "menu",
+   "engines",
+   "scale keyboard",
+   "layout",
+   "if the fm-1 does not start",
+   "support",
+   "ai disclaimer",
+   "credits",
+   "licence"
+  ]
+ }
+}

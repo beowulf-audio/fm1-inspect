@@ -1,0 +1,27 @@
+{
+ "summary": "A Mellotron-style keyboard firmware built on Dinghy, playing sampled M400S tapes through lo-fi tape effects and basic FX. Also runs on the SMK-37 keyboards.",
+ "features": [
+  "Six sounds: flute, choir, cello, vibes, sax tapes plus a Steinway piano",
+  "Blend two Mellotron sounds together",
+  "LOFI page with tape age and hiss controls",
+  "Settings and patterns saved to flash on newer FM-1s",
+  "SMK-37 support: velocity keys, pads, faders, wheels, pedal",
+  "Tape samples are free but not for commercial use"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "11ac69788b188d3a",
+  "length": 5897,
+  "headings": [
+   "fmel-1",
+   "what is this?",
+   "sounds",
+   "new in 1.3",
+   "new in 1.2",
+   "new in 1.1",
+   "disclaimer",
+   "the tapes",
+   "credits"
+  ]
+ }
+}

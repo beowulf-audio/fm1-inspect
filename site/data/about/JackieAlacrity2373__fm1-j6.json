@@ -1,0 +1,28 @@
+{
+ "summary": "A six-voice polysynth modelled loosely on the Roland JUNO-60, with one DCO per voice, a resonant low-pass filter and the classic stereo chorus. The sound is an approximation, not a circuit model.",
+ "features": [
+  "Saw, pulse with PWM, sub and noise; 24 dB filter plus 4-position HPF",
+  "Chorus I, II and I+II; poly, unison and solo modes with portamento",
+  "Arpeggiator and a 16-step recorder with rests",
+  "56 factory memories, selectable by MIDI program change",
+  "USB MIDI in with a CC for every parameter; no MIDI out or SysEx",
+  "Browser editor over Web MIDI; six screen colour themes"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "8fcd1d7aab3e8c11",
+  "length": 7578,
+  "headings": [
+   "j6: a juno-60 style firmware for the m-vave fm-1",
+   "features",
+   "midi",
+   "controls",
+   "web editor",
+   "install",
+   "what it keeps",
+   "build",
+   "status",
+   "licence and credits"
+  ]
+ }
+}

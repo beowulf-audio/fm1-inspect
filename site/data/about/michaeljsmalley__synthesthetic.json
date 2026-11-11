@@ -1,0 +1,23 @@
+{
+ "summary": "SLOOP's four-track groovebox with added USB video: the FM-1 appears to a computer as a webcam and streams music-reactive visuals, so apps like OBS can show them without a capture card.",
+ "features": [
+  "Over 30 visual modes: scopes, geometry and feedback-style effects",
+  "320x240 MJPEG video at 30 fps, with USB audio and MIDI",
+  "SCREEN mode streams the FM-1's own display",
+  "Autopilot changes mode and palette every 4 to 32 bars",
+  "EYESY-style knob controls; visuals have their own MIDI channel",
+  "Synth engines, sequencer and drums come from SLOOP"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "2aed1367ba3d15b3",
+  "length": 5532,
+  "headings": [
+   "synthesthetic",
+   "features",
+   "installing",
+   "building",
+   "documentation"
+  ]
+ }
+}

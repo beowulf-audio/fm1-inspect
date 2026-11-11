@@ -1,0 +1,24 @@
+{
+ "summary": "A single analog-style synthesizer for the FM-1, laid out after the microKORG, where every screen page draws the waveform, filter curve, envelope or LFO it edits. A fork of Felucca.",
+ "features": [
+  "Two oscillators with ring and sync, sub oscillator, noise, wavefolder",
+  "Five filters including a driven MS20-style low-pass",
+  "Four-slot patch bay, two LFOs, poly, mono, legato and 8-voice unison",
+  "Ten arp types and a 16-step sequencer with ties, accents, slides",
+  "32 programs (25 factory); scale lock and one-key chords",
+  "Web installer, browser emulator and a USB rescue mode on OCT-"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "e85e2b061bfec517",
+  "length": 6529,
+  "headings": [
+   "the synth",
+   "on the screen",
+   "the controls",
+   "install",
+   "the code",
+   "credits"
+  ]
+ }
+}

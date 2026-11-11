@@ -1,0 +1,26 @@
+{
+ "summary": "An ambient synth firmware with basses, pads and plucks driven by a repeating generative Euclidean sequencer, with one sequencer track and eight voices.",
+ "features": [
+  "Two oscillators with classic waves or three user sample slots",
+  "Euclidean patterns with probability, direction, interval, chaos and rhythm variations",
+  "Root, scale and range settings; optional scale-only keyboard",
+  "Three delay types, six reverbs, tape wow and flutter, chorus",
+  "Named patch list with favourites; browser player and sample uploader",
+  "Current release not yet verified on a physical FM-1"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "d924ac559ce4e699",
+  "length": 6148,
+  "headings": [
+   "drift",
+   "features",
+   "controls",
+   "install and release status",
+   "samples",
+   "build and contribute",
+   "licence and credits",
+   "0.9 — sequence variations and reorganised effects"
+  ]
+ }
+}

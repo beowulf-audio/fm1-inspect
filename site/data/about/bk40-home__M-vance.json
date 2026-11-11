@@ -1,0 +1,24 @@
+{
+ "summary": "An eight-voice virtual analog synth in the style of the Roland JP-8000 and JP-8080, ported from the JT-8000 engine with its behaviour measured against the original. In development, not yet released.",
+ "features": [
+  "Super Saw and other JP oscillator types; JP-style LPF, BPF and HPF",
+  "Multi-effects, stereo delay, plate reverb and output limiter",
+  "Poly, mono and unison; upper and lower parts as layer or split",
+  "Two-track real-time sequencer with piano roll; 14-mode arpeggiator",
+  "64 programs; USB MIDI in and out, TRS in, JP-8080 CCs",
+  "Browser page to load JP-8000/8080 SysEx patches over USB"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "969588596e30ac85",
+  "length": 11876,
+  "headings": [
+   "m-vance",
+   "the synth",
+   "the panel",
+   "install",
+   "build and run",
+   "credits and licence"
+  ]
+ }
+}

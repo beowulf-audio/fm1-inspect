@@ -1,0 +1,27 @@
+{
+ "summary": "A MIDI sequencer firmware that runs four independent sequencers for external instruments, shown as a 16-by-8 grid on screen. The FM-1 itself makes no sound apart from a metronome.",
+ "features": [
+  "Six modes: Mono, Poly, Chord, Multitrack, Stochastic and Matriceal",
+  "Per-step conditions, repeats, glide and timing offset; up to 128 steps",
+  "Euclidean and Grids-based drum generators, LFOs, mod lanes, harmonizer",
+  "Four USB MIDI ports (64 channels) out; TRS and USB in",
+  "Clock out, clock follow, program change; patterns and songs",
+  "Early 0.x release; first save overwrites other firmwares' data"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "924f3308fd2fecad",
+  "length": 8062,
+  "headings": [
+   "seq-4 for the m-vave fm-1",
+   "the six modes",
+   "in short",
+   "installing, and going back",
+   "midi",
+   "status",
+   "ideas and problems",
+   "make it your own",
+   "credits"
+  ]
+ }
+}

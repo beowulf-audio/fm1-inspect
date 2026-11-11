@@ -1,0 +1,24 @@
+{
+ "summary": "A non-musical firmware that makes the FM-1 a standalone MIDI tool for monitoring, filtering, remapping and triggering MIDI without a computer. It makes no sound of its own apart from a clock click.",
+ "features": [
+  "Scrolling monitor of the last 100 messages, colour-coded by what happened",
+  "Per-port channel and message-type filters; note, CC and channel remaps",
+  "Event triggers send message lists, such as bank and program changes",
+  "Knobs send CCs; keys play notes and program changes",
+  "MIDI clock monitor with metronome click on the headphone output",
+  "TRS and USB in, USB out only; 16 patches with SysEx backup"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "23af50c6e335b8fb",
+  "length": 5966,
+  "headings": [
+   "fm-1 midi processor",
+   "firmware",
+   "what it does",
+   "latency",
+   "midi connections",
+   "repository"
+  ]
+ }
+}

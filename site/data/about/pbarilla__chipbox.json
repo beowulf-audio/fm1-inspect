@@ -1,0 +1,27 @@
+{
+ "summary": "Chipbox, a chiptune groovebox firmware built on Dinghy that emulates more than 35 sound chips from consoles and computers, mixed freely as channels on a 16-step page sequencer.",
+ "features": [
+  "Over 35 chips incl. NES, Game Boy, Mega Drive, C64 SID, OPL",
+  "Up to 16 channels, each one voice of any chip",
+  "16-step pages chained into a song; step entry or live recording",
+  "Pages of 16 steps chained into a song; step entry or live recording",
+  "Punch-in effects and kick ducking per channel",
+  "Bluetooth sync with sibling firmwares (not standard BLE-MIDI)"
+ ],
+ "from": "README and manual",
+ "readme": {
+  "sha": "c4b48c6c89d9d6b8",
+  "length": 11888,
+  "headings": [
+   "chipbox",
+   "what is it",
+   "links",
+   "brothers link bluetooth sync between the brothers",
+   "why is it called brothers link?",
+   "do i need to call it brothers link?",
+   "chips",
+   "tested?",
+   "licence"
+  ]
+ }
+}

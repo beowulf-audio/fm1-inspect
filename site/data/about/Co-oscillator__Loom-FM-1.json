@@ -1,0 +1,43 @@
+{
+ "summary": "A five-track synth, sampler and groovebox built on Felucca: four polyphonic tracks plus a drum track. The project is paused: the author's unit was lost during a flash and the latest versions are not hardware-tested.",
+ "features": [
+  "14 engines incl. wavetable, 6-op FM, granular, tape scrub and slicer",
+  "Dedicated drum track with Analog and FM kits and choke groups",
+  "64-step sequencer with parameter locks, ratchets, swing and automation",
+  "Chord progression generator and 10-mode arpeggiator",
+  "USB and TRS MIDI with MIDI learn; USB audio input",
+  "Web editor and emulator; imports MIDI files, samples, Helm and Surge presets"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "7686d0d1ecd38367",
+  "length": 48347,
+  "headings": [
+   "loom fm-1",
+   "loom fm-1 highlights",
+   "upstream felucca documentation & reference",
+   "features",
+   "new in 1.8.4.4",
+   "new in 1.8.4.3",
+   "new in 1.8.4.2",
+   "new in 1.8.3",
+   "new in 1.8.2",
+   "new in 1.8.1",
+   "new in 1.8",
+   "new in 1.5.1",
+   "new in 1.5",
+   "new in 1.4.1",
+   "⚠ coming from 1.1.5",
+   "controls",
+   "menu",
+   "engines",
+   "scale keyboard",
+   "layout",
+   "if the fm-1 does not start",
+   "support",
+   "ai disclaimer",
+   "credits",
+   "licence"
+  ]
+ }
+}

@@ -1,0 +1,27 @@
+{
+ "summary": "A groovebox with up to six assignable tracks, combining synth engines, a drum machine bank, an acid line generator and a break slicer, built on JIANT's sequencer and project system. Public beta.",
+ "features": [
+  "Eight synth engines incl. FM6, OberVave, FMINI-1, wavetable and SID-6581",
+  "31 drum kits plus the 55-preset Hortator MD bank; swap single drum sounds",
+  "Acid tracks with 303-style generate and mutate; one Break slicer per project",
+  "Euclid, Turing, Grids and other generators; 59 arrangement genres",
+  "Sidechain ducking; USB MIDI host for controllers; four projects, sections A-D",
+  "Web editor for patterns and loops; dense songs can exceed the CPU"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "e32c23b944fed0b5",
+  "length": 9070,
+  "headings": [
+   "rhythmer",
+   "playback base restored · 20261112.1",
+   "explore the machines",
+   "the machines in motion",
+   "build the pattern",
+   "machines and sequencing",
+   "release and compatibility",
+   "samples, credits and license",
+   "watch rhythmer"
+  ]
+ }
+}

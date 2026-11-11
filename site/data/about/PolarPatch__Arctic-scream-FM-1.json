@@ -1,0 +1,27 @@
+{
+ "summary": "A dark ambient drone firmware built on GR!MM, with four tracks and a self-oscillating feedback voice, 'Holvut', that wakes into sustained howls. It comes with long effects, a sequencer and a browser editor.",
+ "features": [
+  "Holvut feedback-loop voice; overblows with FEEDBACK or aftertouch",
+  "DRONE random walks; GENERATE plays tracks by themselves",
+  "64-step sequencer, chords, arpeggiator, song mode; 47 factory sounds",
+  "Tape, grain, 2.6 s delay, shimmer reverb, master filter and drive",
+  "USB and TRS MIDI in, clock in/out, MOD OUT CCs; USB audio",
+  "No built-in samples; own saves, separate from other firmwares"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "898dd65168a8f673",
+  "length": 15279,
+  "headings": [
+   "árktalaš holvvas // arctic scream",
+   "what's new",
+   "the editor",
+   "install",
+   "good to know",
+   "credits",
+   "support",
+   "building from source",
+   "licence"
+  ]
+ }
+}

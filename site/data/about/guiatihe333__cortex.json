@@ -1,0 +1,21 @@
+{
+ "summary": "CORTEX is a generative FM instrument that plays evolving chords by itself, with a tape loop and a video synth on the screen. Forked from AMB-1.",
+ "features": [
+  "Three six-operator FM voices (pad, bells, bass) with DX7 banks",
+  "Per-voice ADSR, Moog-style low-pass filter and five modulators",
+  "Tape reel records and replays the voices",
+  "Songs loaded from MIDI files into song slots",
+  "Screen video synth with twelve preset looks",
+  "On-screen cartoon cat explains each page and knob"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "5dc9fd77829413cf",
+  "length": 3543,
+  "headings": [
+   "cortex for the m-vave fm-1",
+   "building and testing",
+   "credits"
+  ]
+ }
+}

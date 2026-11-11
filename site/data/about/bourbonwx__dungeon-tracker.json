@@ -1,0 +1,23 @@
+{
+ "summary": "A four-track FM groovebox with a tracker-style sequencer in place of a step grid, and a first-person dungeon crawl on the home screen that is played out by the song. A fork of Felucca 1.6.1.",
+ "features": [
+  "Eight engines: YM2612-style FM, wavetables, Amiga-style samples, SID, analog",
+  "Tracker screen per track, with an effects command column",
+  "Track \"classes\" share a 12-voice budget, so tracks never steal voices",
+  "DICE sound design: roll random but musical sound parameters",
+  "RANDOM SONG builds a four-section song; 11 song slots plus autosave",
+  "MIDI channels 1-4 play the tracks; clock in over TRS"
+ ],
+ "from": "README and DUNGEON-TRACKER.md",
+ "readme": {
+  "sha": "e1c086559355c7cd",
+  "length": 2875,
+  "headings": [
+   "felucca",
+   "maintenance notice",
+   "overview",
+   "ai disclaimer",
+   "credits and licence"
+  ]
+ }
+}

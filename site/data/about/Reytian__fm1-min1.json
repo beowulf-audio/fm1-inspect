@@ -1,0 +1,26 @@
+{
+ "summary": "A self-playing minimalist ensemble in the manner of 1960s to 80s minimal music: repeating figures, slow chord cycles and audible processes that you can steer, rearrange and record.",
+ "features": [
+  "Four models: ARPEGGIO, PHASE, PATTERNS and BELLS; twenty built-in pieces",
+  "EASY keys: each white key plays a chord in the key",
+  "EDIT rolls new ideas per part; teach it your own chord cycle",
+  "Bring parts in and out by hand; processes like grow, shrink, shift",
+  "Records performances as songs, up to eight saved",
+  "Newer FM-1s with the UC25HQ80 flash need version 0.2.2 or later"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "4f5a3123b3e093c1",
+  "length": 8045,
+  "headings": [
+   "min-1 for the m-vave fm-1",
+   "four models",
+   "in short",
+   "from listening to making",
+   "the pages",
+   "building and testing",
+   "credits",
+   "中文简介"
+  ]
+ }
+}

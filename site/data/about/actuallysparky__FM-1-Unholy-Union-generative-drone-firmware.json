@@ -1,0 +1,24 @@
+{
+ "summary": "A generative drone firmware built on Felucca: one button rolls an ambient arrangement in a shared key, with pad, sequence and chord arpeggio parts under a fourth voice you play. Marked experimental.",
+ "features": [
+  "'Immaculate Permutation' rolls pad, sequence and arpeggio parts",
+  "Minor, Dorian and pentatonic scales; slow, ambient-leaning presets",
+  "Automatic evolution every 2 to 32 bars, or by hand",
+  "Hold SAVE to keep a session in project slots A to D; undo last change",
+  "Full Felucca instrument editor and a macro page while it plays",
+  "Saves can't be read by older Felucca or Jangada firmware"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "f138486faf35b91b",
+  "length": 4628,
+  "headings": [
+   "fm-1 unholy union generative drone firmware",
+   "press play to pray",
+   "what it does",
+   "receive the offering",
+   "praise the saints",
+   "build and contribute"
+  ]
+ }
+}

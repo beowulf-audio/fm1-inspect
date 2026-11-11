@@ -1,0 +1,20 @@
+{
+ "summary": "A minimal Elektron-style groovebox firmware with four tracks, built on the MONOFM sound core (itself a Felucca fork). Its manual is written in Russian.",
+ "features": [
+  "Four tracks, each with its own machine; one sound core shared with MONOFM",
+  "Patterns in banks A to E with per-pattern kits and chains",
+  "Parameter locks, trig states and grid recording from the keys",
+  "Arpeggiator per track with latch; live recording from keys and MIDI",
+  "MIDI notes over USB and TRS on channels 1 to 4",
+  "Shares a flash area with MONOFM: saving erases the other's project"
+ ],
+ "from": "README and manual",
+ "readme": {
+  "sha": "ee1fa192902e1ed0",
+  "length": 1456,
+  "headings": [
+   "pulhra",
+   "where it comes from"
+  ]
+ }
+}

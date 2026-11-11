@@ -1,0 +1,25 @@
+{
+ "summary": "A MOD and XM tracker for writing, playing and saving FastTracker 2 and ProTracker songs on the FM-1, with a browser song manager for moving files to and from a computer.",
+ "features": [
+  "Up to 32 channels; FastTracker 2 replayer and a ProTracker mode",
+  "Pattern editor showing 4 or 8 channels, with blocks and undo",
+  "Instrument volume and panning envelopes, sample loops and finetune",
+  "Up to 32 songs in flash; first save overwrites other firmwares' data",
+  "USB MIDI clock out, transport in, and USB audio input",
+  "Untested on official firmware V16's boot loader"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "9149df1beb678274",
+  "length": 10093,
+  "headings": [
+   "xmod",
+   "install",
+   "controls",
+   "song manager",
+   "midi and usb audio",
+   "limits",
+   "building"
+  ]
+ }
+}

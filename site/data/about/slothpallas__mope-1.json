@@ -1,0 +1,27 @@
+{
+ "summary": "A six-voice wavetable synth with a gloomy built-in backing band, where every parameter is shown as a change to an animated pixel blob on screen. Beta, tested on a real FM-1.",
+ "features": [
+  "16 wavetables, second oscillator with FM, ring or sync; comb and vowel filters",
+  "Drums and minor-key auto-bass in 13 synthesized styles, no samples",
+  "Loop recorder with four patterns, piano-roll editing and an arpeggiator",
+  "Twelve hold-a-key \"punch\" effects plus delay, chorus, reverb, tape and fry",
+  "54 presets and 16 user slots; MIDI in and out, clock follow or lead",
+  "Overwrites projects saved by FiMba-1 and FoMni in the same flash slot"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "aa232da8761334ca",
+  "length": 24149,
+  "headings": [
+   "mope-1",
+   "the blob is the synth",
+   "the look",
+   "controls",
+   "recording a loop",
+   "the sound",
+   "try it",
+   "installing it",
+   "licence"
+  ]
+ }
+}

@@ -1,0 +1,20 @@
+{
+ "summary": "A modification of PERF-1 aimed at dark electronic music: the same instrument, sequencer, Auto-DJ and effects, with new music across twenty-one dark genres from dark techno to witch house and dark ambient.",
+ "features": [
+  "21 dark genres with ten factory pieces each",
+  "Drum kits, bass, FM voices, chords and scales rewritten per genre",
+  "Wander pages make the music move between pieces and genres by itself",
+  "Dice roll on SEL + PLAY; Wander can stay on at power-on",
+  "Browser version runs the real engine; tested on one FM-1 only"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "b7f24eb3e8c2909f",
+  "length": 3405,
+  "headings": [
+   "dark-1",
+   "what is in the repository",
+   "licence"
+  ]
+ }
+}

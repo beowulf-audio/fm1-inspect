@@ -1,0 +1,27 @@
+{
+ "summary": "A four-voice wavetable FM synthesizer firmware: each voice has two oscillators made of three morphing wavetable operators, with a drum lane, sequencer and looper alongside. The same engine runs in a browser editor and a CLAP plugin.",
+ "features": [
+  "Two 3-operator wavetable oscillators per voice; FM, ring or mix",
+  "Two-part sounds (DUAL, SPLIT, LAYER); 96 factory tones, 24 attack transients",
+  "Self-oscillating or comb filter, two LFOs, looping envelopes, mod matrix",
+  "303-style sequencer: 4 patterns up to 64 steps, chords, step locks",
+  "Kick, snare, hat and clap lane; note looper up to 8 bars",
+  "USB audio, MIDI and clock; TRS MIDI in; 4 voices, 8 patch slots"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "4af8e9591797ac10",
+  "length": 17678,
+  "headings": [
+   "prysm",
+   "the sound",
+   "the pages",
+   "installing from the command line",
+   "installing the clap plugin",
+   "building",
+   "tests on the computer, no fm-1 needed",
+   "where things are",
+   "credits and licence"
+  ]
+ }
+}

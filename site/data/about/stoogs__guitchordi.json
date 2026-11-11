@@ -1,0 +1,29 @@
+{
+ "summary": "Guitchordi is a six-string chord instrument: pick a chord on the black keys, then strum or pluck strings on the white keys. Beta, tested on one FM-1.",
+ "features": [
+  "White keys are strings in zones; black keys pick chords",
+  "16 instruments: guitars, harp, violin, cello, bass, dulcimer",
+  "50 chord styles from jazz and blues to pop and rock",
+  "Strum mode with direction, division and speed; chord lock",
+  "Fourteen guitar tunings, including Drop D and open tunings",
+  "Settings not saved to flash on the device"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "8c1f12d22afd61e9",
+  "length": 12243,
+  "headings": [
+   "guitchordi",
+   "play in the fm-1 panel simulator",
+   "open http://localhost:8769 and click switch on",
+   "play in the instrument workbench",
+   "open http://localhost:8768",
+   "stop:",
+   "verify and develop",
+   "experimental device firmware",
+   "source and project status",
+   "source and licensing",
+   "credits and release testing"
+  ]
+ }
+}

@@ -1,0 +1,20 @@
+{
+ "summary": "A generative firmware aimed at calm, sound-healing style music, combining generative instruments, Solfeggio tones, soft drums and binaural beats. Testing on the physical FM-1 is left to its author.",
+ "features": [
+  "Generative instruments and evolving soundscapes",
+  "Solfeggio frequency tones and stereo binaural beats",
+  "Gentle drums; eight tracks and 16 voices across three music modes",
+  "Seven-page interface with mixer and saved banks",
+  "Performance MIDI over USB and Bluetooth is disabled"
+ ],
+ "from": "README, release notes and changelog",
+ "readme": {
+  "sha": "2d4895be6c1ad222",
+  "length": 2016,
+  "headings": [
+   "aquora",
+   "project entry point",
+   "copyright"
+  ]
+ }
+}

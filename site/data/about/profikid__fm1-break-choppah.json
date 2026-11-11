@@ -1,0 +1,25 @@
+{
+ "summary": "CHOPPAH, a breakbeat chopper firmware: a break is cut into sixteen slices on the white keys, with momentary effect pads on the black keys and a generator that rearranges the break as it plays. Built on fm1-base; early status.",
+ "features": [
+  "Eight built-in breaks incl. AMEN, THINK and APACHE; 16 slices each",
+  "Eleven held pads: rolls, reverse, freeze, tape stop, gate, dub throw",
+  "Four-slot master effects chain in any order, plus effects per slice",
+  "16 patterns with 32 break steps and kick, snare and hat lanes",
+  "Synthesised four-layer gabber kick; tap tempo and mixer",
+  "MIDI notes play slices and drums; looper and song mode not yet done"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "4809bb538ee41123",
+  "length": 13201,
+  "headings": [
+   "choppah: an amen chopper for the m-vave fm-1",
+   "where to find choppah",
+   "panel",
+   "breaks",
+   "building",
+   "publishing",
+   "licence and credits"
+  ]
+ }
+}

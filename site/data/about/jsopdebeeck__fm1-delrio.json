@@ -1,0 +1,24 @@
+{
+ "summary": "A hand-percussion rhythm box for accompanying songs in a circle, with djembe, cajon, udu and others, a berimbau page with a capoeira bateria, and tanpura and shruti box drones.",
+ "features": [
+  "Six percussion instruments with real strokes, velocity on the black keys",
+  "Step sequencer on the white keys; live recording into the loop",
+  "32 rhythms of 2 to 8 beats; 9 slots for your own",
+  "Berimbau page with 11 toques and the capoeira bateria",
+  "Synthesised tanpura and shruti box drones, alone or under the rhythm",
+  "Changes land on the bar; tap tempo and a slowly rising tempo"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "4218d6ce97ee400b",
+  "length": 17770,
+  "headings": [
+   "fm-1delrio: a ceremony rhythm box for the m-vave fm-1",
+   "what it does",
+   "the rhythms",
+   "install",
+   "the sounds",
+   "licence"
+  ]
+ }
+}

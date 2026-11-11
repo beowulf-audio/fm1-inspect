@@ -1,0 +1,25 @@
+{
+ "summary": "A side-scrolling action game, not an instrument: you play a beaver fighting through a robot city on the FM-1's screen, with synthesized music, effects and recorded character voices.",
+ "features": [
+  "Played on the keys: movement, jump, fire, doors, firebombs and a posse",
+  "Bike and jetpack sections; health pickups and checkpoints",
+  "Progress saved to the device when paused; unlockable Golden Beaver run",
+  "Browser preview can play the game or mirror a connected FM-1",
+  "Recorder exports playthrough video with USB audio; needs macOS"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "432e132f4fde04c1",
+  "length": 6179,
+  "headings": [
+   "rambeaver",
+   "play",
+   "install on the fm-1",
+   "controls and progress",
+   "record a playthrough",
+   "build and modify",
+   "verification",
+   "credits and licenses"
+  ]
+ }
+}

@@ -1,0 +1,42 @@
+{
+ "summary": "Skiff, a six-track groovebox firmware forked from Felucca, with a deep step sequencer, a shared pattern pool, song lists and a live performance layer. Also runs on the SMK-37 Pro keyboard.",
+ "features": [
+  "14 synth and drum engines, 148 factory sounds browsable by type",
+  "64-step sequencer: 4-note chords, overlapping notes, ratchets, trig conditions, p-locks",
+  "64-pattern pool, per-track lists of 16 entries, chains and 16 scenes",
+  "Up to 16 voices on two CPU cores; screen shows each control's job",
+  "USB MIDI out of everything played, clock, MIDI learn; USB audio input",
+  "Loads Felucca sounds and projects; 4 projects, 3 user sample slots"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "5e3b657dd236f6fa",
+  "length": 81144,
+  "headings": [
+   "install",
+   "at a glance",
+   "a tour",
+   "find a sound by type",
+   "sequencer",
+   "patterns, songs and performance",
+   "fm6 from scratch",
+   "sound: every page draws what it does",
+   "themes",
+   "the web editor",
+   "features",
+   "patterns, lists and the song",
+   "controls",
+   "the fx layer's keys",
+   "engines",
+   "menu",
+   "midi implementation",
+   "scale keyboard",
+   "chord follow",
+   "build from source",
+   "if the fm-1 does not start",
+   "support",
+   "credits",
+   "licence"
+  ]
+ }
+}

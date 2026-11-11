@@ -1,0 +1,27 @@
+{
+ "summary": "A fork of the X0X groovebox with a 909, an 808, two 303s and a breakbeat player, adding pattern remixing, Grids-based drum generation and an extended 303 line generator.",
+ "features": [
+  "909 and 808 drum machines, two Open303-based basses, an 8-slice break player",
+  "Per-part length (1-64 steps) and rate; bar-quantized pattern chaining",
+  "Remix: separate bank and pattern picks per part, stored steps kept",
+  "Grids MAP/EUCLID kick, snare and hat generation with Undo",
+  "TB-3PO with 22 scales; experimental Morph waveform on one 303",
+  "Browser backup and restore over USB; user loops in three sample slots"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "34b504ec124a019f",
+  "length": 12719,
+  "headings": [
+   "watch x0x-rmx",
+   "a closer look",
+   "four emulator device colors",
+   "what's inside",
+   "experimental wave 3 in this fork",
+   "your own breaks",
+   "building and testing",
+   "original x0x – upstream demonstration",
+   "licence and credits"
+  ]
+ }
+}

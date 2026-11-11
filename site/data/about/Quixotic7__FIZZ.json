@@ -1,0 +1,22 @@
+{
+ "summary": "A step sequencer for the FM TONE synth voice from ChoralRoot. For now it runs on a Mac with the FM-1 as its control panel; a native FM-1 firmware is planned as a second phase.",
+ "features": [
+  "Eight tracks sharing 16 voices; pool of 128 sounds",
+  "Per-step overrides of track defaults, plus p-locks",
+  "Pages with their own start and end points",
+  "Conditions, chance, ratchets and chords of up to six notes",
+  "Currently needs a Mac: sound comes from the computer, not the FM-1",
+  "Browser preview with an on-screen FM-1"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "b7098b2993bb2d7f",
+  "length": 2900,
+  "headings": [
+   "fizz",
+   "build and test",
+   "license",
+   "credits"
+  ]
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "summary": "A rock and metal firmware built on SLOOP, for writing riffs and songs on four tracks: drums, bass, rhythm guitar and lead, using sampled guitars and bass through amp models.",
+ "features": [
+  "Sampled guitar and bass presets through five amp models and cabinet IRs",
+  "On-screen pedalboard: drives, fuzz, modulation, delay, five reverb types, wah, whammy",
+  "Step sequencer with palm mutes, slides, hammer-ons and power chords",
+  "LIVE view puts bend, vibrato, palm mute and whammy on the knobs",
+  "Editable sampled HEAVY KIT plus synthesised kits; eight synth engines",
+  "Sound pack fills all four user sample slots; won't open SLOOP 2.6-2.8 projects"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "74cb8c3cc0962a02",
+  "length": 9444,
+  "headings": [
+   "screenshots",
+   "features",
+   "install",
+   "other ways",
+   "going back",
+   "rescue",
+   "your first riff",
+   "compatibility",
+   "documentation",
+   "credits",
+   "licence"
+  ]
+ }
+}

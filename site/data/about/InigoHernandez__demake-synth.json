@@ -1,0 +1,22 @@
+{
+ "summary": "An ambient lo-fi instrument with three synths playing 64 built-in pedal recordings, each with its own piano roll, patterns and effects, arranged by scenes, a song mode and a chord machine.",
+ "features": [
+  "64 built-in recordings, 7-shape filter, layers, grit at 22 or 11 kHz",
+  "Per-synth reverb, delay and motion; shared space reverb and tape-style media",
+  "Three piano rolls of up to 256 steps, 8 patterns each",
+  "16 scenes and a song of up to 128 steps",
+  "Chord machine with 16 progressions; synths can harmonize each other",
+  "USB MIDI in/out, TRS in, clock; saves share flash with others"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "ed38ce957afb4588",
+  "length": 6186,
+  "headings": [
+   "demake synth",
+   "what it does",
+   "on the fm-1",
+   "build"
+  ]
+ }
+}

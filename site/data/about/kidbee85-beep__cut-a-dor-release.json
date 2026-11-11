@@ -1,0 +1,27 @@
+{
+ "summary": "A beat-making firmware for dusty breaks and drum loops, with generated rhythms, an 8-lane step editor and recordable punch-in effects.",
+ "features": [
+  "76 factory sounds incl. 12 breaks, plus three 80 KiB expansion banks",
+  "Six styles and sixteen rhythm families with swing, variation and lane locks",
+  "8 lanes of 32 steps; A/B parts, intro, drop, outro and fills",
+  "Roll, stutter, reverse, brake and more, recorded to a 1 to 8 bar FX tape",
+  "USB MIDI clock out; MIDI in over USB or jack; no MIDI note output",
+  "Browser editor with WAV import and bounce; can't upload projects to the device"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "5d4bcdc7339aeca6",
+  "length": 5966,
+  "headings": [
+   "cut-a-dor",
+   "play, remix, share",
+   "what's in the dojo?",
+   "browser editor",
+   "install and recover",
+   "controls",
+   "what it absolutely cannot do",
+   "build and contribute",
+   "credits"
+  ]
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "summary": "A game, not an instrument: a spoon-feeding balance game where you steer a bean on a spoon into a grumpy face's mouth, with recorded voice lines and an ambient soundtrack.",
+ "features": [
+  "Keys roll, move and tip the spoon; GLO loads a bean",
+  "Thirteen voice recordings react to hits and misses",
+  "Transformation scene on every fifth successful feed",
+  "Separate face-study view on SEL",
+  "Installed with a Python USB-MIDI tool from the source archive",
+  "Optional macOS viewer and recorder follow the real device over USB"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "086be92d65bcc9a6",
+  "length": 5971,
+  "headings": [
+   "hungry travis",
+   "download",
+   "play",
+   "install",
+   "live view and recording",
+   "what has been verified",
+   "source and credits"
+  ]
+ }
+}

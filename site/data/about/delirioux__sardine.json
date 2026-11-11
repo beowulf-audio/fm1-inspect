@@ -1,0 +1,28 @@
+{
+ "summary": "Sardine, a live club-mixing firmware with four fixed layers (lead, chord, bass and drums) that starts every session with a newly generated groove in one of twenty styles. You play it like a DJ: drop changes in on the bar, break down, and blend into the next style.",
+ "features": [
+  "Twenty club styles; a fresh groove on every start",
+  "STYLE MIX blends into another style, keeping bass or kick",
+  "Pattern modifiers incl. FAST, SLOW, REV, EUCLID; changes wait for the bar",
+  "Two-part tunes with EVOLVE; held moves like BREAK, SWEEP, TAPE STOP",
+  "145 synth sounds and 24 synthesised drum kits; no samples, no cymbals",
+  "USB MIDI out per layer with CCs; MIDI clock out or in over USB or TRS"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "59db767b9f5dd6b5",
+  "length": 12335,
+  "headings": [
+   "sardine",
+   "try it, install it",
+   "the top ten",
+   "everything",
+   "the controls",
+   "two minutes in",
+   "live workflows",
+   "more",
+   "credits",
+   "license"
+  ]
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "summary": "A backing-band firmware: drums, bass, chords and a synth line follow a chord progression you write as scale numbers, in any key and time signature, for soloing or singing over.",
+ "features": [
+  "28 grooves, 24 bass lines, 24 comping styles and 15 synth lines",
+  "Seven time signatures, verse and chorus parts with fills and endings",
+  "160 factory jams across 16 genres, plus GENERATE for new ideas",
+  "MY LINE: a 16-step synth line that follows the chords",
+  "MIDI clock in, tap tempo and footswitch CCs for loop pedals",
+  "32 jam slots on the device; browser companion with user drum kit"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "7f87f63a52f2e1c9",
+  "length": 12438,
+  "headings": [
+   "what it is",
+   "playing it",
+   "the companion app",
+   "install",
+   "how it works",
+   "building from source",
+   "credits"
+  ]
+ }
+}

@@ -1,0 +1,22 @@
+{
+ "summary": "A SLOOP-based groovebox firmware aimed at forest, psytrance, Goa and hitech, with ready-made grooves, its own drum sounds and four factory songs. Released as a test version.",
+ "features": [
+  "Six 32-step factory grooves, 146 to 196 BPM",
+  "Four 240-bar factory songs with atmosphere, build, drop and break sections",
+  "ARP swaps the bass pattern: gallop, offbeat or full-on",
+  "PSY FX page: shared filter, space, feedback and drive, ring mod",
+  "USB and TRS MIDI: notes and clock; sound CCs not implemented",
+  "Full listening and controls test on hardware still pending"
+ ],
+ "from": "README and MYCELIUM notes",
+ "readme": {
+  "sha": "c0ec5314ec3cd3e1",
+  "length": 2046,
+  "headings": [
+   "mycelium fm-1",
+   "version 1.0 — test release",
+   "corresponding source and building",
+   "install, recovery and credits"
+  ]
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "summary": "Not a firmware itself: a catalog of FM-1 community firmwares found on GitHub, kept as pinned submodules, with automated builds for projects that publish no package of their own.",
+ "features": [
+  "Catalog table and JSON data listing each firmware",
+  "Submodules follow each project's default-branch head",
+  "Nightly refresh; builds released with an index and SHA256 sums",
+  "Only builds licensed firmwares with a known build entry point",
+  "Builds are untested on hardware; keep a way back to official V15"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "065079013862d02b",
+  "length": 2474,
+  "headings": [
+   "fm1-firmware-collection",
+   "how it works",
+   "local use",
+   "license"
+  ]
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "summary": "A six-lane tracker and digital drum machine firmware: five synth channels and one drum channel, edited on a tracker grid with the FM-1's own controls. Its USB multitrack and user sample features are marked experimental.",
+ "features": [
+  "Five synth lanes and a drum lane with up to three hits per step",
+  "48 patterns of 1 to 16 steps; 64-position song chains per channel",
+  "12 oscillator types, 8 shared synth voices, 14 built-in drum sounds",
+  "Mixer, mute and solo, punch-in effects, snapshots and mute groups",
+  "Six separate mono channels or stereo master recorded over USB audio",
+  "13 shared user sample slots, about 10 to 20 seconds in total"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "230aac3bfca8a4cc",
+  "length": 43758,
+  "headings": [
+   "what is beetle?",
+   "where to start",
+   "help chapters",
+   "ch6 drum note3 / fx mode",
+   "global user samples & storage v2 experimental",
+   "migrating an existing fm1 to storage v2",
+   "project-reserved sample capacity meter",
+   "usb-c audio capture: stereo or six-track mode experimental",
+   "audio safety and safe editing",
+   "loading and deleting a project",
+   "fm1 controls",
+   "buttons",
+   "rotary encoders",
+   "musical keys",
+   "editing shortcuts",
+   "the main screens",
+   "tracker",
+   "instrument editor and library",
+   "mixer and live mixer",
+   "master fx",
+   "punch-in fx",
+   "song chains",
+   "projects and project manager",
+   "fm1 flash-chip compatibility",
+   "support",
+   "credits and licences"
+  ]
+ }
+}

@@ -1,0 +1,24 @@
+{
+ "summary": "A bass synth firmware for DnB, dub, dubstep and techno, with wobble, reese, sub and 808 sounds, a morph between sounds and a built-in drum sequencer. Marked beta.",
+ "features": [
+  "9 oscillator engines incl. 808, 4-op FM, growl, additive, hard sync",
+  "Three LFOs with one-gesture 'LFO learn' assignment",
+  "A/B morph and FX pads on the keys",
+  "64-step bass sequencer with probability and trig conditions",
+  "8-track drum sequencer with p-locks, automation and sync out",
+  "Sample oscillator, arpeggiator, MIDI; English, French or Spanish menus"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "71be423071f042b1",
+  "length": 4718,
+  "headings": [
+   "k-wasub · fm1 modern bass firmware",
+   "key features",
+   "install",
+   "build",
+   "support",
+   "credits and license"
+  ]
+ }
+}

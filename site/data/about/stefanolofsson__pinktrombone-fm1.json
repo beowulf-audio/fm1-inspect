@@ -1,0 +1,25 @@
+{
+ "summary": "A port of Pink Trombone, a vocal tract synthesizer with a glottis, tongue, lips and nose, played monophonically from the keys and knobs. Tried only in the emulator, never on a real FM-1.",
+ "features": [
+  "Knobs for tongue position and height, lips and tenseness",
+  "Nine vowel presets; vibrato and nasal controls",
+  "Held buttons add fricatives S, SH, F and stops T/D, K/G, P/B",
+  "Drone toggle; chorus, ping-pong delay and reverb",
+  "MIDI notes and CCs for the tract, vibrato and effects",
+  "The screen draws the throat as it moves; built on fm1-dock"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "247eeb2e8c46575c",
+  "length": 3997,
+  "headings": [
+   "pink trombone for the m-vave fm-1",
+   "playing it",
+   "build",
+   "try it in the emulator",
+   "on the computer",
+   "status",
+   "licence"
+  ]
+ }
+}

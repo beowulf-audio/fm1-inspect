@@ -1,0 +1,24 @@
+{
+ "summary": "A controller, MIDI router and four-track arranger firmware built on CTL-1, playing patterns, songs and albums through MIDI or the built-in General MIDI synth. Beta.",
+ "features": [
+  "Four arranger tracks with PATTERN, SONG and ALBUM playback",
+  "Up to 512 pattern IDs in a dedicated music area",
+  "LIVE PLAY: keys pick 176 patterns, queued to the loop end",
+  "Knobs set the four track volumes in LIVE PLAY",
+  "USB MIDI device or host, Bluetooth MIDI and TRS MIDI",
+  "On-device Sonivox General MIDI sound engine"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "f962cf5e5577c0e7",
+  "length": 3462,
+  "headings": [
+   "keystep one 🎹",
+   "highlights",
+   "live play: keyboard as a pattern selector",
+   "downloads and installation",
+   "developer documentation",
+   "deutsch"
+  ]
+ }
+}

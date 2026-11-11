@@ -1,0 +1,24 @@
+{
+ "summary": "GLIDER, a drone instrument firmware built on M-VAVE's FM1 Open: white keys latch scale tones on and off, and black keys glide them along the scale like a steel guitar. A quiet microsound drum track runs underneath. Beta, tested on one unit.",
+ "features": [
+  "Latching keys, up to 16 tones sounding at once",
+  "Black keys glide a tone 1 to 4 scale steps",
+  "25 scales, chord scales, equal or just intonation; 22 presets",
+  "Tape echo, ladder filter, delay and shimmer reverb; MIDI clock",
+  "27 synthesised microsound drum slots, 16 steps, probability and ratchets",
+  "MIDI notes play the keyboard, channel 10 the drums"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "70a6bcac3cee5f22",
+  "length": 4433,
+  "headings": [
+   "glider – drone synth firmware for the m-vave fm-1",
+   "what it does",
+   "install",
+   "build",
+   "test reports and contributions",
+   "license"
+  ]
+ }
+}

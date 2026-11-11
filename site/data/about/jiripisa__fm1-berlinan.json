@@ -1,0 +1,22 @@
+{
+ "summary": "A generative Berlin School sequencer whose voices loop at unequal lengths, phase against each other and mutate over time. The FM-1 makes no sound itself: it sends each voice as MIDI to external synths.",
+ "features": [
+  "Each voice on its own MIDI channel over USB",
+  "Plays the same notes as Berlinan for macOS for a given template and seed",
+  "MIDI clock master, or follows clock from USB or TRS",
+  "Seven panel pages, six save slots kept across power-off",
+  "No harmony modes, melody, MIDI echo, Link or capture",
+  "Projects don't transfer between the Mac app and the FM-1"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "66776b73f3ab14d5",
+  "length": 3858,
+  "headings": [
+   "berlinan for the m-vave fm-1",
+   "where to read",
+   "building and testing",
+   "licence"
+  ]
+ }
+}

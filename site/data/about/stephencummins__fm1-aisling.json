@@ -1,0 +1,31 @@
+{
+ "summary": "A generative Irish ambient firmware forked from NACHTFAHRT: harps over a drone with a flute, fiddle, chanter or voice leading in the old modes. It plays by itself from power-on and responds when you play.",
+ "features": [
+  "Eight pieces in modal and gapped scales; jig-style 12 and 9-step harps",
+  "White keys play the Lead in the piece's scale, and it answers",
+  "PERFORM page: 27 hold-to-play effects on the whole mix",
+  "MIDI clock, CCs, program changes; four parts sent out over USB MIDI",
+  "Sleep timer; browser editor and painted visualiser",
+  "Its first save replaces NACHTFAHRT, DUB-1 or AMB-1 data"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "1214828614a17c19",
+  "length": 21480,
+  "headings": [
+   "aisling for the m-vave fm-1",
+   "what?",
+   "what's new in 1.3.1",
+   "what's new in 1.3",
+   "what's new in 1.2",
+   "what's new in 1.1",
+   "what's new in 1.0",
+   "what's new in 0.5.1",
+   "what's new in 0.5",
+   "the pieces",
+   "in short",
+   "building and testing",
+   "credits"
+  ]
+ }
+}

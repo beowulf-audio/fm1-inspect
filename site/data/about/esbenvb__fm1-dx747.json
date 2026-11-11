@@ -1,0 +1,27 @@
+{
+ "summary": "DX747 turns the FM-1 into an eight-part multitimbral DX7-style FM sound module, meant to be played over MIDI. It replaces the sequencer, sampler and drums.",
+ "features": [
+  "Eight parts on any MIDI channels, 16 voices shared",
+  "Up to eight DX7 voices layered per part, with key and velocity windows",
+  "64 scenes, recalled from keys, buttons or program change",
+  "DIN, USB and Bluetooth MIDI in; DX7 SysEx voice editing",
+  "128 factory voices, DX7 cartridge import, master filter, reverb and delay",
+  "USB audio out; no sequencer, can't read other firmwares' projects"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "b5832a7c05597a7f",
+  "length": 11712,
+  "headings": [
+   "dx747: an eight-part multitimbral dx7 module for the m-vave fm-1",
+   "the idea",
+   "why you will love it",
+   "made to be controlled",
+   "play it, too",
+   "perfect for",
+   "build",
+   "distribution builds",
+   "license"
+  ]
+ }
+}

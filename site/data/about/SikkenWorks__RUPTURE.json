@@ -1,0 +1,38 @@
+{
+ "summary": "RUPTURE is a monophonic bass synth built around Cycle Exchange Synthesis (CXS) or a bandlimited saw, with two sub-oscillators, a step sequencer and arpeggiator, and 1-bit animated screens.",
+ "features": [
+  "Main oscillator switches between CXS and a bandlimited SAW",
+  "Two sub-oscillators with type, octave, detune, drift and blend",
+  "Resonant filter, ADSR, LFO, sound-shape controls and channel EQ",
+  "Eight effects, including spring, hall and room reverbs",
+  "Sequencer with overdub, count-in, hold and locks; eight named sequences",
+  "Guided first-run setup and a 43-screen on-device tour"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "b832e39340da6942",
+  "length": 28665,
+  "headings": [
+   "rupture",
+   "getting started",
+   "guided quick tour first run or any time",
+   "speaker-pop / analog-enable sequencing v1.84.2",
+   "button led startup pop mitigation v1.84.1",
+   "hardware integration v1.84",
+   "basic navigation",
+   "v1.85.2: uc25hq80 / puya flash compatibility",
+   "v1.85.1: sequencer length=4 playback fix",
+   "v1.85: realtime reliability usb midi + dma diagnostics",
+   "realtime mono headroom",
+   "v1.81: rapid-note realtime reliability",
+   "reverb engines and realtime safety v1.80",
+   "project safety and editing",
+   "firmware installation and recovery",
+   "source and building",
+   "documentation",
+   "credits and license",
+   "system info and encoder controls",
+   "live sequencer recording"
+  ]
+ }
+}

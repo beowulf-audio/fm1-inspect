@@ -1,0 +1,25 @@
+{
+ "summary": "A generative firmware built on Felucca that composes endlessly in the manner of a chosen composer or popular genre, using a port of Mutable Instruments Marbles shaped by music theory.",
+ "features": [
+  "89 composers and styles across 10 eras; 86 genres from the 1950s on",
+  "95 instruments on Felucca's engines; only the piano is sampled",
+  "Historical tunings, odd meters, and a 'MOOD' knob from calm to busy",
+  "Freeze into an editable pattern of up to 384 notes; 16 save slots",
+  "Share codes, favourites and a radio mode that changes pieces",
+  "MIDI out with a channel per part; MIDI clock in and out"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "86d1f34aebc62b05",
+  "length": 9769,
+  "headings": [
+   "tuna",
+   "what is in it",
+   "controls",
+   "roadmap",
+   "building and testing",
+   "documentation",
+   "credits and licence"
+  ]
+ }
+}

@@ -1,0 +1,26 @@
+{
+ "summary": "A single-piece firmware built around Chopin's Etude Op. 10 No. 1: it plays the full piece on a sampled Steinway and lets you shape, practise, transpose and re-voice it.",
+ "features": [
+  "Performance controls for rubato, dynamics, accents and pedal style",
+  "Practice tools: slow-down, bar loops, click, play one hand yourself",
+  "\"WAIT\" mode waits for the right note and charts progress per bar",
+  "Change key, mode or bass; historical tunings and pitch standards",
+  "Nine sounds; MIDI out with each hand on its own channel",
+  "Stores data in Felucca's first two song slots; supports newer-chipset units"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "97454c9f0b5f18f1",
+  "length": 7135,
+  "headings": [
+   "flyfish",
+   "why this piece",
+   "install",
+   "five ways into one piece",
+   "the controls",
+   "the notes",
+   "building",
+   "credits and licence"
+  ]
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "summary": "An experimental eight-voice drone and polyphonic FM synth inspired by the SOMA Lyra-8, with separate DRONE and POLY modes. It has had only limited testing on hardware.",
+ "features": [
+  "Eight voices as four interacting FM pairs",
+  "DRONE mode with latches and hold; chromatic 27-key POLY mode",
+  "Hyper LFO, dual modulated delay, distortion and compression",
+  "Arpeggiator at 10-400 BPM with programmable USER steps",
+  "Mutation with one-level undo; 16 factory presets, 8 user slots",
+  "POLY settings not stored in presets; flashing visuals in 2.0.1 only"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "6c21d7abca36fbfb",
+  "length": 5837,
+  "headings": [
+   "⚠️ photosensitivity notice",
+   "hardware testing notice",
+   "artihive",
+   "main features",
+   "drone mode",
+   "poly mode",
+   "poly envelope editing",
+   "current poly boundaries",
+   "physical-device status",
+   "package identity",
+   "release files",
+   "verification",
+   "acknowledgements",
+   "license"
+  ]
+ }
+}

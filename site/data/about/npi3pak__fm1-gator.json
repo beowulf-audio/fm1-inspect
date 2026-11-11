@@ -1,0 +1,23 @@
+{
+ "summary": "A monophonic macro-oscillator synth running the unchanged Plaits DSP code, with the module's CV inputs replaced by a modulation matrix and its knobs by the FM-1's encoders.",
+ "features": [
+  "24 Plaits models in 3 banks, from virtual analog to speech and drums",
+  "Low-pass gate with decay and colour; OUT/AUX mix and stereo spread",
+  "ADSR, two LFOs and an 8-slot modulation matrix",
+  "GATE, TRIG and DRONE play modes, hold, glide and legato",
+  "16 presets in flash; USB and TRS MIDI in",
+  "Monophonic, 48 kHz audio"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "41444cc54f5c2452",
+  "length": 6361,
+  "headings": [
+   "install",
+   "use",
+   "build",
+   "credits",
+   "license"
+  ]
+ }
+}

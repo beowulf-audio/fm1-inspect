@@ -1,0 +1,28 @@
+{
+ "summary": "Turns the FM-1 into a C64 SID music machine with two emulated SID chips, a tracker and step sequencer, and GoatTracker 2 song compatibility.",
+ "features": [
+  "Two SIDs (6581 or 8580) with adjustable chip character; three FX slots",
+  "STEP and GoatTracker-style TRACKER views with parameter locks",
+  "Saves and plays GoatTracker 2 .sng songs; plays PSID .sid tunes",
+  "LAB sound editor, 16 user sounds; imports SidStation and MIDIbox patches",
+  "MIDI CCs and NRPNs; optional Bluetooth MIDI; USB audio input",
+  "Browser library, song editor, screen mirror and song-to-MIDI tools"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "827b784badfa2777",
+  "length": 18571,
+  "headings": [
+   "sidou",
+   "what's new",
+   "what you can do",
+   "try it in your browser",
+   "install",
+   "controls",
+   "songs and goattracker",
+   "for developers",
+   "status and roadmap",
+   "credits and licence"
+  ]
+ }
+}

@@ -1,0 +1,27 @@
+{
+ "summary": "A Hammond B3 tonewheel organ modelled on the setBfree emulator, with upper, lower and pedal manuals and a Leslie. Version 0.3, tested on one unit.",
+ "features": [
+  "91 tonewheels, nine drawbars, leakage, key click and key compression",
+  "Vibrato and chorus V1-C3, percussion, overdrive and reverb",
+  "Leslie with horn and drum: stop, slow and fast",
+  "All 110 setBfree programs by knob or MIDI program change",
+  "USB and TRS MIDI: channels 1-3 play upper, lower and pedal",
+  "Sound measured against setBfree; USB audio input for recording"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "a577216dd08b1d16",
+  "length": 11791,
+  "headings": [
+   "b3 organ for the m-vave fm-1",
+   "what you get",
+   "measured against a raspberry pi running setbfree",
+   "controls",
+   "install",
+   "try it without an fm-1",
+   "build it yourself",
+   "how it is built",
+   "credits and license"
+  ]
+ }
+}

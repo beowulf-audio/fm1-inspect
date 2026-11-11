@@ -1,0 +1,43 @@
+{
+ "summary": "FM-FAM is a DFAM-style percussion synth with a 16-step sequencer, a two-oscillator synth voice and a separate kick voice with its own sequence. Beta.",
+ "features": [
+  "Two oscillators with 16 wave types, filter, noise and envelopes",
+  "Kick voice with its own 16-step sequencer, FM and noise",
+  "Virtual patch bay with eight cables",
+  "176 patterns with a sound each, a 32-slot song, parameter locks",
+  "Effects chain: compressor, delay, reverb, stutter, DJ filter, limiter",
+  "Randomise or reset any page; MIDI clock in and out, pulse sync out"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "4d9a2b23670bf9ac",
+  "length": 32665,
+  "headings": [
+   "fm-fam",
+   "key pairs",
+   "screenshots",
+   "seq",
+   "synth",
+   "patch",
+   "kick",
+   "fx",
+   "patterns glo",
+   "settings env",
+   "scale",
+   "save",
+   "random",
+   "cheat sheet",
+   "fm1-base",
+   "optional parts",
+   "bluetooth and wifi",
+   "two bluetooth stacks",
+   "turning bluetooth on",
+   "turning wifi on",
+   "what each costs",
+   "development over usb",
+   ".rfm1: your firmware in host apps",
+   "firmware.json: your firmware in hubs",
+   "moving a felucca-based firmware here"
+  ]
+ }
+}

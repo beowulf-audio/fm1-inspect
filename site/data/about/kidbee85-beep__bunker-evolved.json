@@ -1,0 +1,27 @@
+{
+ "summary": "Bunker Evolved is a generative ambient firmware forked from Felucca 1.6.1, built around worlds, motifs and controlled mutation, with Felucca's engine editors still available.",
+ "features": [
+  "64 sound recipes in four-role banks; 24 worlds and 24 motifs",
+  "32 scales and GROW scale variations with one-step undo",
+  "Seven bounded mutations plus a lock",
+  "Six HOME views editing the real synth and sequencer state",
+  "Four project slots; Felucca and AMB projects not migrated",
+  "Browser simulator and Chrome editor; runs on one CPU core"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "0820bf98383ba758",
+  "length": 11593,
+  "headings": [
+   "bunker evolved 1.0",
+   "source provenance",
+   "build the device firmware",
+   "build and test the simulator",
+   "native verification",
+   "installation and storage",
+   "distribution layout",
+   "english release website and film",
+   "chrome editor and feature provenance"
+  ]
+ }
+}

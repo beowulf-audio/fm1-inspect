@@ -1,0 +1,25 @@
+{
+ "summary": "A port of the MonkSynth formant vocal synthesizer: a single sung voice with twelve animated characters, each with its own voice and stage, whose mouths follow the vowel.",
+ "features": [
+  "FOF formant synthesis with five interpolated vowels, breath and head size",
+  "Monophonic with glide; choir unison of up to 10 voices",
+  "Velocity and aftertouch from the stock keys, no hardware changes",
+  "Aftertouch moves the vowel, bends pitch, or both",
+  "USB MIDI in and out, including polyphonic aftertouch and CCs",
+  "Talks to the FM-1 Screen Reader over USB; no sequencer"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "35632c7b300a760d",
+  "length": 9423,
+  "headings": [
+   "monk-1: twelve singers for the fm-1",
+   "playing",
+   "screen reader",
+   "how it is made",
+   "build, test, flash",
+   "credits",
+   "how the keys sense velocity and aftertouch"
+  ]
+ }
+}

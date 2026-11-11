@@ -1,0 +1,25 @@
+{
+ "summary": "GRANA, a granular sample player in the spirit of the MicroGranny 2: up to four sample layers played as a cloud of grains, with lo-fi effects, arpeggiator and sequencer. The on-screen interface and editor are in Italian.",
+ "features": [
+  "Four layers, stacked or split across the keyboard",
+  "Grain size, density, spray, jitter, direction, four windows, freeze",
+  "Multimode filter, chorus-to-phaser or ring mod, tape echo, plate reverb",
+  "Two LFOs, arpeggiator, 64-step sequencer, scales; 64 named presets",
+  "User sample bank of 276 KB sent from a browser editor without reinstalling",
+  "USB and TRS MIDI, clock in and out, MIDI learn; optional Bluetooth build"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "0ea7cd20a145c58d",
+  "length": 7438,
+  "headings": [
+   "mario texture's grana",
+   "install",
+   "samples",
+   "the sound",
+   "the pages",
+   "building",
+   "credits and licence"
+  ]
+ }
+}

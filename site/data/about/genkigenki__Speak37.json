@@ -1,0 +1,36 @@
+{
+ "summary": "A speech synthesizer firmware in the style of the Speak & Spell: each key speaks the next word of a chosen sentence at the key's pitch. Made first for the SMK-37 keyboard; the FM-1 build maps the pads and wheels to its buttons.",
+ "features": [
+  "LPC engine after the TI TMS5220; words made with espeak-ng, no TI ROM",
+  "Nine voices incl. CLASSIC, ROBOT, WHISPER and a three-voice CHOIR",
+  "Twenty sentence banks: songs, Latin chant, jokes, several languages",
+  "16 drum grooves; PLAY speaks the sentence in time",
+  "Write your own sentences on the device; USB MIDI notes and clock",
+  "FM-1 version has no key velocity; author wants FM-1 feedback"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "dce10ba8a88ca294",
+  "length": 30539,
+  "headings": [
+   "speak37",
+   "quick start",
+   "try it in your browser",
+   "the sound",
+   "the sentences",
+   "play",
+   "rhythm",
+   "mope",
+   "the editor user",
+   "the screen",
+   "controls smk-37",
+   "on the fm-1",
+   "memories and the store",
+   "install",
+   "safety",
+   "cpu",
+   "build",
+   "credits and licence"
+  ]
+ }
+}

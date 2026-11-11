@@ -1,0 +1,23 @@
+{
+ "summary": "A singing songwriter firmware on Dinghy: a pixel singer voices Japanese syllables over FM chords, bass and drums, with a song generator and a DX7-style FM engine.",
+ "features": [
+  "Live formant voice: 73 Japanese mora, five characters, harmony voice",
+  "Four tracks (vocal, chords, bass, drums), 16 patterns of 64 rows",
+  "GEN writes whole songs in nine styles, from hyperpop to chip",
+  "Six-operator DX7 engine; import cartridges and export a 32-voice bank",
+  "USB and TRS MIDI keyboard input with sustain; 10 song slots",
+  "DX7 SysEx and MIDI input not yet tried on a real FM-1"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "ced82996cf96d68d",
+  "length": 6792,
+  "headings": [
+   "miku-fm",
+   "quick start",
+   "building",
+   "other firmwares' data",
+   "licence"
+  ]
+ }
+}

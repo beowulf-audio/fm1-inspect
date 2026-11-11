@@ -1,0 +1,28 @@
+{
+ "summary": "A drum machine based on the Microtonic engine that can send kits, patterns and chains to a Microtonic-enabled Pocket Operator (PO-32). It also works as a standalone drum machine.",
+ "features": [
+  "16 sounds, 16 patterns and 4 lanes",
+  "LAB pages edit each sound, with A and B patch sides",
+  "Imports Microtonic presets, drum patches and MIDI patterns; exports kits",
+  "Accent, mute, solo, pattern chains and punch-in effects",
+  "Brothers Link: Bluetooth sync with Chipbox and Smileyface",
+  "Standard MIDI clock in and out over USB"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "5229e1682a185c58",
+  "length": 6380,
+  "headings": [
+   "drumlab",
+   "what is it",
+   "links",
+   "microtonic in, and out",
+   "controls",
+   "the three brothers",
+   "brothers link bluetooth sync between the brothers",
+   "why is it called brothers link?",
+   "do i need to call it brothers link?",
+   "licence"
+  ]
+ }
+}

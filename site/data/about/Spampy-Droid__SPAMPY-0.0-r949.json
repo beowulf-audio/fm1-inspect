@@ -1,0 +1,23 @@
+{
+ "summary": "A synthwave-styled variant of the SLOOP groovebox firmware, with a reworked sound bank, drum kits, scenes, effects and a few built-in arcade games.",
+ "features": [
+  "Built on SLOOP and Felucca, with a synthwave look",
+  "Sound bank adds Prophet and OberVave-derived presets and 80s-style patches",
+  "MORPH wavetable engine in place of the NOISE engine",
+  "Many drum kits, including a SYNWAVE kit, and drum processing",
+  "Arcade games such as Neon Pang and Neon Bubbles",
+  "Release notes mostly in Italian"
+ ],
+ "from": "README and release notes",
+ "readme": {
+  "sha": "518fd30aac8b4689",
+  "length": 701,
+  "headings": [
+   "spampy 0.0 — r949",
+   "r949",
+   "downloads",
+   "video guide",
+   "credits and licence"
+  ]
+ }
+}

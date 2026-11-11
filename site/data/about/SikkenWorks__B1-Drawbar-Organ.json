@@ -1,0 +1,39 @@
+{
+ "summary": "A tonewheel drawbar organ for the FM-1 that synthesises its sound from 91 shared tonewheels mixed with nine drawbars, with rotary speaker, percussion and an overdriven rock amp option.",
+ "features": [
+  "Nine drawbars each for UPPER, LOWER and SOLO registrations",
+  "SINE/ORGAN tonewheels or an experimental band-limited SAWTOOTH mode",
+  "B3/LESLIE or driven ROCK/LORD amp and cabinet character",
+  "Up to 12 voices; percussion, key click, leakage, scanner vibrato",
+  "Keyboard splits, chord keys, 48 scales; rotary, delay and reverb",
+  "12 named projects; autosave optional and off by default"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "900c3abc92d478a7",
+  "length": 19894,
+  "headings": [
+   "b1 v5.6: ota repair",
+   "b1",
+   "the instrument",
+   "audio stability and diagnostics",
+   "firmware hub and stock recovery status v5.4",
+   "how to use it",
+   "01 / shape the organ with drawbars",
+   "02 / switch between organ and sawtooth",
+   "03 / choose the character",
+   "04 / play, split and harmonize",
+   "05 / navigate and edit",
+   "effects",
+   "rotary speaker and scanner",
+   "fx 5/6 · delay",
+   "fx 6/6 · reverb",
+   "projects",
+   "automatic parameter saving v4.9",
+   "firmware identity and switching",
+   "installation",
+   "credits",
+   "v5.2 performance note"
+  ]
+ }
+}

@@ -1,0 +1,17 @@
+{
+ "summary": "A rhythm-section firmware that turns the FM-1 into a Latin backing band for cumbia, salsa, merengue and bolero.",
+ "features": [
+  "Four styles: cumbia, salsa, merengue and bolero",
+  "Separate English and Spanish builds",
+  "Installs from the browser; can also be played in a browser emulator",
+  "Version 1.1 tested on physical FM-1 hardware"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "954d168aeed12383",
+  "length": 766,
+  "headings": [
+   "compas 1.1"
+  ]
+ }
+}

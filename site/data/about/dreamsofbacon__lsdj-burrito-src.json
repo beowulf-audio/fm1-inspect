@@ -1,0 +1,44 @@
+{
+ "summary": "LSDJ Burrito runs Little Sound Dj on the FM-1, played from its keys and knobs, with songs saved to flash and extra per-channel and master effects. LSDj itself is not included: you add your own ROM through the web page.",
+ "features": [
+  "Bring your own LSDj ROM; 9.3.9 is the verified version",
+  "Per-channel filters, drive, lo-fi and an LFO; master echo, reverb, compressor",
+  "MIDI clock in and out, MIDI notes and CCs",
+  "Web page for install, live control, song and kit tools, game controller",
+  "Based on GameDude; no Bluetooth",
+  "Alpha status"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "2e416b4dedb0a41a",
+  "length": 26270,
+  "headings": [
+   "dreamybacon's lsdj burrito",
+   "lsdj burrito firmware based on gamedude",
+   "lsdj burrito 0.9.97: a master reverb, effects on one page each, and a game controller",
+   "lsdj burrito 0.9.96: release numbering, and a firmware file without lsdj",
+   "lsdj burrito: note mode sets lsdj's sync to keybd fm-1995",
+   "lsdj burrito: no bluetooth fm-1994",
+   "lsdj burrito: its own firmware number fm-1992",
+   "lsdj burrito: every sample kit fits fm-1991",
+   "lsdj burrito: the fm-1 pushes its screen to the web page fm-1990",
+   "lsdj burrito: screen rate setting fm-1989",
+   "lsdj burrito: screen mirror rows back to back fm-1988",
+   "lsdj burrito: screen mirror without torn panels, 30 a second fm-1987",
+   "lsdj burrito: cursor fx on other lsdj versions fm-1986",
+   "lsdj burrito: faster screen mirror fm-1985",
+   "lsdj burrito: two effects areas fm-1984",
+   "lsdj burrito: screen mirror on the web page fm-1983",
+   "lsdj burrito: master pages apart from the channel pages, autosave fm-1982",
+   "lsdj burrito: echo back with the channel pages fm-1978",
+   "lsdj burrito: hold fx for the master page fm-1977",
+   "lsdj burrito: seq and the other lsdj helpers in web builds fm-1976",
+   "lsdj burrito: master fx controls fm-1975",
+   "lsdj burrito: alpha 71 effects display",
+   "lsdj burrito: experimental webpage template",
+   "based on gamedude",
+   "run and build",
+   "sources and licenses"
+  ]
+ }
+}

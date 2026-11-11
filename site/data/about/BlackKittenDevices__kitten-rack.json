@@ -1,0 +1,23 @@
+{
+ "summary": "A modular synthesizer firmware: each patch is a virtual Eurorack of modules joined by cables, built and played on the FM-1 or in a web editor that sounds the same.",
+ "features": [
+  "56 modules: VCOs, ladder and Buchla-style filters, Turing, Marbles, chaos, effects",
+  "Add modules and cables on the device; rack view shows every cable",
+  "64 patterns of 64 steps per patch, piano roll, drum grid and songs",
+  "Live recording with count-in, free-tempo takes, quantize and undo",
+  "MIDI LEARN maps stored in the patch; USB audio and MIDI, TRS MIDI",
+  "33 factory patches, oscilloscope and animated visuals; one delay, reverb and chorus per patch"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "be3c5b991a7128da",
+  "length": 8955,
+  "headings": [
+   "what it is",
+   "screens",
+   "quick guide",
+   "install",
+   "credits and license"
+  ]
+ }
+}

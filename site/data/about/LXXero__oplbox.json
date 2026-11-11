@@ -1,0 +1,23 @@
+{
+ "summary": "Plays the AdLib soundtracks of several early-1990s DOS games through an OPL2 chip emulation, and doubles as a tracker for editing and writing songs in the original .CMF format.",
+ "features": [
+  "18 built-in DOS game songs, played as the original sound driver did",
+  "Tracker editor with song order and OPL2 instrument screens; 32-step undo",
+  "Nine flash slots saving plain .CMF files the original driver can play",
+  "Scope screen with nine channel oscilloscopes and per-channel mutes",
+  "Arpeggiator synced to the song's rows, writable into the tracker",
+  "Includes an experimental WiFi diagnostics page; no song export to a computer yet"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "cb4c9a3747212ace",
+  "length": 24138,
+  "headings": [
+   "oplbox — the m-vave fm-1 as an adlib",
+   "controls",
+   "install",
+   "what is in it",
+   "build"
+  ]
+ }
+}

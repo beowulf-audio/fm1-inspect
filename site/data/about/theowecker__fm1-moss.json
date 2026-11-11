@@ -1,0 +1,22 @@
+{
+ "summary": "An ambient firmware that starts playing at power-on, with lo-fi, nature and slow generative drift scenes, and a looper that picks up and layers what you play on the keys.",
+ "features": [
+  "16 scenes in three modes: LOFI, SCAPES and DRIFT",
+  "Six spaces: hall, plate, cloud, shimmer, tape and reverse",
+  "LISTEN mode loops your phrases; HOLD plants self-playing notes",
+  "Up to eight loop layers; library of the last eight loops",
+  "Chord pages, drum and bass step editors; scenes evolve over time",
+  "USB MIDI notes on channel 1; USB audio for recording"
+ ],
+ "from": "README and manual",
+ "readme": {
+  "sha": "c0f494fcf280fa32",
+  "length": 891,
+  "headings": [
+   "moss-1",
+   "try it without an fm-1",
+   "build",
+   "install"
+  ]
+ }
+}

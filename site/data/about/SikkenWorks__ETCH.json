@@ -1,0 +1,34 @@
+{
+ "summary": "A wavetable synth firmware built around single-cycle waves you draw on the FM-1: shape Waves A and B, morph between them, and use Wave C to modulate the result.",
+ "features": [
+  "Draw 128-point waves with three brushes; 16-step undo and redo",
+  "Shape morph of A and B, audio-rate 'WAVE AMP', four-route mod matrix",
+  "Up to eight shared voices; GROUPS keyboard splits, macros and scenes",
+  "ARP with 'RIFF' generator; sequencer up to 256 steps with locks",
+  "64 wave, 32 preset and 4 project slots; USB MIDI notes and clock",
+  "Not yet fully tested on physical hardware"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "6856ee1f95c897fa",
+  "length": 17251,
+  "headings": [
+   "etch",
+   "what is etch?",
+   "sound engine",
+   "three different kinds of saved data",
+   "getting started",
+   "simple and advanced",
+   "controls & shortcuts",
+   "draw, sculpt & play",
+   "sequencing & live performance",
+   "presets, projects & backups",
+   "storage locked / foreign data",
+   "installation & recovery",
+   "source & development",
+   "credits and licensing",
+   "core project and directly derived foundation",
+   "additional upstream projects and attribution inventory"
+  ]
+ }
+}

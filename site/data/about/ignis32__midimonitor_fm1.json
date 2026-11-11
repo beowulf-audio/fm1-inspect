@@ -1,0 +1,26 @@
+{
+ "summary": "MIDIMON, a utility firmware with no synth that turns the FM-1 into a MIDI monitor and router, shown in a green-terminal style. It can also act as a Bluetooth MIDI dongle between USB, TRS and BLE devices.",
+ "features": [
+  "Monitors USB, TRS, USB host and both BLE roles at once",
+  "Log of the last 4096 messages in hex, words or both",
+  "KEYS, CC, channel and CLOCK views; finds stuck notes",
+  "Filters by source, channel and message type",
+  "THRU matrix routes any source to USB, BLE-P and BLE-C",
+  "USB host needs a powered hub; early status (0.5)"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "5fb188710e8d864a",
+  "length": 12214,
+  "headings": [
+   "midimon for the m-vave fm-1",
+   "a bluetooth midi dongle you already have",
+   "what it does",
+   "the panel",
+   "installing",
+   "building",
+   "based on fm1-base",
+   "licence"
+  ]
+ }
+}

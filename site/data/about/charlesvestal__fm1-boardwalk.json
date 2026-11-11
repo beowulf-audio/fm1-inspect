@@ -1,0 +1,22 @@
+{
+ "summary": "A collection of music games for the FM-1, laid out as a seaside arcade: walk along the boardwalk and play cabinets that train timing, pitch, rhythm and melody.",
+ "features": [
+  "18 cabinets incl. falling tiles, ear-training, chord finding, change ringing",
+  "Games are played on the keys; KNOB 1 picks level or mode",
+  "Tickets from each round traded for prizes at a counter",
+  "Each game keeps its best score",
+  "Reports screen contents over USB to the FM-1 Screen Reader",
+  "Falls back to a safe mode after two failed starts"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "535af605664df4e2",
+  "length": 5315,
+  "headings": [
+   "boardwalk for the m-vave fm-1",
+   "playing",
+   "building and testing",
+   "credits"
+  ]
+ }
+}

@@ -1,0 +1,37 @@
+{
+ "summary": "An 8-voice virtual analog synth modelled on the Roland SH-101 and S-1, with a two-track step sequencer. It also runs on M-VAVE's SMK-37 keyboards.",
+ "features": [
+  "Mono, unison, poly and chord modes; saw, pulse/PWM, sub and noise",
+  "'OSC DRAW' 16-step wavetables and 'OSC CHOP' comb overtones",
+  "24 dB/oct filter with self-oscillation; LFO up to audio rate",
+  "Two 64-step polyphonic tracks with ratchets, probability, motion recording",
+  "64 factory programs, 35 user slots, 8 patterns; arpeggiator with hold",
+  "USB audio and USB MIDI with the S-1 CC map and SysEx patch dump"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "e7b095d13eed9ec3",
+  "length": 13911,
+  "headings": [
+   "s1vave — 8-voice virtual analog tweak synth for m-vave fm-1",
+   "highlights & features",
+   "1. classic sh-101 voice architecture & tweak innovations",
+   "2. cascaded 4-pole filter & calibrated envelopes",
+   "3. modulation & effects",
+   "4. sequencer, presets & usb connectivity",
+   "hardware panel controls m-vave fm-1",
+   "complete midi cc implementation",
+   "flashing & installation",
+   "option 1: quick install via python recommended",
+   "option 2: web installer",
+   "browser simulator & web calibration studio",
+   "building from source linux / wsl2",
+   "1. prerequisites",
+   "2. download toolchain",
+   "3. clone jieli ac79 sdk",
+   "4. compile firmware package",
+   "documentation links",
+   "credits & license"
+  ]
+ }
+}

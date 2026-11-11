@@ -1,0 +1,34 @@
+{
+ "summary": "A multi-engine synth firmware based on Felucca that drops the samples in favour of extra synth and drum engines, more sequences per track and expanded chord modes.",
+ "features": [
+  "Eight swappable sequences per track, chainable up to 512 steps",
+  "Per-step preset changes within the same engine",
+  "Generative \"GEN\" arp mode with density, chord, evolve and algorithm controls",
+  "Strum and chord-shaping modes using the black keys",
+  "Adds SWARM, FM-TONE, WAVETONE, DRUM-X and its own SH-TONE engine",
+  "No samples or granular engine; tested on one unit"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "eb9b4f0a8bac3ca0",
+  "length": 15030,
+  "headings": [
+   "argo",
+   "about this project",
+   "development and support",
+   "credits and license",
+   "the differences between this and felucca",
+   "8 sequences, one sequence chain option.",
+   "preset changing per step",
+   "the generative arpeggiator",
+   "chord improvements",
+   "five new synth engines; one unique to this firmware, four from other firmwares",
+   "additional effects changes",
+   "user slicer settings on the slicer 2 page",
+   "additional insert effects",
+   "48 user presets",
+   "edit: del step reminder when opening the sequencer menu",
+   "todo"
+  ]
+ }
+}

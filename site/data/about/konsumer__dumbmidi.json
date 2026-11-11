@@ -1,0 +1,28 @@
+{
+ "summary": "A MIDI controller firmware for the FM-1 and M-VAVE's SMK-37 keyboards that names the chord you hold in large type, lets you map every control on screen and sends over USB and Bluetooth MIDI. It makes no sound itself.",
+ "features": [
+  "Big chord and note-name display from keys or incoming MIDI",
+  "On-screen MAP: each control sends CC, note, program or pitch bend",
+  "Arpeggiator, chord memory, scale snap and a two-zone keyboard split",
+  "Key LEDs coloured from MIDI on channel 16",
+  "USB and BLE MIDI out; FM-1 keys send fixed velocity 100",
+  "No web installer or emulator; packages per device model"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "267e7e8c2a00da95",
+  "length": 8602,
+  "headings": [
+   "dumbmidi",
+   "build",
+   "play",
+   "controls",
+   "map a control on the screen",
+   "arpeggiator, chord memory, scale",
+   "colours from midi in",
+   "midi out",
+   "develop",
+   "licence"
+  ]
+ }
+}

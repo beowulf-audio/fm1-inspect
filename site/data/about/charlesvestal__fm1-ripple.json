@@ -1,0 +1,23 @@
+{
+ "summary": "A scriptable platform, inspired by norns: instruments called droplets are written in Lua and play sound engines called currents written in Faust, Pd or C. You load them by copying files to the FM-1, which mounts as a USB drive.",
+ "features": [
+  "USB disk mode: copy droplets and currents, no reflashing",
+  "15 built-in droplets incl. beat, euclid, life, rack, monk and sophie",
+  "rack chains MIDI effects into any voice and two effects",
+  "17 Plaits macro-oscillator currents built in, three more as files",
+  "midi droplet turns the FM-1 into a USB MIDI controller",
+  "276 KB of user disk; browser emulator runs Lua and Faust live"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "21129e819e26b5a4",
+  "length": 5773,
+  "headings": [
+   "ripple",
+   "on the fm-1",
+   "writing your own",
+   "build and test",
+   "licenses"
+  ]
+ }
+}

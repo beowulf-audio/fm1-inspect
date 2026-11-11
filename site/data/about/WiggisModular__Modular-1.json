@@ -1,0 +1,23 @@
+{
+ "summary": "A modular synth firmware in the spirit of the Nord Modular: patches are built from modules in a browser app and uploaded to the FM-1, which plays them through an arpeggiator.",
+ "features": [
+  "Patch modules in a web app, then upload them to the device",
+  "Two global parameter inputs per module with attenuverters, plus a mapping matrix",
+  "Knobs 1 to 4 control the selected module's mapped parameters",
+  "Arpeggiator pages for melody, euclidean rhythm and randomness",
+  "A drum machine voice with 16 steps and 8 factory patterns",
+  "32 factory patch slots; recent changes tested on the host only"
+ ],
+ "from": "README and changelog",
+ "readme": {
+  "sha": "151c05b52775a794",
+  "length": 1462,
+  "headings": [
+   "modular-1",
+   "webapp",
+   "fm-1",
+   "hack it",
+   "license"
+  ]
+ }
+}

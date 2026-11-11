@@ -1,0 +1,21 @@
+{
+ "summary": "A toddler toy firmware with four cards on the PRESETS wheel: nursery songs, spoken letters, counting numbers and a simple piano. There are no menus or settings.",
+ "features": [
+  "SONGS: each of the 27 keys plays a public-domain nursery song",
+  "LETTERS shows and speaks A-Z; NUMBERS counts dots aloud",
+  "PIANO plays the real pitches and shows the note name",
+  "Buttons play drums with a kit per card; 17 sounds on SELECT",
+  "OCT- / OCT+ stop everything; remembers card, sound and song speed",
+  "Version 0.1; voice clips are for non-commercial family use"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "6e6364f053c46b1d",
+  "length": 3564,
+  "headings": [
+   "kidboy 0.1 for the fm-1",
+   "build on the lenovo",
+   "test and simulate"
+  ]
+ }
+}

@@ -1,0 +1,24 @@
+{
+ "summary": "LUOGU plays Peking opera percussion patterns and jinghu interludes, for learning the percussion by playing along or for singing an aria with a backing band. Docs in English and Chinese.",
+ "features": [
+  "64 luogu jing percussion patterns with syllables lit as they sound",
+  "Play-along mode drops your instrument's part and scores timing",
+  "18 banshi and five whole arias with jinghu, jingerhu and yueqin",
+  "Follow-along practice waits for each stroke before moving on",
+  "Recorded percussion strokes; synthesised gong and fiddles",
+  "USB MIDI keyboard or pad plays like the built-in keys"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "e1d6d8151bb2b273",
+  "length": 12242,
+  "headings": [
+   "luogu",
+   "the music",
+   "controls",
+   "build and test",
+   "licence and credits",
+   "中文说明"
+  ]
+ }
+}

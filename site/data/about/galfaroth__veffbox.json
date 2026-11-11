@@ -1,0 +1,24 @@
+{
+ "summary": "A resampling sound-design instrument: build a sound from a source, modulation and an effects chain, resample it, and use the result as the next source. Each saved sound keeps the recipe that made it.",
+ "features": [
+  "Sources: 4-op FM, analog, drums, and resamples as sample, grain or chop",
+  "6 LFOs and 3 envelopes, four destinations each; up to 8 effects",
+  "64-sound bank with generation trees and bit-exact rebuild",
+  "Four tracks, chord sequences, chords by degree and a chord-following arp",
+  "USB MIDI clock in or out and note output; USB audio",
+  "Resamples limited to 1.67 s; pitch not yet a modulation target"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "2398154a35003316",
+  "length": 3734,
+  "headings": [
+   "veffbox",
+   "build, install, test on the hardware",
+   "on the web",
+   "try the interface",
+   "core",
+   "license"
+  ]
+ }
+}

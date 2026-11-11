@@ -1,0 +1,26 @@
+{
+ "summary": "A space exploration game built into the SLOOP groovebox: two knobs fly a ship over 3D planets, with landing, mining, combat, races and warps, while the rest of the FM-1 plays the music as in SLOOP.",
+ "features": [
+  "Fly, land, walk, mine and fight sentinels on generated planets",
+  "Races, pursuits and a galactic warp map",
+  "Game controls on holds and double taps; quick presses work as in SLOOP",
+  "Merged SLOOP features: 15 arp modes, MIDI clock out, sections A-D",
+  "WAVE sample editor page; sounds shown as a CD carousel",
+  "Frames can still drop; flash nearly full, some samples at lower rates"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "cb74506e3e51a0b6",
+  "length": 7405,
+  "headings": [
+   "no man sky fm",
+   "the shortcuts that exist only here",
+   "what is unique to no man sky fm",
+   "still being optimized",
+   "changes",
+   "use it in your own work",
+   "what is in this repository",
+   "credits"
+  ]
+ }
+}

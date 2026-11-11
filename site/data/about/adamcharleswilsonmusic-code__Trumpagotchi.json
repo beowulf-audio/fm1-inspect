@@ -1,0 +1,23 @@
+{
+ "summary": "A parody virtual-pet firmware: you look after a cartoon Trump by feeding, praising, cleaning up after him and putting him to bed, and when he is happy he plays bongos along with your keyboard.",
+ "features": [
+  "Four care keys: Feed, Praise, Clean and Rest",
+  "Food, Mood and Energy bars; Game Over when all reach zero",
+  "Five-minute days; time powered off does not count",
+  "Pentatonic keyboard with bongo accompaniment and voice clips",
+  "Effects knobs unused; no reverb or delay",
+  "Installs with a Python command-line tool; autosaves progress"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "4229c8673667b6aa",
+  "length": 4746,
+  "headings": [
+   "trumpagotchi for m-vave fm-1",
+   "download and install",
+   "quick start",
+   "troubleshooting",
+   "source and credits"
+  ]
+ }
+}

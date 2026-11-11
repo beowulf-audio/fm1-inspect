@@ -1,0 +1,51 @@
+{
+ "summary": "A chord instrument and songwriting groovebox: pick a chord progression, add drums, bass and arpeggios, and play over it with root keys plus chord-type modifier keys.",
+ "features": [
+  "130 progression ideas, up to 16 editable chord slots",
+  "\"Auto Harmony\" builds chords from the chosen key and scale",
+  "Drum kits with fills and drops; 13 arpeggiator modes; 13 FX presets",
+  "\"Chord Lab\" shows notes and intervals and suggests next chords",
+  "Six saved song ideas and the last three recorded takes",
+  "USB audio with chord and bass stems; MIDI out and clock in or out"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "bd11cc4845b27c43",
+  "length": 42871,
+  "headings": [
+   "cord · fm-1",
+   "what you can do",
+   "find your way",
+   "make your first loop",
+   "play without an fm-1",
+   "the controls",
+   "nine home pages",
+   "play chords and learn the keys",
+   "auto harmony",
+   "the keyboard guide and root lights",
+   "explore progressions",
+   "drums, loops and live performance",
+   "fills, drops and returns",
+   "choose and shape your sounds",
+   "arpeggios and strums",
+   "effects",
+   "variations",
+   "write your own phrase",
+   "chord lab",
+   "save and recall ideas",
+   "record your playing",
+   "connect to your computer",
+   "usb audio",
+   "midi and sync",
+   "make it yours",
+   "the cord startup",
+   "settings reference",
+   "install on your fm-1",
+   "when something isn't working",
+   "signature 8 development pilot",
+   "build the firmware",
+   "further reading and credits",
+   "firmware hub listing"
+  ]
+ }
+}

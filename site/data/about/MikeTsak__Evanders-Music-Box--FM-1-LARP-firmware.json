@@ -1,0 +1,28 @@
+{
+ "summary": "A firmware for medieval and fantasy live-action roleplay: acoustic-style physical-model instruments, a four-track composing mode and a scene mode for scoring a game live. Still in early hardware testing.",
+ "features": [
+  "20 instruments: harps, lutes, hurdy-gurdy, bagpipe, shawm, choir, organs, war drums",
+  "Bardic Crafting: four tracks, 64-step sequencer, microtiming, p-locks, live looping",
+  "Encounter: 16 scenes on white keys, 11 variations on black keys, bar-quantized crossfades",
+  "Scale Lock, eleven modes and four historical temperaments",
+  "Hidden Modern Mode adds subtractive and FM synth voices",
+  "Autosave every 30 seconds; USB audio and MIDI not yet confirmed on hardware"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "9f566977fe730414",
+  "length": 21031,
+  "headings": [
+   "screenshots",
+   "overview: larp-first firmware",
+   "feature matrix",
+   "architecture",
+   "boot and power",
+   "flashing",
+   "recovery",
+   "building and testing",
+   "testing",
+   "credits and licence"
+  ]
+ }
+}

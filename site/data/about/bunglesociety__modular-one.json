@@ -1,0 +1,23 @@
+{
+ "summary": "A film-music writing firmware built on Felucca: a soft FM engine from the Modular Town plugin with its effects, a MIDI song player and an always-on sketch recorder. Beta, tested only on the author's unit.",
+ "features": [
+  "'TOWN' FM engine with 40 presets in five families",
+  "Ping-pong delay, plate reverb and the 'island' shimmer effect",
+  "Tape player plays MIDI files sent from a computer",
+  "Hold REC to keep the last phrase played as a saved sketch",
+  "Carnet web app and command-line tool to send songs and export sketches",
+  "Three synth tracks, no drum track; stock presets are lost on install"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "303ce47a70844ec2",
+  "length": 5304,
+  "headings": [
+   "modular one",
+   "what's inside",
+   "installing",
+   "building from source",
+   "licence and credits"
+  ]
+ }
+}

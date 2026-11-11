@@ -1,0 +1,23 @@
+{
+ "summary": "A firmware for small children: any key plays FM notes on a pentatonic scale over a backing beat, with four animal characters animating on screen. There are no menus and nothing to save.",
+ "features": [
+  "Six-operator FM notes locked to a pentatonic scale",
+  "Synthesised drums and a backing beat toggled with PLAY",
+  "Monkey, Cat, Dog and Llama move with the music",
+  "Knobs for pet, speed, busy, bounce and squish",
+  "Built on ChoralRoot; first public beta, mostly checked on the emulator"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "0cf1c84a0f738fda",
+  "length": 3593,
+  "headings": [
+   "purplemonkey fm-1",
+   "try it in the browser",
+   "try it mac, no fm-1 needed",
+   "what is here",
+   "build and test",
+   "licence"
+  ]
+ }
+}

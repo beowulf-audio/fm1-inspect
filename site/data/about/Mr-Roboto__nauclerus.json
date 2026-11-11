@@ -1,0 +1,40 @@
+{
+ "summary": "A groovebox firmware based on Hortator, with eight drum tracks, up to two 303-style ACID bass voices and 64-step patterns, plus pattern remixing and generation tools.",
+ "features": [
+  "808, 909, Plaits-based and sample drum models; ACID bass on up to 2 tracks",
+  "64 steps per track with probability, ratchets, accents, locks and recorded knob motion",
+  "\"ORB Remix\" mappings, TB-3PO bass-line generation and Grids patterns",
+  "Per-track LFOs, resonators, slicer; sidechain compressor and live PERFORM effects",
+  "USB and TRS MIDI in, clock in, MIDI learn and USB audio",
+  "Four project slots and song chaining; separate Bluetooth MIDI build"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "d5e6c1109f7352d6",
+  "length": 40160,
+  "headings": [
+   "nauclerus",
+   "what it does",
+   "on the panel",
+   "mutes",
+   "midi learn",
+   "perform",
+   "projects",
+   "parameter locks",
+   "metronome",
+   "screen colours",
+   "knob acceleration",
+   "key backlight",
+   "cpu and prio",
+   "bluetooth midi",
+   "the bluetooth page",
+   "the smc-mixer daw mode",
+   "install",
+   "back to the official firmware",
+   "build",
+   "layout",
+   "credits",
+   "licence"
+  ]
+ }
+}

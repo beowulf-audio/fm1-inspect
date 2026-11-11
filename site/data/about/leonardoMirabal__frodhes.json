@@ -1,0 +1,29 @@
+{
+ "summary": "A physically modelled electric piano, vibraphone and marimba with no samples: each note is computed from a model of hammer and tine or mallet and bar. The same instrument also runs on the Ableton Move and as a desktop plugin.",
+ "features": [
+  "Four electric pianos, a vibraphone with motor, and a marimba",
+  "Compressor, EQ, drive, filter, tremolo, phaser, chorus, delay, reverb",
+  "Velocity from the FM-1 keys, sustain, chords, scales, arpeggiator",
+  "Pattern recorder of 1-16 bars with overdub and per-step chance",
+  "USB and TRS MIDI, clock, USB audio; 19 factory, 16 user presets",
+  "10 voices, or 14 with the two-core package"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "5fd31b8acbf6854e",
+  "length": 10687,
+  "headings": [
+   "frodhes",
+   "what you get",
+   "install on the fm-1",
+   "on the ableton move",
+   "on your computer: the desktop plugin",
+   "manual",
+   "other keyboards",
+   "credits",
+   "for developers",
+   "support",
+   "license and disclaimer"
+  ]
+ }
+}

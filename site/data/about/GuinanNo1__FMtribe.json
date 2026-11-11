@@ -1,0 +1,20 @@
+{
+ "summary": "A planned clean-room recreation of the Korg monotribe: one VCO, an MS-style filter, an LFO, three drums and an eight-step sequencer. The current build is an early test that only plays a placeholder voice.",
+ "features": [
+  "Early test build: the monotribe instrument itself is not in it yet",
+  "Planned: saw, triangle and square VCO, Korg35-style filter, three EG modes",
+  "Planned: kick, snare and hi-hat with an eight-step sequencer and flux mode",
+  "Planned: the stock monotribe MIDI map over USB, Bluetooth and TRS",
+  "No Korg code; browser installer and emulator"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "e7074b5546d45bf7",
+  "length": 2230,
+  "headings": [
+   "fmtribe",
+   "plan",
+   "build"
+  ]
+ }
+}

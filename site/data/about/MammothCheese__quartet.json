@@ -1,0 +1,24 @@
+{
+ "summary": "A four-track groovebox modelled on a small band: lead, pads, bass and drums, each with its own patterns, pedal effects and arrangement in a song sequencer.",
+ "features": [
+  "LEAD and PAD 4 voices each, plus BASS and DRUMS tracks",
+  "10 patterns per track, 16 to 64 steps; step and live recording",
+  "10 tweakable sounds per instrument; 10 drum kits incl. sampled LM-1",
+  "Five stompbox pedals per track, arpeggiator and mixer with mutes",
+  "SUPER SEQ chains patterns per track into 10 songs",
+  "4 save slots plus autosave; USB rescue by holding OCT-"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "9f65eaac42fb9889",
+  "length": 4922,
+  "headings": [
+   "quartet",
+   "what it does",
+   "install",
+   "build it",
+   "built on",
+   "license"
+  ]
+ }
+}

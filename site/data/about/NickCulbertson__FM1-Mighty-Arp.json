@@ -1,0 +1,22 @@
+{
+ "summary": "A 4-op FM and subtractive synth built around a chance arpeggiator: hold a chord and a CHANCE control decides how many steps play.",
+ "features": [
+  "50 sounds in eight kinds, plus a RANDOM mode that makes new ones",
+  "Arp HOLD; 32-step sequencer transposed from the keys",
+  "Chords, effects and an oscilloscope view; USER presets",
+  "Arp and sequencer notes sent over USB MIDI; MIDI notes in",
+  "Keeps its own presets; doesn't read other firmwares' projects or samples",
+  "Browser emulator and web installer"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "a31624a80eb54985",
+  "length": 3767,
+  "headings": [
+   "mighty arp for the m-vave fm-1",
+   "quick start",
+   "building and testing",
+   "credits"
+  ]
+ }
+}

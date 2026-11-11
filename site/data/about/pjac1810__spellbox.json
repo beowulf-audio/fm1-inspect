@@ -1,0 +1,24 @@
+{
+ "summary": "A talking spelling game modelled on the 1978 Speak & Spell, with an LPC speech voice, an imitation fluorescent display and the original game types, in English.",
+ "features": [
+  "SPELL, LETTER, SAY IT, SECRET CODE and MYSTERY WORD games",
+  "100 words across 4 levels; keys laid out alphabetically",
+  "\"SING\" and \"LETTER SYNTH\" turn words and letters into playable notes",
+  "\"SPEAK\" reads typed text using a 12,000-word dictionary",
+  "Circuit-bending settings: clock, pitch, corrupted coefficients, stutter, crush",
+  "Voice made with espeak-ng, no original ROM data; README in French"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "8043cb8d0de8729a",
+  "length": 6894,
+  "headings": [
+   "spellbox — jeu d'orthographe parlant pour m-vave fm-1",
+   "jouer",
+   "les mots",
+   "obtenir et installer le firmware",
+   "développement",
+   "licence"
+  ]
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "summary": "A 12-voice wavetable synth firmware on Dinghy, with two wavetable oscillators per voice, an arpeggiator and two step sequencers sharing one clock.",
+ "features": [
+  "12 built-in tables plus 8 user slots from Serum, WaveEdit, Ableton or Surge",
+  "Resonant multimode filter, two envelopes, LFO, four-slot effects chain",
+  "Two 32-step sequencers with chords and a per-step modulation lane",
+  "8 factory and 32 user patches; browser tool for patches and tables",
+  "USB MIDI in and out, follows MIDI clock; USB audio input",
+  "Doesn't read other firmwares' data; switching away erases its patches"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "81fa7bfe6378e640",
+  "length": 16466,
+  "headings": [
+   "tastywaves",
+   "contents",
+   "features",
+   "install",
+   "manual install",
+   "playing it",
+   "the pages",
+   "arpeggiator and sequencers",
+   "patches",
+   "the web tool: your own wavetables, patch library",
+   "midi and usb audio",
+   "compatibility",
+   "build from source",
+   "credits and licence"
+  ]
+ }
+}

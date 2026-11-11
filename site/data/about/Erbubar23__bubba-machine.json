@@ -1,0 +1,24 @@
+{
+ "summary": "A six-channel groovebox firmware written from scratch, with modeled drums, a sample slicer and four switchable synth machines modeled on classic instruments, all rendered live at 44.1 kHz. Beta, tested on one unit.",
+ "features": [
+  "BR-8 TR-style drums: 16 instruments, each with its own length",
+  "BP-1 Slicer cuts a take into 16 pads with a step grid",
+  "Synth machines: BB-303, B-MINI, BX-7 6-op FM, BITTAL wavetable, BUNO-6",
+  "HOME mixer: 9 patterns, per-channel filter, delay, reverb, 4 mute scenes",
+  "Per-track length (1-64 steps) and speed; MIDI in, clock in, sync out",
+  "Updates may erase saved patterns until v1; browser emulator available"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "d1f633b95b820b3b",
+  "length": 9020,
+  "headings": [
+   "el objetivo: una máquina hi-fi",
+   "qué es",
+   "pruébalo",
+   "documentación",
+   "licencia",
+   "in english"
+  ]
+ }
+}

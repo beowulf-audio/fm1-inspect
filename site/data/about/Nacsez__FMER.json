@@ -1,0 +1,24 @@
+{
+ "summary": "A firmware with a six-operator FM engine and a virtual analog engine, played as one six-voice instrument or as four mono tracks with patterns and a song arrangement. A Windows companion app manages sounds, projects, backups and installs.",
+ "features": [
+  "6-op FM with DX7-style patch import, plus virtual analog",
+  "Two banks of 64 instruments; 224-sound library with five profiles",
+  "Reorderable filter, drive, chorus, phaser, delay and reverb",
+  "16 projects, 16 patterns each, up to 64 steps; four-lane song mode",
+  "USB and TRS MIDI in, USB out, Bluetooth MIDI between two FMERs",
+  "USB audio of the main mix only; companion app is Windows-only"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "f2cf462fe62b9ed1",
+  "length": 6597,
+  "headings": [
+   "fmer",
+   "start here",
+   "on the instrument",
+   "companion",
+   "current limits",
+   "source and attribution"
+  ]
+ }
+}

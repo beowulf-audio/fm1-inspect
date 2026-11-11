@@ -1,0 +1,28 @@
+{
+ "summary": "Turns the FM-1 into a USB audio interface and Bluetooth audio receiver with an EQ, limiter, mixer and visualizers. It is not an instrument.",
+ "features": [
+  "Class-compliant 2-in/2-out USB audio at 16-bit, 44.1 kHz",
+  "Bluetooth receiver with SBC, AAC, aptX, aptX HD and LDAC",
+  "Five-band parametric EQ and peak limiter, 8 presets each",
+  "Mixer with mute and solo; audio can loop back to USB",
+  "Meters, waveforms and 40-band spectrum displays",
+  "Install needs a separate bootloader flashed with M-Flasher first"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "c2429fc22dfcdaba",
+  "length": 4112,
+  "headings": [
+   "features",
+   "installation",
+   "usage and controls",
+   "usb audio",
+   "bluetooth",
+   "fx chain",
+   "mixer",
+   "settings",
+   "visualizers",
+   "other usefull stuff"
+  ]
+ }
+}

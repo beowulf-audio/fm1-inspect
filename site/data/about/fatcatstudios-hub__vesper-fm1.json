@@ -1,0 +1,24 @@
+{
+ "summary": "An ambient worship pad firmware: 16 scenes, each stacking four voices around a major key you choose, with a global effects chain for pads and atmosphere.",
+ "features": [
+  "Four layered voices per scene; play any voice live or record into the sequence",
+  "SPACE knob adds grains, shimmer, reverb and echo at once",
+  "Global chain: DIRT, TONE, granular TEXTURE, plate reverb and tape echo",
+  "Built-in piano, marimba and glockenspiel samples",
+  "16 user preset slots and four screen themes",
+  "Works on newer FM-1s from 2.0.2; 1.x projects do not carry over"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "a482ff8595c0117a",
+  "length": 5350,
+  "headings": [
+   "vesper",
+   "play it in your browser",
+   "controls",
+   "installing",
+   "building",
+   "credits"
+  ]
+ }
+}

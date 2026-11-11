@@ -1,0 +1,24 @@
+{
+ "summary": "An experimental generative soundscape firmware with two modes: Bioma, a synthesized ecosystem of birds, insects and water, and Atolls, a pair of sample loopers.",
+ "features": [
+  "Bioma: Birds, Insects and Water respond; Wind, Drift, Beam shape it",
+  "Atolls: two independent sample loops with movable windows and Fragments",
+  "Landing points that Flock and V Format move between",
+  "MIDI notes and CCs for both modes; MIDI clock optional",
+  "Browser editor writes four sample slots of up to 7.4 seconds",
+  "Built on Felucca and SLOOP; MIDI tested on the author's unit"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "33a615b6e2fb5bcf",
+  "length": 3375,
+  "headings": [
+   "revo — generative soundscapes",
+   "firmware 1.0",
+   "midi",
+   "samples",
+   "local preview and checks",
+   "repository layout"
+  ]
+ }
+}

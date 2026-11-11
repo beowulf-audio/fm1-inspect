@@ -1,0 +1,35 @@
+{
+ "summary": "An experimental release-candidate synth firmware with five selectable synthesis modes across four parts, built from Felucca and Golana engine code. Much of it is not yet verified on hardware.",
+ "features": [
+  "Modes: KORG, BRUTE, ANALOG, LOFI and an experimental B1 bass engine",
+  "49 presets: 32 user slots plus 17 Felucca ANALOG and LOFI factory sounds",
+  "B1 is not yet a faithful model of the Donner Essential B1",
+  "MUSIC DISK flash store for patterns, songs and albums",
+  "USB audio and MIDI, with device and MIDI host profiles in development",
+  "Back up presets first; recovery may need a separate flashing route"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "931b404cd7836909",
+  "length": 9671,
+  "headings": [
+   "analogbeast 2.0 rc1",
+   "highlights",
+   "factory sounds",
+   "b1: experimental / known limitations",
+   "rc1 change history",
+   "build",
+   "flashing and recovery",
+   "to validate before final release",
+   "provenance / licenses",
+   "entwicklung seit analogbeast 1.1",
+   "music disk / md16",
+   "sequencer und arranger",
+   "synthesizer und dsp",
+   "presets",
+   "usb und midi",
+   "entwicklungs- und teststatus",
+   "rc2: firmware hub identity and publication"
+  ]
+ }
+}

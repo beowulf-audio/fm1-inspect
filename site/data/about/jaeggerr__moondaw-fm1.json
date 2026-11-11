@@ -1,0 +1,28 @@
+{
+ "summary": "An eight-track tracker for writing songs step by step rather than playing them, where each song is a plain-text file that can be edited on a computer or written by an LLM. Beta.",
+ "features": [
+  "8 tracks; up to four notes, an instrument and three named effects per step",
+  "PULSE, NOISE and WAVE chip voices, samples, VOX singing voice and drums",
+  "Build your own instruments with envelope, filter, layers and sends",
+  "Songs as .trk text files, sent and fetched over USB; 31 on the device",
+  "Plays from a MIDI keyboard via the TRS jack or a computer",
+  "On-device help for every screen and effect; script control over USB"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "74e46d53b2965980",
+  "length": 9819,
+  "headings": [
+   "why you might like it",
+   "a look around",
+   "what it does",
+   "status",
+   "install it",
+   "songs",
+   "samples",
+   "building",
+   "credits and licence",
+   "the name"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "summary": "A nine-track groovebox where each track runs its own drum machine, synth engine or MIDI out, with 16-step patterns. It also runs on the M-VAVE SMK-37.",
+ "features": [
+  "Modelled 808, 909, SDS-V, CR-78 plus ROM-sample kits and user samples",
+  "Felucca's synth engines plus STRING and SUPERSAW, with presets",
+  "40 patterns of 16 steps with accents, slides and ratchets",
+  "Delay, reverb and chorus sends, kick ducking, master filter, 11 distortions",
+  "USB and TRS MIDI in, clock in and out, a fixed CC per parameter",
+  "Separate build with Bluetooth MIDI; screen mirroring over USB"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "a4b4190238f63cc6",
+  "length": 35272,
+  "headings": [
+   "fomajam",
+   "playing it",
+   "effects",
+   "machines",
+   "synth engines",
+   "drum machines",
+   "midi",
+   "bluetooth midi",
+   "samples",
+   "kits",
+   "songs",
+   "themes",
+   "usb audio",
+   "key lights",
+   "m-vave smk-37",
+   "develop",
+   "license"
+  ]
+ }
+}

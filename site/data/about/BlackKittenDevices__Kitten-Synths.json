@@ -1,0 +1,27 @@
+{
+ "summary": "A groovebox firmware built on SLOOP 2.8 that adds a fourth synth part, a second drum track and multitrack USB recording, for four synths and two drum kits at once. Marked beta.",
+ "features": [
+  "Six tracks: three synths, a lighter fourth synth part, two drum kits",
+  "MUUG engine: three-oscillator Moog-style synth with 100 presets, 24 dB ladder filter",
+  "8-channel USB audio: stereo master plus each track separately",
+  "Keeps SLOOP's 64-step sequencer, song mode, punch-in effects and samples",
+  "Same MIDI map as SLOOP, plus channel 11 for the second drum track",
+  "Spanish-first docs with an English manual; no way back to V15 in its installer"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "7d75077b91fd370c",
+  "length": 8998,
+  "headings": [
+   "¿qué es?",
+   "capturas",
+   "instalar resumen",
+   "antes de instalar",
+   "firmware hub",
+   "probar sin fm-1",
+   "qué hay en este repositorio",
+   "créditos y gracias",
+   "licencia"
+  ]
+ }
+}

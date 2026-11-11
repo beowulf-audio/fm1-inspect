@@ -1,0 +1,24 @@
+{
+ "summary": "A gravitational-wave synthesizer in which each note is a black-hole merger, with a rising chirp and a ringdown, heard through a tunable detector and a long reverb. The on-device interface is in Italian.",
+ "features": [
+  "Up to four events at once; catalogue of real detections",
+  "Six engines: modal, FM, supersaw, wavefolder, string and formant",
+  "Interferometer, detector noise, 'radio' tuning, reverb with shimmer",
+  "'Deja vu' random loop and RUN mode for self-arriving events",
+  "48 presets; USB and TRS MIDI with CCs, MIDI learn and clock in",
+  "Bluetooth variant for BLE-MIDI controllers; sample bank shared with GRANA"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "8090a573d4d7a605",
+  "length": 8611,
+  "headings": [
+   "mario texture's virgo",
+   "install",
+   "the physics inside",
+   "the pages",
+   "building",
+   "credits and licence"
+  ]
+ }
+}

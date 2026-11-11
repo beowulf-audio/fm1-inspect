@@ -1,0 +1,24 @@
+{
+ "summary": "A dark synth firmware for dungeon synth and old JRPG dungeon music, forked from GHOULBOX on Felucca and keeping its four-track sequencer, songs and effects. Tested on one FM-1.",
+ "features": [
+  "Five power-on scenes: LABYRINTH, RUINS, SHRINE, GOTHIC and BLANK",
+  "Bytebeat and floatbeat waves for the LOFI engine, 32 formulas each",
+  "Engine pages draw creatures that react to filter, detune and level",
+  "'COVEN' home screen with one creature per track",
+  "Inherits GHOULBOX's hurdy-gurdy, drone latch, DREAM generator, web editor",
+  "SLICE engine removed; projects using it won't play it"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "b3fbae2baf54cbfa",
+  "length": 7037,
+  "headings": [
+   "fiendbox: a demon synth for the m-vave fm-1",
+   "what fiendbox adds",
+   "install",
+   "build",
+   "tests",
+   "credits and licence"
+  ]
+ }
+}

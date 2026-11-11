@@ -1,0 +1,21 @@
+{
+ "summary": "PT/FM is a ProTracker-style tracker workstation where pattern tracks play synth engines and samples side by side, with a loop station and a two-deck DJ mode alongside the song editor.",
+ "features": [
+  "Patterns of up to 16 tracks and 128 rows, four commands per cell",
+  "Engines: DX7 FM, JUNO-106, TB-303, retro sound chips, sampler, FUSION",
+  "Up to 16 voices; 11 built-in cartridges with 568 instruments",
+  "LOOPS loop station and DJ mode with two decks and a crossfader",
+  "USB and TRS MIDI in, USB MIDI out and clock, controller mode",
+  "USB audio; songs saved to 412 KB of flash on the device"
+ ],
+ "from": "README and manual",
+ "readme": {
+  "sha": "7c202ab51d3ab3fe",
+  "length": 4015,
+  "headings": [
+   "pt/fm",
+   "what is here",
+   "licence"
+  ]
+ }
+}

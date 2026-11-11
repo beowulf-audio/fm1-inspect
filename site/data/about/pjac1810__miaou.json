@@ -1,0 +1,25 @@
+{
+ "summary": "A cat-shaped children's toy keyboard modelled on B. toys' Meowsic, with the toy's front panel drawn on screen, plus the arpeggiator and six-track sequencer from LAX-32. Docs are in French.",
+ "features": [
+  "Five sounds: piano, bells, organ, banjo and a synthesized meow",
+  "Five rhythms, 20 nursery tunes and 7 meowed cat songs",
+  "50-note recorder with playback; toy speaker effect knob",
+  "Arpeggiator with 14 modes",
+  "Six 64-step tracks, four patterns, chance, conditions and ratchets",
+  "MIDI: keyboard on channel 1, each sound on 2-6, drums on 10"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "099ebba790a3067a",
+  "length": 6662,
+  "headings": [
+   "miaou — le clavier-chat pour m-vave fm-1",
+   "les sons",
+   "les commandes",
+   "l'arpégiateur et le séquenceur",
+   "obtenir et installer le firmware",
+   "développement",
+   "licence"
+  ]
+ }
+}

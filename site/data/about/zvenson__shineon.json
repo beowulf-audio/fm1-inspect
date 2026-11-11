@@ -1,0 +1,25 @@
+{
+ "summary": "A 1970s-style string machine on four tracks, each with its own ensemble and phaser, mixed through send effects and a master bus, with OberVave's step sequencer.",
+ "features": [
+  "16 shared keyers with divider-style 16', 8', 4' saw and 8' square footages",
+  "Six formant registers from contrabass and cello to trumpet and horn",
+  "Three-line bucket-brigade ensemble and six-stage phaser per track",
+  "Delay, plate reverb and drive sends; master DJ filter and compressor",
+  "Four sequencer tracks of up to 256 steps; 8 patterns; 32 factory programs",
+  "USB and TRS MIDI in; four sounds at once roughly double the CPU load"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "101559f5d6ffd774",
+  "length": 13046,
+  "headings": [
+   "shine on",
+   "the sound",
+   "the pages",
+   "the panel",
+   "the sequencer",
+   "build and run",
+   "credits and licence"
+  ]
+ }
+}

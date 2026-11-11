@@ -1,0 +1,23 @@
+{
+ "summary": "A Spanish-language workspace for FM-1 firmware: emulator notes, a rescue guide and a survey of community firmwares, plus ATEK303, an acid bass firmware built on fm1-base.",
+ "features": [
+  "ATEK303: a 303-style voice from Open303 with a diode filter",
+  "14 oscillator types, from saw and square to sub and cross-mod blends",
+  "64-step acid pattern generator with mutation, lock and undo",
+  "Step editor for note, octave, accent, slide and gate",
+  "Drive, chorus or flanger, ping-pong delay and plate reverb; 32 presets",
+  "MIDI clock in and out, sequencer notes out; docs in Spanish"
+ ],
+ "from": "README and ATEK303 README",
+ "readme": {
+  "sha": "1674f8cbc2df6620",
+  "length": 2692,
+  "headings": [
+   "fm1-animatek",
+   "por dónde empezar",
+   "carpetas",
+   "reglas",
+   "licencia"
+  ]
+ }
+}

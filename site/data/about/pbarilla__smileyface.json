@@ -1,0 +1,26 @@
+{
+ "summary": "An acid bass line firmware: write a 16-step pattern or roll a random one, then shape it with knobs modelled on a TD-3-MO and Devil Fish style panel. Can sync with sibling firmwares over Bluetooth.",
+ "features": [
+  "16-step patterns with accent and slide; LFO button rolls a random pattern",
+  "Seven knob pages incl. Devil Fish-style drive, tracking, filter FM",
+  "16 patterns per project, chains of up to 16; 12 projects",
+  "Hold-to-play punch-in FX pads, eight shared with Chipbox and Drumlab",
+  "'Brothers Link' Bluetooth sync of tempo, patterns, key and sidechain",
+  "No drums; a bass line instrument only"
+ ],
+ "from": "README and guide",
+ "readme": {
+  "sha": "cdcfee2a0e8d8da9",
+  "length": 3169,
+  "headings": [
+   "smileyface",
+   "what is it",
+   "links",
+   "brothers link bluetooth sync between the brothers",
+   "why is it called brothers link?",
+   "do i need to call it brothers link?",
+   "tested?",
+   "licence"
+  ]
+ }
+}

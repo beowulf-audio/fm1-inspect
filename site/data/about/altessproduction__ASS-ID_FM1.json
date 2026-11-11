@@ -1,0 +1,27 @@
+{
+ "summary": "An acid groovebox firmware that keeps the ATEK303 bass-line track and adds a 64-step drum track in the style of the TR-808, 909 and 707, both generated from seeds and sharing one clock.",
+ "features": [
+  "Unchanged ATEK303 1.2 track with drive, chorus, delay and reverb",
+  "Eight synthesized drum voices, no samples; 808, 909 and 707 kits",
+  "Seeded groove generator with layered mutations and LOCK",
+  "8 x 16 step matrix editor, swing, drum length independent of the 303",
+  "Drum notes sent as GM notes over USB MIDI",
+  "Not yet tested on a real FM-1; ATEK303 1.2 presets don't load"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "cffddc105ead8d09",
+  "length": 7135,
+  "headings": [
+   "ass-id 1.0 · fm-1",
+   "qu'est-ce que c'est ?",
+   "ce que ça fait",
+   "écouter",
+   "écrans",
+   "prise en main",
+   "compiler",
+   "le dépôt",
+   "crédits et licence"
+  ]
+ }
+}

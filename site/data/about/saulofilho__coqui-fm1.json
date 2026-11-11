@@ -1,0 +1,30 @@
+{
+ "summary": "A Latin and Caribbean groovebox built on GR!MM, adding a synthesized percussion source and style patterns from salsa and bomba to dembow and cumbia.",
+ "features": [
+  "PERC source: 22 synthesized Latin percussion instruments across the keys",
+  "GROOVE plays 14 styles by itself, with parts, fills and swing",
+  "HUMAN knob loosens timing, level and pitch of each hit",
+  "ARP plays tumbao bass, montuno and guajeo lines over held chords",
+  "44 factory sounds and 10 kits; GR!MM's 4 tracks and 64-step sequencer",
+  "MIDI in and out, clock, autosave; doesn't read GR!MM saves"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "884888a541f0528f",
+  "length": 8514,
+  "headings": [
+   "coquí",
+   "what's inside",
+   "the keys on a perc track",
+   "screens",
+   "install",
+   "learn it",
+   "releasing",
+   "the hub page",
+   "building",
+   "credits",
+   "em português",
+   "licence"
+  ]
+ }
+}

@@ -1,0 +1,26 @@
+{
+ "summary": "A tonewheel organ firmware modelled on setBfree, with drawbars, percussion and a rotary speaker, for the FM-1 and the M-VAVE SMK-37 Pro keyboard.",
+ "features": [
+  "Full tonewheel chain with drawbars and a drawbar-key mode",
+  "Percussion, vibrato and chorus settings V1-V3 and C1-C3",
+  "Drive, reverb and a slow, fast or stopped rotary speaker",
+  "USB and TRS MIDI input",
+  "Separate build for the SMK-37 Pro, whose controls are still being tested",
+  "Browser emulator; manual in English and Portuguese"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "65e4493a502a9e60",
+  "length": 6832,
+  "headings": [
+   "fm1-wheel",
+   "layout",
+   "host quick start",
+   "rendering a midi file",
+   "device build",
+   "smk-37 pro",
+   "licence",
+   "credits and ai assistance"
+  ]
+ }
+}

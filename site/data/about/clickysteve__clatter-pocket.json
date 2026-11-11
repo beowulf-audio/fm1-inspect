@@ -1,0 +1,25 @@
+{
+ "summary": "A drum synthesizer firmware that runs CLATTER's port of the Erica Synths LXR-02 sound engine on the FM-1, with a generative step sequencer. It is built on M-VAVE's fm1_open SDK and replaces the stock instrument.",
+ "features": [
+  "LXR-02 drum engine: six voices, seven triggers, modulation and locks",
+  "64 steps on four pages, seven tracks, conditional steps",
+  "Generates kits and patterns by style; mutate a track or the whole pattern",
+  "16 kits; DRUM and chromatic PITCH keyboard modes",
+  "9 project slots; MIDI notes and clock over USB, USB audio",
+  "1.0.0 verified on one unit; many controls tested only in the emulator"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "9a1a973f14fe4ea8",
+  "length": 7079,
+  "headings": [
+   "clatter pocket",
+   "status",
+   "what it does on the fm-1 once installed",
+   "quick start host",
+   "documents",
+   "layout",
+   "licence"
+  ]
+ }
+}

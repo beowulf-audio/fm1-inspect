@@ -1,0 +1,29 @@
+{
+ "summary": "Recreates the Sega Mega Drive / Genesis sound chips, the YM2612 FM chip and the SN76489 PSG, as a playable synth, with a companion web app for patches and VGM songs.",
+ "features": [
+  "YM2612 ported from ymfm and PSG from MAME, checked against both",
+  "128-patch library in 4 banks; starts empty, filled from .opm or VGM",
+  "Single, Layer (up to six patches) or Split per MIDI channel",
+  "Patch editing on the device or in the browser; arpeggiator",
+  "Streams original VGM songs from the web app; converts songs to MIDI",
+  "USB and TRS MIDI; GenMDM layout available as a setting"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "5dbac7a75bdea000",
+  "length": 12450,
+  "headings": [
+   "features",
+   "new in 2.0",
+   "the fm-1's screens",
+   "the web app",
+   "getting started",
+   "installing the firmware",
+   "disclaimer",
+   "built with ai",
+   "documentation",
+   "credits",
+   "licence"
+  ]
+ }
+}

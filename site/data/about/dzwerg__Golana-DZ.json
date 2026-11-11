@@ -1,0 +1,33 @@
+{
+ "summary": "A fork of the Golana synth firmware that extends its sequencer to 64 steps, adds a song mode across program slots and sends notes over USB MIDI. Beta.",
+ "features": [
+  "Up to 64 steps per program, 32 programs of sound plus pattern",
+  "Song mode plays a range of programs once or on repeat",
+  "USB MIDI out of played and sequenced notes",
+  "Keeps Golana's two-oscillator synth, five filters, LFOs and arpeggiator",
+  "One note per step; sounds and patterns are not separate",
+  "Extra steps stored in a separate flash area; back up before switching"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "fda10b0061ed63a7",
+  "length": 10018,
+  "headings": [
+   "golana dz edition",
+   "download golana dz edition v0.1.0-beta .fwschttps://github.com/dzwerg/golana-dz/releases/download/v0.1.0-beta/golana-dz-v0.1.0-beta.fwsc",
+   "what's new in the dz edition?",
+   "quick start on the fm-1",
+   "edit a 64-step pattern",
+   "play a song across programs",
+   "sequence external instruments via usb midi",
+   "installation",
+   "command-line installation windows powershell",
+   "storage and firmware compatibility — read before flashing",
+   "current limitations",
+   "the golana synthesizer is still here",
+   "building from source",
+   "roadmap not yet implemented",
+   "credits and licence"
+  ]
+ }
+}

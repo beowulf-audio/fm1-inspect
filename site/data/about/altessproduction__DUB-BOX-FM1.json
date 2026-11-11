@@ -1,0 +1,22 @@
+{
+ "summary": "An audio effects firmware for dub: the FM-1 acts as a USB sound card and Bluetooth receiver, and its keys and knobs play a siren, tape echo, DJ filter and isolator over whatever audio comes in. No sequencer or synths.",
+ "features": [
+  "Siren with five LFO types, gated from the last black key",
+  "Tape echo with wow, flutter and soft-clipped repeats",
+  "Bipolar DJ filter and four-band isolator with key-operated kills",
+  "2-in/2-out USB audio; Bluetooth receiver with SBC, AAC and aptX",
+  "Mixer, five-band EQ, limiter, meters and spectrum display",
+  "Needs the community m-bootloader, installed with M-Flasher"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "73daf8201d78bfb6",
+  "length": 5645,
+  "headings": [
+   "what it is",
+   "install",
+   "build",
+   "licensing"
+  ]
+ }
+}

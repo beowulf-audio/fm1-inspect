@@ -1,0 +1,24 @@
+{
+ "summary": "An ear-training game built on Melodee: it plays a few notes, hides some of them and asks you to play them back on the keys or over MIDI. Prototype 0.0.13.",
+ "features": [
+  "C major and A natural minor, 1 to 4 notes, one octave or full range",
+  "Choose how many ending notes are hidden; enter them in order",
+  "24 FM6 sounds and 200 Prophet programs; adjustable note spacing",
+  "Scoring that weights missed degrees; scores reset on restart",
+  "Entered from Melodee with HOME + PLAY; replaces track 1's sound",
+  "Hardware revisions, timing and recovery not yet fully qualified"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "17e939a85f7caf54",
+  "length": 4959,
+  "headings": [
+   "fm-1 ear trainer",
+   "current prototype — 0.0.13",
+   "controls",
+   "build and run",
+   "validation and limits",
+   "source and licensing"
+  ]
+ }
+}

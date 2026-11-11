@@ -1,0 +1,28 @@
+{
+ "summary": "A Sega Mega Drive / Genesis music tracker that emulates the YM2612 FM chip and the SN76489 PSG, with a Deflemask- and Furnace-style pattern editor played from the FM-1.",
+ "features": [
+  "6 four-operator FM channels, FM3 extended mode, DAC samples on FM6",
+  "3 PSG tone channels plus noise; model 1 or 2 filter, NTSC or PAL",
+  "Up to 256 patterns per channel, 256 orders, Deflemask Genesis effects",
+  "128 FM and 32 PSG presets, 48-sample drum kit, user slots",
+  "256 song slots; VGM export; songs moved over USB MIDI SysEx",
+  "Browser editor imports VGMs; can't read other firmwares' data"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "35efd78518e55062",
+  "length": 9936,
+  "headings": [
+   "fm1-trax",
+   "try it in your browser",
+   "what it does",
+   "no warranty",
+   "installing",
+   "recovery",
+   "emulator and editor",
+   "controls",
+   "building",
+   "credits and licence"
+  ]
+ }
+}

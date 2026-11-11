@@ -1,0 +1,19 @@
+{
+ "summary": "A gamelan-inspired instrument, mostly Balinese: you lead the core melody on the white keys and the ensemble's interlocking parts, gongs, drums and flute follow it, with the beating 'ombak' shimmer on every note. Made for meditative playing as well as traditional forms.",
+ "features": [
+  "Nine gamelan presets and eleven measured tunings, incl. slendro, pelog, Selonding",
+  "Gong forms such as Gilak, Lancaran, Ketawang and Ladrang",
+  "Kotekan, reyong, ornaments, kendang and suling switched in or out",
+  "Tempo from 96 beats a minute down to one per 20 seconds",
+  "Loop recorder for the core; angsel breaks and a cued ending",
+  "USB and TRS MIDI in, clock follow and clock out"
+ ],
+ "from": "README and manual",
+ "readme": {
+  "sha": "7d1ff62f5e1ecf82",
+  "length": 975,
+  "headings": [
+   "ombak"
+  ]
+ }
+}

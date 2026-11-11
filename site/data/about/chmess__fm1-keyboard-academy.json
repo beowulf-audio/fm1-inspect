@@ -1,0 +1,39 @@
+{
+ "summary": "A beginner keyboard course for the FM-1: it boots into lessons that demonstrate each exercise, light the keys to play, check what you play and adapt. The full FM synth of FM1 Open stays available behind it.",
+ "features": [
+  "8 chapters, 12 foundation exercises and 30 traditional melodies",
+  "Listen, watch, play and review loop with key lights",
+  "Wrong notes flash red; repeats below 80% accuracy, advances above",
+  "Four knobs pick chapter, lesson, sound and help level",
+  "DX7-style FM synth, presets and sequencer from FM1 Open retained",
+  "Public preview; no easy hardware recovery path, back up first"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "fda16825b5fc58ce",
+  "length": 13578,
+  "headings": [
+   "fm1 keyboard academy",
+   "what is included",
+   "four-knob learning home",
+   "course map",
+   "firmware download and safety",
+   "midi melody import",
+   "build and test",
+   "project status",
+   "license",
+   "development history and upstream fm1 open reference",
+   "fm1 learn v01",
+   "using the learning mode",
+   "importing a midi melody",
+   "upstream fm1 open v14",
+   "v14 features",
+   "midi",
+   "updates and compatibility",
+   "build",
+   "raspberry pi / arm64 linux",
+   "windows x64",
+   "license"
+  ]
+ }
+}

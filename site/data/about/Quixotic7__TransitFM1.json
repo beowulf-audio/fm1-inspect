@@ -1,0 +1,25 @@
+{
+ "summary": "A small utility firmware with no sound, meant as a safer stopover when moving between custom firmwares. It presents itself to installers as the official V15 and protects the next install against interrupted writes.",
+ "features": [
+  "Makes no sound and stores nothing; shows a ready screen",
+  "Answers installers as official V15 (FM-1_015)",
+  "ChoralRoot's boot stub falls back to update mode after a cut write",
+  "Its own loader writes the next firmware, first sector last",
+  "Not for V16 or Baud Girl: go through official V15 instead",
+  "Supports newer units with the front logo since 0.1.4"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "7e814f139082f2f9",
+  "length": 11896,
+  "headings": [
+   "transitfm1",
+   "how much of each write is protected",
+   "using it",
+   "building",
+   "releasing",
+   "what is where",
+   "license"
+  ]
+ }
+}

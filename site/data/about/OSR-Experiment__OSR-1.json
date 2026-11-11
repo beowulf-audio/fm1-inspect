@@ -1,0 +1,27 @@
+{
+ "summary": "Blop, a one-finger chord firmware: each key plays a chord from a chosen progression, with chord rhythms, a bass line, a kick with sidechain, and an animated creature on screen. A prototype never tested on a real FM-1.",
+ "features": [
+  "38 chord grids; white keys safe chords, black keys spicier ones",
+  "16 chord rhythms with latch, 32 sounds, voicing and strum controls",
+  "Bass line with seven sounds and eight patterns; ten drum patterns",
+  "Sidechain pump from the kick, glide, delay, chorus, tremolo, reverb",
+  "Sends chord and bass notes over USB MIDI; follows USB MIDI clock",
+  "French documentation; on-screen text in English"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "e8d679d137e97cf1",
+  "length": 5884,
+  "headings": [
+   "blop by obsimo",
+   "commandes",
+   "midi vers ableton",
+   "synchro midi depuis ableton",
+   "fabriquer le firmware",
+   "fichiers",
+   "charge processeur",
+   "télécharger",
+   "licence"
+  ]
+ }
+}

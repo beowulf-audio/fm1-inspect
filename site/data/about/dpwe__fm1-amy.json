@@ -1,0 +1,30 @@
+{
+ "summary": "A six-voice analog-style polysynth that runs the AMY synthesizer library and plays its emulations of the Roland Juno-60's 128 factory patches, editable from the four knobs or the AMYboard web editor. Experimental.",
+ "features": [
+  "128 Juno-60 factory patches, chosen with the PRESETS knob",
+  "Eleven knob pages: oscillators, LFO, filter, envelopes, EQ, chorus, reverb, distortion",
+  "Class-compliant USB MIDI on channel 1 with velocity, bend and sustain",
+  "Live editing from the AMYboard editor over MIDI SysEx",
+  "Nothing is saved; no echo, no DX7 patches, keys not sent to MIDI"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "96af2c0eb8302179",
+  "length": 23001,
+  "headings": [
+   "fm1-amy: a juno-60 synth for the m-vave fm-1",
+   "playing it",
+   "presets",
+   "midi and the amyboard editor",
+   "installing",
+   "if something goes wrong",
+   "building",
+   "updating the presets",
+   "trying it without an fm-1",
+   "how it works",
+   "next steps",
+   "credits",
+   "licence"
+  ]
+ }
+}

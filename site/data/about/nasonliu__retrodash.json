@@ -1,0 +1,26 @@
+{
+ "summary": "RetroDash is a pixel-art rhythm game where you play a song's melody on the FM-1 keys while the rest is played for you from emulated SNES audio. The two-song beta is not yet tested on hardware.",
+ "features": [
+  "Two built-in songs from Chrono Trigger and Final Fantasy VI",
+  "Each pitch keeps the same key; key lights show next notes",
+  "SNES SPC sound played by an S-DSP emulator on the device",
+  "Adjustable scroll speed, playback speed, offset and backing level",
+  "AUTO mode, pause menu and combo feedback",
+  "No song import over USB; songs are built into the firmware"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "06b4c452452c6bdb",
+  "length": 7223,
+  "headings": [
+   "retrodash for m-vave fm-1",
+   "play",
+   "audio and song projects",
+   "build and test",
+   "rebuild both projects no arguments selects these two:",
+   "build.sh defaults to spc + fast dsp + compact ui:",
+   "hardware evidence and limitations",
+   "credits and licences"
+  ]
+ }
+}

@@ -1,0 +1,26 @@
+{
+ "summary": "A chaotic modelling synth whose oscillator is Chua's circuit, one per voice, feeding physical models, with an arpeggiator and a phrase generator that can play together and sync to external gear.",
+ "features": [
+  "CHAOS runs from a pure cycle to the double scroll; 30 noise oscillators",
+  "17 physical models: resonators, strings and waveguides",
+  "Low pass gate per voice; reverbs, bodies, Leslie, delays and talk box",
+  "Arpeggiator and 46-effect phrase generator, combined with logic modes",
+  "MIDI clock in over USB or TRS, out over USB; chaos CCs",
+  "512 presets in four banks; manual is in Dutch"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "80973e7e1b8f4a10",
+  "length": 7105,
+  "headings": [
+   "hawk chua",
+   "sound",
+   "arp and seq, together",
+   "with your sequencer",
+   "install",
+   "the code",
+   "build and test",
+   "license"
+  ]
+ }
+}

@@ -1,0 +1,27 @@
+{
+ "summary": "A generative firmware that writes a four-piece band sketch (drums, bass, keys, lead) from a map of 16 genre towns, which you then re-roll, edit and perform. Version 0.4 is experimental and only partly tested on hardware.",
+ "features": [
+  "Map of 16 genre towns; points between towns blend two genres",
+  "Re-roll or audition band members; Jam mode morphs and tours the map",
+  "Step grid editing, live recording and TAP rhythm entry",
+  "Perform page turns the 27 keys into effects, with build and drop",
+  "Six-letter codes rebuild a sketch; four save slots that can chain",
+  "Shares and overwrites SLOOP's project slots; no user samples"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "7aa43d97daea50cf",
+  "length": 8741,
+  "headings": [
+   "pocket band",
+   "how it works",
+   "install",
+   "what it does to data already on the fm-1",
+   "on usb",
+   "build",
+   "tests",
+   "source map",
+   "licence"
+  ]
+ }
+}

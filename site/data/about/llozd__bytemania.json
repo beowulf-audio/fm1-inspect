@@ -1,0 +1,36 @@
+{
+ "summary": "A bytebeat synth firmware built on Dinghy: it plays one-line formulas of t as sound, with the played note setting how fast t runs and the knobs changing numbers inside the formula.",
+ "features": [
+  "30 built-in patches: 8 tuned waveforms and 22 classic bytebeats",
+  "Write formulas on the device with a live error-checking compiler",
+  "Eight knob variables, colour-matched in the formula; random formula generator",
+  "Mono, detuned dual, 4-voice poly, or a different formula per side",
+  "Loop and ping-pong over any part of a formula; 64 named user slots",
+  "USB MIDI notes, pitch bend, 12 learnable CCs; no sequencer"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "0bdad27049259716",
+  "length": 17344,
+  "headings": [
+   "bytemania",
+   "contents",
+   "installing",
+   "the main screen",
+   "playing",
+   "views",
+   "knobs and variables",
+   "loop",
+   "voice modes",
+   "built-in patches",
+   "the editor",
+   "saving and naming",
+   "cc mapping",
+   "formula language",
+   "building",
+   "code layout",
+   "releases",
+   "credits and licence"
+  ]
+ }
+}

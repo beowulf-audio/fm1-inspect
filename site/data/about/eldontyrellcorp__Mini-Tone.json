@@ -1,0 +1,36 @@
+{
+ "summary": "Mini-Tone, a Felucca fork with six tracks and a new set of engines modelled on Elektron, Mutable Instruments, Roland and Commodore designs, in place of most of Felucca's own. The 8-voice budget stays shared across the six tracks.",
+ "features": [
+  "Engines incl. 6-op FM, Digitone-style FM and Swarmer, Braids, SID, TB303, TR808",
+  "Six tracks, four shown at a time; Felucca's sample engines removed",
+  "64 steps with ratchets, fill conditions, p-locks and an automation list",
+  "Stochastic and Euclidean generator modes per track",
+  "Ping-pong delay and an Elektron-style reverb",
+  "USB and TRS MIDI in, clock from USB or TRS, MIDI learn; USB audio"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "611e6422ff5771a8",
+  "length": 47736,
+  "headings": [
+   "mini-tone",
+   "mini-tone 1.0.5",
+   "mini-tone 1.0.4",
+   "mini-tone 1.0.3",
+   "mini-tone 1.0.2",
+   "mini-tone 1.0.1",
+   "mini-tone 1.0.0",
+   "features",
+   "controls",
+   "menu",
+   "engines",
+   "scale keyboard",
+   "layout",
+   "if the fm-1 does not start",
+   "support",
+   "ai disclaimer",
+   "credits",
+   "licence"
+  ]
+ }
+}

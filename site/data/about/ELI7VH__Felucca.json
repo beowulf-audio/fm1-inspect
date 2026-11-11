@@ -1,0 +1,30 @@
+{
+ "summary": "WaveLoop Kit, a fork of the Felucca multi-engine synth firmware that adds standalone control from an Arturia MiniLab 3 over DIN MIDI, plus a song setlist and autosave for live sets.",
+ "features": [
+  "Felucca base: 13 engines, four tracks sharing 8 voices, 64-step sequencer",
+  "MiniLab 3 map: track faders, per-channel knobs, held effect pads, DJ filter",
+  "12 songs in a reorderable setlist; autosaves after five seconds of silence",
+  "Up to 32 patches per synth engine; extra 808, CR-78-style and FM kits",
+  "Arpeggiator replaced by SHAYPE, a drawn pattern played over held chords",
+  "Needs this fork's release package; the upstream installer gives plain Felucca"
+ ],
+ "from": "README and fork notes",
+ "readme": {
+  "sha": "0ba29ce1f4c7a8a4",
+  "length": 18504,
+  "headings": [
+   "waveloop kit",
+   "waveloop kit — minilab 3",
+   "features",
+   "controls",
+   "menu",
+   "engines",
+   "scale keyboard",
+   "layout",
+   "if the fm-1 does not start",
+   "support",
+   "credits",
+   "licence"
+  ]
+ }
+}

@@ -1,0 +1,22 @@
+{
+ "summary": "A controller firmware that maps the FM-1's keys, knobs and buttons to the VIBE FM, its Web Player and VST, or any MIDI software. The FM-1 makes no sound itself.",
+ "features": [
+  "Keys send notes at fixed velocity 100 on channel 1",
+  "Knobs and encoders as relative CCs; buttons as CC on/off",
+  "SAVE and GLO holds for SHIFT, STOP, arrows and soft keys F1-F6",
+  "Screen shows the host's page and knob values via SysEx",
+  "Shows a converted FM-1 firmware's own screen when the host runs one",
+  "PLAY blinks to incoming MIDI clock"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "54fddaa41f23e874",
+  "length": 4279,
+  "headings": [
+   "vibe fm link",
+   "what the fm-1 becomes",
+   "build it yourself",
+   "license"
+  ]
+ }
+}

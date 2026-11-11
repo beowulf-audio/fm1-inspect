@@ -1,0 +1,27 @@
+{
+ "summary": "A four-track FM groovebox firmware modelled closely on the Elektron Digitone, with added engines, drum kits and a performance layer.",
+ "features": [
+  "Engines: 4-op FM, virtual analog, Braids, supersaw, ensemble, drums",
+  "4 tracks of 64 steps with p-locks, trig conditions and polymeters",
+  "Twelve shared voices across both CPU cores",
+  "Chords, scales, arpeggiator and euclidean generator; chains and song mode",
+  "USB and TRS MIDI, clock in and out, Bluetooth MIDI host or device",
+  "76 factory sounds; projects saved to flash"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "0e8abf902405b478",
+  "length": 12089,
+  "headings": [
+   "what it is",
+   "sound",
+   "sequencing",
+   "try it without an fm-1",
+   "install",
+   "documentation",
+   "building",
+   "repository layout",
+   "credits and licence"
+  ]
+ }
+}

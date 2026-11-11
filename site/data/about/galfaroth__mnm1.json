@@ -1,0 +1,27 @@
+{
+ "summary": "A six-track synth firmware forked from Hortator, with a monophonic synth or FX machine on each track, eight-knob pages and a step sequencer with parameter locks. Still in beta, tested on one unit.",
+ "features": [
+  "Synth machines incl. SuperWave, SID, FM, drums; FX machines on any track",
+  "Resonant HP/LP filter, tape delay and three LFOs per track",
+  "Up to 64 steps per track, probability, ratchets, locks and parameter slide",
+  "330 factory sounds; FX tracks route via buses as insert or send",
+  "MIDI and clock over USB and TRS, MIDI learn",
+  "Expanded sound library replaces two of the three sample slots"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "e373efb5c5190c99",
+  "length": 9749,
+  "headings": [
+   "mnm-1",
+   "what it does",
+   "on the panel",
+   "steps and locks",
+   "timing and live arpeggiation",
+   "building",
+   "back to the official firmware",
+   "licence and credits",
+   "firmware identity and releases"
+  ]
+ }
+}

@@ -1,0 +1,20 @@
+{
+ "summary": "A tool firmware that shows pictures sent from a web page on the FM-1's screen, for checking screen mockups on real hardware. It is not an instrument.",
+ "features": [
+  "Send images from Chrome or Edge with fit, fill, stretch or 1:1 and dither",
+  "Watch a file and re-send it each time it changes",
+  "Gallery of up to 64 kept pictures in 276 KB of flash",
+  "White keys recall pictures; slideshow with 1 to 30 second pace",
+  "Reports what it shows to the FM-1 Screen Reader"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "c8e476ec22d2a4eb",
+  "length": 3732,
+  "headings": [
+   "mocky for the m-vave fm-1",
+   "screen reader",
+   "build, test, run"
+  ]
+ }
+}

@@ -1,0 +1,22 @@
+{
+ "summary": "A three-channel groovebox with drums, a Polivoks-style duophonic synth and a dub siren, each with its own sequencer, effects and mixer channel.",
+ "features": [
+  "Drums: ten Elka Drummer One samples, sine sub, 16 to 64 steps",
+  "Step edits with swing, chance and slide; seven factory reggae and funk patterns",
+  "PLVKS: two-oscillator duophonic voice with arpeggiator and note sequencer",
+  "Dub siren with pitch sweep, filter and glide",
+  "Per-channel pan, saturation and tape; two tempo-synced BBD-style echoes",
+  "Built on Dinghy; MIDI over USB and TRS, USB audio"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "72e72fd78843fd8d",
+  "length": 4359,
+  "headings": [
+   "cultbox",
+   "install",
+   "build it yourself",
+   "where it comes from"
+  ]
+ }
+}

@@ -1,0 +1,36 @@
+{
+ "summary": "Felucca [Salt], a fork of the Felucca multi-engine synth that adds TRS MIDI input, external clock and display options, plus a browser Studio that can edit the FM-1 or play a synth on its own. Still a beta.",
+ "features": [
+  "Nine engines incl. virtual analog, 4-op FM, organ, formant voice and granular",
+  "Three synth tracks and a GM drum track; 8 voices shared",
+  "64-step sequencer with chords, ties, accent, slide and live overdub",
+  "Clock from internal, USB or TRS, with Start, Stop and Continue",
+  "Scale keyboard mode, preset favourites, twenty screen palettes",
+  "The hosted Studio and installer send analytics by default; can be turned off"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "8edcf0cf6d70ab91",
+  "length": 15000,
+  "headings": [
+   "felucca salt",
+   "install on an fm-1",
+   "studio highlights",
+   "salt firmware additions",
+   "core firmware features",
+   "engines",
+   "screen colors",
+   "scale keyboard",
+   "favorite presets",
+   "midi clock and transport",
+   "layout",
+   "support",
+   "credits",
+   "licence",
+   "web editor",
+   "browser keyboard",
+   "device preferences",
+   "optional analytics"
+  ]
+ }
+}

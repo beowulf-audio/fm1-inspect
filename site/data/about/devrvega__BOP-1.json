@@ -1,0 +1,24 @@
+{
+ "summary": "A music toy for children that grows into a real subtractive synth, where each sound is drawn as a character whose shape, size and mouth follow the waveform, pitch and filter.",
+ "features": [
+  "Play door for age 3+: wrong-note-free keys, drums and sound effects",
+  "Make door: four-layer 16-step sequencer, parts A-D, eight songs",
+  "Lab door: two oscillators, filter, envelope, LFO, arp, effects, ten lessons",
+  "Games such as copy-me and sound matching, with a sticker book",
+  "Grown-ups' page: door choice, volume cap, calm lights, sleep timer",
+  "Output limiter and flash limits for young users"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "2f1cd8c6f2bf0712",
+  "length": 6175,
+  "headings": [
+   "bop-1 for the m-vave fm-1",
+   "the friends: bodies that are the sound",
+   "the four doors",
+   "made for children",
+   "in short",
+   "about it"
+  ]
+ }
+}

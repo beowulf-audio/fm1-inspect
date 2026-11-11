@@ -1,0 +1,29 @@
+{
+ "summary": "A monophonic talking formant synth with a 303-style step sequencer: a saw wave through a three-formant vowel filter, where Tongue and Jaw controls morph between the vowels i, e, a, o and u.",
+ "features": [
+  "Vowel plane with Tongue and Jaw, each with its own LFO",
+  "Voice, size and resonance controls, plus a resonant low-pass filter",
+  "303-style envelope and accent; drive and ping-pong delay",
+  "16-step sequencer with per-step vowel, accent and slide; 16 pattern slots",
+  "Pattern randomizer over six scales",
+  "USB MIDI in, out and clock; USB audio; one voice only"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "12fbd027096dd713",
+  "length": 14354,
+  "headings": [
+   "fmlarynx",
+   "the sound",
+   "the screen",
+   "controls",
+   "encoders",
+   "buttons and keys",
+   "sequencer",
+   "midi and audio over usb",
+   "installing",
+   "for developers",
+   "license and credits"
+  ]
+ }
+}

@@ -1,0 +1,24 @@
+{
+ "summary": "A practice firmware for Indian classical music: a modelled tanpura, a tabla that plays ten taals, and a reference tone, all on one screen. AI-written and so far tested only in emulators.",
+ "features": [
+  "Physical-model tanpura with jawari buzz; four strings, tunable Sa and A reference",
+  "Sampled tabla tuned to Sa, ten taals from Teentaal to Chautaal",
+  "Tempo 20 to 600 matras a minute; screen marks sam and khali",
+  "New taals can be added as small text files",
+  "Sine reference tone on any swara over three octaves",
+  "Version 1.0, not yet tried on a real FM-1"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "9eaee37e4232ba63",
+  "length": 5962,
+  "headings": [
+   "teentaal-fm1",
+   "what it does",
+   "documentation",
+   "quick start",
+   "licence and credit",
+   "disclaimer"
+  ]
+ }
+}

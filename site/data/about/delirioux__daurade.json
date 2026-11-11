@@ -1,0 +1,26 @@
+{
+ "summary": "A performance firmware that plays complete grooves in ten styles, from filter house and robot pop to disco and funk, steered with four knobs for filter sweep, sidechain pump, robot voice and energy.",
+ "features": [
+  "Ten styles in two sets, CHROME and SESSION",
+  "ALGORITHM generates another song in the same style",
+  "ARC mode shapes intro, build, drop, solo and breakdown",
+  "Drop and solo buttons; play the lead live on the keys",
+  "Four parts with ten sounds each; formant robot voice; synthesized drums",
+  "MIDI out per part; uses Felucca's first two song slots"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "248966fdfc595f4c",
+  "length": 7824,
+  "headings": [
+   "daurade",
+   "install",
+   "the four knobs",
+   "ten styles",
+   "the controls",
+   "the sound",
+   "building",
+   "credits and licence"
+  ]
+ }
+}

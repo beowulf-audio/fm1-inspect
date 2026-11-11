@@ -1,0 +1,37 @@
+{
+ "summary": "A six-lane drum tracker and ROM-based drum workstation, the drum-focused fork of BEETLE, with song chains and a live setlist mode.",
+ "features": [
+  "Six lanes and 48 patterns; each lane 1 to 16 steps long",
+  "Two built-in kits: BEETLE PCM samples and MONOLITH procedural sounds",
+  "Per-step FX, punch-in FX, ratchets, groove, mute groups and mixer",
+  "Song Mode chains up to 64; Live Mode setlist of 24 positions",
+  "12 project slots, 12 user kits and 13 user sample slots",
+  "USB audio capture as stereo or six mono stems"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "9f12e11a5e624693",
+  "length": 15379,
+  "headings": [
+   "overview",
+   "fm1 flash-chip compatibility",
+   "on-device help",
+   "getting started",
+   "independent lane lengths — 1 to 16 steps",
+   "built-in drums and user kits",
+   "editing and storing global user kits",
+   "user samples",
+   "patterns, step fx and song mode",
+   "live mode — setlist and perform",
+   "setlist",
+   "perform",
+   "battery indicator",
+   "switching firmware and returning to m-vave stock",
+   "projects, storage and backup",
+   "web tools and development",
+   "build from source",
+   "reporting issues",
+   "credits and licenses"
+  ]
+ }
+}

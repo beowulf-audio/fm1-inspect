@@ -1,0 +1,22 @@
+{
+ "summary": "A firmware that turns the FM-1 into a steel tongue drum played with both thumbs, with a koi pond animation reacting to each note. Built on Felucca and sharing its sketch storage with the sibling firmware Modular One.",
+ "features": [
+  "Eleven tongues under each thumb, starting in C major",
+  "Six scales and four materials: steel, low drum, glass, wood",
+  "Strike, resonance and edge-bounce controls; dry sound, no reverb",
+  "Rolls, an octave harmonic and a self-playing 'rain' mode",
+  "Sketchbook and tape recorder shared with Modular One",
+  "Settings for key, MIDI channel, tuning, speaker and sleep"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "a5203232dd5bd23c",
+  "length": 5862,
+  "headings": [
+   "modular koi",
+   "les touches · the keys",
+   "construire · build",
+   "licence · license"
+  ]
+ }
+}

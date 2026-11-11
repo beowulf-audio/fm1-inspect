@@ -1,0 +1,24 @@
+{
+ "summary": "A 16 by 16 light-grid sequencer modelled on Yamaha's TENORI-ON, with its six play modes. The FM-1 has no touch grid, so one marked row or column of the grid is played from the 16 white keys.",
+ "features": [
+  "16 layers and 16 blocks, each layer with its own loop length and speed",
+  "Modes: SCORE, RANDOM, DRAW, BOUNCE, PUSH and SOLO",
+  "28 synthesized sounds and 4 drum kits, no samples",
+  "9 scales, swing, reverb and chorus",
+  "MIDI in and out with one channel per layer",
+  "README written in French"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "f51cff08879fd1d2",
+  "length": 6196,
+  "headings": [
+   "gridlight — séquenceur à grille lumineuse pour m-vave fm-1",
+   "jouer sans écran tactile",
+   "commandes",
+   "obtenir et installer le firmware",
+   "développement",
+   "licence"
+  ]
+ }
+}

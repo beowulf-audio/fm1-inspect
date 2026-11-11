@@ -1,0 +1,24 @@
+{
+ "summary": "Scintilla, a port of the 1981 Elka Synthex to the FM-1, built on the Dinghy platform and matched sample by sample against a browser version of the synth.",
+ "features": [
+  "Two oscillators per voice with sync, ring and cross mod; five-mode filter",
+  "Two layers with split and double; poly, mono and unison",
+  "All 80 factory patches, incl. the Laser Harp 'Ring mod.'",
+  "USB and DIN MIDI, USB audio; velocity and aftertouch from the keys",
+  "Chorus and reverb; no delay yet",
+  "Does not read other firmwares' projects; keeps only its settings"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "774a76a332ca06bd",
+  "length": 8422,
+  "headings": [
+   "scintilla",
+   "what is in it",
+   "how close it is",
+   "what it costs on the fm-1",
+   "running it",
+   "licence"
+  ]
+ }
+}

@@ -1,0 +1,20 @@
+{
+ "summary": "An experimental FM synthesizer firmware built from up to 64 paired oscillator cells that can be wired in parallel, serial, branching or feedback arrangements.",
+ "features": [
+  "Selectable FM laws, up to eight-note paraphony",
+  "Multimode filter, VCA, wavefolder, bit-depth and rate controls, stereo reverb",
+  "One 64-position note sequence plus four CV lanes for parameter automation",
+  "USB and TRS MIDI note input on all channels; follows external MIDI clock",
+  "No MIDI output or CC mapping; 16 patch slots",
+  "Windows updater needs Python 3.12; other firmware may erase saved patches"
+ ],
+ "from": "README and operator's manual",
+ "readme": {
+  "sha": "e15756f0810a2043",
+  "length": 1673,
+  "headings": [
+   "xenolith",
+   "source and licences"
+  ]
+ }
+}

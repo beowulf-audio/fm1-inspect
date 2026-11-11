@@ -1,0 +1,32 @@
+{
+ "summary": "A jazz trio firmware: you play chords and small neural networks running on the FM-1 add a walking bass and a swing drummer that learn the tune's form and follow you.",
+ "features": [
+  "Recognises seven chord types on twelve roots; root must be lowest",
+  "Learns the tune's form and keeps playing when you stop",
+  "Feel in two, in four, or two then four",
+  "Teach the bass your own line; it fine-tunes on the device",
+  "Knobs for tempo, bass freedom, drum activity and swing",
+  "MIDI keyboards over USB, TRS or Bluetooth; early 0.1.1 release"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "97574ad76fdddedc",
+  "length": 11114,
+  "headings": [
+   "trio",
+   "install",
+   "play",
+   "teach the bass your line",
+   "controls",
+   "how it works",
+   "build and test",
+   "licence and credits",
+   "中文说明",
+   "安装",
+   "弹",
+   "教贝斯（edit）",
+   "按键一览",
+   "现状"
+  ]
+ }
+}

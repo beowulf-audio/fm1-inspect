@@ -1,0 +1,27 @@
+{
+ "summary": "A medieval-themed groovebox forked from GHOULBOX and Felucca, for tavern and court dances with lutes, hurdy-gurdies, shawms, bagpipes, frame drums and the medieval modes.",
+ "features": [
+  "13 engines on four tracks, incl. a hurdy-gurdy with ringing drones",
+  "64-step sequencers with chance, ratchets, conditions and Euclid",
+  "Pythagorean, meantone and just temperaments; arpeggiator and chord keys",
+  "KEY TOUCH: velocity and aftertouch from the FM-1's own keys",
+  "MIDI learn, program change, a channel per track; screen reader support",
+  "Opens Felucca and GHOULBOX projects; sounds still mostly GHOULBOX's"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "927a4c41e90d13b2",
+  "length": 10579,
+  "headings": [
+   "estampie: a mediæval groovebox for the fm-1",
+   "what it does",
+   "screens",
+   "your projects and other firmwares",
+   "newer fm-1s",
+   "building",
+   "testing",
+   "ai / llm disclaimer",
+   "licence"
+  ]
+ }
+}

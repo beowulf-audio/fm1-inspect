@@ -1,0 +1,20 @@
+{
+ "summary": "A monosynth firmware modelled on the Novation Bass Station II, with a drum machine, an electric piano and a tape echo alongside it. Also a companion for Cyma Forma's RND Synth.",
+ "features": [
+  "Two oscillators, sub, ring mod, Classic or Acid filter, two LFOs",
+  "Bass Station II arp rhythms, 32-step sequencer, 128 patches; SysEx editor support",
+  "Drum Something 400: 13 drums with patterns, songs and MIDI out",
+  "Piano Something 368X electric piano; Space Something 201 tape echo and spring reverb",
+  "MIDI over USB, Bluetooth and TRS; Bluetooth headphone audio",
+  "Stores 32 RND Synth seeds and mixes its four tracks"
+ ],
+ "from": "README and manual",
+ "readme": {
+  "sha": "d691e07f5497ad8f",
+  "length": 5258,
+  "headings": [
+   "bass something 2",
+   "build, test, install"
+  ]
+ }
+}

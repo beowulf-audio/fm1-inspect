@@ -1,0 +1,23 @@
+{
+ "summary": "Wanderer, a four-voice event-memory synthesizer designed for low-vision use: you protect a played idea as an Anchor, evolve a working copy, add a layer and reshape it. It uses large high-contrast symbols and optional sound cues.",
+ "features": [
+  "Anchor keeps an idea; Melt and Drift evolve a working copy",
+  "Second layer, and Scatter with eight modes from slices to tape and cloud",
+  "100 sounds; subtractive and phase distortion engine with sub bass",
+  "Arpeggiator with 13 patterns, latch, swing and USB or TRS clock in",
+  "Adaptive zoom, display hold and audio cues for low vision",
+  "Printed audio is RAM-only; external clock drives only the arpeggiator"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "1fe53c173675a6a6",
+  "length": 4737,
+  "headings": [
+   "lvm wanderer 1.4 for m-vave fm-1",
+   "what is new in 1.4",
+   "current screens",
+   "hardware confirmation and exact download",
+   "install and keep your projects"
+  ]
+ }
+}

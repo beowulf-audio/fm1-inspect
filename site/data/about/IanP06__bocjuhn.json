@@ -1,0 +1,25 @@
+{
+ "summary": "A six-track firmware for sound exploration, free loops and clocked performance, with eight engines and an animated creature drawn for each engine. Based on Tonitor and still at release-candidate stage.",
+ "features": [
+  "Eight engines: FM, ACID, DROPLETS, FRACT, DRUID, RYUJI, HIVE, OBRADOR",
+  "Granular processing, filters, modulation and effects; BALLSY, BRICKLAYER, PLAY ALONG modes",
+  "RYUJI drums: 10 VA percussion sources plus 38 one-shots, editable kits",
+  "Browser simulator runs the firmware code, no FM-1 needed",
+  "RC7 confirmed on hardware; RC10 hardware testing still pending",
+  "Other firmwares' projects and samples may be overwritten"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "b5301bc3425063a0",
+  "length": 5130,
+  "headings": [
+   "bocjuhn — m-vave fm1 firmware",
+   "current prerelease: 1.0 rc10 — ryuji va + samples",
+   "previous release: 1.0 rc7 — living instruments",
+   "simulator and installer",
+   "build",
+   "firmware hub",
+   "license and credits"
+  ]
+ }
+}

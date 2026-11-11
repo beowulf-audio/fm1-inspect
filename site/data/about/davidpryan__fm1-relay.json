@@ -1,0 +1,25 @@
+{
+ "summary": "A 16-track MIDI sequencer for the FM-1 and SMK-37 that makes no sound itself, driving other instruments, a second FM-1 or a DAW. Version 0.6 is untested on real hardware.",
+ "features": [
+  "16 tracks, 8 patterns each, up to 64 steps with per-track length and direction",
+  "Steps with chords, micro-timing, chance, conditions, ratchets and 4 CC locks",
+  "Device profiles for LOOM-8, JIANT and others; conductor track drives followers",
+  "16 scenes and a 32-slot song; Euclid and Random generators",
+  "Output over USB, USB host, Bluetooth MIDI and TRS on the SMK-37",
+  "Clock send or receive with per-port timing offsets; four project slots"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "dda7adb0842570c2",
+  "length": 9873,
+  "headings": [
+   "relay-16",
+   "what it does",
+   "playing another fm-1 running loom-8",
+   "the controls",
+   "install",
+   "build",
+   "licence"
+  ]
+ }
+}

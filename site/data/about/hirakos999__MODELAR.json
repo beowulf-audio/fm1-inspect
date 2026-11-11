@@ -1,0 +1,25 @@
+{
+ "summary": "A semi-modular drone synth played like an XY pad: four always-on oscillators modulate each other, and the keys move a cursor that shapes filter, modulation and effects instead of playing notes. Still in beta.",
+ "features": [
+  "Four oscillators, 12 waves each, 8 cross-modulation routings",
+  "White keys form a 4 x 4 pad; 11 automatic gestures on black keys",
+  "Stereo chain: filter, drive, fold, ring, crush, chorus, delay, reverb",
+  "Clock set in Hz; ARP and an 8-pattern sequencer with polymetric lanes",
+  "8 generative environments, 2 LFOs, 16 patch slots",
+  "MIDI clock and CC in, optional CC out; may overwrite other firmware data"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "67e20251aa9edff3",
+  "length": 7228,
+  "headings": [
+   "modelar",
+   "install",
+   "what it keeps, and what it overwrites",
+   "first sound",
+   "the controls",
+   "build",
+   "licence"
+  ]
+ }
+}

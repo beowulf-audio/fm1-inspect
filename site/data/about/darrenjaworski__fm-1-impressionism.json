@@ -1,0 +1,19 @@
+{
+ "summary": "A generative ambient firmware meant to be left drifting rather than played: voices free-run on slow, semi-random timers in the harmony of Debussy and Ravel-era Impressionism.",
+ "features": [
+  "Whole-tone and pentatonic scales, extended and quartal chords",
+  "Parallel 'planing' chord motion over a sustained pedal tone",
+  "No clocked sequencer or conventional keyboard voice",
+  "Six scales and eight chord types",
+  "Keybed and fourth knob not used yet; no MIDI"
+ ],
+ "from": "README and roadmap",
+ "readme": {
+  "sha": "612b35cc6ab9ae7a",
+  "length": 916,
+  "headings": [
+   "fm-1-impressionism",
+   "try it online"
+  ]
+ }
+}

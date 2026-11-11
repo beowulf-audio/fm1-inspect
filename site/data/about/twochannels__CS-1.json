@@ -1,0 +1,25 @@
+{
+ "summary": "A Yamaha CS-80-style polysynth firmware on Dinghy, meant as a sound module played over MIDI from an external sequencer such as the Novation Circuit Tracks.",
+ "features": [
+  "Eight voices, each with two channels of VCO, high- and low-pass filters",
+  "Ring modulator, sub oscillator, stereo chorus/tremolo, SELECT as ribbon",
+  "Auto aftertouch curve per note for sequencer use; MIDI learn",
+  "Drive, flanger, tape delay, phaser and plate reverb with shimmer",
+  "52 sounds incl. the CS-80 manual's 22 preset tones; 32 user slots",
+  "TRS and USB MIDI in, clock sync; uses both CPU cores"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "8c2f152b04974042",
+  "length": 8784,
+  "headings": [
+   "cs-1",
+   "what it stands on",
+   "the sounds",
+   "layout",
+   "build and run on a computer",
+   "play it in the browser, and the site",
+   "build for the fm-1"
+  ]
+ }
+}

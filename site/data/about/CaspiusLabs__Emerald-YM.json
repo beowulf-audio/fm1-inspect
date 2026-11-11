@@ -1,0 +1,36 @@
+{
+ "summary": "A generative chiptune firmware in the style of the Mega Drive: an emulated YM2612 and Sega-style PSG play seeded backing music that you shape with knobs and play along to on the keys.",
+ "features": [
+  "Five YM2612 FM voices, DAC percussion, three PSG tones and noise",
+  "Endless generation or an 88-bar intro-to-outro song mode",
+  "Knobs for tempo, density, mutation and transpose; REC picks a new seed",
+  "Level plus decay, color and echo for each of twelve sources",
+  "USB/TRS MIDI in with clock follow; USB MIDI out on separate channels",
+  "Stereo USB audio of the mix; no browser editor, no preset import"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "c8f1378f219c4d6f",
+  "length": 23818,
+  "headings": [
+   "emerald ym",
+   "song mode and animated startup",
+   "historical physical 1.0.4 results",
+   "k1–k4 while playing: targeted physical test",
+   "midi in / out and edit",
+   "historical physical 0.10.0 tests",
+   "usb only on glo",
+   "main screen and physical test 0.6.0",
+   "what it does",
+   "quick controls",
+   "compatibility and data",
+   "usb audio 0.5.0 and later",
+   "verified installation paths",
+   "song variation 1.0.10",
+   "stable 1.0.12 transport",
+   "development",
+   "provision the ignored .runtime dependencies first; see building.md.",
+   "license and credits"
+  ]
+ }
+}

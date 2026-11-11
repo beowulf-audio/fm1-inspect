@@ -1,0 +1,23 @@
+{
+ "summary": "A modular synthesizer with over 80 modules patched with virtual cables on the FM-1's screen. A browser emulator with a visual patch bay runs the same firmware and can sync with the unit over USB.",
+ "features": [
+  "Oscillators, CZ and TX81Z-style FM voices, six filter types, drums",
+  "Sampler and granular player; four sample banks, recordable on the unit",
+  "Step, Euclid, Turing and piano-roll sequencer modules",
+  "16 snapshots per patch, PERFORM page, mutes, MUTATE and SONG mode",
+  "MIDI over USB and TRS; USB audio in both directions",
+  "Supports newer FM-1s with the UC25HQ80 flash chip"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "b3649021fe511b83",
+  "length": 3409,
+  "headings": [
+   "what it is",
+   "install on an fm-1",
+   "using it",
+   "build",
+   "credits and license"
+  ]
+ }
+}

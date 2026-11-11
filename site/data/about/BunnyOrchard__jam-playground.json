@@ -1,0 +1,19 @@
+{
+ "summary": "A generative groovebox firmware that starts playing a new song at every boot and keeps mutating its patterns and sounds, while you change parts or play along. A fork of HYP-1 and AMB-1.",
+ "features": [
+  "Four-voice sampled synth plus eleven drums; fifth key steals the oldest",
+  "Sampled FM piano, vibes, kalimba, harp, upright bass, sax and more",
+  "One-button vibe, scale, mutate, new song and break controls",
+  "Knob effects: ring, wah, phaser, filters; changes land on the next bar",
+  "GLO page: play the keys, arpeggiator, loop the last 16 bars",
+  "Step view per track to edit, mutate or re-voice each part"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "8c35bea42bcf0aeb",
+  "length": 3194,
+  "headings": [
+   "jam playground"
+  ]
+ }
+}

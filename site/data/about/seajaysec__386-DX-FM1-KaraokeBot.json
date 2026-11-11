@@ -1,0 +1,21 @@
+{
+ "summary": "A singing-robot firmware, an homage to the band 386 DX: a text-to-speech voice sings karaoke and MIDI songs or lyrics typed on the FM-1, backed by keys, bass and drum tracks, with an animated robot face.",
+ "features": [
+  "Voice, Keys, Bass and Drums tracks built from chained phrases",
+  "Imports .kar and .mid files through a browser page; 8 song slots",
+  "Type lyrics on the device; five vocal registers, Profondo to Soprano",
+  "Sixteen punch-in effects in the karaoke room",
+  "SLAMJAM mode: a generated poem performed with one of eight bands",
+  "Songs up to 128 bars and 512 sung notes"
+ ],
+ "from": "README and manual",
+ "readme": {
+  "sha": "bf030ef7c8e7d68a",
+  "length": 3598,
+  "headings": [
+   "386dx for the m-vave fm-1",
+   "running the web page",
+   "building and testing"
+  ]
+ }
+}

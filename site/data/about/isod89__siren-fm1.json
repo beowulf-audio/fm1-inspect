@@ -1,0 +1,24 @@
+{
+ "summary": "SIREN writes and plays endless electronic dance tracks on its own, with intros, builds, breaks and drops, while you steer it like a DJ. Version 0.10, experimental.",
+ "features": [
+  "Eight styles from techno and trance to drum and bass and house",
+  "201 sounds over seven layers, including an OberVave engine port",
+  "Black keys trigger breaks, builds, drops, fills and key changes",
+  "White keys take over any layer; hold-to-play DJ effects page",
+  "16 saved seeds replay a track; shareable seed codes",
+  "SIREN STUDIO browser app for live control and sound choice"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "c915eb520caa485a",
+  "length": 8667,
+  "headings": [
+   "at a glance",
+   "the controls",
+   "siren studio",
+   "install",
+   "building it yourself",
+   "credits"
+  ]
+ }
+}

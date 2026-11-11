@@ -1,0 +1,23 @@
+{
+ "summary": "BAILE, a small Brazilian funk rhythm instrument with three kits (Tamborzão, Voltmix and Beat Bolha), each with four parts and a one-bar step pattern.",
+ "features": [
+  "Three kits, one playing at a time; 12 embedded samples",
+  "Four parts per kit, steps toggled on the 16 white keys",
+  "Knobs for saturator, reverb, tempo and swing",
+  "Edits live in RAM only; reboot restores factory patterns",
+  "Shrinks the user storage area; migration from other firmware unvalidated",
+  "Browser preview runs the same application code"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "1661ab3d72762f00",
+  "length": 3246,
+  "headings": [
+   "baile by mulú",
+   "controls",
+   "assets and firmware",
+   "preview",
+   "license"
+  ]
+ }
+}

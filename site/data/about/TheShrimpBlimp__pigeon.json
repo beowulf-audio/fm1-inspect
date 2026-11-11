@@ -1,0 +1,29 @@
+{
+ "summary": "A sampler firmware with two chopped song tracks and 16 drum pads sharing 500 KiB of sample memory, with a step sequencer, arrangement and USB audio recording into the device. Built on Felucca; final beta.",
+ "features": [
+  "Two songs of up to 32 chops each, plus 16 drum pads",
+  "Per-chop start, end, direction, tuning, gain, envelope and loop crossfade",
+  "Record samples from the computer over USB audio, with trim",
+  "1-64 steps, four notes per step, piano roll, patterns A-D, 16-section song",
+  "Mixer, choke groups, filter, delay, chorus, reverb, distortion, compression",
+  "Browser loader, emulator and backups; no synth engines"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "91abbcea994b9de6",
+  "length": 9352,
+  "headings": [
+   "pigeon — sampler firmware for the m-vave fm1",
+   "what it does",
+   "main controls",
+   "build, back up and install",
+   "guides",
+   "human authorship and ai assistance",
+   "foundation and licensing",
+   "browser sampler tool",
+   "project repositories",
+   "try pigeon in the browser",
+   "screen-reader support"
+  ]
+ }
+}

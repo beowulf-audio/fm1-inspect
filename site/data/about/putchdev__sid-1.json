@@ -1,0 +1,29 @@
+{
+ "summary": "A synth firmware built on Dinghy that runs two emulated Commodore 64 SID chips, giving six voices played from the keys or over MIDI, with patches built the way C64 music player instruments are.",
+ "features": [
+  "Port of reSID 0.16 for 6581 or 8580, optional 2x oversampling",
+  "Patches with wavetables, pulse and filter sweeps, vibrato, hard restart",
+  "128 patch slots in 4 banks; 16 factory patches",
+  "Single, Layer, Split or Voices modes across MIDI channels",
+  "Web app extracts instruments and sampled drums from .sid tunes",
+  "USB and TRS MIDI in; plays imported tunes on the FM-1 as MIDI"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "0936c8f78aff4024",
+  "length": 13118,
+  "headings": [
+   "features",
+   "the fm-1's screens",
+   "the web app",
+   "getting started",
+   "installing the firmware",
+   "building and testing",
+   "disclaimer",
+   "built with ai",
+   "documentation",
+   "credits",
+   "licence"
+  ]
+ }
+}

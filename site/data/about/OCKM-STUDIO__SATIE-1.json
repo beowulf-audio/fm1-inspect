@@ -1,0 +1,23 @@
+{
+ "summary": "A generative listening firmware that plays evolving electronic arrangements of Erik Satie pieces, picking a tune and a mood and letting it run. Released as a beta.",
+ "features": [
+  "Ten score reductions: Gymnopedies, Gnossiennes and Ogives",
+  "Five moods, from 'After Hours' to 'Ghost'",
+  "Home knobs for tempo, energy, evolve and Solo/Duet/Trio mix",
+  "Clean, Vinyl, Tape and Grit colour effects; tempo-synced delay",
+  "Hold an eight-bar passage; one saved favourite",
+  "Earlier builds rebooted unexpectedly; cause not confirmed"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "1a18a995a8ffe0c7",
+  "length": 6506,
+  "headings": [
+   "satie-1 — erik. evolved.",
+   "start here",
+   "try and install",
+   "build",
+   "sharing and credits"
+  ]
+ }
+}

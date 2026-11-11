@@ -1,0 +1,26 @@
+{
+ "summary": "A generative firmware, FORMALFRED, that plays four lanes of rhythm and melody on its own, with its sequencer, voices and effects written in Lean 4 and backed by machine-checked proofs.",
+ "features": [
+  "Four lanes: Euclidean, cellular automaton or ratchet rhythms",
+  "Eleven note sources incl. Markov, grammar, Turing and chord",
+  "Voices: 48 Braids shapes, a 4-op FM voice, ten 808 drums",
+  "Chord progressions and Tonnetz walks; scale lock and key",
+  "Hold-to-play 'PUNCH' effects; 142 factory and 8 user patches",
+  "MIDI in and out, internal or external clock"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "c88694a2a8c398ad",
+  "length": 101311,
+  "headings": [
+   "formalfred",
+   "using it",
+   "how it works",
+   "what is proved",
+   "system prerequisites",
+   "targets",
+   "licence, releases, pins",
+   "what is trusted"
+  ]
+ }
+}

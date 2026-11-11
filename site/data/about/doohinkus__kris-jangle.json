@@ -1,0 +1,22 @@
+{
+ "summary": "A Christmas memory game: the FM-1 plays the opening of a carol and you repeat it on the keys, with the phrase growing longer each level.",
+ "features": [
+  "Four public-domain carols, 11 levels up to the full 32-note tune",
+  "Points per correct note, bonus for clean levels",
+  "Three misses send you to \"Grump Mode\" before a retry",
+  "Easy, medium and hard modes; key lights guide the first note",
+  "Piano, flute and sax samples plus synth sounds; saves best scores",
+  "Browser emulator and browser installer"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "2fb64cf7b2c530a8",
+  "length": 2781,
+  "headings": [
+   "kris jangle",
+   "try it",
+   "how to play",
+   "source"
+  ]
+ }
+}

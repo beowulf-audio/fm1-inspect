@@ -1,0 +1,25 @@
+{
+ "summary": "A generative groovebox in the style of early-90s PC tracker music: six lanes compose chords, bass, melodies, drums and effects live in a chosen style, and you mix and blend styles rather than programming steps.",
+ "features": [
+  "Six lanes: lead, arp, pad, bass, drums and sfx",
+  "Eighteen styles, queued, blended lane by lane or launched at once",
+  "Per-lane filter, wobble, drive and tracker effects like slide and vibrato",
+  "Song form with intro, drop, end and an optional energy arc",
+  "Edit page for your own parts, up to 512 bars, with live recording",
+  "Demo-style visuals and scopes; patched for FM-1 units with the new chipset"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "7d8c6c50d2e9abd6",
+  "length": 13743,
+  "headings": [
+   "makohai",
+   "the screens",
+   "how it plays",
+   "try it in the browser",
+   "install",
+   "build",
+   "licence and credits"
+  ]
+ }
+}

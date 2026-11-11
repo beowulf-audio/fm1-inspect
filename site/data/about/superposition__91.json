@@ -1,0 +1,29 @@
+{
+ "summary": "A five-track generative groovebox for city pop and coastal styles: you pick one of 190 self-playing pieces across 19 genres and steer it live with breakdowns, builds, effects and an auto-DJ. A fork of PERF-1.",
+ "features": [
+  "Pad, bass, 303-style acid line, pluck and drums generated live, not loops",
+  "Breakdown, build and drop buttons; auto-DJ and a Mood dial",
+  "93 playable effect keys in four banks, latch or hold",
+  "Drum sequencer: 6 lanes, 16 steps, ratchets, Euclid fills, polymeter",
+  "6-op FM pluck with 30 voices; load up to 16 DX7 voices over USB",
+  "Mixer with compressor and limiter; doesn't read other firmwares' saves"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "5515237ad63721c7",
+  "length": 13326,
+  "headings": [
+   "naiwan 91",
+   "what's in 0.1.0",
+   "what it is",
+   "who it's for",
+   "what makes it different",
+   "a first minute",
+   "the look",
+   "install",
+   "under the hood",
+   "feedback, ideas and help",
+   "credits and licence"
+  ]
+ }
+}

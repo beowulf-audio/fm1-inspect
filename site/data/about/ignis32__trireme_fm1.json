@@ -1,0 +1,30 @@
+{
+ "summary": "Turns the FM-1 into a programmable USB keyboard and macro pad, configured with Vial or an on-device editor. It makes no sound, and the author says it is AI-written and not fully tested by hand.",
+ "features": [
+  "Every key, button and the four knobs can send any key or shortcut",
+  "Media keys and mouse movement, buttons and wheel",
+  "Five QMK-style layers with layer-tap, mod-tap and one-shot modifiers",
+  "Macros, tap dance and combos, written in Vial",
+  "On-device editor, live on-screen legend and per-key light styles",
+  "Stays a USB-MIDI device, so firmware installers still work"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "61d755249dfd2a76",
+  "length": 13319,
+  "headings": [
+   "trireme fm-1",
+   "what it does",
+   "installing",
+   "going back to stock",
+   "the controls",
+   "default layout layer 0",
+   "configuring with vial",
+   "the on-device editor",
+   "building",
+   "releases",
+   "layout",
+   "licence and credits"
+  ]
+ }
+}

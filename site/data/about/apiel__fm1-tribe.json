@@ -1,0 +1,24 @@
+{
+ "summary": "A ten-track groovebox firmware, forked from X0X, where any of its engines can play on any track, with clip launching and scatter effects for live play. Still a beta.",
+ "features": [
+  "10 tracks, 28 engines incl. two kicks, 909 and 808 voices, ACID, FM4",
+  "64 clips per track; 16, 32 or 64 steps with rates, directions, swing",
+  "Scatter effects on the keys for one track or the whole mix",
+  "Two master send effects from reverb and delay to comb and phaser",
+  "Four assignable master knobs: volume, DJ filter, FX amounts, BPM",
+  "Arpeggiator, quantised recording and an always-on master compressor"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "58328b54ed74d987",
+  "length": 4136,
+  "headings": [
+   "tribe",
+   "try it, install it",
+   "what it looks like",
+   "what it does",
+   "build and test",
+   "credits and licence"
+  ]
+ }
+}

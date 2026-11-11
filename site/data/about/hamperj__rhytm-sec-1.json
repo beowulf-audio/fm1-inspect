@@ -1,0 +1,31 @@
+{
+ "summary": "A generative drum machine and bass synth using the drums and bass of PERF-1: patterns are drawn from each style's hit probabilities and keep evolving, for sketching ideas rather than full songs.",
+ "features": [
+  "19 styles with density, complexity and evolve controls",
+  "Bass follows a root note and scale, with chord moves",
+  "Breakdowns, builds, drops and fills on the next bar; per-drum mutes and relocks",
+  "Per-drum level, tune, decay and kit; DJ low/high-pass filter",
+  "MIDI clock sync over USB, including song position",
+  "USB audio stems: stereo master plus mono bass, kick, snare and hats"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "eed49dfed4e6e5b4",
+  "length": 9167,
+  "headings": [
+   "rhytm-sec-1",
+   "install",
+   "standalone firmware",
+   "fm1-dock module",
+   "controls",
+   "screens",
+   "usb audio channels standalone firmware",
+   "build from source",
+   "engine tests on your computer",
+   "screenshots",
+   "regenerating the style data",
+   "status",
+   "licence"
+  ]
+ }
+}

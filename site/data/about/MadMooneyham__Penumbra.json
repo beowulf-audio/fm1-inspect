@@ -1,0 +1,24 @@
+{
+ "summary": "A space-drone instrument: a five-voice drone starts on power-up and you play a soft synth voice, swells and a looper over it, moving between scenes in a key.",
+ "features": [
+  "Five drone voices on black keys; four-voice \"VOX\" synth on white keys",
+  "Looper that follows each scene's key; slow \"TIDES\" swell modulation",
+  "Shimmer reverb, ping-pong tape delay, dual filter; A/B sound morph",
+  "Six preset banks of scenes plus eight user slots",
+  "USB audio and MIDI: clock in or out, 44 CCs both ways, program changes",
+  "Sleep timer and screen-reader support"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "ad51be68512dccc0",
+  "length": 5708,
+  "headings": [
+   "penumbra",
+   "install",
+   "two minutes in",
+   "what's in it",
+   "tell me how you play it",
+   "for developers"
+  ]
+ }
+}

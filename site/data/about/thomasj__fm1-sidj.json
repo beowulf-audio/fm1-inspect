@@ -1,0 +1,35 @@
+{
+ "summary": "SiDJ plays Commodore 64 tunes from the High Voltage SID Collection on an emulated C64 and SID chip, and lets you remix each of the three voices live from the panel or a MIDI keyboard.",
+ "features": [
+  "Cycle-exact C64 with a reSID-based 6581 or 8580 emulation",
+  "Per-voice transpose, mute, solo, waveform swaps, envelopes, filter and LFO",
+  "Tempo control without pitch change, plus a vinyl-style pitch fader",
+  "USB audio of the mix or the mix plus three voice stems",
+  "Sends to real SID hardware over ASID; MIDI clock found from the tune",
+  "Holds about a hundred tunes; overwrites other firmwares' saved data"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "31a7fc0bb2f0d65d",
+  "length": 19239,
+  "headings": [
+   "sidj",
+   "get started",
+   "user manual",
+   "songs",
+   "player",
+   "remix",
+   "outputs",
+   "screen reader",
+   "installing",
+   "songs from the command line",
+   "for developers",
+   "building",
+   "how it works",
+   "verification",
+   "layout",
+   "licence",
+   "author"
+  ]
+ }
+}

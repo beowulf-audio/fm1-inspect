@@ -1,0 +1,22 @@
+{
+ "summary": "Monohull is a single-voice analogue-modelled monosynth that puts all of the FM-1's processing into one voice, spending spare CPU on unison and effects.",
+ "features": [
+  "Morphing saw, pulse, triangle and sine oscillators with sync and sub",
+  "Five filters: transistor ladder, diode ladder, OTA, Sallen-Key, state-variable",
+  "Unison, Juno-style chorus, ping-pong delay and a Rings-derived reverb",
+  "Scheduler adds extras only while CPU allows",
+  "Class-compliant USB MIDI device, playable from a computer",
+  "No patch saving yet; never touches other firmwares' data"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "a619c0fe075bcb1a",
+  "length": 4693,
+  "headings": [
+   "monohull",
+   "install",
+   "layout",
+   "building"
+  ]
+ }
+}

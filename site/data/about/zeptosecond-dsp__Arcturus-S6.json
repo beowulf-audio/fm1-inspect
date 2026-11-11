@@ -1,0 +1,23 @@
+{
+ "summary": "Arcturus S6 is a self-playing wavetable instrument for generative drones and soundscapes, in the style of early digital synths. No sequencer and no filter: movement comes from patched modulators.",
+ "features": [
+  "Four PPG-style wavetable oscillators; 13 wavetables, one generative",
+  "Six Serge-style function generators, two sample-and-holds, a quadrature LFO",
+  "Four logic gate generators, free or on MIDI clock",
+  "Mod and gate matrices with feedback; 21 tunings with quantisers",
+  "Plate reverb with freeze, shift-register delay, flanger",
+  "16 named patches; random drone at power-on; tested on one FM-1"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "0a7419c9963b5f86",
+  "length": 4733,
+  "headings": [
+   "arcturus s6",
+   "install",
+   "status",
+   "build it yourself",
+   "credits and licence"
+  ]
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "summary": "A seven-voice drum synth built on the LXR-02 drum machine's sound engine, as FM-1 firmware with a step sequencer and as desktop plugins (CLAP, VST3, Audio Unit) that share the same engine.",
+ "features": [
+  "Three drums, snare, cymbal, and closed and open hi-hats",
+  "Seven lanes of up to 64 steps with parameter locks, chance and flam",
+  "16 patterns with their own kits, chains and a 63-row song",
+  "Kit morphing, FX bus and stereo reverb added to the engine",
+  "Loads LXR-02 .SND kits into 128 slots; no kits included",
+  "USB stereo or 10-channel audio, MIDI notes and clock in"
+ ],
+ "from": "README and FM-1 firmware README",
+ "readme": {
+  "sha": "cd4fbbdb0a1900c7",
+  "length": 18914,
+  "headings": [
+   "tack",
+   "plugins",
+   "kits",
+   "status",
+   "building from source",
+   "repository layout",
+   "changes to the firmware",
+   "fixes",
+   "additions",
+   "license",
+   "credits"
+  ]
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "summary": "A turntable scratch instrument: the SELECT encoder is the jog wheel and the keys drop the needle on a virtual record of SAM speech words or an endlessly generated \"WORLD\" record.",
+ "features": [
+  "17 scratch techniques plus COMBO, played by holding keys",
+  "100 generated WORLD records built from nine sound materials",
+  "Four knob effects: filter, echo, crush and beat-locked stutter",
+  "Freeze, crossfader cut, backspin, brake and an auto-scratch mode",
+  "Follows MIDI clock; built-in practice drum beat",
+  "Version 4.0 removed the sequencer and rap modes of 3.x"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "d53f261960fbb4de",
+  "length": 12199,
+  "headings": [
+   "nu//metal skratchmaster pro",
+   "install",
+   "play",
+   "playing with a drum machine",
+   "the practice beat",
+   "the records",
+   "the techniques",
+   "the sound",
+   "midi",
+   "build it",
+   "license"
+  ]
+ }
+}

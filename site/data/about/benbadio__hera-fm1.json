@@ -1,0 +1,38 @@
+{
+ "summary": "A chord groovebox that recreates the workflow of the Roland J-6 on the FM-1's colour screen, with chord sets, phrase styles, a pattern sequencer and a Juno-style synth.",
+ "features": [
+  "100 chord sets; a map shows the chord on each key",
+  "9 phrase styles with 12 variations each, previewed as a piano roll",
+  "64 patterns of up to 64 steps, ties, shuffle, real-time recording",
+  "4-voice Juno-style synth, 64 sounds, chorus, delay and reverb",
+  "USB MIDI notes, clock in and out, program change; no TRS MIDI",
+  "Patterns can't be backed up yet; other firmwares may overwrite them"
+ ],
+ "from": "README and MIDI notes",
+ "readme": {
+  "sha": "0f4d1b87e955a5fb",
+  "length": 13706,
+  "headings": [
+   "hera: a chord groovebox for the m-vave fm-1",
+   "how it compares with the j-6",
+   "features",
+   "play",
+   "chord map",
+   "phrase",
+   "sequencer",
+   "patterns",
+   "sounds",
+   "effects",
+   "settings",
+   "the workbench",
+   "using it",
+   "installing",
+   "documentation",
+   "contributing",
+   "credits",
+   "licence",
+   "for nerds",
+   "legal"
+  ]
+ }
+}

@@ -1,0 +1,47 @@
+{
+ "summary": "A six-track Felucca-based synth groovebox styled after the GammaWave desktop synth, with eight sample-free engines, extra filter and drive types and a song generator that covers 49 genres.",
+ "features": [
+  "Engines: analog, 6-op FM, phase distortion, lo-fi/bytebeat, voice, organ, noise, drums",
+  "VOWEL and SCREAM filters, four new drive types, six Hearth macros",
+  "49-genre generator incl. trap and drill; 32 saved takes, played like clips",
+  "MUTATE evolves a track's notes and sound every few bars",
+  "Punch-in FX, five reverbs, master clip, punch and sidechain duck",
+  "Browser studio edits over Web MIDI; uses the user sample flash"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "7a579c6e276f3e37",
+  "length": 54919,
+  "headings": [
+   "pocket gammawave gw-1 — m-vave fm-1 firmware & web studio",
+   "hardware screens 240×240",
+   "the song generator and its takes reel",
+   "takes: the songwriter",
+   "what's in pocket gammawave v1.2.1-gw",
+   "the oct− shift deck",
+   "printable cheat sheets",
+   "synthesis engines & sound architecture",
+   "1. eight synthesis engines no samples",
+   "2. filters and the wraith ribbon edit > filter",
+   "3. punch-in fx, slicer, 5 reverbs & master bus",
+   "4. dual-core audio engine jieli ac791n",
+   "installing on m-vave fm-1 hardware",
+   "building from source",
+   "changelog",
+   "v1.0-gw — pocket gammawave gw-1",
+   "fixes since the first v1.0-gw package published as v1.0-gw-8f5e254",
+   "v1.2.1-gw — clear project and fixes from upstream 2026-10-26",
+   "v1.2-gw — ambient & keys 2026-10-25",
+   "v1.1.1-gw — from the issues 2026-10-24",
+   "v1.1-gw — the songwriter 2026-10-24",
+   "the trap snare and clap pr #14",
+   "published as v1.0-gw-fbf5d6e — the set plays whole phrases pr #13",
+   "published as v1.0-gw-d420b39 — now and takes you choose, the gen screen without flashing pr #11",
+   "published as v1.0-gw-2eeb792 — the gen control model and ux pass pr #9",
+   "published as v1.0-gw-0f3b9b0 — takes v2, the songwriter pr #6; the emulator's build fixed in pr #7",
+   "published as v1.0-gw-a5f1f74 branch claude/gw1-takes-reel, merged as pr #5",
+   "published as v1.0-gw-e3a5a33 branch claude/gw1-trap-genres, merged as pr #4",
+   "credits & license"
+  ]
+ }
+}

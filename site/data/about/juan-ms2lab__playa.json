@@ -1,0 +1,23 @@
+{
+ "summary": "A live-performance firmware built on Optimist: two synth layers on one keyboard plus a drum kit, with a simpler one-page-per-button interface. Most of Optimist's sequencing and sampling is removed.",
+ "features": [
+  "Two layers: LAYER, SPLIT, BLEND crossfade or SINGLE",
+  "Engines: PROPHET, DX7-compatible FM6, ANALOG, DIGITAL, JUNO; 12 voices",
+  "32 drum kits with a 16-step drum sequencer, 4 to 16 bars",
+  "Reverb, chorus and delay sends; master compressor and limiter",
+  "External controller knob CCs; Bluetooth MIDI device and host",
+  "Saves whole performances; played on one FM-1 so far"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "2ba723b87c708cdb",
+  "length": 9530,
+  "headings": [
+   "what it does",
+   "install",
+   "build and test",
+   "what's where",
+   "credits and licence"
+  ]
+ }
+}

@@ -1,0 +1,38 @@
+{
+ "summary": "A six-track synth and groovebox firmware with eight synthesis engines and twelve shared voices, descended from Pocket GammaWave and Felucca. It comes with a browser emulator and a Web Studio editor.",
+ "features": [
+  "Eight engines incl. 6-op FM, phase distortion, tonewheel organ and drum synthesis",
+  "200 factory sounds; CPU modes run 4, 5 or 6 tracks",
+  "64 steps per track with ratchets, conditions and parameter locks",
+  "Song chains, arpeggiator, scales and chords, punch-in effects, mutate",
+  "Five reverbs, delay, slicer, master EQ and limiter",
+  "USB MIDI with SysEx; author states it is not yet measured on hardware"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "9a84ccf5bc317e4b",
+  "length": 15577,
+  "headings": [
+   "quantum gammawave",
+   "what it is",
+   "gallery",
+   "highlights of v2.7.2",
+   "synthesis engines",
+   "tracks, voices and cpu",
+   "sequencing and performance",
+   "effects",
+   "interface",
+   "midi, projects and tools",
+   "hardware",
+   "installing",
+   "building from source",
+   "target firmware jieli pi32v2 clang + the ac79 sdk",
+   "the 10-voice profile, and a pool size other than the default",
+   "the host tests: golden renders, voice / routing checks, ui, cpu budget",
+   "the browser emulator needs emcc",
+   "documentation",
+   "what this project does not claim",
+   "credits and licence"
+  ]
+ }
+}

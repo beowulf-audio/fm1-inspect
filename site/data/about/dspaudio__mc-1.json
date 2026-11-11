@@ -1,0 +1,45 @@
+{
+ "summary": "A four-part groovebox firmware inspired by 1990s grooveboxes, with three melodic parts and a 16-lane drum part, built around a sample-attack LA-PCM sound engine.",
+ "features": [
+  "112 LA-PCM presets from CC0 recordings, plus 16 mono Acid sounds",
+  "Eight synthesized drum kits; eight melodic and six drum voices",
+  "64 patterns of 16 steps, song mode with up to 128 entries",
+  "Six arpeggiator modes and 384 recorded knob-automation events",
+  "Four shared FX banks; USB MIDI in and out, TRS in, USB audio out",
+  "No TRS MIDI out, Bluetooth MIDI or autosave; explicit SAVE only"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "545410c38f939dd7",
+  "length": 46087,
+  "headings": [
+   "mc-1 1.2.0 - rebuilt la-pcm engine and sound bank",
+   "hear the rebuilt la-pcm engine",
+   "see the instrument",
+   "what is included",
+   "install on an fm-1",
+   "runtime faults and rebooting",
+   "restore official v15",
+   "version 1.0.2 changes",
+   "version 1.0.1 changes",
+   "measured 1.0.0 device performance",
+   "try it without hardware",
+   "panel and pattern workflow",
+   "song arrangement",
+   "shared fx",
+   "arpeggiator and knob recording",
+   "projects and compatibility",
+   "built-in demos and listening",
+   "build, validation and licensing",
+   "complete factory preset list",
+   "category index",
+   "drum kits",
+   "release history",
+   "added in 0.3.0",
+   "added in 0.2.0",
+   "added in 0.1.4",
+   "added in 0.1.3",
+   "added in 0.1.2"
+  ]
+ }
+}
