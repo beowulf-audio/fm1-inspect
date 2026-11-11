@@ -312,6 +312,9 @@ details.tech[open] summary .chev { transform: rotate(180deg); }
 .opt-empty { cursor: default; color: var(--ink-3); font-size: 13px; }
 .opt-custom { border-top: 1px solid var(--line); margin-top: 4px; border-radius: 0 0 10px 10px; }
 .gh-panel { position: relative; z-index: 5; }
+/* the suggestions open over the sticky results toolbar (z-index 10): the panel is its own stacking context (its blur),
+   so it is lifted while the list is open, and only then (otherwise it would cover the toolbar when scrolled under it) */
+.gh-panel:has(.repo-list:not([hidden])) { z-index: 20; }
 
 /* On an emulated FM-1 (fm1-lab) */
 .emu { display: flex; gap: 14px; align-items: flex-start; flex-wrap: wrap; }
