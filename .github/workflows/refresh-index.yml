@@ -21,18 +21,19 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: node tools/refresh.mjs --max-new 400
-      # fm1-lab (public, pinned): each new release file booted on an emulated FM-1 (a boot screenshot, sound, the
-      # UC25HQ80 flash test), sandboxed with bubblewrap; the results go into site/data (lab.json, shots/, the reports)
+      # fm1-lab (public, pinned): each new release file booted on an emulated FM-1 (the UC25HQ80 flash test, a boot
+      # screenshot, a preview: the screen as a GIF and the sound), sandboxed with bubblewrap, and each project's latest
+      # previews made again when its tour changed (tools/lab-update.mjs); the results go into site/data
       - uses: actions/checkout@v4
         with:
           repository: beowulf-audio/fm1-lab
-          ref: 43c64060babb97866bb9c531b8cd2faa9882178e
+          ref: 06f780612cee12731bd08a21d800c2880659215e
           path: .fm1-lab
           persist-credentials: false
       - name: fm1-lab's sandbox and emulator
         run: |
           sudo apt-get update -qq
-          sudo apt-get install -y -qq bubblewrap libasound2-dev libx11-dev libxkbcommon-dev libxcursor-dev libxrandr-dev libxi-dev pkg-config
+          sudo apt-get install -y -qq bubblewrap ffmpeg libasound2-dev libx11-dev libxkbcommon-dev libxcursor-dev libxrandr-dev libxi-dev pkg-config
           sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0
           rustup toolchain install 1.95.0 --profile minimal
       - uses: actions/cache@v4
@@ -41,10 +42,10 @@ jobs:
             .fm1-lab/.work/target
             ~/.cargo/registry
           key: fm1-lab-emu-${{ runner.os }}-${{ hashFiles('.fm1-lab/vendor/fm1-emu/Cargo.lock', '.fm1-lab/patches/*.patch') }}
-      - name: Test new release files on an emulated FM-1
+      - name: New release files on an emulated FM-1, and previews whose tour changed
         run: |
           node .fm1-lab/bin/fm1-lab.mjs setup emu
-          node tools/lab-new.mjs --lab .fm1-lab --max 150
+          node tools/lab-update.mjs --lab .fm1-lab --max-new 150 --max-previews 300
       - name: Test
         run: node tests/run.mjs
       - name: Commit if changed

@@ -318,3 +318,5 @@ details.tech[open] summary .chev { transform: rotate(180deg); }
 .emu-shot { width: 200px; height: 200px; image-rendering: pixelated; border-radius: 8px; border: 1px solid var(--line, #2a2e36); flex: none; }
 .emu-facts { margin: 0; padding-left: 18px; flex: 1 1 220px; }
 .emu-facts li { margin: 2px 0; }
+.emu-audio { width: 100%; max-width: 320px; height: 32px; margin-top: 4px; }
+.emu-facts li:has(audio) { list-style: none; margin-left: -18px; }

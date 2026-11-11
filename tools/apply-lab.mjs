@@ -1,13 +1,15 @@
 #!/usr/bin/env node
 // fm1-lab's results (an fm1-lab sweep: results.json and shots/) into the site's data:
 //   site/data/lab.json        SHA-256 -> what the emulated FM-1 showed: v/r (the UC25HQ80 flash test's verdict and
-//                             reason; FM-1 packages only), boots, sound, ms (first screen), shot / gif (files exist)
-//   site/data/shots/SHA.png   the boot screenshot; SHA.gif the screen through fm1-lab's preview tour (sweep --gif)
+//                             reason), boots, sound, ms (first screen), shot / gif / audio (files exist), tour; FM-1
+//                             packages only (fm1-lab emulates an FM-1)
+//   site/data/shots/SHA.png   the boot screenshot; SHA.gif and SHA.m4a the screen and sound through a preview tour
+//                             (fm1-lab sweep --preview), for each project's latest 3 releases
 //   site/data/rel/SHA.json    the stored report, with the tested flash result in it (site/js/brick.js applyBrick)
 //   site/data/releases.json   each release's verdict with it (a.brickVerdict), and known.json's entries likewise
 // Earlier results stay; a file tested again is replaced.
 //   node tools/apply-lab.mjs SWEEP_OUT_DIR [--lab-commit SHA]
-import { readFileSync, writeFileSync, existsSync, mkdirSync, copyFileSync } from "node:fs";
+import { readFileSync, writeFileSync, existsSync, mkdirSync, copyFileSync, rmSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { applyBrick } from "../site/js/brick.js";
@@ -26,17 +28,42 @@ mkdirSync(join(DATA, "shots"), { recursive: true });
 
 let added = 0, shots = 0;
 for (const r of sweep) {
-  if (!r.check?.ok || !r.smoke) continue;
-  const e = { boots: !!r.smoke.boots, sound: !!r.smoke.sound, ms: r.smoke.firstScreenMs ?? null, at: (r.at || "").slice(0, 10) };
-  // the flash test only for FM-1 packages: the SMK-37 and MKE-P37 run as an FM-1 in the emulator, and whether they have
-  // the newer chip at all is not known
-  if (r.brick && r.check.model === "FM-1") { e.v = r.brick.verdict; e.r = r.brick.reason; }
+  // FM-1 packages only: fm1-lab emulates an FM-1, so an SMK-37 or MKE-P37 package boots there but doesn't behave as on its
+  // own hardware (no sound from its keys, the flash test not known to apply)
+  if (!r.check?.ok || !r.smoke || r.check.model !== "FM-1") continue;
+  // merged over what was there: a preview-only run keeps the earlier flash test, and so on
+  const e = { ...(lab.results[r.sha] || {}), boots: !!r.smoke.boots, sound: !!r.smoke.sound, ms: r.smoke.firstScreenMs ?? null, at: (r.at || "").slice(0, 10) };
+  if (r.brick) { e.v = r.brick.verdict; e.r = r.brick.reason; }
   const png = join(sweepDir, "shots", `${r.sha}-boot.png`);
   if (existsSync(png)) { copyFileSync(png, join(DATA, "shots", `${r.sha}.png`)); e.shot = true; shots++; }
   // the preview: a GIF of the screen through fm1-lab's tour (a chord, a melody, PLAY, a few presets)
-  const anim = join(sweepDir, "anim", `${r.sha}.gif`);
-  if (existsSync(anim)) { copyFileSync(anim, join(DATA, "shots", `${r.sha}.gif`)); e.gif = true; }
+  const anim = join(sweepDir, "anim", `${r.sha}.gif`), m4a = join(sweepDir, "audio", `${r.sha}.m4a`);
+  if (r.preview) {
+    if (existsSync(anim)) { copyFileSync(anim, join(DATA, "shots", `${r.sha}.gif`)); e.gif = true; }
+    if (existsSync(m4a)) { copyFileSync(m4a, join(DATA, "shots", `${r.sha}.m4a`)); e.audio = true; }
+    e.tour = r.preview.tour;                         // {source: generic | tailored | author, hash}
+  }
   lab.results[r.sha] = e; added++;
+}
+// previews (GIF, audio) only for each project's latest releases, so the site doesn't grow without end; older versions
+// keep their screenshot and test results
+const KEEP = 3;
+{
+  const rels = JSON.parse(readFileSync(join(DATA, "releases.json"), "utf8")).releases;
+  const byRepo = new Map();
+  for (const [sha, x] of Object.entries(rels)) { if (!byRepo.has(x.repo)) byRepo.set(x.repo, []); byRepo.get(x.repo).push([sha, x.published || "", x.tag || ""]); }
+  const keep = new Set();
+  for (const list of byRepo.values()) {
+    const tags = [...new Set(list.sort((a, b) => b[1].localeCompare(a[1])).map((x) => x[2]))].slice(0, KEEP);
+    for (const [sha, , tag] of list) if (tags.includes(tag)) keep.add(sha);
+  }
+  let pruned = 0;
+  for (const [sha, e] of Object.entries(lab.results)) {
+    if (keep.has(sha) || !rels[sha] || (!e.gif && !e.audio)) continue;
+    for (const ext of ["gif", "m4a"]) rmSync(join(DATA, "shots", `${sha}.${ext}`), { force: true });
+    delete e.gif; delete e.audio; delete e.tour; pruned++;
+  }
+  if (pruned) console.log(`previews of older releases removed: ${pruned}`);
 }
 lab.generated = new Date().toISOString().slice(0, 10);
 lab.lab = { repo: "beowulf-audio/fm1-lab", commit: labCommit || lab.lab?.commit || null };

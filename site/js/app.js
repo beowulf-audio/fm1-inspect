@@ -114,6 +114,12 @@ function verdictOf(v, an, idx, sha) {
   return h("span", { class: `badge ${cls}` }, icon(ico), txt + why);
 }
 
+const TOUR_NOTE = {
+  generic: "The preview plays the same short tour on every firmware (a chord, a melody, PLAY, a few presets), so it shows the default state and a few presets, not everything it can do.",
+  tailored: "The preview plays a tour written for this firmware from its documentation.",
+  author: "The preview plays the tour this firmware's author wrote (.fm1-preview.yaml).",
+};
+
 function card(file, sha, rep, id, rels) {
   const [vIco, vTxt] = VERDICT[rep.verdict] || VERDICT.unknown;
   const head = h("div", { class: "card-head" },
@@ -140,7 +146,8 @@ function card(file, sha, rep, id, rels) {
         h("li", { text: lab.boots ? `Boots: its screen is up ${lab.ms != null ? `${(lab.ms / 1000).toFixed(2)} s` : ""} after power-on.` : "The screen stayed blank in the emulator." }),
         h("li", { text: lab.sound ? "Makes sound when a key is played." : "No sound from a played key (some firmware needs a pattern or a mode first)." }),
         lab.v ? h("li", { text: lab.v === "pass" ? "Newer flash chip (UC25HQ80): works." : lab.v === "fail" ? "Newer flash chip (UC25HQ80): stops saving." : `Newer flash chip (UC25HQ80): ${lab.v}.` }) : null,
-        h("li", { class: "muted", text: `Tested with fm1-lab${lab.at ? ` on ${lab.at}` : ""}: emulated, not on a real unit.${lab.gif ? " The preview plays the same short tour on every firmware: a chord, a melody, PLAY, then a few presets." : ""}` })))) : null;
+        lab.audio ? h("li", {}, h("audio", { controls: "", preload: "none", src: `data/shots/${sha}.m4a`, class: "emu-audio" })) : null,
+        h("li", { class: "muted", text: `Tested with fm1-lab${lab.at ? ` on ${lab.at}` : ""}: emulated, not on a real unit.${lab.gif || lab.audio ? ` ${TOUR_NOTE[lab.tour?.source] || TOUR_NOTE.generic}` : ""}` })))) : null;
 
   const chain = h("section", {}, h("h3", { class: "sec-h" }, icon("badge-check"), "Trust chain"),
     h("ol", { class: "chain" }, trustChain(id).map((s) => h("li", { class: `s-${s.state}` }, h("span", { class: "node" }, icon(s.ico)),
