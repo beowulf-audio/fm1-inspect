@@ -1,0 +1,28 @@
+{
+ "summary": "A live jungle firmware that slices a drum break into sixteen 8th notes and lets you play rolls, stretches and effects over it from the panel.",
+ "features": [
+  "Held white keys trigger repeats, builds, echo, rolls and \"STRETCH\"",
+  "Black keys play single hits plus feedback, lo-fi and octave-down",
+  "Pattern variation, phrase-end fills and a freeze mode",
+  "Three built-in breaks and four slots for your own via a web page",
+  "Follows and sends MIDI clock over USB and Bluetooth; also follows TRS",
+  "Settings are not saved; starts at 160 BPM on each power-on"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "9ac4f037424f5d99",
+  "length": 9003,
+  "headings": [
+   "amenity",
+   "controls",
+   "midi clock",
+   "installing",
+   "your own breaks",
+   "third-party audio",
+   "building without the samples",
+   "building",
+   "credits",
+   "licence"
+  ]
+ }
+}

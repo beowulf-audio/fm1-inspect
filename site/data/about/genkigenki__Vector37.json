@@ -1,0 +1,23 @@
+{
+ "summary": "An overtone synth built mainly for the SMK-37 keyboard, where a moving sun and moon blend four sound corners. The FM-1 build is experimental and has not been tested on a unit.",
+ "features": [
+  "Four corners, each with two overtone generators, a blend and a filter",
+  "Eight wavetable banks of 32 frames that the orbit scans",
+  "32 factory sounds; a 16-sound user bank on the SMK-37 only",
+  "On the FM-1, controls move to knob pages and EDIT plus the keys",
+  "FM-1 build keeps no data of its own and leaves other stores alone",
+  "Browser simulator available"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "804e213bcc64a996",
+  "length": 5387,
+  "headings": [
+   "vector37",
+   "install",
+   "on the fm-1 experimental",
+   "build",
+   "credits"
+  ]
+ }
+}

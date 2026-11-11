@@ -1,0 +1,28 @@
+{
+ "summary": "A SLOOP-based groovebox firmware drawn as a pixel-art RPG, where tracks are heroes, lit steps are attacks and recording is a boss fight.",
+ "features": [
+  "SLOOP's four tracks, nine engines, drums, arpeggiator, sequencer and song mode",
+  "Notes charge each hero's ultimate; monsters, bosses, village and 3D flight scenes",
+  "Party stage decides which heroes play; Piano Hero and FM Hero games",
+  "Synthesised Brazilian kits and instruments such as cavaquinho and berimbau",
+  "Beta; samples stored at 11 to 16 kHz, so slightly duller",
+  "Flash is nearly full; controls follow SLOOP unchanged"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "444c390b925eca28",
+  "length": 7953,
+  "headings": [
+   "what is new in v0.9",
+   "safe install",
+   "controls",
+   "build",
+   "repository",
+   "credits",
+   "the \"rpg style\" notice a small personal test, hehe",
+   "privacy",
+   "contact",
+   "licence"
+  ]
+ }
+}

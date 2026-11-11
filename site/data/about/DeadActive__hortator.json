@@ -1,0 +1,50 @@
+{
+ "summary": "A Felucca-based drum machine firmware with eight drum tracks, a step sequencer and per-track effects, played entirely from the FM-1's own panel.",
+ "features": [
+  "Eight tracks of 808, 909, Plaits-derived and sample drum models",
+  "Up to 64 steps per track with probability, ratchets, nudge and motion",
+  "\"ACID\" 303-style bass voice on up to two tracks",
+  "Grids pattern generator and a sidechain compressor for pumping",
+  "Live PERFORM effects, MIDI Learn and USB audio with 10 channels",
+  "Four project slots; author says untested on most hardware"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "305529b139694a3e",
+  "length": 75429,
+  "headings": [
+   "hortator",
+   "what it does",
+   "on the panel",
+   "mutes",
+   "midi learn",
+   "perform",
+   "projects",
+   "live cue and variations",
+   "samples: slot, start, end",
+   "step tools",
+   "parameter locks",
+   "nudge and quant",
+   "metronome",
+   "screen colours",
+   "knob acceleration",
+   "key backlight",
+   "midi",
+   "usb audio: 2 or 10 channels",
+   "cpu and prio",
+   "web editor",
+   "bluetooth midi",
+   "what bluetooth adds",
+   "what it leaves out",
+   "connecting, step by step",
+   "the bluetooth page",
+   "the smc-mixer daw mode",
+   "install",
+   "back to the official firmware",
+   "build",
+   "layout",
+   "credits",
+   "licence"
+  ]
+ }
+}

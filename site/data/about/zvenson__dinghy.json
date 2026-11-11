@@ -1,0 +1,30 @@
+{
+ "summary": "A minimal starter firmware for developers: it only plays a 4-voice sine on the keys, but includes the platform a real FM-1 firmware needs so you can build your own on top.",
+ "features": [
+  "Working update path, USB rescue mode and crash screen",
+  "USB and TRS MIDI in one queue, with clock; class-compliant USB audio",
+  "Flash storage for settings, blobs and slots, each CRC-checked",
+  "Host mode renders sound to WAV and screen to images",
+  "Build refuses code that could brick the unit; also targets the SMK-37",
+  "Not an instrument: the app itself is a simple sine synth"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "6cf43cf4fb46ecbf",
+  "length": 8851,
+  "headings": [
+   "dinghy",
+   "what you get",
+   "build your own",
+   "1. copy it",
+   "2. set up once",
+   "3. hear it without an fm-1",
+   "4. your first change",
+   "5. onto the fm-1",
+   "6. when it goes wrong",
+   "7. make it yours, release it, get into the hub",
+   "where to go next",
+   "license"
+  ]
+ }
+}

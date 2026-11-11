@@ -1,0 +1,26 @@
+{
+ "summary": "A firmware that turns the FM-1 into a remote panel for other FM-1 firmwares running on a computer, phone or browser, and works on its own as a DX7-style synth, MIDI controller and looper.",
+ "features": [
+  "Sends keys, buttons and encoders as MIDI; host drives screen and LEDs",
+  "Connects over USB-MIDI, a vendor bulk interface or Bluetooth MIDI",
+  "Standalone FM6 synth with 256 ROM voices and 16 user cartridges",
+  "16-loop looper, arpeggiator, scales and MIDI clock out",
+  "\"MIDI REMOTE\" mode makes the whole panel a plain MIDI controller",
+  "USB Host for USB-MIDI devices; needs a powered hub or OTG adapter"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "2f287bccd598a302",
+  "length": 31329,
+  "headings": [
+   "remotefm1",
+   "for firmware authors",
+   "how it works",
+   "using it",
+   "safety",
+   "building the firmware",
+   "what is where",
+   "license"
+  ]
+ }
+}

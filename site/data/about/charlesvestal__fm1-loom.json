@@ -1,0 +1,21 @@
+{
+ "summary": "An eight-track groovebox firmware with eleven engines to choose from per track, a 64-step sequencer and a song mode, laid out in the style of the OP-XY.",
+ "features": [
+  "Seven synths including a 303, plus sampler, break slicer, drums, MIDI out",
+  "64 steps with step tricks, parameter locks, arp, strum and hold",
+  "\"weave\" combines two patterns; momentary \"throws\" effects",
+  "Conductor track steps the song through a chord progression",
+  "Two send effects, mixer with EQ, master compressor, 93 presets",
+  "MIDI over USB, Bluetooth and TRS; USB host via powered hub"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "c29cf1096bb965fe",
+  "length": 4350,
+  "headings": [
+   "loom-8 for the m-vave fm-1",
+   "building and testing",
+   "credits"
+  ]
+ }
+}

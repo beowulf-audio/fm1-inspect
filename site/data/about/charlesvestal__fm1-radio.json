@@ -1,0 +1,37 @@
+{
+ "summary": "An internet radio firmware that joins 2.4 GHz WiFi and plays stations from Radio Garden, with punch-in effects on the keys. It is a proof of concept with known rough edges.",
+ "features": [
+  "Tune by continent, country, place and station on the knobs",
+  "16 hold-to-play effects: filters, stutters, tape stop, reverse",
+  "A small 4-voice synth to play over the radio",
+  "Up to 16 favorites; works as a USB sound card for recording",
+  "Plays MP3 and AAC; HLS, MP4 and Ogg streams don't play",
+  "2.4 GHz WiFi only; HTTPS certificates are not checked"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "a7937684d45c3e94",
+  "length": 15244,
+  "headings": [
+   "fm1-radio: an internet radio for the fm-1",
+   "licensing",
+   "building",
+   "what you need",
+   "build and install",
+   "the places",
+   "using it",
+   "first start: join a network",
+   "listening",
+   "favorites",
+   "the synth",
+   "recording over usb",
+   "punch-in effects",
+   "debugging over usb",
+   "https and certificates",
+   "known limits",
+   "where the space goes",
+   "history",
+   "credits"
+  ]
+ }
+}

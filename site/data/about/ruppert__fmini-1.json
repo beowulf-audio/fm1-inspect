@@ -1,0 +1,21 @@
+{
+ "summary": "A single-synth firmware that turns the FM-1 into an emulation of the Minimoog Model D, with onboard effects, an arpeggiator and a small sequencer.",
+ "features": [
+  "Three oscillators, noise and a mixer that overloads softly",
+  "24 dB/oct ladder low-pass with its own contour, plus an LFO",
+  "Monophonic by default, with an optional 12-voice mode",
+  "Around 200 factory patches; browser patch editor and emulator",
+  "Supports newer FM-1 units with the UC25HQ80 flash chip",
+  "Beta build for the M-Vave SMK-37 keyboard"
+ ],
+ "from": "README and developer guide",
+ "readme": {
+  "sha": "3aa8e7d103f16124",
+  "length": 1974,
+  "headings": [
+   "1. screenshots",
+   "2. installation",
+   "3. credits"
+  ]
+ }
+}

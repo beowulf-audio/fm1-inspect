@@ -46,13 +46,15 @@ jobs:
         run: |
           node .fm1-lab/bin/fm1-lab.mjs setup emu
           node tools/lab-update.mjs --lab .fm1-lab --max-new 150 --max-previews 300
+      - name: Descriptions whose README changed a lot
+        run: node tools/about-check.mjs
       - name: Test
         run: node tests/run.mjs
       - name: Commit if changed
         run: |
           git config user.name "fm1-inspect index bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add site/data data/repos.json data/tours/review.json
+          git add site/data data/repos.json data/tours/review.json data/about-review.json
           if git diff --cached --quiet; then echo "No index changes."; exit 0; fi
           git commit -m "Refresh firmware index ($(date -u +%Y-%m-%d))"
           git push

@@ -1,0 +1,35 @@
+{
+ "summary": "A six-voice synth firmware modelled on the Roland Juno-106, with its chorus, an acid-style step sequencer and tape and shimmer effects.",
+ "features": [
+  "PolyBLEP DCO with sub and noise into a 24 dB resonant filter",
+  "Four-position HPF and BBD chorus I, II and I+II",
+  "128-step sequencer with piano roll, p-locks, ratchets and slide",
+  "128 factory and 128 user presets with on-device naming",
+  "MIDI learn for 45 parameters; Bluetooth MIDI as host or device",
+  "USB audio and MIDI; browser librarian loads Juno-106 SysEx"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "2b29cc9b13febfb0",
+  "length": 9598,
+  "headings": [
+   "fm-106",
+   "key features",
+   "hardware controls & navigation",
+   "quick button shortcuts",
+   "parameter edit pages",
+   "step sequencer & piano roll",
+   "midi cc configuration & learn",
+   "how to use live midi learn:",
+   "web simulator & patch librarian",
+   "building & installation",
+   "prerequisites",
+   "1. build firmware",
+   "single-core build ultra-stable, fpu accelerated:",
+   "dual-core build cpu0 + cpu1 parallel audio:",
+   "2. build webassembly simulator",
+   "3. install to m-vave fm-1",
+   "license"
+  ]
+ }
+}

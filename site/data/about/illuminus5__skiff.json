@@ -1,0 +1,42 @@
+{
+ "summary": "A six-track groovebox firmware with fourteen synth and drum engines, a 64-step sequencer and a live performance layer. It is a fork of Felucca and loads Felucca's sounds and projects.",
+ "features": [
+  "14 engines incl. FM6, PHYS, GRAIN, SLICE and DRUM; 148 factory sounds",
+  "64-step tracks with chords, ratchets, trig conditions and p-locks",
+  "Shared pool of 64 patterns, per-track lists, song mode, 16 scenes",
+  "PERFORM page for live launching; FX layer with repeat, tape stop, freeze",
+  "USB and TRS MIDI with clock, USB audio, a browser editor",
+  "Up to 16 voices on two cores; also runs on the SMK-37 Pro"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "9d6a4ca4087587e6",
+  "length": 81347,
+  "headings": [
+   "install",
+   "at a glance",
+   "a tour",
+   "find a sound by type",
+   "sequencer",
+   "patterns, songs and performance",
+   "fm6 from scratch",
+   "sound: every page draws what it does",
+   "themes",
+   "the web editor",
+   "features",
+   "patterns, lists and the song",
+   "controls",
+   "the fx layer's keys",
+   "engines",
+   "menu",
+   "midi implementation",
+   "scale keyboard",
+   "chord follow",
+   "build from source",
+   "if the fm-1 does not start",
+   "support",
+   "credits",
+   "licence"
+  ]
+ }
+}

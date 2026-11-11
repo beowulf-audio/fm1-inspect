@@ -1,0 +1,28 @@
+{
+ "summary": "An always-on ambience firmware built on Felucca: each power-on starts a new random, in-key piece, and the worlds you mark as liked shape the ones that come next.",
+ "features": [
+  "Four generated parts (pulse, floor, haze, voice) over a background bed",
+  "Knobs set part volumes; three macros per part",
+  "Upper buttons are timed \"verbs\" such as sink, swell and scramble",
+  "Up to 16 liked worlds kept; nothing else is saved",
+  "MIDI in over USB and TRS with clock follow",
+  "No sequencer editing, presets, projects or web editor"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "3025859dcce5d455",
+  "length": 11694,
+  "headings": [
+   "maku",
+   "install",
+   "docs",
+   "what it does",
+   "layout",
+   "if the fm-1 does not start",
+   "contributing",
+   "ai disclaimer",
+   "credits",
+   "licence"
+  ]
+ }
+}

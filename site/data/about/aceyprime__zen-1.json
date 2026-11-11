@@ -1,0 +1,25 @@
+{
+ "summary": "An ambient firmware that shows animated Japanese scenes on the screen and turns what happens in them into music, playing by itself until you join in.",
+ "features": [
+  "Three scenes: Sakura, Koi and Hotaru, each with several moods",
+  "\"Natural\" mood runs a day or night in half an hour",
+  "Pentatonic notes over a drone and nature recordings, on a 6-op FM engine",
+  "Keys play notes that fit the music and the scene reacts",
+  "Sleep timer; mood settings kept across power-offs",
+  "Koto instrument mode from FuMi-1 kept; Bluetooth and Wi-Fi never enabled"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "9ac089528f365047",
+  "length": 8438,
+  "headings": [
+   "zen-1 禅 for the m-vave fm-1",
+   "the scenes",
+   "controls",
+   "building and testing",
+   "layout",
+   "credits",
+   "license"
+  ]
+ }
+}

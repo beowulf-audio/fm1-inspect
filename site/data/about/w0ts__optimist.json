@@ -1,0 +1,26 @@
+{
+ "summary": "A modular firmware built on SLOOP, Felucca and other FM-1 projects: you choose which engines and features go in, build it in the browser, test it in a simulator and install it from there.",
+ "features": [
+  "Four tracks: three synth and a 10-lane drum track",
+  "Browser builder plus ready-made flavours for synths or drums",
+  "64-step sequencer with p-locks, motion, conditions and note generators",
+  "Two insert effects per track, three returns and punch-in effects",
+  "Ableton Link and \"JANK\" Wi-Fi jamming; Bluetooth MIDI and audio",
+  "Optional SD card mode needs an added SD board"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "d7430fa88834931a",
+  "length": 10561,
+  "headings": [
+   "what is in it",
+   "the flavours",
+   "builder, installer, editor w0ts.github.io/optimisthttps://w0ts.github.io/optimist/",
+   "your first install",
+   "the guide",
+   "build it on your computer",
+   "credits",
+   "licence and contributing"
+  ]
+ }
+}

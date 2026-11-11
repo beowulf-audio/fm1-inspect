@@ -1,0 +1,23 @@
+{
+ "summary": "A groovebox firmware that runs a 909, an 808, two 303s and a slice-based break player at the same time, for writing beats and acid lines on the FM-1.",
+ "features": [
+  "909 and 808 kits with 11 voices each, two Open303 basslines",
+  "TB-3PO line generator writes and mutates 303 patterns",
+  "Per-part step length up to 64 and rate; 32 patterns, chains and song mode",
+  "Knob motion recording, p-locks and per-step probability",
+  "USB and TRS MIDI with fixed CC map; class-compliant stereo USB audio",
+  "Beta: very busy patterns can reduce sound quality; no breaks included"
+ ],
+ "from": "README and manual",
+ "readme": {
+  "sha": "fd4a2b107401a43e",
+  "length": 5014,
+  "headings": [
+   "x0x for the m-vave fm-1",
+   "what's inside",
+   "your own breaks",
+   "building and testing",
+   "licence and credits"
+  ]
+ }
+}

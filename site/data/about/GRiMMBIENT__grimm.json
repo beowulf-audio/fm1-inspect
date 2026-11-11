@@ -1,0 +1,28 @@
+{
+ "summary": "A four-track drone and atmosphere firmware for dark ambient and dungeon synth, with seven sound sources, long effects and tracks that can generate parts on their own.",
+ "features": [
+  "Sources: VA, 6-op FM, sample, recorded choirs, organ, physical models, phase distortion",
+  "Four tracks share six voices; 44 factory sounds and 64 user slots",
+  "Tape per track, granular with freeze, tape echo, reverb up to infinite",
+  "64-step sequencer per track, one-key chords, arpeggiator, song slots A-D",
+  "\"GENERATE\" lets tracks play by themselves in key, following tempo or clock",
+  "USB and TRS MIDI, clock in and out; USB audio input; autosave"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "82059afd216972b5",
+  "length": 8454,
+  "headings": [
+   "gr!mm v2.0",
+   "what's inside",
+   "install",
+   "learn it",
+   "the editor and the web emulator",
+   "your own samples",
+   "screens",
+   "credits",
+   "building from source",
+   "licence"
+  ]
+ }
+}

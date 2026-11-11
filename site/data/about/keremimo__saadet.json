@@ -1,0 +1,25 @@
+{
+ "summary": "A two-part synthesizer firmware with six engines and a browser editor, meant for playing sounds rather than sequencing. It started as a fork of Melodee.",
+ "features": [
+  "Prophet, FM6, CZ-1, JUNO-106, HYDRA and PPG engines",
+  "Two parts played by MIDI channel, split or layered",
+  "Arpeggiator, chords, strum, scales and microtonal tuning",
+  "384 user sound slots, favourites and SysEx import and export",
+  "USB, TRS-in and Bluetooth MIDI; stereo USB audio at 44.1 kHz",
+  "No sequencer or multitrack recording; can overwrite Melodee data"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "dd1a2e8f4f42c0a4",
+  "length": 4414,
+  "headings": [
+   "saadet",
+   "play and shape sounds",
+   "quick-start cheat sheet",
+   "storage and compatibility",
+   "documentation",
+   "validation and provenance",
+   "support"
+  ]
+ }
+}

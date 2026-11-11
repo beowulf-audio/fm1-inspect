@@ -1,0 +1,36 @@
+{
+ "summary": "A drone synth firmware with two always-on drones that you tune, shape and move instead of playing notes, inspired by the Stylophone DS-2, Subharmonicon and Lyra-8.",
+ "features": [
+  "Each drone: morphing oscillator, partner, sub or subharmonic, noise, filter",
+  "Pitch link, hard sync and cross-modulation between the two drones",
+  "Eight gestures on the keys, held or pressure-driven; 16 presets and 48 scenes",
+  "Two-wave LFO, rhythmic Swell, Drift and Wander keep it moving on its own",
+  "Six delay types, drive, five reverbs up to infinite; motion loop recorder",
+  "MIDI notes tune the drones; locks Swell, LFO and delay to MIDI clock"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "2cf674c2e3ce7335",
+  "length": 60668,
+  "headings": [
+   "niagara drift",
+   "what it does",
+   "installing",
+   "playing it",
+   "start here",
+   "the presets",
+   "white keys: scenes",
+   "the gestures",
+   "the controls",
+   "pages",
+   "the lfo",
+   "black keys: switches",
+   "midi",
+   "trying it in the browser",
+   "hearing the screen",
+   "problems and ideas",
+   "building and testing",
+   "credits"
+  ]
+ }
+}

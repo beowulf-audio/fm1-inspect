@@ -1,0 +1,34 @@
+{
+ "summary": "A single-instrument firmware modelled on the Suiko ST-50, a Japanese instrument for accompanying shigin poetry recitation, with its five-note scale on the keys and koto-style ornaments.",
+ "features": [
+  "White keys play the in scale over three octaves; key set in honsu",
+  "Switches between equal temperament and the ST-50's tuning measured from recordings",
+  "21 instruments on a 6-operator FM engine, including kotos, flutes and bells",
+  "Black keys can become ornaments: vibrato, paired trill, koto left-hand bends",
+  "Unquantised looper with overdub layers, each keeping its own instrument",
+  "MIDI in with velocity, notes out on channel 1; quieter than stock"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "e889867e570ccbe0",
+  "length": 21366,
+  "headings": [
+   "fumi-1 for the m-vave fm-1",
+   "sixty seconds",
+   "before you install",
+   "getting back",
+   "playing",
+   "the looper",
+   "the ornament keys",
+   "the trill",
+   "why the tuning matters",
+   "building and testing",
+   "the instruments",
+   "the soundfont",
+   "the audition bench",
+   "tools",
+   "where to talk",
+   "credits"
+  ]
+ }
+}

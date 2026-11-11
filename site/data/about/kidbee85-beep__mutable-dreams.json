@@ -1,0 +1,20 @@
+{
+ "summary": "A six-track instrument for generative ambient music, evolving soundscapes and rhythms, built around a large library of preset scenes called Biomes.",
+ "features": [
+  "272 factory Biomes and 632 tone presets",
+  "Synth voices, lo-fi kits and hand percussion with a shared granular bus",
+  "Sequence recording, chord progressions, \"Living Links\" and \"Biome Drift\"",
+  "\"Journey\" arranges up to eight sections",
+  "MIDI Learn, USB display mirroring and multichannel USB recording",
+  "Returning to stock firmware can erase user banks and settings"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "7612ad7ff7cbaec2",
+  "length": 2200,
+  "headings": [
+   "mutable dreams 2.0 for the m-vave fm-1",
+   "installation and recovery"
+  ]
+ }
+}

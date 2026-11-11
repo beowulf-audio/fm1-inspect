@@ -323,3 +323,14 @@ details.tech[open] summary .chev { transform: rotate(180deg); }
 .emu-facts li { margin: 2px 0; }
 .emu-audio { width: 100%; max-width: 320px; height: 32px; margin-top: 4px; }
 .emu-facts li:has(audio) { list-style: none; margin-left: -18px; }
+.about-sum { margin: 0 0 6px; }
+.about-feat { margin: 0 0 6px; padding-left: 18px; }
+.about-feat li { margin: 2px 0; }
+.about-from { margin: 0; font-size: 0.85em; }
+.readme-box > .readme { padding: 4px 14px 12px; max-height: 70vh; overflow: auto; overflow-wrap: anywhere; }
+.readme img { max-width: 100%; height: auto; }
+.readme pre { overflow-x: auto; padding: 8px 10px; border-radius: 6px; background: rgba(127,127,127,.12); }
+.readme table { border-collapse: collapse; display: block; overflow-x: auto; }
+.readme th, .readme td { border: 1px solid var(--line, #2a2e36); padding: 3px 8px; }
+.readme h1 { font-size: 1.3em; } .readme h2 { font-size: 1.15em; } .readme h3 { font-size: 1.05em; }
+.readme .offsite { font-size: .9em; }

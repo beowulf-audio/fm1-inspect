@@ -82,6 +82,17 @@ ok(similarity(a, signature(shingleHashes(other)).sig) < 0.2, "different code -> 
   ok(d4.previews["o/p"].tag === "v1", "the newer release not previewed yet: the current preview stays");
 }
 
+// descriptions: a README that changed a lot is listed, a small edit isn't
+{
+  const { fingerprint, changed } = await import("../tools/about-check.mjs");
+  const base = "# X0X\n\nA groovebox.\n\n## Install\n\nSteps.\n\n## Controls\n\n" + "Keys and knobs. ".repeat(40);
+  const a = fingerprint(base);
+  ok(a.headings.join("|") === "x0x|install|controls", "a README's sections");
+  ok(changed(fingerprint(base), a) === null && changed(fingerprint(base.replace("groovebox", "groove box")), a) === null, "the same, or a typo: not listed");
+  ok(/sections added: song mode/.test(changed(fingerprint(base + "\n\n## Song mode\n\nNew."), a) || ""), "a new section: listed");
+  ok(/longer/.test(changed(fingerprint(base + "More. ".repeat(200)), a) || ""), "much longer: listed");
+}
+
 // 3. real files (optional corpus)
 const corpus = process.argv[2];
 if (corpus && existsSync(corpus)) {

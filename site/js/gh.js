@@ -6,6 +6,7 @@
 import { h, icon, ext, ghLink, short, fmtKB, fmtN, safeUrl } from "./ui.js";
 import { RELAY_URL } from "./config.js";
 import { previewBlock } from "./preview.js";
+import { readmeSection } from "./readme.js";
 
 const API = "https://api.github.com";
 const RAW = "https://raw.githubusercontent.com";
@@ -137,7 +138,7 @@ export async function lookupRepo(repo, ctx) {
 
   // source
   const srcEl = h("p", { class: "muted", text: "Scanning source…" });
-  const report = repoCard(meta, releases, committed, srcEl, ctx, repo, ref);
+  const report = repoCard(meta, releases, committed, srcEl, ctx, repo, ref, tree);
   ctx.status("Scanning source…");
   scanSource(repo, ref, tree, (d, n) => { srcEl.textContent = `Scanning source: ${d} of ${n} files…`; })
     .then((s) => {
@@ -155,7 +156,7 @@ function badge(cls, ico, text) { return h("span", { class: `badge ${cls}` }, ico
 const VERDICT_ICON = { ok: "shield-check", caution: "shield-alert", risk: "shield-x" };
 const VERDICT_TEXT = { ok: "Looks fine", caution: "Caution", risk: "Risk" };
 
-function repoCard(meta, releases, committed, srcEl, ctx, repo, ref) {
+function repoCard(meta, releases, committed, srcEl, ctx, repo, ref, tree) {
   // the repo's verdict = its latest release's FM-1 file, when we have analysed it
   const latest = releases[0]?.assets || [];
   const pickFm1 = latest.find((a) => ctx.releases[a.sha]?.a?.model === "FM-1") || latest.find((a) => ctx.releases[a.sha]?.a);
@@ -234,11 +235,23 @@ function repoCard(meta, releases, committed, srcEl, ctx, repo, ref) {
       return h("li", { class: "asset" }, h("div", { class: "aname" }, h("code", { text: t.path }), h("span", { class: "muted", text: fmtKB(t.size || 0) })), h("div", { class: "abadges" }, btn));
     }))) : null;
 
+  // what the firmware is: a short description and its main features, written for the project from its documentation
+  // (data/about/OWNER__REPO.json); the section stays out until it has loaded, and when there is none
+  const aboutEl = h("section", { class: "wide about", hidden: true });
+  fetch(`data/about/${repo.replace("/", "__")}.json`, { cache: "no-cache" }).then((r) => (r.ok ? r.json() : null)).then((a) => {
+    if (!a?.summary) return;
+    aboutEl.append(h("h3", { class: "sec-h" }, icon("info"), "What it is"), h("p", { class: "about-sum", text: a.summary }),
+      Array.isArray(a.features) && a.features.length ? h("ul", { class: "about-feat" }, a.features.slice(0, 8).map((f) => h("li", { text: String(f) }))) : null,
+      a.from ? h("p", { class: "muted about-from", text: `From its ${a.from}.` }) : null);
+    aboutEl.hidden = false;
+  }).catch(() => {});
   // the project's preview: its tour on one release file, with the version it is of
   const pv = ctx.preview?.(repo), pvEl = pv ? previewBlock(pv.p, pv.lab) : null;
   cardEl = h("article", { class: `card t-${tone}`, "data-verdict": "repo" }, head, meta2,
     h("div", { class: "body" },
+      aboutEl,
       pvEl ? h("section", { class: "wide" }, h("h3", { class: "sec-h" }, icon("microchip"), "Preview on an emulated FM-1"), pvEl) : null,
+      readmeSection(repo, ref, tree),
       h("section", {}, h("h3", { class: "sec-h" }, icon("history"), "Releases"), relList),
       h("section", {}, h("h3", { class: "sec-h" }, icon("search"), "Source check"), srcEl),
       committedSec));

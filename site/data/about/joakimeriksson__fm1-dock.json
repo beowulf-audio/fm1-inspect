@@ -1,0 +1,28 @@
+{
+ "summary": "A host firmware that keeps several synths as modules in flash, so you can switch between them from a picker on HOME without reinstalling.",
+ "features": [
+  "Comes with CS-1, Scintilla, OberVave and a sine",
+  "Add modules like FM-106, DUB-1 or FM-1 SID from a web page",
+  "Shared options: MIDI channel filter, local off, master EQ, MIDI thru",
+  "Optional Bluetooth MIDI; uses the FM-1's second core",
+  "SDK and tools for building and deploying your own module over USB",
+  "Flash for added modules is limited; large modules crowd out others"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "8b68d5b1d779aea5",
+  "length": 22556,
+  "headings": [
+   "install",
+   "new in 0.8",
+   "the modules",
+   "play it",
+   "bluetooth midi",
+   "the second core",
+   "safety nets",
+   "your own module",
+   "build it",
+   "credits"
+  ]
+ }
+}

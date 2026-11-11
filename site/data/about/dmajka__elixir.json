@@ -1,0 +1,32 @@
+{
+ "summary": "A drum synth and sequencer firmware that began as a port of the Erica Synths LXR-02 drum machine, with seven drum tracks and many added engines, filters and generative tools.",
+ "features": [
+  "LXR-02's six voices on seven tracks; 29 extra engines incl. Rings and Plaits",
+  "32 patterns of up to 64 steps, parameter locks, trig conditions, ratchets",
+  "Euclid, Grids, Turing and cellular generators; \"SPELLS\" and \"WANDER\"",
+  "18 filter types, FX bus, delay, four reverbs and sidechain compressor",
+  "400+ parameters by CC or NRPN, clock in and out, 8-channel USB audio",
+  "LXR-02's 85 factory kits built in; imports .SND kits and projects"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "1e8b03ac29ffa8a8",
+  "length": 34367,
+  "headings": [
+   "elixir",
+   "controls",
+   "sends and reverb",
+   "copying a bar",
+   "steps and tracks",
+   "performance perf",
+   "sound shaping",
+   "midi and sync",
+   "try it in the browser",
+   "library: backup, restore, lxr-02 kits",
+   "build the firmware",
+   "install",
+   "tests",
+   "license"
+  ]
+ }
+}

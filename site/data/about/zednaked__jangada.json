@@ -1,0 +1,42 @@
+{
+ "summary": "A Felucca-based multi-engine synth firmware with a dark, industrial and Brazilian character: self-evolving drones, manguebeat drum kits and grit effects meant for live play, across four tracks.",
+ "features": [
+  "13 engines, including Dexed-editable FM6 and a ladder-filter ANALOG",
+  "Drone mode with \"EVOL\" random walks and a \"TENS\" tension ramp over bars",
+  "Industrial and maracatu, baião and coco kits; 49 factory beats with fills",
+  "64-step sequencer per track with chance, ratchets, Euclid and 13 arp modes",
+  "Tape, hum, dust and per-track distortion; 16 hold-to-play punch-in effects",
+  "USB and TRS MIDI, clock in and out, MIDI learn; USB audio; 4 projects"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "b21fe6a76e493e4a",
+  "length": 38438,
+  "headings": [
+   "jangada 🛶",
+   "philosophy",
+   "listen",
+   "play it in the browser",
+   "play it from a mixer",
+   "by the numbers",
+   "install",
+   "first steps",
+   "what's in it",
+   "drones",
+   "mangue and the northeast",
+   "grit: tape, master and punch",
+   "drums",
+   "engines",
+   "live: hold a button",
+   "sequencer and arpeggiator",
+   "midi and usb",
+   "screen, lights and menu",
+   "on the site",
+   "storage and safety",
+   "tools",
+   "build and test",
+   "next",
+   "credits and license"
+  ]
+ }
+}

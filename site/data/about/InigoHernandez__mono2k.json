@@ -1,0 +1,27 @@
+{
+ "summary": "A Monomachine-style synthesizer firmware: six tracks, each running one mono machine, with a 64-step parameter-lock sequencer and a lofi effects bus on a 1-bit styled screen.",
+ "features": [
+  "Machines include SID-6581, three FM types, VOX-6 and LXR-style drums",
+  "Per track: filter, delay, distortion, three LFOs and an arpeggiator",
+  "64-step sequencer with p-locks, trig conditions, ratchets and polymeter",
+  "Bus with reverb, ADPCM crunch and 22 performance effects",
+  "Six MIDI channels, Monomachine CC map, MIDI clock in and out",
+  "One project of 64 patterns; saving overwrites other firmwares' data there"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "64f44335bbd8f26b",
+  "length": 36999,
+  "headings": [
+   "mono2k",
+   "on the fm-1",
+   "run it",
+   "what is in it",
+   "where things are",
+   "the next steps",
+   "author",
+   "calibration",
+   "credits and licence"
+  ]
+ }
+}

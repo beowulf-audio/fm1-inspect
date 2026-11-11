@@ -1,0 +1,23 @@
+{
+ "summary": "A general-purpose synth and sequencer firmware for the FM-1 with four tracks, many sound engines and a browser installer and editor.",
+ "features": [
+  "Four synth tracks, each with its own engine and sequence",
+  "Engines include ANALOG, FM6, PHASE, WHEEL, GRAIN, PHYS, SLICE and DRUM",
+  "Step sequencer with parameter locks, ratchets, chance and song sections",
+  "Web installer and SysEx web editor with full device backup",
+  "Installer can return the unit to the official V15 firmware",
+  "1.8.2 beta adds support for newer units with UC25HQ80 flash"
+ ],
+ "from": "README and editor protocol docs",
+ "readme": {
+  "sha": "b23571b51d47ee80",
+  "length": 2696,
+  "headings": [
+   "felucca",
+   "install",
+   "project resources",
+   "development and support",
+   "credits and licence"
+  ]
+ }
+}

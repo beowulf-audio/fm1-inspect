@@ -1,0 +1,31 @@
+{
+ "summary": "A four-track groovebox firmware based on SLOOP and Felucca, with three synth parts and a drum machine, and an \"Event Tape\" for rearranging recorded sequencer events into songs.",
+ "features": [
+  "Event Tape copies, lifts and drops notes, hits and locks; not audio",
+  "17 engines and 189 factory sounds, including SWARM, PULSE, FM4 and CLOUD",
+  "Up to 64 steps with chords, ratchets, p-locks and fill conditions",
+  "Synth parts share 8 voices in total",
+  "MIDI clock in and out, MIDI Learn, controller mode, USB audio",
+  "Bluetooth only in a separate build, which drops some built-in samples"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "070679e29e2b0bdc",
+  "length": 22974,
+  "headings": [
+   "orbit",
+   "make a loop, then move its events",
+   "what makes orbit its own instrument",
+   "sounds and performance",
+   "drum editing for live sets",
+   "midi sync and bluetooth",
+   "sounds replaced in the bluetooth build",
+   "listen and explore",
+   "install",
+   "play in your browser",
+   "try the native preview",
+   "documentation",
+   "origin, credits and licensing"
+  ]
+ }
+}

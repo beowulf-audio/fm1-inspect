@@ -1,0 +1,22 @@
+{
+ "summary": "A four-track groovebox firmware forked from SLOOP, pairing 303 or Juno-style, Elements and Plaits synth tracks with an LXR-02 drum synth and generators that write parts as you play.",
+ "features": [
+  "Track 1 switches between a TB-303 voice and a Juno-106 style polysynth",
+  "64-step sequencer with 4-note chords, ratchets, slides, chance, song arranger",
+  "GEN writes parts on one key and progression; ACID GEN and DRUM GEN",
+  "Clouds-based granular send, reverb, delay and punch-in effects",
+  "USB audio in stereo or six-channel stems, MIDI out per track, DAW sync",
+  "Reads SLOOP projects up to 2.6 only; back up before switching firmware"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "1d991151bc0fde18",
+  "length": 5391,
+  "headings": [
+   "what's inside",
+   "install",
+   "build",
+   "credits and licence"
+  ]
+ }
+}

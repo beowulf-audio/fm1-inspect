@@ -1,0 +1,23 @@
+{
+ "summary": "A MIDI controller firmware: the keys, knobs, an arpeggiator and a Euclidean drum sequencer send MIDI over USB and Bluetooth, and the FM-1 also plays it all on its own General MIDI sounds.",
+ "features": [
+  "Velocity and aftertouch read from the keys",
+  "Scale mode with the scale's chords on the black keys",
+  "Four banks of assignable knob CCs",
+  "Arpeggiator and a four-track Euclidean drum sequencer",
+  "USB and Bluetooth MIDI out; TRS MIDI in is passed along",
+  "A separate USB-only build without Bluetooth; Screen Reader support"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "102ad2b0f5a165f1",
+  "length": 4682,
+  "headings": [
+   "ctl-1 for the m-vave fm-1",
+   "in short",
+   "screen reader",
+   "building and testing",
+   "credits"
+  ]
+ }
+}

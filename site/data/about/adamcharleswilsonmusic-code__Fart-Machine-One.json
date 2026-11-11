@@ -1,0 +1,31 @@
+{
+ "summary": "A novelty firmware that plays ten recorded CC0 fart samples across the keys, with reverb, delay and a one-bar loop recorder.",
+ "features": [
+  "Ten one-shot samples repeated across all 27 keys",
+  "One-bar, 16-step loop with overdub, quantized to the step",
+  "Knobs set reverb, delay amount, delay time and feedback",
+  "Eight voices; MIDI channel 1 notes play and record",
+  "Own WAV files can replace the bank when rebuilding",
+  "Loop is lost at power-off; no MIDI clock sync or song mode"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "651a016dc12c99b0",
+  "length": 9517,
+  "headings": [
+   "fart machine one",
+   "install: from download to first fart",
+   "1. download the firmware and source",
+   "2. open a terminal in that folder",
+   "3. set up the installer",
+   "4. connect and check your fm-1",
+   "5. install",
+   "6. make something regrettable",
+   "if something goes wrong",
+   "controls",
+   "sounds and names",
+   "build, test, preview and provenance",
+   "inspiration"
+  ]
+ }
+}

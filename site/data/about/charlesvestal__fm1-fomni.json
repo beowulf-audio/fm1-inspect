@@ -1,0 +1,25 @@
+{
+ "summary": "A chord-harp firmware modelled on the Omnichord: black keys pick chords and the white keys act as a strum plate, with a backing chord, bass and rhythm underneath.",
+ "features": [
+  "Two harp voices to mix, with adjustable sustain",
+  "Ten OM-84 rhythms with auto bass sync, sync start and chord hold",
+  "Minor, 7th and m7 by holding ENV, LFO or both; chord keys reassignable",
+  "Plate reverb; drums stay dry",
+  "USB and TRS MIDI in, USB out on four channels; follows MIDI clock",
+  "One screen and no patterns to program; saves settings automatically"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "915b2b3efa78d422",
+  "length": 5514,
+  "headings": [
+   "fomni for the m-vave fm-1",
+   "playing",
+   "the pages",
+   "midi",
+   "screen reader",
+   "building and testing",
+   "credits"
+  ]
+ }
+}

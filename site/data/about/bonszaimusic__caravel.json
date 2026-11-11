@@ -1,0 +1,44 @@
+{
+ "summary": "A multi-engine synth and sequencer firmware continued from Felucca, with fifteen engines across four tracks and a focus on live sound design: morphing between engines, snapshots and held textures.",
+ "features": [
+  "Engines include SEM, HADES, DRONE, ENSEMBLE, FM6, PHYS, VOICE and GRAIN",
+  "Four tracks sharing 8 voices; 64-step sequencer with locks and automation",
+  "\"Pair Morph\", Random Morph snapshots and hands-free Morph Journeys",
+  "STASIS freezes and layers the reverb send into a held texture",
+  "HARMONY chord progression that tracks, arps and live keys follow",
+  "USB and TRS MIDI with MIDI learn; project format changes between versions"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "6d220c1ee17e1953",
+  "length": 28491,
+  "headings": [
+   "caravel",
+   "watch and listen",
+   "tutorials",
+   "caravel 0.12.0 — harmony",
+   "caravel 0.11.0 — ensemble in stereo",
+   "caravel 0.10.1 — fix release",
+   "caravel 0.10.0 — the ensemble engine",
+   "caravel 0.9.0 — random morph and journey per track",
+   "caravel 0.8.0 — morph journey",
+   "caravel 0.7.2 — candidate fix for the stock return -5",
+   "caravel 0.7.1 — keep your performance snapshots",
+   "caravel 0.7.0 — smoother audio and visible performance automation",
+   "caravel 0.6.0 - hold a sound. build a texture.",
+   "performance controls retained from 0.5.0",
+   "a look at the screen",
+   "engines at a glance",
+   "what caravel adds to felucca",
+   "compatibility with felucca",
+   "installing",
+   "what it is",
+   "inherited from felucca",
+   "new in 1.6.1",
+   "new in 1.6",
+   "support and contributing",
+   "ai disclaimer",
+   "credits and licence"
+  ]
+ }
+}

@@ -1,0 +1,49 @@
+{
+ "summary": "A fork of the SLOOP groovebox that swaps its engines for a single six-operator DX7 engine, ported from Dexed, with three synth parts and an FM drum track you can program on the device.",
+ "features": [
+  "DX7 engine: 32 algorithms, full voice editing on the unit, low-pass filter",
+  "Load your own DX7 banks as .syx: 8 banks of 32 voices",
+  "16-sound FM drum kits with per-sound macros, step locks and a random kit",
+  "Patterns up to 128 steps; SLOOP layers, song mode and punch-in effects",
+  "USB and TRS MIDI with clock and per-track channels; USB audio",
+  "Beta: the dual-core 4.0 build has not been tested on a device yet"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "a015baffbf733e67",
+  "length": 46525,
+  "headings": [
+   "why sloopdx",
+   "contents",
+   "from sloop 2.6 / 2.7 new in 4.0",
+   "from sloop 2.5 3.4",
+   "from sloop 2.4 3.3",
+   "from sloop 2.3",
+   "screens",
+   "what it does",
+   "status",
+   "install",
+   "from the browser",
+   "other ways",
+   "going back",
+   "rescue",
+   "your first beat in 60 seconds",
+   "the controls",
+   "the menu: settings of the fm-1",
+   "midi and usb audio",
+   "midi in",
+   "midi out",
+   "midi clock in",
+   "usb audio: record the fm-1 on a computer",
+   "the web editor",
+   "compatibility",
+   "troubleshooting",
+   "specifications",
+   "documentation",
+   "building and tests",
+   "contributing",
+   "credits and thanks",
+   "licence"
+  ]
+ }
+}

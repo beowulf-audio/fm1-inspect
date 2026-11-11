@@ -1,0 +1,36 @@
+{
+ "summary": "A two-part synthesizer firmware that plays both parts dual mono, in stereo or layered, with a MORPH fader that glides each sound between two versions.",
+ "features": [
+  "DUEL, STEREO and LAYER modes; layer has velocity crossfade and split",
+  "MORPH between a sound and a randomized second version",
+  "Ten engines including FM6 and WAVE with user wavetables",
+  "Twin filter, sub oscillator and per-part effects, EQ and ducker",
+  "128 patches and 15 factory multis; web editor with backup",
+  "MIDI channel per part, CC map, MIDI Learn and clock in"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "a8b728384c5cc0c0",
+  "length": 14472,
+  "headings": [
+   "duell",
+   "install and update",
+   "what is in it",
+   "two parts, three modes",
+   "morph",
+   "ten engines",
+   "factory content",
+   "level",
+   "effects",
+   "keys",
+   "two cores",
+   "midi",
+   "usb, the editor and the backup",
+   "midi cc map",
+   "what is not in 1.2",
+   "build and test",
+   "read more",
+   "credits and licence"
+  ]
+ }
+}

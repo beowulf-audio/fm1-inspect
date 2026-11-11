@@ -1,0 +1,33 @@
+{
+ "summary": "A granular sampler firmware that turns a few seconds of any sample into moving clouds, loops and swells, played from the FM-1's keys and knobs.",
+ "features": [
+  "Six modes: CLOUD, DUST, TAPE, BLOOM, PULSE and DRIFT",
+  "Keys play the grains at any pitch with velocity; chords work",
+  "Held FX plus black keys: freeze, reverse, stutter, tape stop, shimmer",
+  "RANDOM with knob locks and undo; RESAMPLE records up to five seconds",
+  "14 CC0 factory sounds, 16 user slots, 21 to 62 s total",
+  "Follows MIDI clock start, stop and tempo; does not read other firmwares' samples"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "06f153488679e983",
+  "length": 13566,
+  "headings": [
+   "what it is",
+   "watch it",
+   "get started",
+   "is it safe?",
+   "playing it",
+   "the companion app",
+   "running it yourself",
+   "your own sounds",
+   "how it works",
+   "building from source",
+   "layout",
+   "credits",
+   "questions and ideas",
+   "support",
+   "licence"
+  ]
+ }
+}

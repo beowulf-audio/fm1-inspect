@@ -1,0 +1,23 @@
+{
+ "summary": "A polyphonic wavetable synth firmware themed on standing stones, with several voice architectures, a step sequencer and an arpeggiator. It is in beta.",
+ "features": [
+  "15 morphing wavetable banks and seven voice architectures, including \"STRIKE\"",
+  "Four filter types and three modulation slots per patch",
+  "Spring, tomb and tank reverbs; tape and bucket-brigade delays",
+  "Step sequencer with scales, arpeggiator, two layers with splits and zones",
+  "Presets saved in flash and kept across firmware updates",
+  "PCM waves need a separate upload; the web installer does both steps"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "97988f00fa33f439",
+  "length": 3526,
+  "headings": [
+   "carnac os",
+   "install",
+   "recovery",
+   "build from source",
+   "licence"
+  ]
+ }
+}

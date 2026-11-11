@@ -1,0 +1,48 @@
+{
+ "summary": "A single six-operator FM synthesizer firmware meant for learning FM: every DX7-style parameter sits under a knob while you play, and the screen shows what each change did. No drums, patterns or song mode.",
+ "features": [
+  "8 voices of DX7-style FM: 32 algorithms, operator and pitch envelopes",
+  "Algorithm diagram, live spectrum and waveform screens; CPU meter",
+  "Eight operator waveforms, an extra global ADSR, and a filter",
+  "Chorus, phaser, delay and reverb; selectable sample rate and bit depth",
+  "20 factory voices and 256 user slots that take DX7 SysEx banks",
+  "MIDI in over USB and TRS; small arpeggiator and one-phrase looper"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "7d8fc2aede1d211c",
+  "length": 74704,
+  "headings": [
+   "fm lab",
+   "the instrument",
+   "playing it",
+   "editing it",
+   "what a click is worth",
+   "the knobs on home",
+   "ratio, and the two bytes under it",
+   "a tap, and a hold",
+   "one note at a time",
+   "one envelope over everything",
+   "midi",
+   "sample rate",
+   "bit depth",
+   "mono output",
+   "the pitch envelope",
+   "the lfo",
+   "operator waves",
+   "the filter",
+   "effects",
+   "taking it apart",
+   "something to keep playing",
+   "the four drawings",
+   "keeping a sound",
+   "sending it patches",
+   "the meter",
+   "the two corners",
+   "building it",
+   "trying a change without the hardware",
+   "where to go next",
+   "license"
+  ]
+ }
+}

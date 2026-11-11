@@ -1,0 +1,35 @@
+{
+ "summary": "A Felucca-based firmware aimed at dungeon synth, dark ambient and medieval fantasy music, with its own sounds, scenes, tunings and a generative composer.",
+ "features": [
+  "Keeps Felucca's four-track sequencer, song mode, effects and editor",
+  "GURDY hurdy-gurdy engine, with the SELECT knob usable as a crank",
+  "\"DREAM\" writes and evolves a slow piece across all four tracks",
+  "59 curated sounds, CRYPT drum kit, HALL reverb, tape and cave ambience",
+  "Pythagorean, meantone and just tunings; layer, split and drone latch",
+  "MIDI CC control and sequencer output over USB MIDI; runs in a browser"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "e1d632f7240eb2a6",
+  "length": 18284,
+  "headings": [
+   "ghoulbox: fm-1 dungeon synth",
+   "what's new",
+   "2.4",
+   "2.3.2",
+   "2.3.1",
+   "2.3",
+   "2.2",
+   "2.1",
+   "2.0",
+   "1.4",
+   "1.3",
+   "1.2",
+   "what ghoulbox adds to felucca",
+   "install",
+   "if the fm-1 does not start",
+   "sound auditions",
+   "credits and licence"
+  ]
+ }
+}

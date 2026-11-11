@@ -1,0 +1,22 @@
+{
+ "summary": "A generative ambient firmware that plays itself from power-on: pad voices, bells on uneven tape loops, a gliding bass and soft Euclidean percussion. You shape it by choosing a piece and scale rather than performing.",
+ "features": [
+  "Keys add or remove notes from the scale the music uses",
+  "Eight pieces, each saved with its own knobs, scale and tempo",
+  "Tape echo, long tape loop and plate reverb on the output",
+  "Freeze, rest and next-chord controls on PLAY, REC and EDIT",
+  "Follows MIDI clock; sends pad, bells, bass and pulse on four channels",
+  "Browser emulator to try it without an FM-1"
+ ],
+ "from": "README and manual",
+ "readme": {
+  "sha": "5ffa5476b96f8051",
+  "length": 3826,
+  "headings": [
+   "amb-1 for the m-vave fm-1",
+   "in short",
+   "building and testing",
+   "credits"
+  ]
+ }
+}

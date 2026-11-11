@@ -1,0 +1,27 @@
+{
+ "summary": "A generative Berlin School firmware, forked from DUB-1, that plays long, self-running pieces of repeating sequences, drones and echo in the style of 1970s German electronic music.",
+ "features": [
+  "Two drifting sequences, a drone, a gliding lead and an atmosphere layer",
+  "Ten built-in pieces, each with its own key, tempo and sounds",
+  "White keys play the lead in key; it answers phrases you play",
+  "Black keys trigger eleven held performance effects",
+  "Mute and solo layers; filters move independently on their own clocks",
+  "Pieces repeat indefinitely and never end on their own"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "39cfafd493f15944",
+  "length": 13158,
+  "headings": [
+   "nachtfahrt for the m-vave fm-1",
+   "what the fahrt?",
+   "video click to play",
+   "why?",
+   "what it does?",
+   "the pieces",
+   "in short",
+   "building and testing",
+   "credits"
+  ]
+ }
+}

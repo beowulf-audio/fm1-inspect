@@ -1,0 +1,25 @@
+{
+ "summary": "An experimental generative firmware, grown from a Melodee fork, where four tracks play written steps or rule-based generators that listen to each other and evolve over time.",
+ "features": [
+  "13 generators including TURING, EUCLID, MARKOV, ATLAS and SERIES",
+  "EVOLVE, FORM and DEVELOP grow phrases into sections over time",
+  "Seeded randomness: PLAY replays a piece exactly, ROLL makes a new one",
+  "16 modulation cords and a CHORD track that keeps parts in key",
+  "FM6, ORACLE, TRIO and 808/909 DRUM sounds; MIDI and clock out over USB",
+  "Single-core build offered for units that crash on the standard one"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "db0caed8064c6b42",
+  "length": 13789,
+  "headings": [
+   "install",
+   "what's inside",
+   "gallery",
+   "building",
+   "about me",
+   "built with claude code",
+   "credits and licence"
+  ]
+ }
+}

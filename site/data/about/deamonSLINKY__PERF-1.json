@@ -1,0 +1,29 @@
+{
+ "summary": "A generative five-track groovebox for live performance: pick a piece in one of nineteen genres and it plays pad, bass, acid, pluck and drums, which you then steer with breakdowns, builds, drops, mutes and effects.",
+ "features": [
+  "Auto-DJ can run groove, fill, breakdown, build and drop on its own",
+  "Drum sequencer: six lanes, polymeter, ratchets, density, chains and drift",
+  "Self-answering 303-style acid line that can be frozen and edited",
+  "Six-operator FM engine with 30 DX7-style voices; load 16 of your own",
+  "93 performance effect keys, mixer, compressor and look-ahead limiter",
+  "Pieces can be stored and shared; still under heavy development"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "b2915939ef68f306",
+  "length": 18867,
+  "headings": [
+   "perf-1",
+   "what's new in 0.17.0",
+   "what it is",
+   "who it's for",
+   "what makes it different",
+   "a first minute",
+   "the look",
+   "install",
+   "under the hood",
+   "feedback, ideas and help",
+   "credits and licence"
+  ]
+ }
+}

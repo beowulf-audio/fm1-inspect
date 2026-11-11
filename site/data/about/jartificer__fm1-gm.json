@@ -1,0 +1,32 @@
+{
+ "summary": "A firmware that turns the FM-1 into a General MIDI sound module with a 16-track song sequencer, using samples cut down from the Fluid R3 SoundFont.",
+ "features": [
+  "All 128 GM programs and a GM drum kit; sounds not editable",
+  "16 tracks on any MIDI channel; real-time overdub and step recording",
+  "Bar editing with note length, move, loop, copy and paste, with undo",
+  "64 song slots sharing about 284 KB of flash; browser piano-roll editor",
+  "USB and TRS MIDI in as a multi-channel GM module; no clock sync",
+  "Update past 0.9.8: older versions can make a dangerously loud noise"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "21dca5b27a43e158",
+  "length": 25459,
+  "headings": [
+   "fm1-gm",
+   "emulator and firmware loader",
+   "song editor",
+   "the sounds",
+   "using it",
+   "recording",
+   "editing a bar",
+   "defaults chosen where the hardware or the request was open",
+   "no warranty",
+   "installing",
+   "recovery",
+   "in the browser",
+   "developing",
+   "license"
+  ]
+ }
+}

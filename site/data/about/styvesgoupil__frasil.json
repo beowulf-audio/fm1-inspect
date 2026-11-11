@@ -1,0 +1,26 @@
+{
+ "summary": "An ambient drone firmware: tapped keys latch drones that drift slowly into a large shimmer reverb with freeze, with an FM bell voice above and a bass voice below.",
+ "features": [
+  "Drone voices mix detuned choir, additive partials and resonant noise",
+  "36 drone presets, three LFOs, 12 scales and in-scale chords",
+  "GLINT bells and BASS each have an arpeggiator or 32-step sequencer",
+  "The drone has its own chord sequence; all follow MIDI clock",
+  "Per-track MIDI channels over USB and TRS, with MIDI learn",
+  "16 scenes in flash shared with other firmwares; may overwrite their data"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "af8d1b9144b2f6b3",
+  "length": 22482,
+  "headings": [
+   "frasil",
+   "install",
+   "where your scenes are kept",
+   "the sound",
+   "playing",
+   "midi usb and trs",
+   "build from source",
+   "licence and credits"
+  ]
+ }
+}

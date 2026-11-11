@@ -1,0 +1,44 @@
+{
+ "summary": "A kalimba firmware built from FoMni: the white keys are physically modelled tines laid out like a 17-key kalimba, and the black keys play thumb-roll chords, a second row or performance moves.",
+ "features": [
+  "Six tine materials, from steel and brass to bamboo and glass",
+  "Choice of body, a coverable sound hole for \"wah\", and mbira-style buzzers",
+  "Twelve scales including Hirajoshi and an mbira tuning; optional just intonation",
+  "Four mbira patterns over the chords you pick, following MIDI clock",
+  "Grains, ping-pong delay, plate reverb, tape, lo-fi, chorus and filter",
+  "USB and TRS MIDI in with CC control; beta, runs on real hardware"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "9c5419405d51ed57",
+  "length": 55545,
+  "headings": [
+   "fimba-1: a kalimba for the m-vave fm-1",
+   "contents",
+   "how we got here",
+   "credits",
+   "the controls",
+   "the panel at a glance",
+   "keys",
+   "buttons",
+   "encoders and the master knob",
+   "the pages and their knobs",
+   "the screen",
+   "midi",
+   "screen reader",
+   "how the kalimba works",
+   "the tine",
+   "materials",
+   "the body",
+   "the signal path",
+   "patterns",
+   "tuning",
+   "the browser version",
+   "installing from the page",
+   "building, testing, installing",
+   "installing safely",
+   "continuous integration and releases",
+   "licence"
+  ]
+ }
+}

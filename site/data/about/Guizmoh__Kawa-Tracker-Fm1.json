@@ -1,0 +1,28 @@
+{
+ "summary": "A six-track tracker firmware aimed at chiptune and IDM, with chip-style, FM, drum and sample engines and patterns chained into a song.",
+ "features": [
+  "Six tracks: pulse, 4-bit wave, noise, FM (one track), drums or sample",
+  "Patterns of 16, 32 or 64 steps, up to two effects per cell",
+  "Per-track tables, groove, Euclid and random tools",
+  "64 live effects in four banks, 11-type filter, FX sequencer",
+  "Four user sample slots loaded over USB, with a sample editor",
+  "MIDI clock in and out; screen in English, French or Spanish"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "bd59b714ff8b7a11",
+  "length": 10064,
+  "headings": [
+   "kawa — pocket tracker for the m-vave fm-1",
+   "start here",
+   "what you get",
+   "controls at a glance",
+   "install",
+   "go back to the official firmware or install another one",
+   "your samples",
+   "something wrong?",
+   "support kawa",
+   "credits and licence"
+  ]
+ }
+}

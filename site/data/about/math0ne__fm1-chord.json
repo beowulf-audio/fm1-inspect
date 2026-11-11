@@ -1,0 +1,19 @@
+{
+ "summary": "A Felucca-based firmware that turns the FM-1 into a chord machine: white keys play scale chords and strum them, black keys change the chord type.",
+ "features": [
+  "Seven scale-degree chord keys plus a nine-key strumplate",
+  "Black keys add 7ths, 9ths, sus, dim and borrowed chords; slash bass",
+  "Strum, arp, drone, lead, 16-step chord sequencer and 4-layer looper",
+  "56 drum loops, 37 sounds, built-in effects and an ear trainer",
+  "MIDI in and out; settings kept after power-off",
+  "No Bluetooth or mic features; Felucca's synth is still underneath"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "58a7d07f068c68f9",
+  "length": 3722,
+  "headings": [
+   "fm1-chord"
+  ]
+ }
+}

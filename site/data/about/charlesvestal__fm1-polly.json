@@ -1,0 +1,23 @@
+{
+ "summary": "An auto-accompaniment arranger inspired by the Yamaha QY70: a style plays an eight-instrument band on General MIDI sounds and follows the chords you play. It also works as a General MIDI sound module.",
+ "features": [
+  "Songs made of sections, with 16 chord progressions",
+  "Two grooves per style plus Intro, Fill and Ending, and two melodies",
+  "Record into grooves; edited copies stay apart from the style",
+  "Can play the QY70's 128 preset styles from your own QY70 ROM",
+  "MIDI in on all 16 channels over USB or TRS; external clock",
+  "Works with the FM-1 Screen Reader"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "e2a6c04751e8e682",
+  "length": 7079,
+  "headings": [
+   "polly for the m-vave fm-1",
+   "the words",
+   "good to know",
+   "the controls",
+   "building"
+  ]
+ }
+}

@@ -1,0 +1,24 @@
+{
+ "summary": "A chord-playing firmware inspired by the Orchid chord synth: each note you play becomes a chord with a bass part underneath, while a pixel plant grows on screen.",
+ "features": [
+  "Upper keys choose chord types, combinable; 27 scales from any root",
+  "Two key layouts, each with a Lock mode that holds the chord type",
+  "Bass part with octaver; arpeggiator with nine patterns including a strum",
+  "Eight-pattern sequencer for chords, bass, drums and a layer, plus song",
+  "About 60 virtual analogue and FM sounds; six effects in any order",
+  "MIDI out over USB on four channels; follows or sends MIDI clock"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "8f8fb4df2e43b740",
+  "length": 7121,
+  "headings": [
+   "coralflower",
+   "what it does",
+   "install",
+   "build it yourself",
+   "credits and licence",
+   "feedback and support"
+  ]
+ }
+}

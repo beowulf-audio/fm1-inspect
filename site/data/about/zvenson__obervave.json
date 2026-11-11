@@ -1,0 +1,24 @@
+{
+ "summary": "An eight-voice analog-style polysynth in the spirit of early-1980s American poly synths, played on four tracks with a mixer, send effects and a step sequencer.",
+ "features": [
+  "Two oscillators a voice with hard sync and cross-modulation",
+  "Filter modes include a four-pole ladder and an SEM-style morph",
+  "Four tracks of up to 256 steps with polymeter, ratchets and chance",
+  "Tracks start on the bar; 8 patterns keep their own sounds and mix",
+  "99 program slots with 70 factory sounds; arpeggiator follows MIDI clock",
+  "USB MIDI in and out, TRS MIDI in, a MIDI channel per track"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "c37e402b062edd81",
+  "length": 15137,
+  "headings": [
+   "obervave",
+   "the synth",
+   "the panel",
+   "the sequencer",
+   "build and run",
+   "credits and licence"
+  ]
+ }
+}

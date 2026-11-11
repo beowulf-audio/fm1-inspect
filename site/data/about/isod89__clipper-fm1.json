@@ -1,0 +1,42 @@
+{
+ "summary": "A single-instrument synthesizer firmware grown from the SLOOP groovebox, with 23 synthesis engines and 407 sounds. It has no tracks, drum machine, song mode or built-in samples.",
+ "features": [
+  "HYBRID voice: three oscillators, two filters, 16-slot mod matrix",
+  "Engines include FMX, FM6 with DX7 banks, JUNO, WSEQ and VECTOR",
+  "Mod matrix, MOD SEQ and four macros on every engine",
+  "Microtuning with Scala files; LAYER, SPLIT and two-part MULTI",
+  "Arpeggiator with a Turing machine, step sequencer, MPE, USB and TRS MIDI",
+  "8 voices by default; on-device testing is still ongoing"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "b69b019881006c66",
+  "length": 59616,
+  "headings": [
+   "at a glance",
+   "new in 1.3.1: the newer flash chip",
+   "new in 1.3: a bug-fix release",
+   "new in 1.2: sloop 2.8.3's fixes, a steadier second core, the ewi as one voice",
+   "new in 1.1: ultra-compatible midi, the sloop 2.7.2 sequencer, and a clean reverb",
+   "new in 1.0: a stereo voice, a deeper modulation, four macros, a hall and a shimmer",
+   "new in 0.9: filter models, vintage, microtuning, a turing machine, and a clean sound",
+   "new in 0.8: juno and its chorus, vector, a modulation sequencer, spice / dice",
+   "new in 0.7: both cores, a history of the sound, and sloop 2.7's best",
+   "new in 0.6: two parts, an insert per sound, fmx and wave sequencing",
+   "new in 0.5.1: an audio timing readout the crackle hunt",
+   "new in 0.5: two more engines, vps and terrain",
+   "new in 0.4.1: sloop 2.6's fixes, and living next to sloop 2.6",
+   "new in 0.4: a modulation matrix on every engine, and mpe",
+   "new in 0.3: playing it like a big synth",
+   "new in 0.2: the sound",
+   "what is left to do",
+   "on the fm-1",
+   "hybrid, the clipper voice",
+   "playing it from a controller new in clipper, every engine",
+   "install and test",
+   "polyphony",
+   "tests",
+   "credits"
+  ]
+ }
+}

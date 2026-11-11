@@ -1,0 +1,24 @@
+{
+ "summary": "An Orchid-style chord instrument firmware: one hand plays roots while the other picks chord types, with voicing, a bass part, performance modes and a chord looper. A public beta.",
+ "features": [
+  "Seven synth engines: FM6, Digitone-style FM TONE, VA, CZ-1, P5, WHEEL, GRAIN",
+  "Key Mode, Simple, Advanced and Free play styles, latch and secret chords",
+  "Strum, slop, arpeggio and harp modes; four bass behaviours",
+  "Looper with ten slots and five record modes",
+  "Three USB MIDI streams out, clock both ways; three-pair USB audio",
+  "All-synth, no samples; installers refuse to go over SLOOP"
+ ],
+ "from": "README",
+ "readme": {
+  "sha": "929e4581f6c57ba9",
+  "length": 20377,
+  "headings": [
+   "choralroot fm-1",
+   "install",
+   "status",
+   "layout",
+   "building",
+   "licence"
+  ]
+ }
+}
