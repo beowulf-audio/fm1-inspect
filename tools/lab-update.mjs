@@ -64,7 +64,7 @@ for (const [repo, list] of latest) {
   for (const x of list) {
     tours[x.sha] = { scenario: t.scenario, source: t.source };
     const e = lab[x.sha];
-    if (e && (e.tour?.hash !== t.hash || !e.gif) && e.boots !== false && redo.length < MAX_PREV) redo.push(x.sha);
+    if (e && (e.tour?.hash !== t.hash || !e.gif || !e.tour?.stats) && e.boots !== false && redo.length < MAX_PREV) redo.push(x.sha);
   }
 }
 const freshSet = new Set(fresh);

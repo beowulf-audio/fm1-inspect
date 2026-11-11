@@ -48,6 +48,36 @@ ok(similarity(a, signature(shingleHashes(other)).sig) < 0.2, "different code -> 
   ok(/Units with the original chip aren't affected/.test(applyBrick(rep(), { v: "fail" }).findings[0].text), "a fail says who is affected");
 }
 
+// tour check: a newer release that shows clearly less through the same tour goes on the review list
+{
+  const { worse, check } = await import("../tools/tour-check.mjs");
+  const st = (looks, soundShare, onsets) => ({ looks, soundShare, onsets });
+  ok(worse(st(12, 0.8, 20), st(12, 0.8, 20)) === null, "the same preview: nothing to look at");
+  ok(worse(st(11, 0.75, 18), st(12, 0.8, 20)) === null, "a little less: nothing to look at");
+  ok(/screens 12 → 2/.test(worse(st(2, 0.8, 20), st(12, 0.8, 20)) || ""), "stuck on one screen is flagged");
+  ok(/sound 80% → 10%/.test(worse(st(12, 0.1, 20), st(12, 0.8, 20)) || ""), "gone quiet is flagged");
+  ok(worse(st(1, 0.1, 0), st(2, 0.2, 3)) === null, "a quiet, simple firmware isn't flagged for small numbers");
+  const rel = { a: { repo: "o/p", tag: "v2", asset: "p.fwsc", published: "2026-11-02" }, b: { repo: "o/p", tag: "v1", asset: "p.fwsc", published: "2026-11-01" },
+                c: { repo: "o/q", tag: "v2", asset: "q.fwsc", published: "2026-11-02" }, d: { repo: "o/q", tag: "v1", asset: "q.fwsc", published: "2026-11-01" },
+                e: { repo: "o/g", tag: "v2", asset: "g.fwsc", published: "2026-11-02" }, f: { repo: "o/g", tag: "v1", asset: "g.fwsc", published: "2026-11-01" } };
+  const T = (source, hash, s) => ({ tour: { source, hash, stats: s } });
+  const lab = { a: T("tailored", "h", st(1, 0.1, 0)), b: T("tailored", "h", st(14, 0.9, 30)),
+                c: T("tailored", "new", st(1, 0.1, 0)), d: T("tailored", "old", st(14, 0.9, 30)),   // the tour changed: not compared
+                e: T("generic", "h", st(1, 0.1, 0)), f: T("generic", "h", st(14, 0.9, 30)) };      // generic tours aren't checked
+  const base = { "o/p": { tag: "v1", asset: "p.fwsc", hash: "h", stats: st(14, 0.9, 30) }, "o/q": { tag: "v1", asset: "q.fwsc", hash: "old", stats: st(14, 0.9, 30) } };
+  const r1 = check(rel, lab, base);
+  ok(r1.review.length === 1 && r1.review[0].repo === "o/p" && r1.review[0].baseline === "v1", "flagged: a newer release that shows clearly less than its baseline");
+  ok(r1.baseline["o/p"].tag === "v1" && r1.baseline["o/q"].tag === "v2" && !r1.baseline["o/g"], "a flagged baseline stays; a changed tour starts again; generic tours have none");
+  const good = { ...lab, a: T("tailored", "h", st(13, 0.85, 28)) }, r2 = check(rel, good, base);
+  ok(r2.review.length === 0 && r2.baseline["o/p"].tag === "v2", "a newer release that shows as much becomes the baseline");
+  const { stem } = await import("../tools/tour-check.mjs");
+  ok(stem("Wulgaren__Araminta-e86b396.fwsc") === stem("Wulgaren__Araminta-1f0c2aa.fwsc") && stem("sloop-2.8.5.fwsc") === stem("sloop-2.9.0.fwsc")
+     && stem("felucca-1.8.2-beta.fwsc") === stem("felucca-1.8.3.fwsc") && stem("Araminta-e86b396.fwsc") !== stem("Optimist-e86b396.fwsc"), "a file's name without its version or build");
+  const coll = { x: { repo: "o/c", tag: "b2", asset: "B-2222222.fwsc", published: "2" }, y: { repo: "o/c", tag: "b2", asset: "C-2222222.fwsc", published: "2" } };
+  const r3 = check(coll, { x: T("tailored", "h", st(1, 0, 0)), y: T("tailored", "h", st(1, 0, 0)) }, { "o/c": { tag: "b1", asset: "A-1111111.fwsc", hash: "h", stats: st(20, 0.9, 30) } });
+  ok(r3.review.length === 0 && r3.baseline["o/c"].tag === "b1", "a collection's different firmwares aren't compared");
+}
+
 // 3. real files (optional corpus)
 const corpus = process.argv[2];
 if (corpus && existsSync(corpus)) {

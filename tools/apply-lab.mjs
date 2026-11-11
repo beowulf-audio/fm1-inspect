@@ -41,7 +41,7 @@ for (const r of sweep) {
   if (r.preview) {
     if (existsSync(anim)) { copyFileSync(anim, join(DATA, "shots", `${r.sha}.gif`)); e.gif = true; }
     if (existsSync(m4a)) { copyFileSync(m4a, join(DATA, "shots", `${r.sha}.m4a`)); e.audio = true; }
-    e.tour = r.preview.tour;                         // {source: generic | tailored | author, hash}
+    e.tour = { ...r.preview.tour, ...(r.preview.stats ? { stats: r.preview.stats } : {}) };   // {source: generic | tailored | author, hash, stats: {looks, soundShare, onsets}}
   }
   lab.results[r.sha] = e; added++;
 }
