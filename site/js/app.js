@@ -114,6 +114,17 @@ function verdictOf(v, an, idx, sha) {
   return h("span", { class: `badge ${cls}` }, icon(ico), txt + why);
 }
 
+/** The preview's sound; pressing play starts the GIF from its first frame, so picture and sound run together (both
+ *  come from one emulator run over the same 7 s). */
+function syncedAudio(src, hasGif) {
+  const a = h("audio", { controls: "", preload: "none", src, class: "emu-audio" });
+  if (hasGif) a.addEventListener("play", () => {
+    const img = a.closest(".emu")?.querySelector(".emu-shot");
+    if (img) { const base = img.src.split("?")[0]; img.src = `${base}?t=${Date.now()}`; }   // a new URL restarts a GIF
+  });
+  return a;
+}
+
 const TOUR_NOTE = {
   generic: "The preview plays the same short tour on every firmware (a chord, a melody, PLAY, a few presets), so it shows the default state and a few presets, not everything it can do.",
   tailored: "The preview plays a tour written for this firmware from its documentation.",
@@ -146,7 +157,7 @@ function card(file, sha, rep, id, rels) {
         h("li", { text: lab.boots ? `Boots: its screen is up ${lab.ms != null ? `${(lab.ms / 1000).toFixed(2)} s` : ""} after power-on.` : "The screen stayed blank in the emulator." }),
         h("li", { text: lab.sound ? "Makes sound when a key is played." : "No sound from a played key (some firmware needs a pattern or a mode first)." }),
         lab.v ? h("li", { text: lab.v === "pass" ? "Newer flash chip (UC25HQ80): works." : lab.v === "fail" ? "Newer flash chip (UC25HQ80): stops saving." : `Newer flash chip (UC25HQ80): ${lab.v}.` }) : null,
-        lab.audio ? h("li", {}, h("audio", { controls: "", preload: "none", src: `data/shots/${sha}.m4a`, class: "emu-audio" })) : null,
+        lab.audio ? h("li", {}, syncedAudio(`data/shots/${sha}.m4a`, lab.gif)) : null,
         h("li", { class: "muted", text: `Tested with fm1-lab${lab.at ? ` on ${lab.at}` : ""}: emulated, not on a real unit.${lab.gif || lab.audio ? ` ${TOUR_NOTE[lab.tour?.source] || TOUR_NOTE.generic}` : ""}` })))) : null;
 
   const chain = h("section", {}, h("h3", { class: "sec-h" }, icon("badge-check"), "Trust chain"),

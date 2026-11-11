@@ -6,7 +6,7 @@
 const TESTED = "Tested on an emulated FM-1 with the newer UC25HQ80 flash chip";
 const TEXT = {
   pass: { level: "ok", text: `${TESTED}: it uses its flash the same way as on the original chip, so settings save and later installs work on newer FM-1 units.` },
-  fail: { level: "bad", text: `${TESTED}: it stops using its flash there (on the original chip it saves). On newer FM-1 units its settings would be lost at power-off and later installs refused, which then needs a USB download-mode rescue. Check the project for a newer release.` },
+  fail: { level: "bad", text: "On FM-1 units with the newer UC25HQ80 flash chip it won't save: it accepts only the original chip, so there it keeps settings in RAM (lost at power-off) and later installs are refused, which then needs a USB download-mode rescue. Units with the original chip aren't affected. Confirmed on an emulated FM-1 with the newer chip; check the project for a release that supports it." },
   warn: { level: "warn", text: `${TESTED}: it uses its flash much less there than on the original chip. It may not save everything on newer FM-1 units; check the project's notes.` },
   inconclusive: { level: "info", text: `${TESTED}: no conclusion (it did not use its flash during the test).` },
   error: { level: "info", text: `${TESTED}: the emulator could not run it, so no conclusion.` },
@@ -29,5 +29,5 @@ export function applyBrick(rep, b) {
 
 /** A short note for a verdict badge. */
 export function brickNote(b) {
-  return !b ? "" : b.v === "pass" ? " · works on newer FM-1s (tested)" : b.v === "fail" ? " · breaks on newer FM-1s (tested)" : b.v === "warn" ? " · may not save on newer FM-1s" : "";
+  return !b ? "" : b.v === "pass" ? " · works with the newer flash chip (tested)" : b.v === "fail" ? " · won't save with the newer flash chip (tested)" : b.v === "warn" ? " · may not save with the newer flash chip" : "";
 }
