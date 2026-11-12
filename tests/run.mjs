@@ -80,6 +80,13 @@ ok(similarity(a, signature(shingleHashes(other)).sig) < 0.2, "different code -> 
   ok(d3.previews["o/p"].tag === "v2", "a rewritten tour: the newer release is previewed");
   const d4 = decide(releases, { ...lab, a2: { boots: true } }, cur);
   ok(d4.previews["o/p"].tag === "v1", "the newer release not previewed yet: the current preview stays");
+  // a preview made with the firmware's resource region (data/resources.json) isn't compared with one made without it
+  const withRes = { ...L("tailored", "h", st(1, 0.1, 0)) }; withRes.tour.resources = "0xab000:00ff";
+  const d5 = decide(releases, { ...lab, a2: withRes }, cur);
+  ok(d5.previews["o/p"].tag === "v2" && d5.previews["o/p"].resources === "0xab000:00ff" && !d5.review.some((x) => x.repo === "o/p"), "with its resource region now: the newer release is previewed");
+  const same = { ...L("tailored", "h", st(14, 0.9, 30)) }; same.tour.resources = "0xab000:00ff";
+  const d6 = decide(releases, { ...lab, a2: same }, { ...cur, "o/p": { sha: "a2", tag: "v2", asset: "p-2.0.fwsc", source: "tailored", hash: "h", stats: st(9, 0.5, 9) } });
+  ok(d6.previews["o/p"].resources === "0xab000:00ff", "the same release again, now with its region: the preview records it");
 }
 
 // descriptions: a README that changed a lot is listed, a small edit isn't

@@ -1,0 +1,8 @@
+{
+ "about": "Where a project's resource region goes in the FM-1's flash: data its installer writes after the update, released as NAME-res.bin beside the .fwsc. The address is the app's own, compiled into its firmware and in no release file, so it is taken from its source (from: the file and line, at the tag checked). fm1-lab puts the region there for the project's preview (fm1-lab run --resources FILE@ADDR). A project that moves it shows its 'missing' screen in the preview until this is updated.",
+ "regions": {
+  "charlesvestal/fm1-loom": { "base": "0xAB000", "from": "app/app.h: #define APP_RES_BASE 0xAB000u", "checked": "v0.15" },
+  "charlesvestal/fm1-polly": { "base": "0xAB000", "from": "app/app.h: #define APP_RES_BASE 0xAB000u", "checked": "v0.6.3" },
+  "keremimo/melodee": { "base": "0xCB000", "from": "firmware/src/res.c: #define RES_BASE 0xCB000u", "checked": "v1.6.1" }
+ }
+}

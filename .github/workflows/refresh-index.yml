@@ -27,7 +27,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           repository: beowulf-audio/fm1-lab
-          ref: 649d4938886f0e6b262d40dfc40efad3b5eb440d
+          ref: 8f9147841fd7ff5b43cbf1304a5543af1cf4d15a
           path: .fm1-lab
           persist-credentials: false
       - name: fm1-lab's sandbox and emulator

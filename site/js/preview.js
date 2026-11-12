@@ -38,5 +38,5 @@ export function previewBlock(p, lab) {
     h("ul", { class: "emu-facts" },
       h("li", {}, "Previewing ", h("b", { text: p.tag }), p.asset ? h("span", { class: "muted", text: ` · ${p.asset}` }) : null),
       lab.audio ? h("li", {}, syncedAudio(`data/shots/${p.sha}.m4a`, true)) : h("li", { class: "muted", text: "No sound in the preview." }),
-      h("li", { class: "muted", text: `${TOUR_NOTE[p.source] || TOUR_NOTE.generic} Made with fm1-lab${p.at ? ` on ${p.at}` : ""}: emulated, not on a real unit.` })));
+      h("li", { class: "muted", text: `${TOUR_NOTE[p.source] || TOUR_NOTE.generic}${p.resources ? " With its resource file (the data its installer writes after the update) in place." : ""} Made with fm1-lab${p.at ? ` on ${p.at}` : ""}: emulated, not on a real unit.` })));
 }

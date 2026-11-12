@@ -7,6 +7,9 @@
 //      whether it replaces the current preview
 // A project's tour, the first that exists: the author's .fm1-preview.yaml in their repository (the default branch),
 // a tour written for it here (data/tours/OWNER__REPO.yaml), fm1-lab's generic one (scenarios/preview.yaml).
+// A release file with a resource region beside it (NAME-res.bin, the index's res) whose address is in
+// data/resources.json: the region is downloaded (checked against its SHA-256) and put in the emulated flash for the
+// preview; a preview made without it, or with another, is made again.
 //   node tools/lab-update.mjs --lab PATH_TO_FM1_LAB [--max-new 150] [--max-previews 300] [--dry-run]
 import { readFileSync, writeFileSync, existsSync, mkdirSync, mkdtempSync, readdirSync, copyFileSync } from "node:fs";
 import { join, dirname } from "node:path";
@@ -36,8 +39,14 @@ mkdirSync(tourDir);
 
 const previews = existsSync(join(ROOT, "site", "data", "previews.json")) ? JSON.parse(readFileSync(join(ROOT, "site", "data", "previews.json"), "utf8")).previews : {};
 // a newer release already found to show clearly less through the same tour isn't played again until the tour changes
-const judged = new Set((existsSync(join(ROOT, "data", "tours", "review.json")) ? JSON.parse(readFileSync(join(ROOT, "data", "tours", "review.json"), "utf8")).review : []).map((x) => `${x.sha} ${x.hash}`));
+const judged = new Set((existsSync(join(ROOT, "data", "tours", "review.json")) ? JSON.parse(readFileSync(join(ROOT, "data", "tours", "review.json"), "utf8")).review : []).map((x) => `${x.sha} ${x.hash} ${x.resources || ""}`));
 const generic = join(LAB, "scenarios", "preview.yaml");
+const regions = existsSync(join(ROOT, "data", "resources.json")) ? JSON.parse(readFileSync(join(ROOT, "data", "resources.json"), "utf8")).regions : {};
+/** A release file's resource region for its preview: {asset, sha, base, id} (id: fm1-lab's tour.resources), or null */
+const resourcesOf = (sha) => {
+  const r = releases[sha], g = r?.res && regions[r.repo], base = g && parseInt(g.base, 16);
+  return g && Number.isInteger(base) ? { asset: r.res.asset, sha: r.res.sha, base, id: `0x${base.toString(16)}:${r.res.sha.slice(0, 16)}` } : null;
+};
 const ok = (text, where) => {   // a tour must be a valid fm1-lab scenario, and short
   try { const sc = normalize(yaml.load(text), where); if (sc.ms > 20000 || sc.steps.length > 200) throw new Error("longer than 20 s or 200 steps"); return true; }
   catch (e) { console.log(`  tour ${where} not used: ${e.message}`); return false; }
@@ -61,16 +70,16 @@ for (const [repo, list] of byProject(releases)) {
   const cur = previews[repo], c = candidate(list, cur), e = lab[c.sha];
   if (!e && !freshSet.has(c.sha)) continue;           // not tested yet, and not today: another day
   if (e && e.boots === false) continue;
-  const t = await tourFor(repo);
-  const has = e?.gif && e.tour?.hash === t.hash && e.tour?.stats;
-  if (!has && !(cur && cur.hash === t.hash && judged.has(`${c.sha} ${t.hash}`)) && redo.length < MAX_PREV) { tours[c.sha] = { scenario: t.scenario, source: t.source }; redo.push(c.sha); }
+  const t = await tourFor(repo), res = resourcesOf(c.sha);
+  const has = e?.gif && e.tour?.hash === t.hash && e.tour?.stats && (e.tour.resources || null) === (res?.id || null);
+  if (!has && !(cur && cur.hash === t.hash && judged.has(`${c.sha} ${t.hash} ${res?.id || ""}`)) && redo.length < MAX_PREV) { tours[c.sha] = { scenario: t.scenario, source: t.source, ...(res ? { res } : {}) }; redo.push(c.sha); }
 }
 const newRepos = new Set(fresh.map((s) => releases[s].repo));
 console.log(`${Object.keys(releases).length} release files · ${fresh.length} new to test (${newRepos.size} projects) · ${redo.length} previews to make`);
-writeFileSync(join(work, "tours.json"), JSON.stringify(tours));
 if (process.argv.includes("--dry-run")) {   // what it would do, nothing more
   const src = {}; for (const t of Object.values(tours)) src[t.source] = (src[t.source] || 0) + 1;
-  console.log(`dry run: tours by source for the latest releases: ${JSON.stringify(src)}`); process.exit(0);
+  const withRes = Object.entries(tours).filter(([, t]) => t.res).map(([s]) => `${releases[s].repo} ${releases[s].tag}`);
+  console.log(`dry run: tours by source for the latest releases: ${JSON.stringify(src)}${withRes.length ? ` · with their resource region: ${withRes.join(", ")}` : ""}`); process.exit(0);
 }
 
 async function download(shas, dir) {
@@ -87,6 +96,25 @@ async function download(shas, dir) {
   }
   return got;
 }
+// the resource regions (anonymously, checked against their SHA-256); one that can't be had: the preview without it, and
+// again another day
+const resDir = join(work, "res"); mkdirSync(resDir);
+for (const [sha, t] of Object.entries(tours)) {
+  if (!t.res) continue;
+  const r = releases[sha], p = join(resDir, `${t.res.sha}.bin`);
+  try {
+    if (!existsSync(p)) {
+      const res = await fetch(`https://github.com/${r.repo}/releases/download/${encodeURIComponent(r.tag)}/${encodeURIComponent(t.res.asset)}`, { redirect: "follow", headers: { "user-agent": "fm1-inspect" } });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const b = Buffer.from(await res.arrayBuffer());
+      if (createHash("sha256").update(b).digest("hex") !== t.res.sha) throw new Error("SHA-256 differs");
+      writeFileSync(p, b);
+    }
+    t.resources = `${p}@0x${t.res.base.toString(16)}`;
+  } catch (e) { console.log(`  resources for ${r.repo} ${r.tag} (${t.res.asset}) not used: ${e.message}`); }
+  delete t.res;
+}
+writeFileSync(join(work, "tours.json"), JSON.stringify(tours));
 const commit = execFileSync("git", ["-C", LAB, "rev-parse", "HEAD"], { encoding: "utf8" }).trim();
 const sweep = (dir, out, extra, preview) => {
   execFileSync(process.execPath, [join(LAB, "bin", "fm1-lab.mjs"), "sweep", dir, "--out", out, ...(preview ? ["--preview", "--tours", join(work, "tours.json")] : []), "--no-audio", ...extra], { stdio: "inherit" });

@@ -8,7 +8,8 @@
 //   - it shows clearly less (fewer screens, much less sound; a version that moved its controls can leave a tour pressing
 //     the wrong things): the current preview stays, the project goes on data/tours/review.json, and the job's log gets
 //     a warning; a fixed tour makes it again
-//   - the tour changed (rewritten), or the project uses the generic tour: the newer release becomes the preview
+//   - the tour changed (rewritten), or the project uses the generic tour, or it was made with another resource region
+//     (data/resources.json): the newer release becomes the preview
 //   node tools/previews.mjs [--quiet]
 import { readFileSync, writeFileSync, existsSync, rmSync } from "node:fs";
 import { join, dirname } from "node:path";
@@ -66,13 +67,13 @@ export function decide(releases, lab, previews = {}) {
   for (const [repo, list] of byProject(releases)) {
     const cur = previews[repo] && lab[previews[repo].sha]?.gif ? previews[repo] : null;
     const c = candidate(list, cur), e = lab[c.sha], t = e?.tour;
-    const entry = () => ({ sha: c.sha, tag: c.tag, asset: c.asset, source: t.source, hash: t.hash, stats: t.stats, at: e.at || null });
+    const entry = () => ({ sha: c.sha, tag: c.tag, asset: c.asset, source: t.source, hash: t.hash, ...(t.resources ? { resources: t.resources } : {}), stats: t.stats, at: e.at || null });
     if (!(e?.gif && t?.stats)) { if (cur) next[repo] = cur; continue; }          // the latest has no preview (yet): keep the current one
     // compared only with the same firmware through the same tour: a renamed file, or a collection's other firmware, just
     // becomes the preview
-    if (!cur || cur.sha === c.sha || cur.hash !== t.hash || t.source === "generic" || stem(c.asset) !== stem(cur.asset)) { next[repo] = entry(); continue; }
+    if (!cur || cur.sha === c.sha || cur.hash !== t.hash || (cur.resources || null) !== (t.resources || null) || t.source === "generic" || stem(c.asset) !== stem(cur.asset)) { next[repo] = entry(); continue; }
     const why = worse(t.stats, cur.stats);
-    if (why) { next[repo] = cur; review.push({ repo, tag: c.tag, asset: c.asset, sha: c.sha, hash: t.hash, previewing: cur.tag, source: t.source, why, now: t.stats, before: cur.stats }); }
+    if (why) { next[repo] = cur; review.push({ repo, tag: c.tag, asset: c.asset, sha: c.sha, hash: t.hash, ...(t.resources ? { resources: t.resources } : {}), previewing: cur.tag, source: t.source, why, now: t.stats, before: cur.stats }); }
     else next[repo] = entry();
   }
   return { previews: next, review: review.sort((a, b) => a.repo.localeCompare(b.repo)) };

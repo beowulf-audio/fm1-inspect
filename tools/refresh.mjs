@@ -65,9 +65,14 @@ await pool([...repos], 6, async (repo) => {
   for (const r of rels || []) for (const a of r.assets || []) {
     if (!/\.fwsc$/i.test(a.name) || !a.digest?.startsWith("sha256:")) continue;
     const sha = a.digest.slice(7);
-    if (releases[sha]?.a || fresh.some((f) => f.sha === sha)) continue;
+    // its resource region, released beside it (NAME-res.bin: data its installer writes after the update; fm1-lab puts
+    // it in the emulated flash for the preview, at the address in data/resources.json)
+    const ra = (r.assets || []).find((x) => x.name.toLowerCase() === a.name.toLowerCase().replace(/\.fwsc$/, "-res.bin") && x.digest?.startsWith("sha256:"));
+    const res = ra && ra.size < 1048576 ? { asset: ra.name, sha: ra.digest.slice(7), size: ra.size } : null;
+    if (releases[sha]?.a) { if (releases[sha].repo === repo && releases[sha].tag === r.tag_name) { if (res) releases[sha].res = res; else delete releases[sha].res; } continue; }
+    if (fresh.some((f) => f.sha === sha)) continue;
     fresh.push({ sha, repo, tag: r.tag_name, asset: a.name, published: (r.published_at || "").slice(0, 10), prerelease: !!r.prerelease,
-      url: r.html_url, size: a.size, ci: a.uploader?.type === "Bot" && /github-actions/.test(a.uploader?.login || "") });
+      url: r.html_url, size: a.size, res, ci: a.uploader?.type === "Bot" && /github-actions/.test(a.uploader?.login || "") });
   }
 });
 console.log(`${fresh.length} new release files${fresh.length > maxNew ? `, analysing the first ${maxNew}` : ""}`);
@@ -133,7 +138,7 @@ await pool(fresh.slice(0, maxNew), 6, async (f) => {
   releases[f.sha] = { repo: f.repo, tag: f.tag, asset: f.asset, published: f.published, prerelease: f.prerelease, url: f.url,
     tier: att?.verified ? "attested" : f.ci ? "ci" : "release",
     a: { verdict: report.verdict, model: report.model, flash: report.flash, internet: report.network?.internetCapable ?? null, usb: report.usb },
-    attested: att };
+    attested: att, ...(f.res ? { res: f.res } : {}) };
   ok++;
 });
 rmSync(tmp, { recursive: true, force: true });
