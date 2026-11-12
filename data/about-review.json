@@ -1,3 +1,40 @@
 {
- "review": []
+ "review": [
+  {
+   "repo": "Guillel51/Quantum-GammaWave",
+   "why": "sections added: highlights of v2.7.4.7; sections removed: highlights of v2.7.2"
+  },
+  {
+   "repo": "Josh-McFarlin/boopbox",
+   "why": "sections removed: what's new in 1.9.1, 1.9.0, 1.8.1, 1.8.0…; shorter (63407 → 14676 characters)"
+  },
+  {
+   "repo": "Rastapopolix/tessera",
+   "why": "sections added: new in 3.5"
+  },
+  {
+   "repo": "altessproduction/sloop-dub-fm1",
+   "why": "sections added: the dub wing, the sound-system bank: 158 presets, the drum kits: 37, the riddims: 22…; sections removed: the dub: what this firmware adds, what's new in 1.0, features, midi…"
+  },
+  {
+   "repo": "echoe/argo_fm1",
+   "why": "sections added: chord improvements and modes, other changes, select is set to page by default, effects changes…; sections removed: chord improvements, additional effects changes, user slicer settings on the slicer 2 page"
+  },
+  {
+   "repo": "evanyerburgh/niagara-drift",
+   "why": "sections added: manual; sections removed: playing it, start here, the presets, white keys: scenes…; shorter (60668 → 9144 characters)"
+  },
+  {
+   "repo": "joakimeriksson/fm1-dock",
+   "why": "sections added: new in 0.8.1"
+  },
+  {
+   "repo": "leonardoMirabal/frodhes",
+   "why": "sections added: where to find frodhes"
+  },
+  {
+   "repo": "zvenson/obervave",
+   "why": "sections added: backup"
+  }
+ ]
 }
