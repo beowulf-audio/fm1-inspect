@@ -9,7 +9,9 @@
 // a tour written for it here (data/tours/OWNER__REPO.yaml), fm1-lab's generic one (scenarios/preview.yaml).
 // A release file with a resource region beside it (NAME-res.bin, the index's res) whose address is in
 // data/resources.json: the region is downloaded (checked against its SHA-256) and put in the emulated flash for the
-// preview; a preview made without it, or with another, is made again.
+// preview; a preview made without it, or with another, is made again. A region in the package itself (entry: its type,
+// an entry beside flash.bin that only the firmware's own installer writes) needs no download: fm1-lab takes it from the
+// file (entry:TYPE@ADDR); a release whose package has no such entry is previewed without it, and not again for that.
 //   node tools/lab-update.mjs --lab PATH_TO_FM1_LAB [--max-new 150] [--max-previews 300] [--dry-run]
 import { readFileSync, writeFileSync, existsSync, mkdirSync, mkdtempSync, readdirSync, copyFileSync } from "node:fs";
 import { join, dirname } from "node:path";
@@ -44,9 +46,14 @@ const generic = join(LAB, "scenarios", "preview.yaml");
 const regions = existsSync(join(ROOT, "data", "resources.json")) ? JSON.parse(readFileSync(join(ROOT, "data", "resources.json"), "utf8")).regions : {};
 /** A release file's resource region for its preview: {asset, sha, base, id} (id: fm1-lab's tour.resources), or null */
 const resourcesOf = (sha) => {
-  const r = releases[sha], g = r?.res && regions[r.repo], base = g && parseInt(g.base, 16);
-  return g && Number.isInteger(base) ? { asset: r.res.asset, sha: r.res.sha, base, id: `0x${base.toString(16)}:${r.res.sha.slice(0, 16)}` } : null;
+  const r = releases[sha], g = r && regions[r.repo], base = g && parseInt(g.base, 16);
+  if (!g || !Number.isInteger(base)) return null;
+  if (Number.isInteger(g.entry)) return { entry: g.entry, base, id: `0x${base.toString(16)}:entry${g.entry}` };
+  return r.res ? { asset: r.res.asset, sha: r.res.sha, base, id: `0x${base.toString(16)}:${r.res.sha.slice(0, 16)}` } : null;
 };
+// the preview has what it should: the region, or (one in the package) fm1-lab found the package has no such entry
+const sameResources = (tour, res) => (tour.resources || null) === (res?.id || null)
+  || (res?.entry != null && !tour.resources && /no entry of type/.test(tour.resourcesError || ""));
 const ok = (text, where) => {   // a tour must be a valid fm1-lab scenario, and short
   try { const sc = normalize(yaml.load(text), where); if (sc.ms > 20000 || sc.steps.length > 200) throw new Error("longer than 20 s or 200 steps"); return true; }
   catch (e) { console.log(`  tour ${where} not used: ${e.message}`); return false; }
@@ -71,7 +78,7 @@ for (const [repo, list] of byProject(releases)) {
   if (!e && !freshSet.has(c.sha)) continue;           // not tested yet, and not today: another day
   if (e && e.boots === false) continue;
   const t = await tourFor(repo), res = resourcesOf(c.sha);
-  const has = e?.gif && e.tour?.hash === t.hash && e.tour?.stats && (e.tour.resources || null) === (res?.id || null);
+  const has = e?.gif && e.tour?.hash === t.hash && e.tour?.stats && sameResources(e.tour, res);
   if (!has && !(cur && cur.hash === t.hash && judged.has(`${c.sha} ${t.hash} ${res?.id || ""}`)) && redo.length < MAX_PREV) { tours[c.sha] = { scenario: t.scenario, source: t.source, ...(res ? { res } : {}) }; redo.push(c.sha); }
 }
 const newRepos = new Set(fresh.map((s) => releases[s].repo));
@@ -101,6 +108,7 @@ async function download(shas, dir) {
 const resDir = join(work, "res"); mkdirSync(resDir);
 for (const [sha, t] of Object.entries(tours)) {
   if (!t.res) continue;
+  if (t.res.entry != null) { t.resources = `entry:${t.res.entry}@0x${t.res.base.toString(16)}`; delete t.res; continue; }
   const r = releases[sha], p = join(resDir, `${t.res.sha}.bin`);
   try {
     if (!existsSync(p)) {
