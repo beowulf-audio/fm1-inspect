@@ -1,16 +1,28 @@
 {
  "review": [
   {
+   "repo": "AndrewGG88/S1Vave",
+   "why": "sections added: 5. vibe fm daw plugin & v2.0 visual / workflow upgrades, vst plugin troubleshooting blank white screen in ableton live 12 / windows"
+  },
+  {
    "repo": "Guillel51/Quantum-GammaWave",
-   "why": "sections added: highlights of v2.7.4.7; sections removed: highlights of v2.7.2"
+   "why": "sections added: highlights of v2.9.3; sections removed: highlights of v2.7.2"
   },
   {
    "repo": "Josh-McFarlin/boopbox",
    "why": "sections removed: what's new in 1.9.1, 1.9.0, 1.8.1, 1.8.0…; shorter (63407 → 14676 characters)"
   },
   {
+   "repo": "LIkst4/skiff-atlatl",
+   "why": "sections added: about, changes from skiff, release history, skiff's readme"
+  },
+  {
    "repo": "Rastapopolix/tessera",
    "why": "sections added: new in 3.5"
+  },
+  {
+   "repo": "SikkenWorks/RUPTURE",
+   "why": "sections added: rupture v1.89, bend play parameter fx long press, uc25hq80 / puya flash compatibility introduced in v1.85.2, sequencer length=4 playback fix introduced in v1.85.1…; sections removed: rupture, v1.85.2: uc25hq80 / puya flash compatibility, v1.85.1: sequencer length=4 playback fix, v1.85: realtime reliability usb midi + dma diagnostics…"
   },
   {
    "repo": "altessproduction/sloop-dub-fm1",
@@ -18,7 +30,7 @@
   },
   {
    "repo": "echoe/argo_fm1",
-   "why": "sections added: chord improvements and modes, other changes, select is set to page by default, effects changes…; sections removed: chord improvements, additional effects changes, user slicer settings on the slicer 2 page"
+   "why": "sections added: chord improvements and modes, other non-effects changes, select is set to page by default, effects changes…; sections removed: chord improvements, additional effects changes, user slicer settings on the slicer 2 page"
   },
   {
    "repo": "evanyerburgh/niagara-drift",
@@ -26,11 +38,27 @@
   },
   {
    "repo": "joakimeriksson/fm1-dock",
-   "why": "sections added: new in 0.8.1"
+   "why": "sections added: new in 0.8.2, new in 0.8.1"
+  },
+  {
+   "repo": "kidbee85-beep/mutable-dreams",
+   "why": "sections added: mutable dreams 2.1 for the m-vave fm-1; sections removed: mutable dreams 2.0 for the m-vave fm-1"
   },
   {
    "repo": "leonardoMirabal/frodhes",
    "why": "sections added: where to find frodhes"
+  },
+  {
+   "repo": "maxravedj/fm1-audio-router",
+   "why": "sections added: midi controller"
+  },
+  {
+   "repo": "piotrwozniak/piterfly",
+   "why": "sections added: piterfly 1.1.0 for m-vave fm-1, the fm-1 device interface, make a larger arrangement, shape the performance…; sections removed: piterfly 1.0.1 for m-vave fm-1, base sloop documentation, contents, what's new in 2.8…; shorter (64887 → 6982 characters)"
+  },
+  {
+   "repo": "stephencummins/fm1-aisling",
+   "why": "sections added: what's new in 1.4"
   },
   {
    "repo": "zvenson/obervave",
