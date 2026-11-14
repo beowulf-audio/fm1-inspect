@@ -1,3 +1,24 @@
 {
- "review": []
+ "review": [
+  {
+   "repo": "doohinkus/kris-jangle",
+   "tag": "v0.12",
+   "asset": "kris-jangle-0.12.fwsc",
+   "sha": "3c330e960d6d71d99cd9f82e2ac9880e31378ec098d9d6db17c184e056087ef8",
+   "hash": "8c4d8033c0d9bf33",
+   "previewing": "v0.9",
+   "source": "tailored",
+   "why": "screens 35 → 11",
+   "now": {
+    "looks": 11,
+    "soundShare": 0.6,
+    "onsets": 2
+   },
+   "before": {
+    "looks": 35,
+    "soundShare": 0.46,
+    "onsets": 3
+   }
+  }
+ ]
 }
