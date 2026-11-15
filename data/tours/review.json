@@ -1,23 +1,23 @@
 {
  "review": [
   {
-   "repo": "doohinkus/kris-jangle",
-   "tag": "v0.12",
-   "asset": "kris-jangle-0.12.fwsc",
-   "sha": "3c330e960d6d71d99cd9f82e2ac9880e31378ec098d9d6db17c184e056087ef8",
-   "hash": "8c4d8033c0d9bf33",
-   "previewing": "v0.9",
+   "repo": "PolarPatch/Arctic-scream-FM-1",
+   "tag": "v2.1.1",
+   "asset": "arctic-scream-2.1.1.fwsc",
+   "sha": "8bc6de3d3732d0393d65a04b0cd9e5cf8b423713775e621739e0a24c50aaeeb7",
+   "hash": "3ae1a14a41356f3b",
+   "previewing": "v2.0",
    "source": "tailored",
-   "why": "screens 35 → 11",
+   "why": "sound 88% → 0% of the time, sounds started 14 → 0",
    "now": {
-    "looks": 11,
-    "soundShare": 0.6,
-    "onsets": 2
+    "looks": 25,
+    "soundShare": 0,
+    "onsets": 0
    },
    "before": {
-    "looks": 35,
-    "soundShare": 0.46,
-    "onsets": 3
+    "looks": 30,
+    "soundShare": 0.88,
+    "onsets": 14
    }
   }
  ]

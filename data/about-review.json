@@ -5,8 +5,16 @@
    "why": "sections added: 5. vibe fm daw plugin & v2.0 visual / workflow upgrades, vst plugin troubleshooting blank white screen in ableton live 12 / windows"
   },
   {
+   "repo": "De-Pattern/Ravel_FM1",
+   "why": "sections added: chance mode a phrase made up as it plays, chain mode a kit's lanes setting each other off"
+  },
+  {
    "repo": "Guillel51/Quantum-GammaWave",
    "why": "sections added: highlights of v3.0.1; sections removed: highlights of v2.7.2"
+  },
+  {
+   "repo": "JazzyRhythmer/Rhythmer",
+   "why": "sections added: more from jazzy rhythmer; sections removed: playback base restored · 20261112.1"
   },
   {
    "repo": "Josh-McFarlin/boopbox",
@@ -18,11 +26,19 @@
   },
   {
    "repo": "MadMooneyham/Penumbra",
-   "why": "sections added: the first few minutes, more it can do, the manual; sections removed: two minutes in"
+   "why": "sections added: the first few minutes, more it can do, the manual; sections removed: two minutes in; longer (5708 → 9075 characters)"
+  },
+  {
+   "repo": "PatttF/fm-106",
+   "why": "sections added: button & encoder functions, web tools & patch librarian, installation & setup, method 1: web browser 1-click installer recommended…; sections removed: quick button shortcuts, web simulator & patch librarian, building & installation, prerequisites…; longer (9598 → 13880 characters)"
+  },
+  {
+   "repo": "PolarPatch/Arctic-scream-FM-1",
+   "why": "longer (15279 → 20357 characters)"
   },
   {
    "repo": "Quixotic7/FIZZ",
-   "why": "sections added: get it, read; longer (2900 → 4402 characters)"
+   "why": "sections added: get it, read; longer (2900 → 4445 characters)"
   },
   {
    "repo": "Rastapopolix/tessera",
@@ -30,7 +46,7 @@
   },
   {
    "repo": "SikkenWorks/RUPTURE",
-   "why": "sections added: rupture v1.89, bend play parameter fx long press, uc25hq80 / puya flash compatibility introduced in v1.85.2, sequencer length=4 playback fix introduced in v1.85.1…; sections removed: rupture, v1.85.2: uc25hq80 / puya flash compatibility, v1.85.1: sequencer length=4 playback fix, v1.85: realtime reliability usb midi + dma diagnostics…"
+   "why": "sections added: bend play parameter fx long press, uc25hq80 / puya flash compatibility introduced in v1.85.2, sequencer length=4 playback fix introduced in v1.85.1, realtime reliability usb midi + dma diagnostics; v1.85…; sections removed: rupture, v1.85.2: uc25hq80 / puya flash compatibility, v1.85.1: sequencer length=4 playback fix, v1.85: realtime reliability usb midi + dma diagnostics…"
   },
   {
    "repo": "altessproduction/sloop-dub-fm1",
@@ -41,8 +57,20 @@
    "why": "sections added: caravel 0.13.0 — elastic p1.4"
   },
   {
+   "repo": "copych/FM1-Ear-Trainer",
+   "why": "sections removed: current prototype — 0.0.13, build and run, validation and limits, source and licensing; shorter (4959 → 1668 characters)"
+  },
+  {
    "repo": "echoe/argo_fm1",
    "why": "sections added: table of contents, changes from felucca, sequences within tracks, chord improvements and modes…; sections removed: the differences between this and felucca, 8 sequences, one sequence chain option., chord improvements, five new synth engines; one unique to this firmware, four from other firmwares…; longer (15030 → 20358 characters)"
+  },
+  {
+   "repo": "ejtb76/amenity",
+   "why": "sections added: connections, when it crashes; longer (9003 → 12670 characters)"
+  },
+  {
+   "repo": "ejtb76/fmlarynx",
+   "why": "sections added: midi, bluetooth and audio; sections removed: midi and audio over usb"
   },
   {
    "repo": "evanyerburgh/niagara-drift",
@@ -54,7 +82,7 @@
   },
   {
    "repo": "joakimeriksson/fm1-dock",
-   "why": "sections added: new add-ons, new in 0.8.2, new in 0.8.1"
+   "why": "sections added: new in 0.9 a test release, new add-ons, new in 0.8.2, new in 0.8.1"
   },
   {
    "repo": "kidbee85-beep/mutable-dreams",
@@ -74,7 +102,7 @@
   },
   {
    "repo": "piotrwozniak/piterfly",
-   "why": "sections added: piterfly 1.1.0 for m-vave fm-1, the fm-1 device interface, make a larger arrangement, shape the performance…; sections removed: piterfly 1.0.1 for m-vave fm-1, base sloop documentation, contents, what's new in 2.8…; shorter (64887 → 6982 characters)"
+   "why": "sections added: piterfly 1.2.0 for m-vave fm-1, tracks and controls, effects, saved songs…; sections removed: piterfly 1.0.1 for m-vave fm-1, base sloop documentation, contents, what's new in 2.8…; shorter (64887 → 5637 characters)"
   },
   {
    "repo": "stephencummins/fm1-aisling",
