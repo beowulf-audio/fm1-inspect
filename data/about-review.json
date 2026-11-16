@@ -6,7 +6,7 @@
   },
   {
    "repo": "De-Pattern/Ravel_FM1",
-   "why": "sections added: chance mode a phrase made up as it plays, chain mode a kit's lanes setting each other off"
+   "why": "sections added: what's new, chance mode a phrase made up as it plays, chain mode a kit's lanes setting each other off, if the fm-1 will not start unbricking; sections removed: if the fm-1 will not start"
   },
   {
    "repo": "Guillel51/Quantum-GammaWave",
@@ -21,12 +21,16 @@
    "why": "sections added: project layout; sections removed: what's new in 1.9.1, 1.9.0, 1.8.1, 1.8.0…; shorter (63407 → 15992 characters)"
   },
   {
+   "repo": "KHAVld/ARTIHIVE",
+   "why": "sections added: fm-1 emulator by keril https://github.com/kkeril; sections removed: ⚠️ photosensitivity notice, release files"
+  },
+  {
    "repo": "LIkst4/skiff-atlatl",
    "why": "sections added: about, changes from skiff, release history, skiff's readme"
   },
   {
    "repo": "MadMooneyham/Penumbra",
-   "why": "sections added: the first few minutes, more it can do, the manual; sections removed: two minutes in; longer (5708 → 9075 characters)"
+   "why": "sections added: the first few minutes, more it can do, the manual; sections removed: two minutes in; longer (5708 → 9559 characters)"
   },
   {
    "repo": "PatttF/fm-106",
@@ -42,7 +46,7 @@
   },
   {
    "repo": "Rastapopolix/tessera",
-   "why": "sections added: new in 3.5"
+   "why": "sections added: new in 3.6, new in 3.5"
   },
   {
    "repo": "SikkenWorks/RUPTURE",
@@ -50,7 +54,7 @@
   },
   {
    "repo": "altessproduction/sloop-dub-fm1",
-   "why": "sections added: the dub wing, the sound-system bank: 180 presets, the drum kits: 38, the riddims: 28…; sections removed: the dub: what this firmware adds, what's new in 1.0, features, midi…"
+   "why": "sections added: the dub wing, the sound-system bank: 180 presets, the drum kits: 38, the riddims: 27…; sections removed: the dub: what this firmware adds, what's new in 1.0, features, midi…"
   },
   {
    "repo": "bonszaimusic/caravel",
@@ -58,11 +62,11 @@
   },
   {
    "repo": "copych/FM1-Ear-Trainer",
-   "why": "sections removed: current prototype — 0.0.13, build and run, validation and limits, source and licensing; shorter (4959 → 1668 characters)"
+   "why": "sections removed: current prototype — 0.0.13, build and run, validation and limits, source and licensing; shorter (4959 → 1734 characters)"
   },
   {
    "repo": "echoe/argo_fm1",
-   "why": "sections added: table of contents, changes from felucca, sequences within tracks, chord improvements and modes…; sections removed: the differences between this and felucca, 8 sequences, one sequence chain option., chord improvements, five new synth engines; one unique to this firmware, four from other firmwares…; longer (15030 → 20358 characters)"
+   "why": "sections added: table of contents, changes from felucca, sequences within tracks, chord improvements and modes…; sections removed: the differences between this and felucca, 8 sequences, one sequence chain option., chord improvements, five new synth engines; one unique to this firmware, four from other firmwares…; longer (15030 → 22114 characters)"
   },
   {
    "repo": "ejtb76/amenity",
@@ -78,7 +82,7 @@
   },
   {
    "repo": "glvno/matryoshka",
-   "why": "sections added: master fx unreleased"
+   "why": "sections added: master fx"
   },
   {
    "repo": "joakimeriksson/fm1-dock",
@@ -86,11 +90,11 @@
   },
   {
    "repo": "kidbee85-beep/mutable-dreams",
-   "why": "sections added: mutable dreams 2.1 for the m-vave fm-1, follow and support; sections removed: mutable dreams 2.0 for the m-vave fm-1; longer (2200 → 3057 characters)"
+   "why": "sections added: mutable dreams 2.2 · played live, new ways to play, install, back up and return, listen and keep in touch…; sections removed: mutable dreams 2.0 for the m-vave fm-1, installation and recovery; longer (2200 → 4858 characters)"
   },
   {
    "repo": "leonardoMirabal/frodhes",
-   "why": "sections added: where to find frodhes"
+   "why": "sections added: where to find frodhes, on the akai mpc"
   },
   {
    "repo": "maxravedj/fm1-audio-router",

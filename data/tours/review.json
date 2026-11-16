@@ -1,23 +1,43 @@
 {
  "review": [
   {
-   "repo": "PolarPatch/Arctic-scream-FM-1",
-   "tag": "v2.1.1",
-   "asset": "arctic-scream-2.1.1.fwsc",
-   "sha": "8bc6de3d3732d0393d65a04b0cd9e5cf8b423713775e621739e0a24c50aaeeb7",
-   "hash": "3ae1a14a41356f3b",
-   "previewing": "v2.0",
+   "repo": "PatttF/fm-106",
+   "tag": "1.02",
+   "asset": "fm106.fwsc",
+   "sha": "f3a1229b4176de901191a6ce1da2985daa7de925bedda78bae20325e47190034",
+   "hash": "6f2a92dcf9f1a7a1",
+   "previewing": "1.0",
    "source": "tailored",
-   "why": "sound 88% → 0% of the time, sounds started 14 → 0",
+   "why": "sounds started 18 → 3",
    "now": {
-    "looks": 25,
-    "soundShare": 0,
-    "onsets": 0
+    "looks": 9,
+    "soundShare": 0.37,
+    "onsets": 3
    },
    "before": {
-    "looks": 30,
-    "soundShare": 0.88,
-    "onsets": 14
+    "looks": 8,
+    "soundShare": 0.45,
+    "onsets": 18
+   }
+  },
+  {
+   "repo": "Quixotic7/FIZZ",
+   "tag": "v0.13.0",
+   "asset": "fizz-usb-0.13.0.fwsc",
+   "sha": "11148699c6989e2af4e1537c7d744c9305022a299175036b198aecb2ec95a9c6",
+   "hash": "444e0388d3fc0bd6",
+   "previewing": "v0.12.0-beta.19",
+   "source": "tailored",
+   "why": "sounds started 20 → 1",
+   "now": {
+    "looks": 14,
+    "soundShare": 0.18,
+    "onsets": 1
+   },
+   "before": {
+    "looks": 17,
+    "soundShare": 0.35,
+    "onsets": 20
    }
   }
  ]
