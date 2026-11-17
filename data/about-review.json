@@ -5,6 +5,10 @@
    "why": "sections added: 5. vibe fm daw plugin & v2.0 visual / workflow upgrades, vst plugin troubleshooting blank white screen in ableton live 12 / windows"
   },
   {
+   "repo": "CaptainChronosis/XENOLITH",
+   "why": "longer (1673 → 3406 characters)"
+  },
+  {
    "repo": "De-Pattern/Ravel_FM1",
    "why": "sections added: what's new, chance mode a phrase made up as it plays, chain mode a kit's lanes setting each other off, if the fm-1 will not start unbricking; sections removed: if the fm-1 will not start"
   },
@@ -53,6 +57,10 @@
    "why": "sections added: bend play parameter fx long press, uc25hq80 / puya flash compatibility introduced in v1.85.2, sequencer length=4 playback fix introduced in v1.85.1, realtime reliability usb midi + dma diagnostics; v1.85…; sections removed: rupture, v1.85.2: uc25hq80 / puya flash compatibility, v1.85.1: sequencer length=4 playback fix, v1.85: realtime reliability usb midi + dma diagnostics…"
   },
   {
+   "repo": "TexasRADIO/compas-firmware",
+   "why": "sections added: compás 1.2 with big beat editor; sections removed: compas 1.1; longer (766 → 1715 characters)"
+  },
+  {
    "repo": "altessproduction/sloop-dub-fm1",
    "why": "sections added: the dub wing, the sound-system bank: 180 presets, the drum kits: 38, the riddims: 27…; sections removed: the dub: what this firmware adds, what's new in 1.0, features, midi…"
   },
@@ -62,7 +70,7 @@
   },
   {
    "repo": "copych/FM1-Ear-Trainer",
-   "why": "sections removed: current prototype — 0.0.13, build and run, validation and limits, source and licensing; shorter (4959 → 1734 characters)"
+   "why": "sections added: pitch training controls, metronome and rhythm games; sections removed: current prototype — 0.0.13, controls, build and run, validation and limits…"
   },
   {
    "repo": "echoe/argo_fm1",
@@ -78,19 +86,19 @@
   },
   {
    "repo": "evanyerburgh/niagara-drift",
-   "why": "sections added: manual; sections removed: playing it, start here, the presets, white keys: scenes…; shorter (60668 → 9170 characters)"
+   "why": "sections added: manual; sections removed: playing it, start here, the presets, white keys: scenes…; shorter (60668 → 9731 characters)"
   },
   {
    "repo": "glvno/matryoshka",
-   "why": "sections added: master fx"
+   "why": "sections added: master fx, diff and snapshots; sections removed: diff and a/b"
   },
   {
    "repo": "joakimeriksson/fm1-dock",
-   "why": "sections added: new in 0.9 a test release, new add-ons, new in 0.8.2, new in 0.8.1"
+   "why": "sections added: new in 0.9 a test release, new add-ons, new in 0.8.2, new in 0.8.1; longer (22556 → 30233 characters)"
   },
   {
    "repo": "kidbee85-beep/mutable-dreams",
-   "why": "sections added: mutable dreams 2.2 · played live, new ways to play, install, back up and return, listen and keep in touch…; sections removed: mutable dreams 2.0 for the m-vave fm-1, installation and recovery; longer (2200 → 4858 characters)"
+   "why": "sections added: mutable dreams 2.3 · bloom studies, new in 2.3, back up before updating, explore the wider garden…; sections removed: mutable dreams 2.0 for the m-vave fm-1, installation and recovery; longer (2200 → 4112 characters)"
   },
   {
    "repo": "leonardoMirabal/frodhes",
@@ -98,7 +106,11 @@
   },
   {
    "repo": "maxravedj/fm1-audio-router",
-   "why": "sections added: midi controller"
+   "why": "sections added: midi controller; longer (4112 → 5523 characters)"
+  },
+  {
+   "repo": "oscillr/DUELL",
+   "why": "sections added: macros, perform, patches, multis and patterns, screen reader…; sections removed: factory content, what is not in 1.2"
   },
   {
    "repo": "pbarilla/smileyface",
@@ -110,7 +122,7 @@
   },
   {
    "repo": "stephencummins/fm1-aisling",
-   "why": "sections added: what's new in 1.4"
+   "why": "sections added: what's new in 1.4.1, what's new in 1.4"
   },
   {
    "repo": "superposition/91",

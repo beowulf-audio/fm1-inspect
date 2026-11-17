@@ -1,43 +1,43 @@
 {
  "review": [
   {
-   "repo": "PatttF/fm-106",
-   "tag": "1.02",
-   "asset": "fm106.fwsc",
-   "sha": "f3a1229b4176de901191a6ce1da2985daa7de925bedda78bae20325e47190034",
-   "hash": "6f2a92dcf9f1a7a1",
-   "previewing": "1.0",
+   "repo": "arrastao/baile-fm1",
+   "tag": "v0.8.0",
+   "asset": "BAILE-0.8-FM1.fwsc",
+   "sha": "813390703a715913188b486d157d0f81b2d697b12559ac29c25eace5dae9b763",
+   "hash": "1452d35a0dea01c5",
+   "previewing": "v0.7.0",
    "source": "tailored",
-   "why": "sounds started 18 → 3",
+   "why": "sound 76% → 6% of the time, sounds started 38 → 2",
    "now": {
-    "looks": 9,
-    "soundShare": 0.37,
-    "onsets": 3
+    "looks": 5,
+    "soundShare": 0.06,
+    "onsets": 2
    },
    "before": {
-    "looks": 8,
-    "soundShare": 0.45,
-    "onsets": 18
+    "looks": 7,
+    "soundShare": 0.76,
+    "onsets": 38
    }
   },
   {
-   "repo": "Quixotic7/FIZZ",
-   "tag": "v0.13.0",
-   "asset": "fizz-usb-0.13.0.fwsc",
-   "sha": "11148699c6989e2af4e1537c7d744c9305022a299175036b198aecb2ec95a9c6",
-   "hash": "444e0388d3fc0bd6",
-   "previewing": "v0.12.0-beta.19",
+   "repo": "doohinkus/kris-jangle",
+   "tag": "v0.12",
+   "asset": "kris-jangle-0.12.fwsc",
+   "sha": "3c330e960d6d71d99cd9f82e2ac9880e31378ec098d9d6db17c184e056087ef8",
+   "hash": "8c4d8033c0d9bf33",
+   "previewing": "v0.9",
    "source": "tailored",
-   "why": "sounds started 20 → 1",
+   "why": "screens 35 → 11",
    "now": {
-    "looks": 14,
-    "soundShare": 0.18,
-    "onsets": 1
+    "looks": 11,
+    "soundShare": 0.6,
+    "onsets": 2
    },
    "before": {
-    "looks": 17,
-    "soundShare": 0.35,
-    "onsets": 20
+    "looks": 35,
+    "soundShare": 0.46,
+    "onsets": 3
    }
   }
  ]
