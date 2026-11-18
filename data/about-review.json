@@ -34,7 +34,11 @@
   },
   {
    "repo": "MadMooneyham/Penumbra",
-   "why": "sections added: the first few minutes, more it can do, the manual; sections removed: two minutes in; longer (5708 → 9559 characters)"
+   "why": "sections added: the first few minutes, more it can do, the manual; sections removed: two minutes in; longer (5708 → 10951 characters)"
+  },
+  {
+   "repo": "MammothCheese/quartet",
+   "why": "sections added: 👉 read the guidehttps://mammothcheese.github.io/quartet/ · download../../releases/latest · try it in your browserhttps://joakimeriksson.github.io/fm1-emu/?fw=quartet&mhz=60, play in a minute, what's inside; sections removed: what it does"
   },
   {
    "repo": "PatttF/fm-106",
@@ -66,7 +70,7 @@
   },
   {
    "repo": "bonszaimusic/caravel",
-   "why": "sections added: caravel 0.13.0 — elastic p1.4"
+   "why": "sections added: start with play, shape in build, six engines, a new data generation, install, build and verify…; sections removed: watch and listen, tutorials, caravel 0.12.0 — harmony, caravel 0.11.0 — ensemble in stereo…; shorter (28491 → 4935 characters)"
   },
   {
    "repo": "copych/FM1-Ear-Trainer",
@@ -74,7 +78,7 @@
   },
   {
    "repo": "echoe/argo_fm1",
-   "why": "sections added: table of contents, changes from felucca, sequences within tracks, chord improvements and modes…; sections removed: the differences between this and felucca, 8 sequences, one sequence chain option., chord improvements, five new synth engines; one unique to this firmware, four from other firmwares…; longer (15030 → 22114 characters)"
+   "why": "sections added: table of contents, changes from felucca, sequences within tracks, chord improvements and modes…; sections removed: the differences between this and felucca, 8 sequences, one sequence chain option., chord improvements, five new synth engines; one unique to this firmware, four from other firmwares…; longer (15030 → 22622 characters)"
   },
   {
    "repo": "ejtb76/amenity",
@@ -85,20 +89,24 @@
    "why": "sections added: midi, bluetooth and audio; sections removed: midi and audio over usb"
   },
   {
+   "repo": "emilystgeist/fiendbox",
+   "why": "sections added: web emulator"
+  },
+  {
    "repo": "evanyerburgh/niagara-drift",
-   "why": "sections added: manual; sections removed: playing it, start here, the presets, white keys: scenes…; shorter (60668 → 9731 characters)"
+   "why": "sections added: manual; sections removed: playing it, start here, the presets, white keys: scenes…; shorter (60668 → 9809 characters)"
   },
   {
    "repo": "glvno/matryoshka",
-   "why": "sections added: master fx, diff and snapshots; sections removed: diff and a/b"
+   "why": "sections added: master fx, sequencer, clock divider, s&h, quantizer, pulse, euclid, compressor and limiter, diff and sound design; sections removed: sequencer, clock divider, s&h, quantizer, pulse, compressor, diff and a/b"
   },
   {
    "repo": "joakimeriksson/fm1-dock",
-   "why": "sections added: new in 0.9 a test release, new add-ons, new in 0.8.2, new in 0.8.1; longer (22556 → 30233 characters)"
+   "why": "sections added: new in 0.9 a test release, new add-ons, new in 0.8.2, new in 0.8.1; longer (22556 → 30610 characters)"
   },
   {
    "repo": "kidbee85-beep/mutable-dreams",
-   "why": "sections added: mutable dreams 2.3 · bloom studies, new in 2.3, back up before updating, explore the wider garden…; sections removed: mutable dreams 2.0 for the m-vave fm-1, installation and recovery; longer (2200 → 4112 characters)"
+   "why": "sections added: mutable dreams 2.3 · bloom studies, new in 2.3, back up before updating, explore the wider garden…; sections removed: mutable dreams 2.0 for the m-vave fm-1, installation and recovery; longer (2200 → 4328 characters)"
   },
   {
    "repo": "leonardoMirabal/frodhes",
@@ -118,7 +126,7 @@
   },
   {
    "repo": "piotrwozniak/piterfly",
-   "why": "sections added: piterfly 1.2.0 for m-vave fm-1, tracks and controls, effects, saved songs…; sections removed: piterfly 1.0.1 for m-vave fm-1, base sloop documentation, contents, what's new in 2.8…; shorter (64887 → 5637 characters)"
+   "why": "sections added: piterfly 1.2.5 for m-vave fm-1, tracks and controls, effects, saved songs…; sections removed: piterfly 1.0.1 for m-vave fm-1, base sloop documentation, contents, what's new in 2.8…; shorter (64887 → 6921 characters)"
   },
   {
    "repo": "stephencummins/fm1-aisling",

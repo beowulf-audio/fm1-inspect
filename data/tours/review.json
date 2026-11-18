@@ -1,36 +1,36 @@
 {
  "review": [
   {
-   "repo": "arrastao/baile-fm1",
-   "tag": "v0.8.0",
-   "asset": "BAILE-0.8-FM1.fwsc",
-   "sha": "813390703a715913188b486d157d0f81b2d697b12559ac29c25eace5dae9b763",
-   "hash": "1452d35a0dea01c5",
-   "previewing": "v0.7.0",
+   "repo": "bonszaimusic/caravel",
+   "tag": "v1.0.0",
+   "asset": "caravel-1.0.0.fwsc",
+   "sha": "a948f5592617ef24b78d8e02c085034aea9aae24e0df10b616cbb9c382dd3d52",
+   "hash": "eebcbe8f2e069f14",
+   "previewing": "v0.13.0",
    "source": "tailored",
-   "why": "sound 76% → 6% of the time, sounds started 38 → 2",
+   "why": "screens 12 → 5, sound 61% → 33% of the time",
    "now": {
     "looks": 5,
-    "soundShare": 0.06,
-    "onsets": 2
+    "soundShare": 0.33,
+    "onsets": 10
    },
    "before": {
-    "looks": 7,
-    "soundShare": 0.76,
-    "onsets": 38
+    "looks": 12,
+    "soundShare": 0.61,
+    "onsets": 18
    }
   },
   {
    "repo": "doohinkus/kris-jangle",
-   "tag": "v0.12",
-   "asset": "kris-jangle-0.12.fwsc",
-   "sha": "3c330e960d6d71d99cd9f82e2ac9880e31378ec098d9d6db17c184e056087ef8",
+   "tag": "v0.14",
+   "asset": "kris-jangle-0.14.fwsc",
+   "sha": "72b36c33b58f259bd8d2055511696596c5ddf26a192eaec7a6c901511b1652c2",
    "hash": "8c4d8033c0d9bf33",
    "previewing": "v0.9",
    "source": "tailored",
-   "why": "screens 35 → 11",
+   "why": "screens 35 → 12",
    "now": {
-    "looks": 11,
+    "looks": 12,
     "soundShare": 0.6,
     "onsets": 2
    },
@@ -38,6 +38,46 @@
     "looks": 35,
     "soundShare": 0.46,
     "onsets": 3
+   }
+  },
+  {
+   "repo": "PolarPatch/Arctic-scream-FM-1",
+   "tag": "v2.1.1",
+   "asset": "arctic-scream-2.1.1.fwsc",
+   "sha": "8bc6de3d3732d0393d65a04b0cd9e5cf8b423713775e621739e0a24c50aaeeb7",
+   "hash": "3ae1a14a41356f3b",
+   "previewing": "v2.0",
+   "source": "tailored",
+   "why": "sound 88% → 0% of the time, sounds started 14 → 0",
+   "now": {
+    "looks": 25,
+    "soundShare": 0,
+    "onsets": 0
+   },
+   "before": {
+    "looks": 30,
+    "soundShare": 0.88,
+    "onsets": 14
+   }
+  },
+  {
+   "repo": "Quixotic7/FIZZ",
+   "tag": "v0.13.0",
+   "asset": "fizz-usb-0.13.0.fwsc",
+   "sha": "11148699c6989e2af4e1537c7d744c9305022a299175036b198aecb2ec95a9c6",
+   "hash": "444e0388d3fc0bd6",
+   "previewing": "v0.12.0-beta.19",
+   "source": "tailored",
+   "why": "sounds started 20 → 1",
+   "now": {
+    "looks": 14,
+    "soundShare": 0.18,
+    "onsets": 1
+   },
+   "before": {
+    "looks": 17,
+    "soundShare": 0.35,
+    "onsets": 20
    }
   }
  ]
