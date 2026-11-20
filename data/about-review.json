@@ -38,7 +38,7 @@
   },
   {
    "repo": "MammothCheese/quartet",
-   "why": "sections added: 👉 read the guidehttps://mammothcheese.github.io/quartet/ · download../../releases/latest · try it in your browserhttps://joakimeriksson.github.io/fm1-emu/?fw=quartet&mhz=60, play in a minute, what's inside; sections removed: what it does"
+   "why": "sections added: 👉 take the tourhttps://mammothcheese.github.io/quartet/ · make your first songhttps://mammothcheese.github.io/quartet/quickstart.html · full guidehttps://mammothcheese.github.io/quartet/guide.html · download../../releases/latest · play it in your browserhttps://mammothcheese.github.io/quartet/emu/, play in a minute, what's inside; sections removed: what it does"
   },
   {
    "repo": "PatttF/fm-106",
@@ -46,7 +46,7 @@
   },
   {
    "repo": "PolarPatch/Arctic-scream-FM-1",
-   "why": "longer (15279 → 20357 characters)"
+   "why": "longer (15279 → 21266 characters)"
   },
   {
    "repo": "Quixotic7/FIZZ",
@@ -54,11 +54,11 @@
   },
   {
    "repo": "Rastapopolix/tessera",
-   "why": "sections added: new in 3.6, new in 3.5"
+   "why": "sections added: new in 3.7, new in 3.6, new in 3.5, guide videos"
   },
   {
    "repo": "SikkenWorks/RUPTURE",
-   "why": "sections added: bend play parameter fx long press, uc25hq80 / puya flash compatibility introduced in v1.85.2, sequencer length=4 playback fix introduced in v1.85.1, realtime reliability usb midi + dma diagnostics; v1.85…; sections removed: rupture, v1.85.2: uc25hq80 / puya flash compatibility, v1.85.1: sequencer length=4 playback fix, v1.85: realtime reliability usb midi + dma diagnostics…"
+   "why": "sections added: rupture v2.0.43, achtergrond: v2.0.40-intro en eerdere optimalisaties, bestaande v2.0.39 dsp-/dma-bescherming, previous release: v2.0.35…; sections removed: rupture, v1.85.2: uc25hq80 / puya flash compatibility, v1.85.1: sequencer length=4 playback fix, v1.85: realtime reliability usb midi + dma diagnostics…; longer (28665 → 93037 characters)"
   },
   {
    "repo": "TexasRADIO/compas-firmware",
@@ -98,7 +98,7 @@
   },
   {
    "repo": "glvno/matryoshka",
-   "why": "sections added: master fx, sequencer, clock divider, s&h, quantizer, pulse, euclid, compressor and limiter, diff and sound design; sections removed: sequencer, clock divider, s&h, quantizer, pulse, compressor, diff and a/b"
+   "why": "sections added: master fx, sequencer, clock divider, s&h, quantizer, pulse, euclid, compressor and limiter, diff and sound design…; sections removed: sequencer, clock divider, s&h, quantizer, pulse, compressor, diff and a/b"
   },
   {
    "repo": "joakimeriksson/fm1-dock",
