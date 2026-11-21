@@ -34,7 +34,7 @@
   },
   {
    "repo": "MadMooneyham/Penumbra",
-   "why": "sections added: the first few minutes, more it can do, the manual; sections removed: two minutes in; longer (5708 → 10951 characters)"
+   "why": "sections added: the first few minutes, more it can do, the manual; sections removed: two minutes in; longer (5708 → 11006 characters)"
   },
   {
    "repo": "MammothCheese/quartet",
@@ -66,7 +66,7 @@
   },
   {
    "repo": "altessproduction/sloop-dub-fm1",
-   "why": "sections added: the dub wing, the sound-system bank: 180 presets, the drum kits: 38, the riddims: 27…; sections removed: the dub: what this firmware adds, what's new in 1.0, features, midi…"
+   "why": "sections added: the dub wing, the sound-system bank: 180 presets, the drum kits: 38, the riddims: 75…; sections removed: the dub: what this firmware adds, what's new in 1.0, features, midi…"
   },
   {
    "repo": "bonszaimusic/caravel",
@@ -118,7 +118,7 @@
   },
   {
    "repo": "oscillr/DUELL",
-   "why": "sections added: macros, perform, patches, multis and patterns, screen reader…; sections removed: factory content, what is not in 1.2"
+   "why": "sections added: duell on the smk-37, macros, perform, patches, multis and patterns…; sections removed: factory content, what is not in 1.2"
   },
   {
    "repo": "pbarilla/smileyface",
