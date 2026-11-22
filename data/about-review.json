@@ -26,7 +26,7 @@
   },
   {
    "repo": "KHAVld/ARTIHIVE",
-   "why": "sections added: fm-1 emulator by keril https://github.com/kkeril; sections removed: ⚠️ photosensitivity notice, release files"
+   "why": "sections added: fm-1 emulator by keril https://github.com/kkeril; sections removed: ⚠️ photosensitivity notice, hardware testing notice, physical-device status, release files; shorter (5837 → 3730 characters)"
   },
   {
    "repo": "LIkst4/skiff-atlatl",
@@ -39,6 +39,10 @@
   {
    "repo": "MammothCheese/quartet",
    "why": "sections added: 👉 take the tourhttps://mammothcheese.github.io/quartet/ · make your first songhttps://mammothcheese.github.io/quartet/quickstart.html · full guidehttps://mammothcheese.github.io/quartet/guide.html · download../../releases/latest · play it in your browserhttps://mammothcheese.github.io/quartet/emu/, play in a minute, what's inside; sections removed: what it does"
+  },
+  {
+   "repo": "MarcGoudy/guru-600",
+   "why": "sections removed: guru-600"
   },
   {
    "repo": "PatttF/fm-106",
@@ -69,8 +73,12 @@
    "why": "sections added: the dub wing, the sound-system bank: 180 presets, the drum kits: 38, the riddims: 75…; sections removed: the dub: what this firmware adds, what's new in 1.0, features, midi…"
   },
   {
+   "repo": "bk40-home/M-vance",
+   "why": "sections added: bluetooth midi"
+  },
+  {
    "repo": "bonszaimusic/caravel",
-   "why": "sections added: start with play, shape in build, six engines, a new data generation, install, build and verify…; sections removed: watch and listen, tutorials, caravel 0.12.0 — harmony, caravel 0.11.0 — ensemble in stereo…; shorter (28491 → 4935 characters)"
+   "why": "sections added: start with play, shape in build, six engines, a new data generation, install, build and verify…; sections removed: watch and listen, tutorials, caravel 0.12.0 — harmony, caravel 0.11.0 — ensemble in stereo…; shorter (28491 → 5478 characters)"
   },
   {
    "repo": "copych/FM1-Ear-Trainer",
@@ -98,11 +106,11 @@
   },
   {
    "repo": "glvno/matryoshka",
-   "why": "sections added: master fx, sequencer, clock divider, s&h, quantizer, pulse, euclid, compressor and limiter, diff and sound design…; sections removed: sequencer, clock divider, s&h, quantizer, pulse, compressor, diff and a/b"
+   "why": "sections added: master fx, sequencer, clock divider, s&h, quantizer, pulse, euclid, compressor and limiter, diff and sound design…; sections removed: sequencer, clock divider, s&h, quantizer, pulse, compressor, diff and a/b; longer (54719 → 73190 characters)"
   },
   {
    "repo": "joakimeriksson/fm1-dock",
-   "why": "sections added: new in 0.9 a test release, new add-ons, new in 0.8.2, new in 0.8.1; longer (22556 → 30610 characters)"
+   "why": "sections added: new in 0.9 a test release, new add-ons, new in 0.8.2, new in 0.8.1; longer (22556 → 31785 characters)"
   },
   {
    "repo": "kidbee85-beep/mutable-dreams",
@@ -130,7 +138,7 @@
   },
   {
    "repo": "stephencummins/fm1-aisling",
-   "why": "sections added: what's new in 1.5, what's new in 1.4.1, what's new in 1.4"
+   "why": "sections added: what's new in 1.6, what's new in 1.5, what's new in 1.4.1, what's new in 1.4"
   },
   {
    "repo": "superposition/91",
