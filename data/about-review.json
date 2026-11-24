@@ -34,7 +34,7 @@
   },
   {
    "repo": "MadMooneyham/Penumbra",
-   "why": "sections added: the first few minutes, more it can do, the manual; sections removed: two minutes in; longer (5708 → 11006 characters)"
+   "why": "sections added: the first few minutes, more it can do, the manual; sections removed: two minutes in; longer (5708 → 11339 characters)"
   },
   {
    "repo": "MammothCheese/quartet",
@@ -50,7 +50,7 @@
   },
   {
    "repo": "PolarPatch/Arctic-scream-FM-1",
-   "why": "longer (15279 → 21266 characters)"
+   "why": "longer (15279 → 22647 characters)"
   },
   {
    "repo": "Quixotic7/FIZZ",
@@ -74,7 +74,7 @@
   },
   {
    "repo": "bk40-home/M-vance",
-   "why": "sections added: bluetooth midi, velocity, pressure and the jp's velocity and control; longer (11876 → 17256 characters)"
+   "why": "sections added: jt-80x0, bluetooth midi, velocity, pressure and the jp's velocity and control; sections removed: m-vance; longer (11876 → 17665 characters)"
   },
   {
    "repo": "bonszaimusic/caravel",
@@ -110,15 +110,15 @@
   },
   {
    "repo": "glvno/matryoshka",
-   "why": "sections added: master fx, sequencer, clock divider, s&h, quantizer, pulse, euclid, compressor and limiter, diff and sound design…; sections removed: sequencer, clock divider, s&h, quantizer, pulse, compressor, diff and a/b; longer (54719 → 73068 characters)"
+   "why": "sections added: fx drawers, sequencer, clock divider, s&h, quantizer, pulse, euclid, compressor and limiter, diff and sound design…; sections removed: sequencer, clock divider, s&h, quantizer, pulse, compressor, diff and a/b; longer (54719 → 73494 characters)"
   },
   {
    "repo": "joakimeriksson/fm1-dock",
-   "why": "sections added: new in 0.9 a test release, new add-ons, new in 0.8.2, new in 0.8.1; longer (22556 → 32147 characters)"
+   "why": "sections added: new in 0.9 a test release, new add-ons, new in 0.8.2, new in 0.8.1…; longer (22556 → 33218 characters)"
   },
   {
    "repo": "kidbee85-beep/mutable-dreams",
-   "why": "sections added: mutable dreams 2.3 · bloom studies, new in 2.3, back up before updating, explore the wider garden…; sections removed: mutable dreams 2.0 for the m-vave fm-1, installation and recovery; longer (2200 → 4415 characters)"
+   "why": "sections added: mutable dreams 2.4, new in 2.4, retained from 2.3, back up before updating…; sections removed: mutable dreams 2.0 for the m-vave fm-1, installation and recovery; longer (2200 → 5149 characters)"
   },
   {
    "repo": "leonardoMirabal/frodhes",
@@ -150,7 +150,7 @@
   },
   {
    "repo": "w0ts/optimist",
-   "why": "sections added: optimist; sections removed: what is in it, the flavours, builder, installer, editor w0ts.github.io/optimisthttps://w0ts.github.io/optimist/, your first install…; shorter (10561 → 5412 characters)"
+   "why": "sections added: optimist; sections removed: what is in it, the flavours, builder, installer, editor w0ts.github.io/optimisthttps://w0ts.github.io/optimist/, your first install…; shorter (10561 → 5417 characters)"
   },
   {
    "repo": "zvenson/obervave",
