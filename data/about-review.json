@@ -42,7 +42,7 @@
   },
   {
    "repo": "MarcGoudy/guru-600",
-   "why": "sections removed: guru-600"
+   "why": "sections removed: guru-600; longer (25247 → 33859 characters)"
   },
   {
    "repo": "PatttF/fm-106",
@@ -66,7 +66,7 @@
   },
   {
    "repo": "TexasRADIO/compas-firmware",
-   "why": "sections added: compás 1.2 with big beat editor; sections removed: compas 1.1; longer (766 → 1715 characters)"
+   "why": "sections added: compás 1.3; sections removed: compas 1.1; longer (766 → 2342 characters)"
   },
   {
    "repo": "altessproduction/sloop-dub-fm1",
@@ -78,7 +78,7 @@
   },
   {
    "repo": "bonszaimusic/caravel",
-   "why": "sections added: start with play, shape in build, six engines, a new data generation, install, build and verify…; sections removed: watch and listen, tutorials, caravel 0.12.0 — harmony, caravel 0.11.0 — ensemble in stereo…; shorter (28491 → 6548 characters)"
+   "why": "sections added: start with play, shape in build, six engines, a new data generation, install, build and verify…; sections removed: watch and listen, tutorials, caravel 0.12.0 — harmony, caravel 0.11.0 — ensemble in stereo…; shorter (28491 → 6812 characters)"
   },
   {
    "repo": "copych/FM1-Ear-Trainer",
@@ -110,11 +110,11 @@
   },
   {
    "repo": "glvno/matryoshka",
-   "why": "sections added: fx drawers, sequencer, clock divider, s&h, quantizer, pulse, euclid, compressor and limiter, diff and sound design…; sections removed: sequencer, clock divider, s&h, quantizer, pulse, compressor, diff and a/b; longer (54719 → 73494 characters)"
+   "why": "sections added: fx drawers, sequencer, clock divider, s&h, quantizer, pulse, euclid, compressor and limiter, diff and sound design…; sections removed: sequencer, clock divider, s&h, quantizer, pulse, compressor, diff and a/b"
   },
   {
    "repo": "joakimeriksson/fm1-dock",
-   "why": "sections added: new in 0.9 a test release, new add-ons, new in 0.8.2, new in 0.8.1…; longer (22556 → 33218 characters)"
+   "why": "sections added: new in 1.0, new in 0.9 a test release, new add-ons, new in 0.8.2…; longer (22556 → 37679 characters)"
   },
   {
    "repo": "kidbee85-beep/mutable-dreams",
