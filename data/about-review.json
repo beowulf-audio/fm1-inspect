@@ -50,7 +50,7 @@
   },
   {
    "repo": "PolarPatch/Arctic-scream-FM-1",
-   "why": "longer (15279 → 22647 characters)"
+   "why": "longer (15279 → 22824 characters)"
   },
   {
    "repo": "Quixotic7/FIZZ",
@@ -61,8 +61,12 @@
    "why": "sections added: new in 3.7, new in 3.6, new in 3.5, guide videos"
   },
   {
+   "repo": "SikkenWorks/B1-Drawbar-Organ",
+   "why": "sections removed: b1 v5.6: ota repair"
+  },
+  {
    "repo": "SikkenWorks/RUPTURE",
-   "why": "sections added: rupture v2.0.43, achtergrond: v2.0.40-intro en eerdere optimalisaties, bestaande v2.0.39 dsp-/dma-bescherming, previous release: v2.0.35…; sections removed: rupture, v1.85.2: uc25hq80 / puya flash compatibility, v1.85.1: sequencer length=4 playback fix, v1.85: realtime reliability usb midi + dma diagnostics…; longer (28665 → 93037 characters)"
+   "why": "sections added: rupture for m-vave fm1, install, first launch, play and shape sounds…; sections removed: rupture, getting started, guided quick tour first run or any time, speaker-pop / analog-enable sequencing v1.84.2…; shorter (28665 → 5458 characters)"
   },
   {
    "repo": "TexasRADIO/compas-firmware",
@@ -113,8 +117,12 @@
    "why": "sections added: fx drawers, sequencer, clock divider, s&h, quantizer, pulse, euclid, compressor and limiter, diff and sound design…; sections removed: sequencer, clock divider, s&h, quantizer, pulse, compressor, diff and a/b"
   },
   {
+   "repo": "jasonpersinger/ghoulbox-fm1-dungeon-synth",
+   "why": "sections added: 2.4.1"
+  },
+  {
    "repo": "joakimeriksson/fm1-dock",
-   "why": "sections added: new in 1.0, new in 0.9 a test release, new add-ons, new in 0.8.2…; longer (22556 → 37679 characters)"
+   "why": "sections added: new in 1.0, new in 0.9 a test release, new add-ons, new in 0.8.2…; longer (22556 → 39603 characters)"
   },
   {
    "repo": "kidbee85-beep/mutable-dreams",
@@ -138,7 +146,7 @@
   },
   {
    "repo": "piotrwozniak/piterfly",
-   "why": "sections added: piterfly 1.2.5 for m-vave fm-1, tracks and controls, effects, saved songs…; sections removed: piterfly 1.0.1 for m-vave fm-1, base sloop documentation, contents, what's new in 2.8…; shorter (64887 → 6921 characters)"
+   "why": "sections added: piterfly 1.2.6 for m-vave fm-1, tracks and controls, effects, saved songs…; sections removed: piterfly 1.0.1 for m-vave fm-1, base sloop documentation, contents, what's new in 2.8…; shorter (64887 → 6900 characters)"
   },
   {
    "repo": "stephencummins/fm1-aisling",
