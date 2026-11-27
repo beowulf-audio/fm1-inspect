@@ -18,7 +18,7 @@
   },
   {
    "repo": "JazzyRhythmer/Rhythmer",
-   "why": "sections added: more from jazzy rhythmer; sections removed: playback base restored · 20261112.1"
+   "why": "sections added: also available for m-vave smk-37 pro, more from jazzy rhythmer; sections removed: playback base restored · 20261112.1"
   },
   {
    "repo": "Josh-McFarlin/boopbox",
@@ -50,7 +50,7 @@
   },
   {
    "repo": "PolarPatch/Arctic-scream-FM-1",
-   "why": "longer (15279 → 22824 characters)"
+   "why": "longer (15279 → 24263 characters)"
   },
   {
    "repo": "Quixotic7/FIZZ",
@@ -82,7 +82,7 @@
   },
   {
    "repo": "bonszaimusic/caravel",
-   "why": "sections added: start with play, shape in build, six engines, a new data generation, install, build and verify…; sections removed: watch and listen, tutorials, caravel 0.12.0 — harmony, caravel 0.11.0 — ensemble in stereo…; shorter (28491 → 6812 characters)"
+   "why": "sections added: start with play, shape in build, six engines, a new data generation, install, build and verify…; sections removed: watch and listen, tutorials, caravel 0.12.0 — harmony, caravel 0.11.0 — ensemble in stereo…; shorter (28491 → 6861 characters)"
   },
   {
    "repo": "copych/FM1-Ear-Trainer",
@@ -94,7 +94,7 @@
   },
   {
    "repo": "echoe/argo_fm1",
-   "why": "sections added: table of contents, changes from felucca, sequences within tracks, chord improvements and modes…; sections removed: the differences between this and felucca, 8 sequences, one sequence chain option., chord improvements, five new synth engines; one unique to this firmware, four from other firmwares…; longer (15030 → 22622 characters)"
+   "why": "sections added: table of contents, changes from felucca, sequences within tracks, chord improvements and modes…; sections removed: the differences between this and felucca, 8 sequences, one sequence chain option., chord improvements, five new synth engines; one unique to this firmware, four from other firmwares…; longer (15030 → 24561 characters)"
   },
   {
    "repo": "ejtb76/amenity",
@@ -122,7 +122,7 @@
   },
   {
    "repo": "joakimeriksson/fm1-dock",
-   "why": "sections added: new in 1.0, new in 0.9 a test release, new add-ons, new in 0.8.2…; longer (22556 → 39603 characters)"
+   "why": "sections added: new in 1.0, new in 0.9 a test release, new add-ons, new in 0.8.2…; longer (22556 → 40153 characters)"
   },
   {
    "repo": "kidbee85-beep/mutable-dreams",
@@ -146,7 +146,7 @@
   },
   {
    "repo": "piotrwozniak/piterfly",
-   "why": "sections added: piterfly 1.2.6 for m-vave fm-1, tracks and controls, effects, saved songs…; sections removed: piterfly 1.0.1 for m-vave fm-1, base sloop documentation, contents, what's new in 2.8…; shorter (64887 → 6900 characters)"
+   "why": "sections added: piterfly 1.2.9 for m-vave fm-1, tracks and controls, effects, saved songs…; sections removed: piterfly 1.0.1 for m-vave fm-1, base sloop documentation, contents, what's new in 2.8…; shorter (64887 → 7318 characters)"
   },
   {
    "repo": "stephencummins/fm1-aisling",
