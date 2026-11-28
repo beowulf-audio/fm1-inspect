@@ -114,7 +114,7 @@
   },
   {
    "repo": "glvno/matryoshka",
-   "why": "sections added: fx drawers, sequencer, clock divider, s&h, quantizer, pulse, euclid, compressor and limiter, diff and sound design…; sections removed: sequencer, clock divider, s&h, quantizer, pulse, compressor, diff and a/b"
+   "why": "sections added: fx drawers, sequencer, clock divider, s&h, quantizer, pulse, euclid, compressor and limiter, diff and sound design…; sections removed: sequencer, clock divider, s&h, quantizer, pulse, compressor, diff and a/b; longer (54719 → 73667 characters)"
   },
   {
    "repo": "jasonpersinger/ghoulbox-fm1-dungeon-synth",
@@ -122,7 +122,7 @@
   },
   {
    "repo": "joakimeriksson/fm1-dock",
-   "why": "sections added: new in 1.0, new in 0.9 a test release, new add-ons, new in 0.8.2…; longer (22556 → 40153 characters)"
+   "why": "sections added: new in 1.0.1, new in 1.0, new in 0.9 a test release, new add-ons…; longer (22556 → 40824 characters)"
   },
   {
    "repo": "kidbee85-beep/mutable-dreams",
@@ -158,7 +158,7 @@
   },
   {
    "repo": "w0ts/optimist",
-   "why": "sections added: optimist; sections removed: what is in it, the flavours, builder, installer, editor w0ts.github.io/optimisthttps://w0ts.github.io/optimist/, your first install…; shorter (10561 → 5417 characters)"
+   "why": "sections added: optimist; sections removed: what is in it, the flavours, builder, installer, editor w0ts.github.io/optimisthttps://w0ts.github.io/optimist/, your first install…; shorter (10561 → 5419 characters)"
   },
   {
    "repo": "zvenson/obervave",

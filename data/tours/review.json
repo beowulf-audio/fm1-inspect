@@ -1,63 +1,43 @@
 {
  "review": [
   {
-   "repo": "arrastao/baile-fm1",
-   "tag": "v0.8.0",
-   "asset": "BAILE-0.8-FM1.fwsc",
-   "sha": "813390703a715913188b486d157d0f81b2d697b12559ac29c25eace5dae9b763",
-   "hash": "1452d35a0dea01c5",
-   "previewing": "v0.7.0",
+   "repo": "doohinkus/kris-jangle",
+   "tag": "v0.15",
+   "asset": "kris-jangle-0.15.fwsc",
+   "sha": "8f67370a58b435781011ab7b2a6d114d99a479f7c83b5bdd43f98e54ec2f4fb1",
+   "hash": "8c4d8033c0d9bf33",
+   "previewing": "v0.9",
    "source": "tailored",
-   "why": "sound 76% → 6% of the time, sounds started 38 → 2",
+   "why": "screens 35 → 14",
    "now": {
-    "looks": 5,
-    "soundShare": 0.06,
+    "looks": 14,
+    "soundShare": 0.6,
     "onsets": 2
    },
    "before": {
-    "looks": 7,
-    "soundShare": 0.76,
-    "onsets": 38
+    "looks": 35,
+    "soundShare": 0.46,
+    "onsets": 3
    }
   },
   {
-   "repo": "bonszaimusic/caravel",
-   "tag": "v1.2.1",
-   "asset": "caravel-1.2.1.fwsc",
-   "sha": "a9752f2c25a6e4dc60d99b2c0b8bb071d98fb2038bea61628ade29aa1a0a0d99",
-   "hash": "eebcbe8f2e069f14",
-   "previewing": "v0.13.0",
+   "repo": "Quixotic7/FIZZ",
+   "tag": "v0.13.0",
+   "asset": "fizz-usb-0.13.0.fwsc",
+   "sha": "11148699c6989e2af4e1537c7d744c9305022a299175036b198aecb2ec95a9c6",
+   "hash": "444e0388d3fc0bd6",
+   "previewing": "v0.12.0-beta.19",
    "source": "tailored",
-   "why": "screens 12 → 5, sound 61% → 28% of the time",
+   "why": "sounds started 20 → 1",
    "now": {
-    "looks": 5,
-    "soundShare": 0.28,
-    "onsets": 9
+    "looks": 14,
+    "soundShare": 0.18,
+    "onsets": 1
    },
    "before": {
-    "looks": 12,
-    "soundShare": 0.61,
-    "onsets": 18
-   }
-  },
-  {
-   "repo": "PolarPatch/Arctic-scream-FM-1",
-   "tag": "v2.1.9",
-   "asset": "arctic-scream-2.1.9.fwsc",
-   "sha": "6f7961c41ab62804e63b173682e22c7b0c265d9f6856682a1b0ff656a0e4fa65",
-   "hash": "3ae1a14a41356f3b",
-   "previewing": "v2.0",
-   "source": "tailored",
-   "why": "sound 88% → 0% of the time, sounds started 14 → 0",
-   "now": {
-    "looks": 25,
-    "soundShare": 0,
-    "onsets": 0
-   },
-   "before": {
-    "looks": 30,
-    "soundShare": 0.88,
-    "onsets": 14
+    "looks": 17,
+    "soundShare": 0.35,
+    "onsets": 20
    }
   }
  ]
